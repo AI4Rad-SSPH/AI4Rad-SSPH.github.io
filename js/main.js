@@ -162,9 +162,9 @@ function renderTeam(data, lang) {
     html += '</div>';
   }
 
-  html += '<div id="phd" class="student-category reveal"><div class="section-label"><span class="section-label__text">' + (lang === 'cn' ? '博士研究生' : 'PhD Students') + '</span><span class="section-label__line"></span></div>';
-  html += '<div class="student-category__sub"><div class="student-category__sub-label">' + (lang === 'cn' ? '工学博士' : 'Engineering') + '</div><div class="member-grid">' + data.phd_engineering.map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
-  html += '<div class="student-category__sub"><div class="student-category__sub-label">' + (lang === 'cn' ? '医学博士' : 'Medicine') + '</div><div class="member-grid">' + data.phd_medical.map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
+  html += '<div id="phd" class="student-category reveal"><div class="section-label"><span class="section-label__text">' + (lang === 'cn' ? '博士研究生' : 'Doctoral Students') + '</span><span class="section-label__line"></span></div>';
+  html += '<div class="student-category__sub"><div class="student-category__sub-label">' + (lang === 'cn' ? '工学博士（PhD）' : 'Engineering · PhD') + '</div><div class="member-grid">' + data.phd_engineering.map(function(m){ m.degree = m.degree || (lang === 'cn' ? '博士' : 'PhD'); return renderMemberCard(m, lang); }).join('') + '</div></div>';
+  html += '<div class="student-category__sub"><div class="student-category__sub-label">' + (lang === 'cn' ? '医学博士（MD）' : 'Medicine · MD') + '</div><div class="member-grid">' + data.phd_medical.map(function(m){ m.degree = m.degree || (lang === 'cn' ? '医学博士' : 'MD'); return renderMemberCard(m, lang); }).join('') + '</div></div>';
   html += '</div>';
 
   html += '<div id="master" class="student-category reveal"><div class="section-label"><span class="section-label__text">' + (lang === 'cn' ? '硕士研究生' : 'Master Students') + '</span><span class="section-label__line"></span></div>';
