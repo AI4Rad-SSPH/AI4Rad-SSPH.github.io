@@ -1,6 +1,7 @@
 (function(){
   var h = document.documentElement;
   var b = document.getElementById('themeToggle');
+  if (!b) return;
   var s = localStorage.getItem('ai4rad-theme');
   if (s === 'dark' || s === 'light') {
     h.setAttribute('data-theme', s);
@@ -18,7 +19,10 @@
   });
   function update(){
     var c = h.getAttribute('data-theme');
-    b.textContent = c === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19';
+    var icon = c === 'dark' ? 'sun' : 'moon';
+    b.innerHTML = '<span class="ic ic--' + icon + ' nav__theme-icon"></span>';
+    b.setAttribute('title', c === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    b.setAttribute('aria-label', c === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
   }
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e){
     if (!localStorage.getItem('ai4rad-theme')) {
@@ -61,13 +65,30 @@
   s.forEach(function(x){ o.observe(x.sec); });
 })();
 
+function memberInitials(member, lang) {
+  var name = lang === 'cn' ? member.name_cn : member.name_en;
+  if (!name) name = lang === 'cn' ? member.name_en : member.name_cn;
+  if (!name) return '?';
+  var parts = name.trim().split(/\s+/);
+  if (parts.length >= 2) {
+    return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+  }
+  return name.substring(0, 2).toUpperCase();
+}
+
+function renderAvatar(member, lang, extraClass) {
+  var alt = lang === 'cn' ? member.name_cn : member.name_en;
+  if (member.avatar_type === 'photo' && member.avatar_path) {
+    return '<img src="' + member.avatar_path + '" alt="' + alt + '" loading="eager">';
+  }
+  return '<div class="avatar-ph" aria-hidden="true">' + memberInitials(member, lang) + '</div>';
+}
+
 function avatarUrl(member) {
   if (member.avatar_type === 'photo' && member.avatar_path) {
     return member.avatar_path;
   }
-  var seed = member.avatar_seed || member.id;
-  var bg = member.avatar_bg || 'dbeafe';
-  return 'https://api.dicebear.com/9.x/lorelei-neutral/svg?seed=' + encodeURIComponent(seed) + '&backgroundColor=' + bg;
+  return null;
 }
 
 // Where a member's avatar should link: internal member page if they have one,
@@ -89,7 +110,7 @@ function renderLeader(member, lang) {
   var aOpen = link ? '<a href="' + link + '"' + (member.page ? '' : ' target="_blank" rel="noopener"') + '>' : '';
   var aClose = link ? '</a>' : '';
   var title = lang === 'cn' ? member.title_cn : member.title;
-  return '<div class="leader-card reveal"><div class="leader-card__avatar">' + aOpen + '<img src="' + avatarUrl(member) + '" alt="' + name + '" loading="eager">' + aClose + '</div><div><div class="leader-card__name">' + name + '<span class="leader-card__name-en">' + nameOther + '</span></div><div class="leader-card__tags">' + tags + '</div><div class="leader-card__meta">' + title + ' · ' + aff + '<br>' + dept + '</div></div></div>';
+  return '<div class="leader-card reveal"><div class="leader-card__avatar">' + aOpen + renderAvatar(member, lang) + aClose + '</div><div><div class="leader-card__name">' + name + '<span class="leader-card__name-en">' + nameOther + '</span></div><div class="leader-card__tags">' + tags + '</div><div class="leader-card__meta">' + title + ' · ' + aff + '<br>' + dept + '</div></div></div>';
 }
 
 function renderPI(member, lang) {
@@ -114,7 +135,7 @@ function renderPI(member, lang) {
   if (dept) line2Parts.push(dept);
   if (aff) line2Parts.push(aff);
   var line2 = line2Parts.join(', ');
-  return '<div class="pi-card reveal"><div class="pi-card__avatar">' + home + '<img src="' + avatarUrl(member) + '" alt="' + name + '" loading="eager">' + homeEnd + '</div><div><div class="pi-card__name">' + name + '<span class="' + (lang === 'cn' ? 'pi-card__name-en' : 'pi-card__name-cn') + '">' + nameOther + '</span></div><div class="pi-card__meta">' + line1 + (line1 && line2 ? '<br>' : '') + line2 + '</div></div></div>';
+  return '<div class="pi-card reveal"><div class="pi-card__avatar">' + home + renderAvatar(member, lang) + homeEnd + '</div><div><div class="pi-card__name">' + name + '<span class="' + (lang === 'cn' ? 'pi-card__name-en' : 'pi-card__name-cn') + '">' + nameOther + '</span></div><div class="pi-card__meta">' + line1 + (line1 && line2 ? '<br>' : '') + line2 + '</div></div></div>';
 }
 
 function renderMemberCard(member, lang) {
@@ -143,7 +164,7 @@ function renderMemberCard(member, lang) {
   if (member.links && member.links.github) {
     meta += ' · <a href="' + member.links.github + '" target="_blank" rel="noopener">GitHub</a>';
   }
-  return '<div class="member-card"><div class="member-card__avatar">' + home + '<img src="' + avatarUrl(member) + '" alt="' + name + '" loading="eager">' + homeEnd + '</div><div class="member-card__info"><div class="member-card__name">' + name + ' <span class="' + (lang === 'cn' ? 'member-card__name-en' : 'member-card__name-cn') + '">' + nameOther + '</span></div><div class="member-card__meta">' + meta + '</div></div></div>';
+  return '<div class="member-card"><div class="member-card__avatar">' + home + renderAvatar(member, lang) + homeEnd + '</div><div class="member-card__info"><div class="member-card__name">' + name + ' <span class="' + (lang === 'cn' ? 'member-card__name-en' : 'member-card__name-cn') + '">' + nameOther + '</span></div><div class="member-card__meta">' + meta + '</div></div></div>';
 }
 
 function renderTeam(data, lang) {

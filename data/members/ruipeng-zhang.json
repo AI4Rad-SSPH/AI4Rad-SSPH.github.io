@@ -163,7 +163,7 @@
           "url": "https://link.springer.com/chapter/10.1007/978-3-031-25085-9_17",
           "authors": "Yuxuan Jiang, Yanfeng Wang, <strong>Ruipeng Zhang</strong>, Qinwei Xu, Ya Zhang, Xin Chen, Qi Tian.",
           "venue": "ECCV Workshop, 2022",
-          "tags": [{ "label": "Workshop", "kind": "venue" }, { "label": "🏆 Best Long Paper", "kind": "award" }],
+          "tags": [{ "label": "Workshop", "kind": "venue" }, { "label": "Best Long Paper", "kind": "award" }],
           "links": [{ "label": "pdf", "url": "https://link.springer.com/chapter/10.1007/978-3-031-25085-9_17" }]
         }
       ]

@@ -8,14 +8,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Outfit:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
+  <link rel="icon" href="images/brand/ai4rad-emblem.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <nav class="nav">
     <div class="nav__inner">
       <a href="./index_ch.html" class="nav__brand">
-        <img src="images/brand/ssph-med-icons.png" alt="SSPH" class="nav__brand-logo">
+        <img src="images/brand/ai4rad-emblem.svg" alt="AI4Rad" class="nav__brand-logo">
         <span class="nav__brand-text">AI4Rad 实验室</span>
       </a>
       <div class="nav__links">
@@ -25,24 +25,19 @@
         <a href="#resources" class="nav__link">资源</a>
         <a href="./index.html" class="nav__link--lang">EN</a>
       </div>
-      <button class="nav__theme-btn" id="themeToggle" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+      <button class="nav__theme-btn" id="themeToggle" aria-label="切换深色模式" title="切换深色模式"></button>
     </div>
   </nav>
 
   <main class="wrapper">
     <section class="hero reveal">
-      <div class="hero__logos">
-        <img src="images/brand/ssph-med-logo.svg" alt="上海市第六人民医院" class="hero__logo">
-        <span class="hero__logo-sep"></span>
-        <img src="images/brand/sjtu-logo-zh.svg" alt="上海交通大学" class="hero__sjtu">
-      </div>
+      <img src="images/brand/ai4rad-logo-full.svg" alt="AI4Rad 实验室" class="hero__brandlogo">
       <div class="hero__badge">
         <span class="hero__badge-dot"></span>
         放射介入科 · 上海市第六人民医院 · 上海交通大学医学院
       </div>
       <h1 class="hero__title">AI4Rad 实验室</h1>
-      <p class="hero__slogan">让诊断更精准，让医疗更普惠。</p>
-      <p class="hero__subtitle">我们致力于把最前沿的人工智能技术，落地到最真实的临床场景中——让先进模型成为真正可信、可用的工具，让诊断更精准，让医疗更普惠。</p>
+      <p class="hero__subtitle">将医学影像研究转化为经过验证的临床工具。我们研发面向脑部、血管与骨肌影像的机器学习系统，相关成果发表于 <em>npj Digital Medicine</em>、<em>Radiology</em> 与 <em>European Radiology</em>。</p>
       <div class="hero__cta">
         <a href="./team_ch.html" class="btn btn--primary">认识团队</a>
         <a href="https://github.com/AI4Rad-SSPH" class="btn btn--secondary" target="_blank" rel="noopener">GitHub 组织</a>
@@ -51,29 +46,28 @@
 
     <div class="portal reveal">
       <a href="./team_ch.html" class="portal-card">
-        <div class="portal-card__icon">👥</div>
+        <div class="portal-card__icon"><span class="ic ic--team"></span></div>
         <div class="portal-card__title">团队</div>
         <div class="portal-card__desc">横跨医学与工程的临床医生、工程师与学生。</div>
-        <div class="portal-card__cta">认识团队 →</div>
+        <div class="portal-card__cta">认识团队 <span class="ic ic--external" style="width:0.8rem;height:0.8rem;"></span></div>
       </a>
       <a href="#projects" class="portal-card">
-        <div class="portal-card__icon">🔬</div>
+        <div class="portal-card__icon"><span class="ic ic--flask"></span></div>
         <div class="portal-card__title">项目</div>
         <div class="portal-card__desc">从脑 MRI 报告到血管与卒中影像的临床 AI。</div>
-        <div class="portal-card__cta">查看项目 →</div>
-      </a>
-      <a href="#demos" class="portal-card">
-        <span class="portal-card__badge">敬请期待</span>
-        <div class="portal-card__icon">▶️</div>
-        <div class="portal-card__title">演示</div>
-        <div class="portal-card__desc">我们模型与临床工具的交互式演示。</div>
-        <div class="portal-card__cta">敬请期待</div>
+        <div class="portal-card__cta">查看项目 <span class="ic ic--external" style="width:0.8rem;height:0.8rem;"></span></div>
       </a>
       <a href="#resources" class="portal-card">
-        <div class="portal-card__icon">📦</div>
+        <div class="portal-card__icon"><span class="ic ic--layers"></span></div>
         <div class="portal-card__title">资源</div>
         <div class="portal-card__desc">实验室发布的代码、论文与开放资源。</div>
-        <div class="portal-card__cta">浏览 →</div>
+        <div class="portal-card__cta">浏览 <span class="ic ic--external" style="width:0.8rem;height:0.8rem;"></span></div>
+      </a>
+      <a href="mailto:zhangrp@sjtu.edu.cn" class="portal-card">
+        <div class="portal-card__icon"><span class="ic ic--mail"></span></div>
+        <div class="portal-card__title">联系</div>
+        <div class="portal-card__desc">欢迎合作或咨询加入我们。</div>
+        <div class="portal-card__cta">发送邮件 <span class="ic ic--external" style="width:0.8rem;height:0.8rem;"></span></div>
       </a>
     </div>
 
@@ -83,7 +77,7 @@
         <div class="section-head__line"></div>
       </div>
       <p style="color:var(--text-secondary);font-size:0.98rem;line-height:1.85;max-width:760px;">
-        AI4Rad 实验室是上海市第六人民医院放射介入科的医学影像人工智能团队。我们以视觉基础模型、多模态大语言模型、影像生成与空间智能四类技术能力为支撑，面向泛血管、骨肌、肿瘤、慢病队列、急诊影像等七大临床方向开展研究与转化。我们的目标只有一个：<strong>让技术真正抵达临床</strong>。
+        AI4Rad 实验室是上海交通大学医学院附属第六人民医院放射介入科的医学影像人工智能团队。我们的工作围绕视觉基础模型、多模态语言模型、影像生成与空间智能四类技术能力展开，并在多中心研究中验证其临床价值。
       </p>
     </section>
 
@@ -94,24 +88,24 @@
       </div>
       <div class="research-areas">
         <div class="area-card">
-          <div class="area-card__icon" style="background:var(--area-icon-bg);">👁️</div>
+          <div class="area-card__icon" style="background:var(--area-icon-bg);"><span class="ic ic--eye"></span></div>
           <div class="area-card__title">视觉基础模型</div>
-          <div class="area-card__desc">面向医学影像的视觉表征与结构化理解，支撑诊断、分类、分割、检测、定位及定量参数提取。</div>
+          <div class="area-card__desc">面向医学影像的视觉表征，支撑检测、分割与定量生物标志提取。应用包括 CTA 脑动脉瘤检测与骨肌影像分析。</div>
         </div>
         <div class="area-card">
-          <div class="area-card__icon" style="background:var(--area-icon-bg);">🧠</div>
+          <div class="area-card__icon" style="background:var(--area-icon-bg);"><span class="ic ic--brain"></span></div>
           <div class="area-card__title">多模态大语言模型</div>
-          <div class="area-card__desc">融合影像、报告文本、病史与知识库，开展报告生成、临床推理、评测框架与智能体研究。</div>
+          <div class="area-card__desc">融合影像、报告文本与病史，用于结构化报告与临床推理。代表工作为 BrainMIND，一项面向脑 MRI 诊断印象生成的多中心基准。</div>
         </div>
         <div class="area-card">
-          <div class="area-card__icon" style="background:var(--area-icon-bg);">🎨</div>
+          <div class="area-card__icon" style="background:var(--area-icon-bg);"><span class="ic ic--pulse"></span></div>
           <div class="area-card__title">影像生成</div>
-          <div class="area-card__desc">跨模态图像生成、低剂量去噪、图像增强、快速成像与缺失序列补全。</div>
+          <div class="area-card__desc">跨模态图像生成、低剂量去噪与图像增强，以缩短扫描时间并提升下游诊断的图像质量。</div>
         </div>
         <div class="area-card">
-          <div class="area-card__icon" style="background:var(--area-icon-bg);">🌐</div>
+          <div class="area-card__icon" style="background:var(--area-icon-bg);"><span class="ic ic--cube"></span></div>
           <div class="area-card__title">空间智能与物理仿真</div>
-          <div class="area-card__desc">三维空间建模、配准、血流仿真、骨肌力学与物理一致性约束的可解释定量分析。</div>
+          <div class="area-card__desc">三维空间建模、配准与血流仿真，用于血管与骨肌系统的定量分析。</div>
         </div>
       </div>
     </section>
@@ -129,31 +123,17 @@
             <div class="project-card__tag">多模态大模型 · npj Digital Medicine 2026</div>
             <div class="project-card__title">BrainMIND — 基于大语言模型的脑 MRI 报告诊断印象生成</div>
             <div class="project-card__desc">面向脑 MRI 报告诊断印象生成的多中心基准与阅片者研究，系统评测大语言模型的诊断能力。</div>
-            <div class="project-card__links"><a href="https://www.nature.com/articles/s41746-026-02380-4" target="_blank" rel="noopener">论文 →</a><a href="https://github.com/FrankZhangRp/BrainMIND" target="_blank" rel="noopener">代码 →</a></div>
+            <div class="project-card__links"><a href="https://www.nature.com/articles/s41746-026-02380-4" target="_blank" rel="noopener">论文 <span class="ic ic--external" style="width:0.75rem;height:0.75rem;"></span></a><a href="https://github.com/FrankZhangRp/BrainMIND" target="_blank" rel="noopener">代码 <span class="ic ic--external" style="width:0.75rem;height:0.75rem;"></span></a></div>
           </div>
         </div>
         <div class="project-card">
-          <div class="project-card__media"><div class="project-card__icon">🧬</div></div>
+          <div class="project-card__media"><div class="project-card__icon"><span class="ic ic--pulse"></span></div></div>
           <div>
             <div class="project-card__tag">视觉基础模型 · Radiology / European Radiology</div>
             <div class="project-card__title">脑血管与卒中 AI — 动脉瘤检测、ASPECTS、血栓分析</div>
             <div class="project-card__desc">面向 CTA 脑动脉瘤检测、自动 ASPECTS 评分与急性卒中血栓表征的多中心深度学习系统。</div>
-            <div class="project-card__links"><a href="https://github.com/AI4Rad-SSPH" target="_blank" rel="noopener">GitHub 组织 →</a></div>
+            <div class="project-card__links"><a href="https://github.com/AI4Rad-SSPH" target="_blank" rel="noopener">GitHub 组织 <span class="ic ic--external" style="width:0.75rem;height:0.75rem;"></span></a></div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="demos" class="reveal" style="margin-top:56px;">
-      <div class="section-head">
-        <h2 class="section-head__title">演示</h2>
-        <div class="section-head__line"></div>
-      </div>
-      <div class="resource-link" style="max-width:520px;">
-        <span class="resource-link__icon">▶️</span>
-        <div>
-          <div class="resource-link__title">交互式演示即将上线</div>
-          <div class="resource-link__desc">我们影像模型的在线演示将在此发布，关注 <a href="https://github.com/AI4Rad-SSPH" target="_blank" rel="noopener">GitHub</a> 获取更新。</div>
         </div>
       </div>
     </section>
@@ -165,20 +145,20 @@
       </div>
       <div class="resource-list">
         <a class="resource-link" href="https://github.com/AI4Rad-SSPH" target="_blank" rel="noopener">
-          <span class="resource-link__icon">🐙</span>
+          <span class="resource-link__icon"><span class="ic ic--github"></span></span>
           <div><div class="resource-link__title">GitHub 组织</div><div class="resource-link__desc">开源代码与模型发布</div></div>
         </a>
-        <a class="resource-link" href="./team_ch.html">
-          <span class="resource-link__icon">👥</span>
-          <div><div class="resource-link__title">团队成员</div><div class="resource-link__desc">PI、学生与校友</div></div>
-        </a>
         <a class="resource-link" href="https://scholar.google.com/citations?user=zj4WqewAAAAJ&hl=zh-CN" target="_blank" rel="noopener">
-          <span class="resource-link__icon">🎓</span>
+          <span class="resource-link__icon"><span class="ic ic--cap"></span></span>
           <div><div class="resource-link__title">论文成果</div><div class="resource-link__desc">Google Scholar 代表性论文</div></div>
         </a>
+        <a class="resource-link" href="./team_ch.html">
+          <span class="resource-link__icon"><span class="ic ic--team"></span></span>
+          <div><div class="resource-link__title">团队</div><div class="resource-link__desc">PI、学生与校友</div></div>
+        </a>
         <a class="resource-link" href="mailto:zhangrp@sjtu.edu.cn">
-          <span class="resource-link__icon">✉️</span>
-          <div><div class="resource-link__title">加入 / 合作</div><div class="resource-link__desc">欢迎与我们联系</div></div>
+          <span class="resource-link__icon"><span class="ic ic--mail"></span></span>
+          <div><div class="resource-link__title">联系</div><div class="resource-link__desc">欢迎与我们联系</div></div>
         </a>
       </div>
     </section>
@@ -190,16 +170,16 @@
       </div>
       <div class="news-list">
         <div class="news-item">
-          <span class="news-item__date">2026.06</span>
-          <span class="news-item__text">AI4Rad Lab 组织主页在 GitHub Pages 上线。</span>
-        </div>
-        <div class="news-item">
           <span class="news-item__date">2026.04</span>
-          <span class="news-item__text">BrainMIND 研究被 <em>npj Digital Medicine</em> 接收：基于大语言模型的脑 MRI 报告诊断印象生成。</span>
+          <span class="news-item__text">BrainMIND 研究发表于 <em>npj Digital Medicine</em>：基于大语言模型的脑 MRI 报告诊断印象生成。</span>
         </div>
         <div class="news-item">
           <span class="news-item__date">2025.09</span>
-          <span class="news-item__text">AI4Rad 实验室迎来 2025 级博士与硕士研究生。</span>
+          <span class="news-item__text">实验室多中心卒中 ASPECTS 研究被 <em>European Radiology</em> 接收。</span>
+        </div>
+        <div class="news-item">
+          <span class="news-item__date">2024.10</span>
+          <span class="news-item__text">脑动脉瘤 CTA 检测工作发表于 <em>Radiology</em>。</span>
         </div>
       </div>
     </section>
@@ -216,10 +196,12 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__logos">
-      <img src="images/brand/ssph-med-logo.svg" alt="上海市第六人民医院" class="footer__logo" style="margin-bottom:0;">
-      <span class="footer__logo-sep"></span>
-      <img src="images/brand/sjtu-logo-zh.svg" alt="上海交通大学" class="footer__sjtu">
+    <img src="images/brand/ai4rad-logo-full.svg" alt="AI4Rad 实验室" class="footer__brandlogo">
+    <div class="footer__affil-cap">Affiliated with</div>
+    <div class="footer__affil">
+      <img src="images/brand/ssph-med-logo.svg" alt="上海市第六人民医院" class="a-ssph">
+      <span class="footer__affil-sep"></span>
+      <img src="images/brand/sjtu-logo-zh.svg" alt="上海交通大学" class="a-sjtu">
     </div>
     <div class="footer__institution">上海市第六人民医院</div>
     <div class="footer__dept">上海交通大学医学院附属 · 放射介入科</div>
