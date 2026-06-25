@@ -1,0 +1,100 @@
+{
+  "id": "yao-zeng",
+  "name_en": "Yao Zeng",
+  "name_cn": "曾耀",
+  "photo": "images/members/yao-zeng.jpg",
+  "title_en": "PhD Student · AI4Rad Lab · Donghua University",
+  "title_cn": "博士研究生 · AI4Rad Lab · 东华大学",
+  "bio_en": "Yao Zeng is a PhD student at the School of Information Science and Technology, Donghua University, and a member of AI4Rad Lab. He joined AI4Rad Lab in 2022 during his master's study at Shenyang University of Technology. His research focuses on medical imaging AI, vascular geometry modeling, computational hemodynamics, and physics-aware deep learning for blood-flow prediction. He is particularly interested in point-cloud representation learning for vascular flow fields, PINN-based hemodynamic modeling, and CFD-assisted clinical research.",
+  "bio_cn": "曾耀，东华大学信息科学与技术学院博士研究生，AI4Rad Lab 成员。2022 年硕士就读于沈阳工业大学期间加入 AI4Rad Lab。主要研究方向包括医学影像人工智能、血管几何建模、计算血流动力学，以及面向血流预测的物理感知深度学习。当前关注血流点云表征学习、基于 PINN 的血流动力学建模，以及 CFD 辅助临床研究。",
+  "links": {
+    "email": "sspxdzy@scosine.org",
+    "orcid": "https://orcid.org/0009-0002-3182-6107",
+    "github": "https://github.com/sspxdzy",
+    "scholar": "",
+    "homepage": ""
+  },
+  "interests_en": [
+    "Medical imaging AI and vascular image analysis",
+    "Point-cloud representation learning for vascular geometry and blood-flow fields",
+    "PINN-based and physics-aware deep learning for hemodynamic prediction",
+    "Computational fluid dynamics simulation and CFD-assisted hemodynamic research"
+  ],
+  "interests_cn": [
+    "医学影像人工智能与血管影像分析",
+    "面向血管几何与血流场的点云表征学习",
+    "基于 PINN 的物理感知深度学习与血流动力学预测",
+    "计算流体力学仿真与 CFD 辅助血流动力学研究"
+  ],
+  "news_en": [
+    {
+      "date": "2022",
+      "highlight": true,
+      "text": "Joined AI4Rad Lab during master's study at Shenyang University of Technology."
+    },
+    {
+      "date": "2025",
+      "highlight": true,
+      "text": "Started PhD study at Donghua University."
+    },
+    {
+      "date": "2025",
+      "highlight": true,
+      "text": "Paper accepted by Computer Methods and Programs in Biomedicine."
+    }
+  ],
+  "news_cn": [
+    {
+      "date": "2022年",
+      "highlight": true,
+      "text": "硕士就读于沈阳工业大学期间加入 AI4Rad Lab。"
+    },
+    {
+      "date": "2025年",
+      "highlight": true,
+      "text": "进入东华大学攻读博士学位。"
+    },
+    {
+      "date": "2025年",
+      "highlight": true,
+      "text": "论文被 Computer Methods and Programs in Biomedicine 接收。"
+    }
+  ],
+  "publications": [
+    {
+      "group_en": "Journal Papers",
+      "group_cn": "期刊论文",
+      "items": [
+        {
+          "featured": true,
+          "title": "Expanding point cloud statistical shape model applications: Generalized vascular modeling for population-level hemodynamic simulations",
+          "authors": "Yao Zeng, et al.",
+          "venue": "Computer Methods and Programs in Biomedicine, 2025",
+          "tags": [
+            {
+              "label": "SCI Q1",
+              "kind": "jcr"
+            },
+            {
+              "label": "Medical AI",
+              "kind": "venue"
+            },
+            {
+              "label": "Hemodynamics",
+              "kind": "venue"
+            }
+          ],
+          "links": []
+        }
+      ]
+    }
+  ],
+  "awards_en": [
+    "Software copyright: ischemic stroke thrombosis image analysis system",
+    "Patent: stroke evaluation device based on fractal dimension"
+  ],
+  "awards_cn": [
+    "软件著作权：缺血性卒中血栓图像分析系统",
+    "专利：基于分形维数的卒中评估装置"
+  ]
+}

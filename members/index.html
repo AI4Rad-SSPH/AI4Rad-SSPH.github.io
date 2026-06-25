@@ -11,9 +11,11 @@
   <link rel="icon" href="../images/brand/ai4rad-emblem.svg">
   <link rel="stylesheet" href="../css/style.css">
   <style>
-    .mp-profile { display: grid; grid-template-columns: 1fr 220px; gap: 48px; align-items: start; padding: 48px 0 32px; }
-    .mp-photo { width: 100%; aspect-ratio: 3/4; object-fit: cover; border-radius: var(--radius-md); border: 1px solid var(--border); }
-    .mp-avatar-fallback { width: 100%; aspect-ratio: 3/4; border-radius: var(--radius-md); background: var(--ai4rad-teal-soft); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; }
+    .mp-profile { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 48px; align-items: start; padding: 48px 0 32px; }
+    .mp-profile > div:first-child { min-width: 0; }
+    .mp-photo-wrap { width: 220px; height: 293px; }
+    .mp-photo { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-md); border: 1px solid var(--border); }
+    .mp-avatar-fallback { width: 100%; height: 100%; border-radius: var(--radius-md); background: var(--ai4rad-teal-soft); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; }
     .mp-avatar-fallback .avatar-ph { font-size: 2.6rem; border-radius: var(--radius-md); }
     .mp-back { display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; font-weight: 500; color: var(--text-muted); margin-bottom: 20px; }
     .mp-back:hover { color: var(--text-primary); }
@@ -46,7 +48,7 @@
     .mp-empty { text-align: center; color: var(--text-muted); padding: 80px 0; }
     @media (max-width: 768px) {
       .mp-profile { grid-template-columns: 1fr; gap: 28px; padding: 32px 0 20px; }
-      .mp-photo-wrap { order: -1; max-width: 180px; margin: 0 auto; }
+      .mp-photo-wrap { order: -1; width: 180px; height: 240px; margin: 0 auto; }
       .mp-name { font-size: 1.8rem; text-align: center; }
       .mp-name-sub { display: block; margin: 4px 0 0; text-align: center; }
       .mp-title, .mp-contacts { justify-content: center; text-align: center; }
@@ -125,7 +127,10 @@
     }
 
     function renderPhoto(m) {
-      if (m.photo) return '<img class="mp-photo" src="' + asset(m.photo) + '" alt="' + esc(t(m.name_en, m.name_cn)) + '" loading="lazy">';
+      if (m.photo) {
+        var initials = esc(memberInitials(m));
+        return '<img class="mp-photo" src="' + asset(m.photo) + '" alt="' + esc(t(m.name_en, m.name_cn)) + '" loading="lazy"><div class="mp-avatar-fallback" style="display:none;"><div class="avatar-ph" aria-hidden="true">' + initials + '</div></div>';
+      }
       return '<div class="mp-avatar-fallback"><div class="avatar-ph" aria-hidden="true">' + memberInitials(m) + '</div></div>';
     }
 
@@ -157,6 +162,7 @@
       if (m.bio_en || m.bio_cn) html += '<p class="mp-bio">' + t(m.bio_en, m.bio_cn) + '</p>';
       html += '<div class="mp-contacts">';
       if (L.email) html += '<a href="mailto:' + L.email + '">' + t('Email', '邮箱') + '</a>';
+      if (L.orcid) html += '<a href="' + L.orcid + '" target="_blank" rel="noopener">ORCID</a>';
       if (L.scholar) html += '<a href="' + L.scholar + '" target="_blank" rel="noopener">Google Scholar</a>';
       if (L.github) html += '<a href="' + L.github + '" target="_blank" rel="noopener">GitHub</a>';
       if (L.homepage) html += '<a href="' + L.homepage + '" target="_blank" rel="noopener">' + t('Homepage', '个人主页') + '</a>';
@@ -188,6 +194,7 @@
             html += '<div class="pub-title">' + (p.url ? '<a href="' + p.url + '" target="_blank" rel="noopener">' + titleInner + '</a>' : titleInner) + '</div>';
             if (p.authors) html += '<div class="pub-authors">' + p.authors + '</div>';
             if (p.venue) html += '<div class="pub-venue">' + esc(p.venue) + '</div>';
+            if (p.tags && p.tags.length) html += '<div class="pub-tags">' + p.tags.map(function(tag){ return '<span class="pub-tag pub-tag--' + esc(tag.kind || 'venue') + '">' + esc(tag.label) + '</span>'; }).join('') + '</div>';
             if (p.links && p.links.length) html += '<div class="pub-links">' + p.links.map(function(lk){ return '<a href="' + lk.url + '" target="_blank" rel="noopener">' + esc(lk.label) + '</a>'; }).join('') + '</div>';
             html += '</li>';
           });
@@ -208,12 +215,18 @@
       }
 
       root.innerHTML = html;
+      root.querySelectorAll('.mp-photo').forEach(function(img){
+        img.addEventListener('error', function(){
+          this.style.display = 'none';
+          if (this.nextElementSibling) this.nextElementSibling.style.display = 'flex';
+        });
+        if (img.complete && img.naturalWidth === 0) {
+          img.dispatchEvent(new Event('error'));
+        }
+      });
       if (lang === 'cn') document.documentElement.setAttribute('lang', 'zh-CN');
 
-      var obs = new IntersectionObserver(function(entries){
-        entries.forEach(function(e){ if (e.isIntersecting) e.target.classList.add('visible'); });
-      }, { threshold: 0.05 });
-      root.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
+      root.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('visible'); });
     }
   })();
   </script>
