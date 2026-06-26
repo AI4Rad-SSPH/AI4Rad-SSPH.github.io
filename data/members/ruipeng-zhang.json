@@ -5,8 +5,18 @@
   "photo": "images/members/ruipeng-zhang.jpg",
   "title_en": "PI, AI4Rad Lab · Assistant Researcher · Shanghai Sixth People's Hospital",
   "title_cn": "AI4Rad Lab 课题组 PI · 助理研究员 · 上海交通大学医学院附属第六人民医院",
-  "bio_en": "PI of AI4Rad Lab and Assistant Researcher at Shanghai Sixth People's Hospital, SJTU School of Medicine. PhD in Information and Communication Engineering from Shanghai Jiao Tong University (2024), advised by Prof. Ya Zhang. Research interests include medical vision-language models and cross-distribution generalization on clinical data.",
-  "bio_cn": "AI4Rad 实验室课题组 PI、上海交通大学医学院附属第六人民医院放射介入科助理研究员。2024 年于上海交通大学获信息与通信工程博士学位，师从张娅教授。研究方向为医学视觉语言模型与临床数据跨分布泛化。",
+  "bio_en": "PI of AI4Rad Lab and Assistant Researcher at the Department of Radiology, Shanghai Sixth People's Hospital, SJTU School of Medicine. He received his PhD in Information and Communication Engineering from Shanghai Jiao Tong University (2024), advised by Prof. Ya Zhang, and was a Research Intern at the Shanghai Artificial Intelligence Laboratory (2021–2024). Before that, he earned his B.Eng. in Communication Engineering from the Honors College of the University of Electronic Science and Technology of China (2019).",
+  "bio_cn": "AI4Rad 实验室课题组 PI、上海交通大学医学院附属第六人民医院放射介入科助理研究员。2024 年于上海交通大学电子系获信息与通信工程博士学位（师从张娅教授），2021–2024 年任上海人工智能实验室见习研究员；本科毕业于电子科技大学英才实验学院通信工程专业（2019）。",
+  "education_en": [
+    {"period": "2019.09 – 2024.06", "place": "Shanghai Jiao Tong University", "detail": "PhD, Information and Communication Engineering (advisor: Prof. Ya Zhang)"},
+    {"period": "2021.03 – 2024.05", "place": "Shanghai Artificial Intelligence Laboratory", "detail": "Research Intern"},
+    {"period": "2015.09 – 2019.06", "place": "University of Electronic Science and Technology of China (UESTC)", "detail": "B.Eng., Communication Engineering, Honors College (英才实验学院)"}
+  ],
+  "education_cn": [
+    {"period": "2019.09 – 2024.06", "place": "上海交通大学 电子系", "detail": "信息与通信工程 博士（导师：张娅教授）"},
+    {"period": "2021.03 – 2024.05", "place": "上海人工智能实验室", "detail": "见习研究员"},
+    {"period": "2015.09 – 2019.06", "place": "电子科技大学 英才实验学院", "detail": "通信工程 学士"}
+  ],
   "links": {
     "email": "zhangrp@sjtu.edu.cn",
     "scholar": "https://scholar.google.com/citations?user=m7RzJxwAAAAJ&hl=en",
@@ -14,26 +24,33 @@
     "homepage": "https://frankzhangrp.github.io/"
   },
   "interests_en": [
-    "Medical vision-language models",
-    "Cross-distribution generalization on clinical data"
+    "<strong>Representation Learning & Generalization in Medical Imaging</strong> — learning transferable, robust feature representations and tackling cross-site, cross-scanner distribution shift in clinical imaging data.",
+    "<strong>Unified Understanding & Generation of Medical Images</strong> — vision-language foundation models that jointly perform understanding (detection, segmentation, report generation) and image synthesis/enhancement.",
+    "<strong>Multicenter Clinical Generalization of Medical AI</strong> — federated and domain-generalization methods for the prospective, multicenter validation and deployment of radiology AI."
   ],
   "interests_cn": [
-    "医学视觉语言模型",
-    "临床数据跨分布泛化"
+    "<strong>医学影像的表征学习与泛化性</strong> — 学习可迁移、鲁棒的视觉特征表征，应对跨机构、跨设备的分布偏移。",
+    "<strong>医学影像的统一理解与生成</strong> — 视觉语言基础模型，统一实现理解（检测、分割、报告生成）与图像合成/增强。",
+    "<strong>医学影像人工智能的多中心临床泛化</strong> — 面向放射 AI 前瞻性多中心验证与落地的联邦学习与域泛化方法。"
   ],
   "news_en": [
     {
       "date": "Jun 2026",
       "highlight": true,
-      "text": "LumbarSR — paired clinical CT &amp; micro-CT dataset for lumbar vertebra super-resolution — accepted by <strong><em>Scientific Data</em></strong>. Co-first author."
+      "text": "<strong>HR-LLM-Stroke</strong> — a multi-agent LLM framework for emergency stroke treatment recommendation — published in <strong><em>Journal of Medical Internet Research</em></strong>. Co-first author."
+    },
+    {
+      "date": "Jun 2026",
+      "highlight": true,
+      "text": "<strong>BrainMIND</strong> — multicenter benchmark of LLMs for brain MRI diagnostic impression generation — published in <strong><em>npj Digital Medicine</em></strong> (IF 18.0). Co-first author."
+    },
+    {
+      "date": "Jun 2026",
+      "highlight": true,
+      "text": "<strong>LumbarSR</strong> — paired clinical CT &amp; micro-CT dataset for lumbar vertebra super-resolution — accepted by <strong><em>Scientific Data</em></strong>. Co-first author."
     },
     {
       "date": "Jan 2026",
-      "highlight": true,
-      "text": "Paper accepted in <strong><em>npj Digital Medicine</em></strong> (SCI Q1, IF 15.2). Co-first author."
-    },
-    {
-      "date": "Dec 2024",
       "text": "Paper accepted in <strong>FITEE</strong>."
     },
     {
@@ -61,15 +78,20 @@
     {
       "date": "2026年6月",
       "highlight": true,
-      "text": "LumbarSR —— 配对临床 CT 与显微 CT 的腰椎超分辨率数据集，被 <strong><em>Scientific Data</em></strong> 接收。共同第一作者。"
+      "text": "<strong>HR-LLM-Stroke</strong> —— 面向急诊卒中治疗推荐的多智能体大语言模型框架，发表于 <strong><em>Journal of Medical Internet Research</em></strong>。共同第一作者。"
+    },
+    {
+      "date": "2026年6月",
+      "highlight": true,
+      "text": "<strong>BrainMIND</strong> —— 大语言模型脑 MRI 诊断印象生成多中心基准，发表于 <strong><em>npj Digital Medicine</em></strong>（IF 18.0）。共同第一作者。"
+    },
+    {
+      "date": "2026年6月",
+      "highlight": true,
+      "text": "<strong>LumbarSR</strong> —— 配对临床 CT 与显微 CT 的腰椎超分辨率数据集，被 <strong><em>Scientific Data</em></strong> 接收。共同第一作者。"
     },
     {
       "date": "2026年1月",
-      "highlight": true,
-      "text": "一篇论文被 <strong><em>npj Digital Medicine</em></strong> 接收（SCI Q1, IF 15.2）。共同第一作者。"
-    },
-    {
-      "date": "2024年12月",
       "text": "一篇论文被 <strong>FITEE</strong> 接收。"
     },
     {

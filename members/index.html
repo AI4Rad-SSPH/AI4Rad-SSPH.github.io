@@ -196,6 +196,15 @@
       html += '<div class="mp-photo-wrap">' + renderPhoto(m) + '</div></section>';
 
       var interests = t(m.interests_en, m.interests_cn);
+
+      var education = t(m.education_en, m.education_cn);
+      if (education && education.length) {
+        html += '<section class="reveal">' + sectionHead(t('Education & Experience', '教育与经历'));
+        html += '<ul class="news-list">' + education.map(function(e){
+          return '<li><span class="date">' + esc(e.period) + '</span><strong>' + esc(e.place) + '</strong> — ' + esc(e.detail) + '</li>';
+        }).join('') + '</ul></section>';
+      }
+
       if (interests && interests.length) {
         html += '<section class="reveal">' + sectionHead(t('Research', '研究方向'));
         html += '<ul class="mp-interests">' + interests.map(function(x){ return '<li>' + x + '</li>'; }).join('') + '</ul></section>';

@@ -15,6 +15,14 @@
     "github": "https://github.com/your-handle",
     "homepage": ""
   },
+  "education_en": [
+    { "period": "2019.09 – 2024.06", "place": "Shanghai Jiao Tong University", "detail": "PhD, Your Major (advisor: Prof. X)" },
+    { "period": "2015.09 – 2019.06", "place": "Your Undergraduate University", "detail": "B.Eng., Your Major" }
+  ],
+  "education_cn": [
+    { "period": "2019.09 – 2024.06", "place": "上海交通大学", "detail": "你的专业 博士（导师：X 教授）" },
+    { "period": "2015.09 – 2019.06", "place": "你的本科学校", "detail": "你的专业 学士" }
+  ],
   "interests_en": [
     "<strong>Topic A</strong> — one line on what you work on",
     "<strong>Topic B</strong> — another line"
