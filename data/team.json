@@ -114,7 +114,8 @@
       "affiliation": "Shanghai Sixth People's Hospital",
       "affiliation_cn": "上海市第六人民医院",
       "department": "Department of Radiology",
-      "department_cn": "放射介入科"
+      "department_cn": "放射介入科",
+      "page": true
     }
   ],
   "phd_engineering": [
@@ -159,7 +160,8 @@
       "university_cn": "交大医学院",
       "program": "Medical-Engineering Cross Program",
       "program_cn": "医工交叉专项",
-      "year": "2025"
+      "year": "2025",
+      "page": true
     },
     {
       "id": "jianqiao-ye",
@@ -171,7 +173,8 @@
       "degree": "PhD",
       "degree_cn": "博士",
       "note": "PhD Candidate",
-      "note_cn": "博士候选人"
+      "note_cn": "博士候选人",
+      "page": true
     }
   ],
   "phd_medical": [
@@ -184,7 +187,8 @@
       "avatar_type": "initials",
       "university": "SJTU School of Medicine",
       "university_cn": "交大医学院",
-      "year": "2025"
+      "year": "2025",
+      "page": true
     },
     {
       "id": "xuanchen-jin",
@@ -195,7 +199,8 @@
       "avatar_type": "initials",
       "university": "SJTU School of Medicine",
       "university_cn": "交大医学院",
-      "year": "2025"
+      "year": "2025",
+      "page": true
     },
     {
       "id": "mengdan-jiang",
@@ -206,7 +211,8 @@
       "avatar_type": "initials",
       "university": "SJTU School of Medicine",
       "university_cn": "交大医学院",
-      "year": "2024"
+      "year": "2024",
+      "page": true
     },
     {
       "id": "xinyu-song",
@@ -247,7 +253,8 @@
       "university_cn": "交大医学院",
       "year": "2025",
       "note": "Ruijin Hospital",
-      "note_cn": "瑞金医院"
+      "note_cn": "瑞金医院",
+      "page": true
     }
   ],
   "master_engineering": [
@@ -262,7 +269,8 @@
       "university_cn": "东华大学",
       "school": "School of Biomedical Engineering",
       "school_cn": "生医工学院",
-      "year": "2024"
+      "year": "2024",
+      "page": true
     },
     {
       "id": "yuanyi-wang",
@@ -275,7 +283,8 @@
       "university_cn": "东华大学",
       "school": "School of Information Science",
       "school_cn": "信智学院",
-      "year": "2024"
+      "year": "2024",
+      "page": true
     },
     {
       "id": "wenhua-zheng",
@@ -288,7 +297,8 @@
       "university_cn": "东华大学",
       "school": "School of Information Science",
       "school_cn": "信智学院",
-      "year": "2025"
+      "year": "2025",
+      "page": true
     },
     {
       "id": "shangbo-du",
@@ -299,7 +309,8 @@
       "avatar_type": "initials",
       "university": "Shenyang University of Technology",
       "university_cn": "沈阳工业大学",
-      "year": "2025"
+      "year": "2025",
+      "page": true
     },
     {
       "id": "qiang-sun",
@@ -310,7 +321,8 @@
       "avatar_type": "initials",
       "university": "Shenyang University of Technology",
       "university_cn": "沈阳工业大学",
-      "year": "2025"
+      "year": "2025",
+      "page": true
     }
   ],
   "master_medical": [
@@ -335,7 +347,8 @@
       "avatar_type": "initials",
       "university": "SJTU School of Medicine",
       "university_cn": "交大医学院",
-      "year": "2024"
+      "year": "2024",
+      "page": true
     },
     {
       "id": "yixiao-tang",
@@ -346,7 +359,8 @@
       "avatar_type": "initials",
       "university": "SJTU School of Medicine",
       "university_cn": "交大医学院",
-      "year": "2024"
+      "year": "2024",
+      "page": true
     },
     {
       "id": "junlin-zhang",
@@ -357,7 +371,8 @@
       "avatar_type": "initials",
       "university": "SJTU School of Medicine",
       "university_cn": "交大医学院",
-      "year": "2025"
+      "year": "2025",
+      "page": true
     },
     {
       "id": "kaiyue-sun",
@@ -368,7 +383,8 @@
       "avatar_type": "initials",
       "university": "SJTU School of Medicine",
       "university_cn": "交大医学院",
-      "year": "2025"
+      "year": "2025",
+      "page": true
     }
   ],
   "alumni": [
@@ -401,7 +417,8 @@
       "university_cn": "交大医学院",
       "year": "2023",
       "note": "Graduated 2026, continuing PhD",
-      "note_cn": "2026年毕业，继续攻读博士"
+      "note_cn": "2026年毕业，继续攻读博士",
+      "page": true
     },
     {
       "id": "zhuo-li",

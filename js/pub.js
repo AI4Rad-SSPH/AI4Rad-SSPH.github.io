@@ -14,6 +14,14 @@
   // authors_text intentionally allows inline HTML (<strong>), so NOT escaped.
   function escAttr(s) { return esc(s); }
 
+  // Resolve an asset path (cover) to an absolute site-root URL so it works
+  // regardless of whether this page lives at site root or in /members/.
+  function assetRoot(p) {
+    if (!p) return '';
+    if (/^(https?:|data:|\/)/.test(p)) return p;   // already absolute
+    return '/' + p;                                  // site-root relative
+  }
+
   // Render one paper as an <li.pub-card>. `lang` is 'en' | 'cn'.
   function renderCard(p, lang, memberNameById) {
     var title = esc(p.title);
@@ -27,7 +35,7 @@
 
     var h = '<li class="pub-card">';
     if (p.cover) {
-      h += '<div class="pub-card__media"><img src="' + escAttr(p.cover) +
+      h += '<div class="pub-card__media"><img src="' + escAttr(assetRoot(p.cover)) +
            '" alt="" loading="lazy"></div>';
     }
     h += '<div class="pub-card__body">';
