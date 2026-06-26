@@ -2,15 +2,27 @@
   "id": "qiang-sun",
   "name_en": "Qiang Sun",
   "name_cn": "孙强",
-  "title_en": "Master Student · Shenyang University of Technology",
-  "title_cn": "硕士研究生 · 沈阳工业大学",
-  "bio_en": "Master student at Shenyang University of Technology, and a member of AI4Rad Lab. Research focuses on medical imaging AI.",
-  "bio_cn": "沈阳工业大学硕士研究生，AI4Rad Lab 成员。研究方向为医学影像人工智能。",
-  "links": {},
+  "photo": "images/members/qiang-sun.jpg",
+  "title_en": "Master Student · AI4Rad Lab · Shenyang University of Technology",
+  "title_cn": "硕士研究生 · AI4Rad Lab · 沈阳工业大学",
+  "bio_en": "Qiang Sun is a master's student at Shenyang University of Technology and a member of AI4Rad Lab. His research focuses on artificial intelligence in medical imaging, including deformable medical image registration, multi-organ segmentation, longitudinal and multi-phase abdominal CT analysis, and quantitative assessment of tumor treatment response.",
+  "bio_cn": "孙强是沈阳工业大学硕士研究生，AI4Rad Lab 成员。研究方向聚焦医学影像人工智能，具体包括医学图像可变形配准、多器官分割、纵向与多时相腹部 CT 分析，以及肿瘤治疗疗效的定量评估。",
+  "links": {
+    "email": "",
+    "scholar": "",
+    "github": "https://github.com/neuralsun",
+    "homepage": "https://github.com/neuralsun"
+  },
   "interests_en": [
-    "Medical imaging AI"
+    "Medical imaging artificial intelligence",
+    "Medical image registration and multi-organ segmentation",
+    "Longitudinal and multi-phase abdominal CT analysis",
+    "Quantitative assessment of tumor treatment response"
   ],
   "interests_cn": [
-    "医学影像人工智能"
+    "医学影像人工智能",
+    "医学图像配准与多器官分割",
+    "纵向与多时相腹部 CT 分析",
+    "肿瘤治疗疗效的定量评估"
   ]
 }

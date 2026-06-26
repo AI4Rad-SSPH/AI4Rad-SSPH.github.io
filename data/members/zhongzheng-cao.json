@@ -2,24 +2,41 @@
   "id": "zhongzheng-cao",
   "name_en": "Zhongzheng Cao",
   "name_cn": "曹中正",
-  "title_en": "Master Student · SJTU School of Medicine · AI4Rad Lab",
-  "title_cn": "硕士研究生 · 上海交通大学医学院 · AI4Rad Lab",
-  "bio_en": "Master student at SJTU School of Medicine and a member of AI4Rad Lab. Research interests include clinical radiology and large language model frameworks for emergency and stroke imaging.",
-  "bio_cn": "上海交通大学医学院硕士研究生，AI4Rad Lab 成员。研究方向包括临床放射学，以及面向急诊与卒中影像的大语言模型框架。",
-  "links": {},
+  "photo": "images/members/zhongzheng-cao.jpg",
+  "title_en": "Master Student · AI4Rad Lab · Shanghai Sixth People's Hospital",
+  "title_cn": "硕士研究生 · AI4Rad Lab · 上海市第六人民医院",
+  "bio_en": "Master's student at AI4Rad Lab, Shanghai Sixth People's Hospital, SJTU School of Medicine. Research focuses on medical imaging artificial intelligence, musculoskeletal radiology, bone tumor X-ray analysis, and clinical validation of AI models.",
+  "bio_cn": "上海交通大学医学院附属第六人民医院 AI4Rad Lab 硕士研究生。研究方向为医学影像人工智能、骨肌影像分析、骨肿瘤 X 线分析以及医学 AI 模型的临床验证。",
+  "links": {
+    "email": "",
+    "scholar": "",
+    "github": "",
+    "homepage": ""
+  },
   "interests_en": [
-    "Clinical radiology",
-    "Large language model frameworks for emergency stroke imaging"
+    "Medical imaging artificial intelligence",
+    "Musculoskeletal radiology",
+    "Bone tumor X-ray analysis",
+    "Clinical validation of AI models",
+    "Radiology report generation and evaluation"
   ],
   "interests_cn": [
-    "临床放射学",
-    "面向急诊卒中影像的大语言模型框架"
+    "医学影像人工智能",
+    "骨肌影像学",
+    "骨肿瘤 X 线智能分析",
+    "AI 模型临床验证",
+    "影像报告生成与评价"
   ],
   "news_en": [
     {
       "date": "Jun 2026",
       "highlight": true,
       "text": "<strong>HR-LLM-Stroke</strong> — a multi-agent LLM framework for emergency stroke treatment recommendation — published in <strong><em>Journal of Medical Internet Research</em></strong> (IF 8.2)."
+    },
+    {
+      "date": "2026",
+      "highlight": true,
+      "text": "Joined AI4Rad Lab as a master's student."
     }
   ],
   "news_cn": [
@@ -27,6 +44,11 @@
       "date": "2026年6月",
       "highlight": true,
       "text": "<strong>HR-LLM-Stroke</strong> —— 面向急诊卒中治疗推荐的多智能体大语言模型框架，发表于 <strong><em>Journal of Medical Internet Research</em></strong>（IF 8.2）。"
+    },
+    {
+      "date": "2026年",
+      "highlight": true,
+      "text": "作为硕士研究生加入 AI4Rad Lab。"
     }
   ]
 }
