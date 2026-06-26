@@ -1,0 +1,37 @@
+{
+  "id": "federated-adversarial-domain-hallucination",
+  "title": "Federated Adversarial Domain Hallucination for Privacy-preserving Domain Generalization",
+  "authors_text": "Qinwei Xu, Ruipeng Zhang, Ya Zhang, Yi-Yan Wu, Yanfeng Wang.",
+  "author_ids": [
+    "ruipeng-zhang"
+  ],
+  "type": "journal",
+  "year": 2023,
+  "venue": "IEEE Transactions on Multimedia, 2023",
+  "tags": [
+    {
+      "label": "CCF-B",
+      "kind": "ccf"
+    },
+    {
+      "label": "JCR Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "CAS Tier 1",
+      "kind": "cas"
+    },
+    {
+      "label": "IF 8.4",
+      "kind": "if"
+    }
+  ],
+  "doi": "",
+  "links": {
+    "pdf": "https://ieeexplore.ieee.org/abstract/document/10073578/"
+  },
+  "topic": [],
+  "featured": false,
+  "cover": "images/fadh.jpg",
+  "lab": false
+}

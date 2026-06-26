@@ -1,0 +1,33 @@
+{
+  "id": "transient-ischemic-attack-carotid-web",
+  "title": "Transient Ischemic Attack and Carotid Web",
+  "authors_text": "H. Hu, X. Zhang, J. Zhao, Y. Li, Y. Zhao.",
+  "author_ids": [
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2019,
+  "venue": "American Journal of Neuroradiology",
+  "doi": "10.3174/ajnr.A5946",
+  "topic": [
+    "Stroke Imaging",
+    "Vascular Imaging"
+  ],
+  "tags": [
+    {
+      "label": "Q2",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 3.7",
+      "kind": "if"
+    }
+  ],
+  "abstract": "This study describes the association between carotid web—a thin, fibrous intimal shelf in the internal carotid artery—and transient ischemic attack, highlighting the vascular imaging features of this under-recognized cause of ischemic stroke in young patients.",
+  "links": {
+    "doi": "https://doi.org/10.3174/ajnr.A5946",
+    "pdf": "https://doi.org/10.3174/ajnr.A5946"
+  },
+  "lab": true,
+  "featured": false
+}

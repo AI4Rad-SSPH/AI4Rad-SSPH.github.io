@@ -1,0 +1,46 @@
+name: Rebuild publications manifest
+
+# After a publication change lands on main, regenerate manifest.json and commit
+# it back. This means contributors NEVER have to run Python or hand-edit the
+# manifest, and removes manifest.json as a recurring merge-conflict hotspot.
+# The bot commit carries [skip ci], so it does not re-trigger this workflow.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/publications/**'
+      - 'data/team.json'
+      - 'tools/build-pubs.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-manifest
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Rebuild manifest
+        run: python3 tools/build-pubs.py
+
+      - name: Commit manifest if it changed
+        run: |
+          if git diff --quiet data/publications/manifest.json; then
+            echo "✓ manifest already up to date — nothing to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/publications/manifest.json
+          git commit -m "chore: rebuild publications manifest [skip ci]"
+          git push

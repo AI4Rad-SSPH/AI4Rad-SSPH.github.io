@@ -1,0 +1,33 @@
+{
+  "id": "inorganic-nanomaterial-brain-imaging",
+  "title": "Inorganic Nanomaterial for Biomedical Imaging of Brain Diseases",
+  "authors_text": "Wenxian Du, Lingling Zhou, Qiang Zhang, Xin Liu, Xiaoer Wei, Yuehua Li.",
+  "author_ids": [
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2021,
+  "venue": "Molecules",
+  "doi": "10.3390/molecules26237340",
+  "topic": [
+    "Nanomedicine",
+    "Neuroimaging"
+  ],
+  "tags": [
+    {
+      "label": "Q2",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 5.1",
+      "kind": "if"
+    }
+  ],
+  "abstract": "This review surveys inorganic nanomaterials used for biomedical imaging of brain diseases, covering design principles, imaging modalities, and translational considerations for nanomaterial-based neuroimaging probes.",
+  "links": {
+    "doi": "https://doi.org/10.3390/molecules26237340",
+    "pdf": "https://doi.org/10.3390/molecules26237340"
+  },
+  "lab": true,
+  "featured": false
+}

@@ -1,0 +1,37 @@
+{
+  "id": "stress-perfusion-cardiac-mr-review",
+  "title": "Qualitative and Quantitative Stress Perfusion Cardiac Magnetic Resonance in Clinical Practice: A Comprehensive Review",
+  "authors_text": "Wenli Zhou, Jason Sin, Andrew T. Yan, Haonan Wang, Jing Lu, Yuehua Li, Paul Kim, Amit R. Patel, Ming-Yen Ng.",
+  "author_ids": [
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2023,
+  "venue": "Diagnostics",
+  "doi": "10.3390/diagnostics13030524",
+  "topic": [
+    "Cardiac Imaging",
+    "MRI Imaging"
+  ],
+  "tags": [
+    {
+      "label": "Review",
+      "kind": "type"
+    },
+    {
+      "label": "Q2",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 3.8",
+      "kind": "if"
+    }
+  ],
+  "abstract": "This comprehensive review covers qualitative and quantitative stress perfusion cardiac magnetic resonance methods in clinical practice, including acquisition protocols, analysis techniques, and clinical applications for ischemic heart disease assessment.",
+  "links": {
+    "doi": "https://doi.org/10.3390/diagnostics13030524",
+    "pdf": "https://doi.org/10.3390/diagnostics13030524"
+  },
+  "lab": true,
+  "featured": false
+}

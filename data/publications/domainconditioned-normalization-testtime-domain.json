@@ -1,0 +1,25 @@
+{
+  "id": "domainconditioned-normalization-testtime-domain",
+  "title": "Domain-Conditioned Normalization for Test-Time Domain Generalization",
+  "authors_text": "Yuxuan Jiang, Yanfeng Wang, Ruipeng Zhang, Qinwei Xu, Ya Zhang, Xin Chen, Qi Tian.",
+  "author_ids": [
+    "ruipeng-zhang"
+  ],
+  "type": "conference",
+  "year": 2022,
+  "venue": "ECCV Workshop, 2022",
+  "tags": [
+    {
+      "label": "Best Long Paper",
+      "kind": "award"
+    }
+  ],
+  "doi": "",
+  "links": {
+    "pdf": "https://link.springer.com/chapter/10.1007/978-3-031-25085-9_17"
+  },
+  "topic": [],
+  "featured": false,
+  "cover": "images/dcn.jpg",
+  "lab": false
+}

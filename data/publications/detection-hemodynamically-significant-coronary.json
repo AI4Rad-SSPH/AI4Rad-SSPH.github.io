@@ -1,0 +1,32 @@
+{
+  "id": "detection-hemodynamically-significant-coronary",
+  "title": "Detection of hemodynamically significant coronary stenosis: CT myocardial perfusion versus machine learning CT fractional flow reserve",
+  "authors_text": "Y Li, M Yu, X Dai, Z Lu, C Shen, et al.",
+  "author_ids": [
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2019,
+  "venue": "Radiology, 2019",
+  "tags": [
+    {
+      "label": "Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 17.6",
+      "kind": "if"
+    }
+  ],
+  "doi": "10.1148/radiol.2019190098",
+  "links": {
+    "pdf": "https://doi.org/10.1148/radiol.2019190098"
+  },
+  "topic": [
+    "Cardiac Imaging",
+    "Deep Learning",
+    "CT Imaging"
+  ],
+  "featured": false,
+  "abstract": "Compares CT myocardial perfusion versus machine-learning CT fractional flow reserve for detecting hemodynamically significant coronary stenosis."
+}

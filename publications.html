@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI4Rad Lab publications — journal and conference papers on medical imaging AI.">
+  <title>Publications · AI4Rad Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/brand/team-logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="./" class="nav__brand">
+        <img src="images/brand/team-logo.png" alt="AI4Rad" class="nav__brand-logo">
+        <span class="nav__brand-text">AI4Rad Lab</span>
+      </a>
+      <div class="nav__links">
+        <a href="./" class="nav__link">Home</a>
+        <a href="./about.html" class="nav__link">About</a>
+        <a href="./team.html" class="nav__link">Team</a>
+        <a href="./publications.html" class="nav__link active">Publications</a>
+        <a href="./contact.html" class="nav__link">Contact</a>
+        <a href="./publications_ch.html" class="nav__link--lang">中文</a>
+      </div>
+      <button class="nav__theme-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode"></button>
+    </div>
+  </nav>
+
+  <main class="wrapper">
+    <section class="hero reveal">
+      <h1 class="hero__title">Publications</h1>
+      <p class="hero__subtitle">Selected journal and conference papers from the lab. Full list also on <a href="https://scholar.google.com/citations?user=zj4WqewAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.</p>
+    </section>
+
+    <div id="pub-root" class="reveal">
+      <div class="filters"></div>
+      <p class="filter-count"></p>
+      <ul class="pub-list pub-list--cards"></ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <img src="images/brand/team-logo.png" alt="AI4Rad Lab" class="footer__brandlogo">
+      <p class="footer__brand-cap"><span class="footer__brand-intro">Medical Imaging AI Lab · Department of Radiology, Shanghai Sixth People's Hospital · SJTU School of Medicine</span><span class="footer__brand-vision">Supporting clinical care · Diagnostic efficiency &amp; quality · Mechanisms behind the image</span></p>
+    </div>
+    <div class="footer__links">
+      <a href="./">Home</a>
+      <a href="./team.html">Team</a>
+      <a href="./publications.html">Publications</a>
+      <a href="mailto:zhangrp@sjtu.edu.cn">Email</a>
+      <a href="https://github.com/AI4Rad-SSPH" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p class="footer__meta">AI4Rad Lab · Department of Radiology · Shanghai Sixth People's Hospital · &copy; 2026</p>
+    <div class="footer__affil">
+      <span class="footer__affil-cap">Affiliated with</span>
+      <div class="footer__affil-logos">
+        <img src="images/brand/ssph-med-logo.svg" alt="Shanghai Sixth People's Hospital" class="a-ssph">
+        <span class="footer__affil-sep" aria-hidden="true"></span>
+        <img src="images/brand/sjtu-logo-en.svg" alt="Shanghai Jiao Tong University" class="a-sjtu">
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/pub.js"></script>
+  <script>
+  (function () {
+    var memberNameById = null;
+    Promise.all([
+      fetch('data/publications/manifest.json').then(function (r) { return r.json(); }),
+      fetch('data/team.json').then(function (r) { return r.json(); })
+    ]).then(function (res) {
+      var papers = res[0], team = res[1];
+      // Site-wide list shows only lab papers (those with Yuehua Li).
+      papers = papers.filter(function (p) { return p.lab !== false; });
+      var names = {};
+      var members = {};
+      ['leader', 'pi', 'postdoc', 'phd_engineering', 'phd_medical',
+       'master_engineering', 'master_medical', 'alumni'].forEach(function (cat) {
+        (team[cat] || []).forEach(function (m) {
+          names[m.id] = m.name_en;
+          members[m.id] = { en: m.name_en, cn: m.name_cn };
+        });
+      });
+      memberNameById = function (id) { return names[id]; };
+      window.Pub.initFilter('pub-root', papers, 'en', memberNameById, { members: members });
+    }).catch(function (e) {
+      document.querySelector('#pub-root .pub-list').innerHTML =
+        '<li class="pub-empty">Failed to load publications. Please refresh.</li>';
+      console.error(e);
+    });
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+{
+  "id": "mengfei-wang",
+  "name_en": "Mengfei Wang",
+  "name_cn": "王孟飞",
+  "photo": "images/members/mengfei-wang.jpg",
+  "title_en": "PhD Student · Medical Imaging & AI · AI4Rad Lab",
+  "title_cn": "博士研究生 · 医学影像与人工智能 · AI4Rad Lab",
+  "bio_en": "Mengfei Wang is a PhD student at <strong>Donghua University</strong> and a member of <strong>AI4Rad Lab</strong>. His research focuses on AI for medical imaging and radiology, including deep-learning-based medical image analysis, generative models for image enhancement, translation, and super-resolution, and large language models for radiology report and clinical text analysis. He previously studied in the School of Health Science and Engineering at the University of Shanghai for Science and Technology. More information is available on his <a href=\"https://orcid.org/0009-0002-9474-3368\" target=\"_blank\" rel=\"noopener\">ORCID profile</a>.",
+  "bio_cn": "王孟飞是<strong>东华大学</strong>博士研究生，现为 <strong>AI4Rad Lab</strong> 成员。研究方向聚焦医学影像与放射学人工智能，包括基于深度学习的医学图像分析、面向图像增强/跨模态转换/超分辨率的生成模型，以及面向放射报告与临床文本分析的大语言模型。此前就读于上海理工大学健康科学与工程学院。更多信息见其 <a href=\"https://orcid.org/0009-0002-9474-3368\" target=\"_blank\" rel=\"noopener\">ORCID 页面</a>。",
+  "links": {
+    "email": "wangmengfei@mail.dhu.edu.cn",
+    "github": "https://github.com/Becomingw",
+    "homepage": "https://orcid.org/0009-0002-9474-3368"
+  },
+  "interests_en": [
+    "<strong>Deep Learning for Medical Imaging</strong> — lesion segmentation, diagnosis support, and clinical image understanding",
+    "<strong>Medical Image Generation</strong> — GANs and diffusion models for enhancement, translation, and super-resolution",
+    "<strong>LLMs in Radiology</strong> — radiology report analysis, clinical text structuring, and privacy-aware local models",
+    "<strong>Healthcare AI Engineering</strong> — Python, PyTorch, and Linux-based model development"
+  ],
+  "interests_cn": [
+    "<strong>医学影像深度学习</strong> — 病灶分割、辅助诊断与临床图像理解",
+    "<strong>医学图像生成</strong> — 面向增强、跨模态转换与超分辨率的 GAN 和扩散模型",
+    "<strong>放射学大语言模型</strong> — 放射报告分析、临床文本结构化与隐私友好的本地模型",
+    "<strong>医疗 AI 工程实践</strong> — 基于 Python、PyTorch 与 Linux 的模型开发"
+  ],
+  "news_en": [
+    {
+      "date": "Jun 2026",
+      "highlight": true,
+      "text": "<strong>LumbarSR</strong> — a paired clinical CT &amp; micro-CT dataset for lumbar vertebra super-resolution — accepted by <strong><em>Scientific Data</em></strong> (IF 7.2)."
+    },
+    {
+      "date": "Jun 2026",
+      "highlight": true,
+      "text": "<strong>HR-LLM-Stroke</strong> — a multi-agent LLM framework for emergency stroke treatment recommendation — published in <strong><em>Journal of Medical Internet Research</em></strong> (IF 8.2)."
+    },
+    {
+      "date": "Mar 2026",
+      "highlight": true,
+      "text": "Paper on CT report analysis for bone metastasis using local and proprietary large language models published in <strong>BMC Health Services Research</strong>. Co-first author."
+    },
+    {
+      "date": "Sep 2025",
+      "text": "Paper on generalized vascular modeling for population-level hemodynamic simulations published in <strong>Computer Methods and Programs in Biomedicine</strong>."
+    },
+    {
+      "date": "Sep 2025",
+      "text": "Joined <strong>Donghua University</strong> and <strong>AI4Rad Lab</strong> as a PhD student."
+    },
+    {
+      "date": "2024",
+      "text": "Paper on large language models for surgical record structuring published in <strong>Journal of Multidisciplinary Healthcare</strong>."
+    }
+  ],
+  "news_cn": [
+    {
+      "date": "2026年6月",
+      "highlight": true,
+      "text": "<strong>LumbarSR</strong> —— 配对临床 CT 与显微 CT 的腰椎超分辨率数据集，被 <strong><em>Scientific Data</em></strong> 接收（IF 7.2）。"
+    },
+    {
+      "date": "2026年6月",
+      "highlight": true,
+      "text": "<strong>HR-LLM-Stroke</strong> —— 面向急诊卒中治疗推荐的多智能体大语言模型框架，发表于 <strong><em>Journal of Medical Internet Research</em></strong>（IF 8.2）。"
+    },
+    {
+      "date": "2026年3月",
+      "highlight": true,
+      "text": "关于本地与闭源大语言模型在骨转移 CT 报告分析中的研究发表于 <strong>BMC Health Services Research</strong>。共同第一作者。"
+    },
+    {
+      "date": "2025年9月",
+      "text": "关于面向群体级血流动力学模拟的通用血管建模研究发表于 <strong>Computer Methods and Programs in Biomedicine</strong>。"
+    },
+    {
+      "date": "2025年9月",
+      "text": "加入<strong>东华大学</strong>与 <strong>AI4Rad Lab</strong>，攻读博士学位。"
+    },
+    {
+      "date": "2024年",
+      "text": "关于大语言模型辅助手术记录结构化的研究发表于 <strong>Journal of Multidisciplinary Healthcare</strong>。"
+    }
+  ],
+  "services_en": [
+    "<strong>Journal Reviewer:</strong> Cluster Computing (2026)"
+  ],
+  "services_cn": [
+    "<strong>期刊审稿人：</strong>Cluster Computing（2026）"
+  ]
+}

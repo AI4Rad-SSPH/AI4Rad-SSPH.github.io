@@ -1,0 +1,39 @@
+{
+  "id": "unichest-conqueranddivide-pretraining-multisource",
+  "title": "UniChest: Conquer-and-Divide Pre-training for Multi-Source Chest X-Ray Classification",
+  "authors_text": "Tianjie Dai, Ruipeng Zhang, Feng Hong, Jiangchao Yao, Ya Zhang, Yanfeng Wang.",
+  "author_ids": [
+    "ruipeng-zhang"
+  ],
+  "type": "journal",
+  "year": 2024,
+  "venue": "IEEE Transactions on Medical Imaging, 2024",
+  "tags": [
+    {
+      "label": "CCF-B",
+      "kind": "ccf"
+    },
+    {
+      "label": "JCR Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "CAS Tier 1 · Top",
+      "kind": "cas"
+    },
+    {
+      "label": "IF 10.6",
+      "kind": "if"
+    }
+  ],
+  "doi": "",
+  "links": {
+    "pdf": "https://tianjiedai.github.io/unichest/",
+    "code": "https://github.com/Elfenreigen/UniChest",
+    "project": "https://tianjiedai.github.io/unichest/"
+  },
+  "topic": [],
+  "featured": true,
+  "cover": "images/unichest.png",
+  "lab": false
+}

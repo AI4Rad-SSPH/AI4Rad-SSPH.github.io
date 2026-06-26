@@ -1,0 +1,32 @@
+{
+  "id": "neutrophillike-cellmembranecoated-nanozyme-therapy",
+  "title": "Neutrophil-like cell-membrane-coated nanozyme therapy for ischemic stroke",
+  "authors_text": "… Y Li, et al.",
+  "author_ids": [
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2021,
+  "venue": "ACS Nano, 2021",
+  "tags": [
+    {
+      "label": "Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 17.3",
+      "kind": "if"
+    }
+  ],
+  "doi": "10.1021/acsnano.0c07973",
+  "links": {
+    "pdf": "https://doi.org/10.1021/acsnano.0c07973"
+  },
+  "topic": [
+    "Neuroimaging",
+    "Stroke Imaging",
+    "Nanomedicine"
+  ],
+  "featured": false,
+  "abstract": "Neutrophil-like cell-membrane-coated nanozyme enabling active targeting therapy for ischemic brain damage and long-term neurological recovery."
+}

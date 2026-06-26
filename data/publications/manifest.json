@@ -1,0 +1,1722 @@
+[
+  {
+    "file": "rethinking-wholebody-ct-image.json",
+    "id": "rethinking-wholebody-ct-image",
+    "title": "Rethinking whole-body CT image interpretation: an abnormality-centric approach",
+    "authors_text": "Z Zhao, L Dai, Y Zhang, W Xie, Y Wang",
+    "author_ids": [
+      "lisong-dai"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "CVPR, 2026",
+    "tags": [],
+    "doi": "",
+    "links": {},
+    "topic": [],
+    "featured": false,
+    "lab": false
+  },
+  {
+    "file": "predicting-infarct-thrombectomy-knowledge-guided.json",
+    "id": "predicting-infarct-thrombectomy-knowledge-guided",
+    "title": "Predicting Infarct Outcomes After Extended Time Window Thrombectomy in Large Vessel Occlusion Using Knowledge-Guided Deep Learning",
+    "authors_text": "Lisong Dai, Lei Yuan, Houwang Zhang, Zheng Sun, Jingxuan Jiang, Zhaohui Li, Yuehua Li, Yunfei Zha.",
+    "author_ids": [
+      "lisong-dai",
+      "zheng-sun",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "Journal of NeuroInterventional Surgery",
+    "tags": [
+      {
+        "label": "Q2",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 4.4",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1136/jnis-2025-023355",
+    "links": {
+      "doi": "https://doi.org/10.1136/jnis-2025-023355",
+      "pdf": "https://doi.org/10.1136/jnis-2025-023355"
+    },
+    "topic": [
+      "Stroke Imaging",
+      "Deep Learning"
+    ],
+    "featured": false,
+    "abstract": "This study develops a knowledge-guided deep learning model to predict final infarct outcomes after extended time window thrombectomy in large vessel occlusion. By incorporating clinical and imaging knowledge priors, the model supports patient selection for reperfusion therapy in the extended treatment window.",
+    "lab": true
+  },
+  {
+    "file": "lumbarsr-paired-clinical-microct-dataset.json",
+    "id": "lumbarsr-paired-clinical-microct-dataset",
+    "title": "LumbarSR: A Paired Clinical CT and Photon-Counting Micro-CT Dataset for Human Lumbar Vertebrae",
+    "authors_text": "Ping Wang*, Ruipeng Zhang*, Mengfei Wang, Shenyan Zong, Jinyu Zhu, Xinyu Song, Zhenzhen Cao, Xuefei Hu, Dan Wang, Yuehua Li.",
+    "author_ids": [
+      "ping-wang",
+      "ruipeng-zhang",
+      "mengfei-wang",
+      "xinyu-song",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "Scientific Data (in press)",
+    "cover": "images/lumbar-sr-viz.jpg",
+    "tags": [
+      {
+        "label": "Dataset",
+        "kind": "type"
+      },
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 7.2",
+        "kind": "if"
+      }
+    ],
+    "doi": "",
+    "links": {
+      "code": "https://github.com/FrankZhangRp/LumbarSR-Challenge",
+      "project": "https://frankzhangrp.github.io/LumbarSR-Challenge/"
+    },
+    "topic": [
+      "Musculoskeletal Imaging",
+      "Super-Resolution",
+      "Dataset"
+    ],
+    "featured": true,
+    "abstract": "LumbarSR provides the first paired clinical CT and photon-counting micro-CT dataset of human lumbar vertebrae, enabling super-resolution benchmarks that bridge the resolution gap between in-vivo imaging and high-resolution ex-vivo micro-CT. The dataset and challenge foster reproducible evaluation of medical image super-resolution methods.",
+    "lab": true
+  },
+  {
+    "file": "brainmind-evaluation-large-language.json",
+    "id": "brainmind-evaluation-large-language",
+    "title": "Evaluation of Large Language Models for Diagnostic Impression Generation from Brain MRI Report Findings: A Multicenter Benchmark and Reader Study",
+    "authors_text": "Ming-Liang Wang*, Rui-Peng Zhang*, Wen-Juan Wu*, Yu Lu*, Xiao-Er Wei, Zheng Sun, Bao-Hui Guan, Jun-Jie Zhang, Xue Wu, Lei Zhang#, Tian-Le Wang#, Yue-Hua Li#. <em>* Co-first authors. # Corresponding authors.</em>",
+    "author_ids": [
+      "ruipeng-zhang",
+      "zheng-sun",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "npj Digital Medicine",
+    "cover": "images/brainmind-flowchart.png",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 18.0",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1038/s41746-026-02380-4",
+    "links": {
+      "pdf": "https://www.nature.com/articles/s41746-026-02380-4",
+      "doi": "https://doi.org/10.1038/s41746-026-02380-4",
+      "code": "https://github.com/FrankZhangRp/BrainMIND"
+    },
+    "topic": [
+      "Large Language Models",
+      "Neuroimaging",
+      "Clinical Decision Support"
+    ],
+    "featured": true,
+    "abstract": "Benchmarked 10 large language models on generating diagnostic impressions from brain MRI report findings across a multicenter dataset, establishing a reproducible evaluation framework and reader study for LLM-based radiology reporting.",
+    "lab": true
+  },
+  {
+    "file": "enhancing-bone-metastasis-ct.json",
+    "id": "enhancing-bone-metastasis-ct",
+    "title": "Enhancing bone metastasis CT report analysis: a comparison of local and proprietary large language models for privacy and resource efficiency",
+    "authors_text": "Zhuo Li*, Mengfei Wang*, Ao Liu, Yao Zeng, Bicong Yan, Zhongzheng Cao, Jinyu Zhu, Yulu Yang, Yuehua Li. <em>* Co-first authors.</em>",
+    "author_ids": [
+      "mengfei-wang",
+      "yao-zeng",
+      "bicong-yan",
+      "zhongzheng-cao",
+      "yulu-yang",
+      "zhuo-li",
+      "ao-liu",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "BMC Health Services Research, 2026",
+    "tags": [],
+    "doi": "10.1186/s12913-026-14350-3",
+    "links": {
+      "pdf": "https://doi.org/10.1186/s12913-026-14350-3",
+      "doi": "https://doi.org/10.1186/s12913-026-14350-3"
+    },
+    "topic": [],
+    "featured": false,
+    "lab": false
+  },
+  {
+    "file": "multiagent-llm-emergency-stroke.json",
+    "id": "multiagent-llm-emergency-stroke",
+    "title": "A Multi-Agent Large Language Model Framework for Emergency Treatment Recommendation in Acute Ischemic Stroke: Development and Validation Study",
+    "authors_text": "Bicong Yan, Ruipeng Zhang, Yanfeng Fan, Ying Li, Li Chen, Xinyu Song, Yixiao Tang, Zhongzheng Cao, Li Shen, Mengfei Wang, Zhuo Li, Yijia Xiong, Yuehua Li.",
+    "author_ids": [
+      "bicong-yan",
+      "ruipeng-zhang",
+      "xinyu-song",
+      "yixiao-tang",
+      "zhongzheng-cao",
+      "mengfei-wang",
+      "zhuo-li",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "Journal of Medical Internet Research",
+    "cover": "images/hr-llm-stroke-framework.png",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 8.2",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.2196/96304",
+    "links": {
+      "doi": "https://doi.org/10.2196/96304",
+      "pdf": "https://doi.org/10.2196/96304",
+      "code": "https://github.com/FrankZhangRp/HR-LLM-Stroke",
+      "project": "https://frankzhangrp.github.io/HR-LLM-Stroke/"
+    },
+    "topic": [
+      "Large Language Models",
+      "Stroke Imaging",
+      "Clinical Decision Support"
+    ],
+    "featured": true,
+    "abstract": "Acute ischemic stroke requires rapid, guideline-driven treatment decisions within narrow time windows. This study presents a multi-agent large language model framework (HR-LLM-Stroke) that orchestrates specialized agents for imaging interpretation, clinical feature extraction, and treatment recommendation, supporting real-world clinical decision-making in acute ischemic stroke. Developed and validated on multicenter data, the framework demonstrates the feasibility of agentic LLM systems for time-critical emergency stroke workflows.",
+    "lab": true
+  },
+  {
+    "file": "unibrain-universal-brain-mri.json",
+    "id": "unibrain-universal-brain-mri",
+    "title": "UniBrain: Universal brain MRI diagnosis with hierarchical knowledge-enhanced pre-training",
+    "authors_text": "J Lei, L Dai, H Jiang, C Wu, X Zhang, et al.",
+    "author_ids": [
+      "lisong-dai",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2025,
+    "venue": "Computerized Medical Imaging and Graphics, 2025",
+    "tags": [
+      {
+        "label": "Q2",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 4.9",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1016/j.compmedimag.2025.102516",
+    "links": {
+      "pdf": "https://doi.org/10.1016/j.compmedimag.2025.102516",
+      "code": "https://github.com/ljy19970415/unibrain"
+    },
+    "topic": [
+      "Neuroimaging",
+      "Deep Learning"
+    ],
+    "featured": false,
+    "abstract": "Hierarchical knowledge-enhanced pre-training framework for universal brain MRI diagnosis, validated on in-domain and out-of-domain datasets.",
+    "lab": true
+  },
+  {
+    "file": "expanding-point-cloud-statistical.json",
+    "id": "expanding-point-cloud-statistical",
+    "title": "Expanding point cloud statistical shape model applications: Generalized vascular modeling for population-level hemodynamic simulations",
+    "authors_text": "Yao Zeng, Zheng Sun, Mengfei Wang, Zhuo Li, Ao Liu, Meixiu Pan, Haifeng Zhao, Yuehua Li.",
+    "author_ids": [
+      "mengfei-wang",
+      "yao-zeng",
+      "zheng-sun",
+      "zhuo-li",
+      "ao-liu",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2025,
+    "venue": "Computer Methods and Programs in Biomedicine, 2025",
+    "tags": [],
+    "doi": "10.1016/j.cmpb.2025.108924",
+    "links": {
+      "pdf": "https://doi.org/10.1016/j.cmpb.2025.108924",
+      "doi": "https://doi.org/10.1016/j.cmpb.2025.108924"
+    },
+    "topic": [],
+    "featured": false,
+    "lab": false
+  },
+  {
+    "file": "deep-learningbased-automatic-aspects.json",
+    "id": "deep-learningbased-automatic-aspects",
+    "title": "Deep learning-based automatic ASPECTS calculation can improve diagnosis efficiency in patients with acute ischemic stroke: a multicenter study",
+    "authors_text": "J Wei, K Shang, X Wei, … L Dai, Z Sun, … Y Li",
+    "author_ids": [
+      "lisong-dai",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2025,
+    "venue": "European Radiology, 2025",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 6",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1007/s00330-024-10960-9",
+    "links": {
+      "pdf": "https://doi.org/10.1007/s00330-024-10960-9"
+    },
+    "topic": [
+      "Neuroimaging",
+      "Stroke Imaging",
+      "Deep Learning",
+      "CT Imaging"
+    ],
+    "featured": false,
+    "abstract": "Deep-learning ASPECTS scoring on non-contrast CT improves diagnostic efficiency for acute ischemic stroke across multiple centers.",
+    "lab": true
+  },
+  {
+    "file": "biomimetic-microenvironment-nanomodulators-reactive.json",
+    "id": "biomimetic-microenvironment-nanomodulators-reactive",
+    "title": "Biomimetic microenvironment nanomodulators for reactive oxygen species regulation",
+    "authors_text": "… Y Li, et al.",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2025,
+    "venue": "ACS Nano, 2025",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 17.3",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1021/acsnano.5c21630",
+    "links": {
+      "pdf": "https://doi.org/10.1021/acsnano.5c21630"
+    },
+    "topic": [
+      "Nanomedicine",
+      "CT Imaging"
+    ],
+    "featured": false,
+    "abstract": "ROS-responsive T1-T2 dual-modal MRI nanomodulators for visualized treatment of atherosclerosis.",
+    "lab": true
+  },
+  {
+    "file": "unichest-conqueranddivide-pretraining-multisource.json",
+    "id": "unichest-conqueranddivide-pretraining-multisource",
+    "title": "UniChest: Conquer-and-Divide Pre-training for Multi-Source Chest X-Ray Classification",
+    "authors_text": "Tianjie Dai, Ruipeng Zhang, Feng Hong, Jiangchao Yao, Ya Zhang, Yanfeng Wang.",
+    "author_ids": [
+      "ruipeng-zhang"
+    ],
+    "type": "journal",
+    "year": 2024,
+    "venue": "IEEE Transactions on Medical Imaging, 2024",
+    "cover": "images/unichest.png",
+    "tags": [
+      {
+        "label": "CCF-B",
+        "kind": "ccf"
+      },
+      {
+        "label": "JCR Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "CAS Tier 1 · Top",
+        "kind": "cas"
+      },
+      {
+        "label": "IF 10.6",
+        "kind": "if"
+      }
+    ],
+    "doi": "",
+    "links": {
+      "pdf": "https://tianjiedai.github.io/unichest/",
+      "code": "https://github.com/Elfenreigen/UniChest",
+      "project": "https://tianjiedai.github.io/unichest/"
+    },
+    "topic": [],
+    "featured": true,
+    "lab": false
+  },
+  {
+    "file": "synchronous-superficial-middle-cerebral-vein.json",
+    "id": "synchronous-superficial-middle-cerebral-vein",
+    "title": "Synchronous Superficial Middle Cerebral Vein Outflow Correlates Favorable Tissue Fate After Mechanical Thrombectomy for Acute Ischemic Stroke",
+    "authors_text": "Lisong Dai, Zheng Sun, Jingxuan Jiang, Jianyong Wei, Xinyu Song, Shen Chen, Yuehua Li.",
+    "author_ids": [
+      "lisong-dai",
+      "zheng-sun",
+      "jianyong-wei",
+      "xinyu-song",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2024,
+    "venue": "Academic Radiology",
+    "tags": [
+      {
+        "label": "Q2",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 4.7",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1016/j.acra.2023.07.005",
+    "links": {
+      "doi": "https://doi.org/10.1016/j.acra.2023.07.005",
+      "pdf": "https://doi.org/10.1016/j.acra.2023.07.005"
+    },
+    "topic": [
+      "Stroke Imaging",
+      "Vascular Imaging"
+    ],
+    "featured": false,
+    "abstract": "This study investigates the relationship between superficial middle cerebral vein (SMCV) outflow patterns and tissue outcomes following mechanical thrombectomy in acute ischemic stroke. Synchronous SMCV outflow was found to correlate with favorable tissue fate, supporting venous outflow assessment as an imaging marker for prognosis after reperfusion therapy.",
+    "lab": true
+  },
+  {
+    "file": "precision-structuring-freetext-surgical.json",
+    "id": "precision-structuring-freetext-surgical",
+    "title": "Precision Structuring of Free-Text Surgical Record for Enhanced Stroke Management: A Comparative Evaluation of Large Language Models",
+    "authors_text": "Mengfei Wang, Jianyong Wei, Yao Zeng, Lisong Dai, Bicong Yan, Yueqi Zhu, Xiaoer Wei, Yidong Jin, Yuehua Li.",
+    "author_ids": [
+      "mengfei-wang",
+      "jianyong-wei",
+      "yao-zeng",
+      "lisong-dai",
+      "bicong-yan",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2024,
+    "venue": "Journal of Multidisciplinary Healthcare, 2024",
+    "tags": [],
+    "doi": "10.2147/JMDH.S486449",
+    "links": {
+      "pdf": "https://doi.org/10.2147/JMDH.S486449",
+      "doi": "https://doi.org/10.2147/JMDH.S486449"
+    },
+    "topic": [],
+    "featured": false,
+    "lab": false
+  },
+  {
+    "file": "largescale-longtailed-disease-diagnosis.json",
+    "id": "largescale-longtailed-disease-diagnosis",
+    "title": "Large-scale long-tailed disease diagnosis on radiology images",
+    "authors_text": "Q Zheng, W Zhao, C Wu, X Zhang, L Dai, … et al.",
+    "author_ids": [
+      "lisong-dai",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2024,
+    "venue": "Nature Communications, 2024",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 18.1",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1038/s41467-024-54424-6",
+    "links": {
+      "pdf": "https://doi.org/10.1038/s41467-024-54424-6",
+      "doi": "https://doi.org/10.1038/s41467-024-54424-6"
+    },
+    "topic": [
+      "Deep Learning",
+      "Clinical Decision Support"
+    ],
+    "featured": false,
+    "abstract": "A foundation-model approach addressing the long-tailed distribution of radiology diagnoses, improving recognition of rare conditions on medical images.",
+    "lab": true
+  },
+  {
+    "file": "knowledgeaugmented-deep-learning-segmenting.json",
+    "id": "knowledgeaugmented-deep-learning-segmenting",
+    "title": "Knowledge-augmented deep learning for segmenting and detecting cerebral aneurysms with CT angiography: a multicenter study",
+    "authors_text": "J Wei, X Song, X Wei, Z Yang, L Dai, M Wang, Z Sun, et al.",
+    "author_ids": [
+      "lisong-dai",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2024,
+    "venue": "Radiology, 2024",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 17.6",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1148/radiol.233197",
+    "links": {
+      "pdf": "https://doi.org/10.1148/radiol.233197"
+    },
+    "topic": [
+      "Neuroimaging",
+      "Deep Learning",
+      "CT Imaging"
+    ],
+    "featured": false,
+    "abstract": "Knowledge-augmented deep learning to segment and detect cerebral aneurysms on CT angiography, validated in a multicenter study with stable external performance.",
+    "lab": true
+  },
+  {
+    "file": "ischemic-stroke-infarct-segmentation.json",
+    "id": "ischemic-stroke-infarct-segmentation",
+    "title": "Ischemic stroke infarct segmentation model based on depthwise separable convolution for multimodal magnetic resonance imaging",
+    "authors_text": "Yidong Jin, Mengfei Wang, Jiayan Chen, Yuehua Li.",
+    "author_ids": [
+      "mengfei-wang",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2024,
+    "venue": "Journal of Biomedical Engineering, 2024",
+    "tags": [],
+    "doi": "10.7507/1001-5515.202308001",
+    "links": {
+      "pdf": "https://doi.org/10.7507/1001-5515.202308001",
+      "doi": "https://doi.org/10.7507/1001-5515.202308001"
+    },
+    "topic": [],
+    "featured": false,
+    "lab": false
+  },
+  {
+    "file": "fairnessguided-federated-training-generalization.json",
+    "id": "fairnessguided-federated-training-generalization",
+    "title": "Fairness-guided federated training for generalization and personalization in cross-silo federated learning",
+    "authors_text": "Ruipeng Zhang, Ziqing Fan, Jiangchao Yao, Ya Zhang, Yanfeng Wang.",
+    "author_ids": [
+      "ruipeng-zhang"
+    ],
+    "type": "journal",
+    "year": 2024,
+    "venue": "Frontiers of Information Technology & Electronic Engineering, 2024",
+    "cover": "images/fftgp.png",
+    "tags": [
+      {
+        "label": "CCF-C",
+        "kind": "ccf"
+      },
+      {
+        "label": "JCR Q3",
+        "kind": "jcr"
+      },
+      {
+        "label": "CAS Tier 4",
+        "kind": "cas"
+      },
+      {
+        "label": "IF 2.7",
+        "kind": "if"
+      }
+    ],
+    "doi": "",
+    "links": {
+      "pdf": "https://link.springer.com/article/10.1631/FITEE.2400279"
+    },
+    "topic": [],
+    "featured": false,
+    "lab": false
+  },
+  {
+    "file": "domaininspired-sharpnessaware-minimization-under.json",
+    "id": "domaininspired-sharpnessaware-minimization-under",
+    "title": "Domain-Inspired Sharpness-Aware Minimization Under Domain Shifts",
+    "authors_text": "Ruipeng Zhang, Ziqing Fan, Jiangchao Yao*, Ya Zhang, Yanfeng Wang*.",
+    "author_ids": [
+      "ruipeng-zhang"
+    ],
+    "type": "conference",
+    "year": 2024,
+    "venue": "ICLR, 2024",
+    "cover": "images/DISAM.png",
+    "tags": [
+      {
+        "label": "CCF-A",
+        "kind": "ccf"
+      }
+    ],
+    "doi": "",
+    "links": {
+      "pdf": "https://openreview.net/pdf?id=I4wB3HA3dJ",
+      "project": "https://github.com/MediaBrain-SJTU/DISAM"
+    },
+    "topic": [],
+    "featured": true,
+    "lab": false
+  },
+  {
+    "file": "development-validation-deep-learning.json",
+    "id": "development-validation-deep-learning",
+    "title": "Development and validation of a deep learning model to reduce the interference of rectal artifacts in MRI-based prostate cancer diagnosis",
+    "authors_text": "L Hu, X Guo, D Zhou, Z Wang, L Dai, … Y Li, et al.",
+    "author_ids": [
+      "lisong-dai"
+    ],
+    "type": "journal",
+    "year": 2024,
+    "venue": "Radiology: Artificial Intelligence, 2024",
+    "tags": [],
+    "doi": "10.1148/ryai.230362",
+    "links": {
+      "doi": "https://doi.org/10.1148/ryai.230362",
+      "pdf": "https://doi.org/10.1148/ryai.230362"
+    },
+    "topic": [],
+    "featured": false,
+    "lab": false
+  },
+  {
+    "file": "coronary-inflammation-pericoronary-adipose.json",
+    "id": "coronary-inflammation-pericoronary-adipose",
+    "title": "Coronary inflammation based on pericoronary adipose tissue attenuation in type 2 diabetic mellitus: effect of diabetes management",
+    "authors_text": "Y Liu, L Dai, Y Dong, C Ma, P Cheng, et al.",
+    "author_ids": [
+      "lisong-dai"
+    ],
+    "type": "journal",
+    "year": 2024,
+    "venue": "Cardiovascular Diabetology, 2024",
+    "tags": [],
+    "doi": "10.1186/s12933-024-02199-x",
+    "links": {
+      "doi": "https://doi.org/10.1186/s12933-024-02199-x",
+      "pdf": "https://doi.org/10.1186/s12933-024-02199-x"
+    },
+    "topic": [],
+    "featured": false,
+    "lab": false
+  },
+  {
+    "file": "boosting-deep-learning-interpretable.json",
+    "id": "boosting-deep-learning-interpretable",
+    "title": "Boosting deep learning for interpretable brain MRI lesion detection through the integration of radiology report information",
+    "authors_text": "L Dai, J Lei, F Ma, Z Sun, … Y Li, et al.",
+    "author_ids": [
+      "lisong-dai",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2024,
+    "venue": "Radiology: Artificial Intelligence, 2024",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 20.1",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1148/ryai.230520",
+    "links": {
+      "pdf": "https://doi.org/10.1148/ryai.230520"
+    },
+    "topic": [
+      "Neuroimaging",
+      "Deep Learning",
+      "CT Imaging"
+    ],
+    "featured": false,
+    "abstract": "Integrates radiology report information into deep learning to improve interpretable brain MRI lesion detection.",
+    "lab": true
+  },
+  {
+    "file": "autorgbrain-grounded-report-generation.json",
+    "id": "autorgbrain-grounded-report-generation",
+    "title": "AutoRG-Brain: Grounded report generation for brain MRI",
+    "authors_text": "J Lei, X Zhang, C Wu, L Dai, … Y Li",
+    "author_ids": [
+      "lisong-dai",
+      "yuehua-li"
+    ],
+    "type": "preprint",
+    "year": 2024,
+    "venue": "arXiv preprint, 2024",
+    "tags": [],
+    "doi": "10.48550/arXiv.2407.16684",
+    "links": {
+      "pdf": "https://arxiv.org/abs/2407.16684",
+      "code": "https://github.com/JiayuLei1520/AutoRG-Brain"
+    },
+    "topic": [
+      "Neuroimaging",
+      "Deep Learning"
+    ],
+    "featured": false,
+    "abstract": "The first brain MRI report generation system with pixel-level grounded visual clues, using a two-stage segmentation-then-generation framework.",
+    "lab": true
+  },
+  {
+    "file": "dualenergy-ct-radiomics-stroke-onset.json",
+    "id": "dualenergy-ct-radiomics-stroke-onset",
+    "title": "A Dual-Energy Computed Tomography-Based Radiomics Nomogram for Predicting Time Since Stroke Onset: A Multicenter Study",
+    "authors_text": "Jingxuan Jiang, Kai Sheng, Minda Li, Huilin Zhao, Baohui Guan, Lisong Dai, Yuehua Li.",
+    "author_ids": [
+      "lisong-dai",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2024,
+    "venue": "European Radiology",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 6",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1007/s00330-024-10802-8",
+    "links": {
+      "doi": "https://doi.org/10.1007/s00330-024-10802-8",
+      "pdf": "https://doi.org/10.1007/s00330-024-10802-8"
+    },
+    "topic": [
+      "Stroke Imaging",
+      "Radiomics",
+      "CT Imaging"
+    ],
+    "featured": false,
+    "abstract": "Accurate estimation of time since stroke onset is critical for treatment eligibility decisions. This multicenter study develops a dual-energy CT-based radiomics nomogram to predict onset time, combining quantitative iodine maps and radiomic features. The model provides a clinically actionable tool for refining treatment windows in acute ischemic stroke.",
+    "lab": true
+  },
+  {
+    "file": "dualenergy-cta-clot-composition.json",
+    "id": "dualenergy-cta-clot-composition",
+    "title": "The Value of Dual-Energy Computed Tomography Angiography-Derived Parameters in the Evaluation of Clot Composition",
+    "authors_text": "Jingxuan Jiang, Hongmei Gu, Minda Li, Ye Hua, Sijia Wang, Lisong Dai, Yuehua Li.",
+    "author_ids": [
+      "lisong-dai",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2023,
+    "venue": "Academic Radiology",
+    "tags": [
+      {
+        "label": "Q2",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 4.7",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1016/j.acra.2022.12.023",
+    "links": {
+      "doi": "https://doi.org/10.1016/j.acra.2022.12.023",
+      "pdf": "https://doi.org/10.1016/j.acra.2022.12.023"
+    },
+    "topic": [
+      "Stroke Imaging",
+      "Vascular Imaging",
+      "CT Imaging"
+    ],
+    "featured": false,
+    "abstract": "This study evaluates dual-energy CT angiography-derived parameters for assessing clot composition in acute ischemic stroke, demonstrating the added value of dual-energy acquisition over conventional imaging for thrombus characterization and treatment planning.",
+    "lab": true
+  },
+  {
+    "file": "simde-simple-domain-expansion.json",
+    "id": "simde-simple-domain-expansion",
+    "title": "SimDE: A Simple Domain Expansion Approach for Single-Source Domain Generalization",
+    "authors_text": "Qinwei Xu, Ruipeng Zhang, Yi-Yan Wu, Ya Zhang, Ning Liu, Yanfeng Wang.",
+    "author_ids": [
+      "ruipeng-zhang"
+    ],
+    "type": "conference",
+    "year": 2023,
+    "venue": "CVPR Workshop, 2023",
+    "cover": "images/simde.jpg",
+    "tags": [],
+    "doi": "",
+    "links": {
+      "pdf": "https://openaccess.thecvf.com/content/CVPR2023W/L3D-IVU/papers/Xu_SimDE_A_Simple_Domain_Expansion_Approach_for_Single-Source_Domain_Generalization_CVPRW_2023_paper.pdf"
+    },
+    "topic": [],
+    "featured": false,
+    "lab": false
+  },
+  {
+    "file": "redox-responsive-peptide-coacervates.json",
+    "id": "redox-responsive-peptide-coacervates",
+    "title": "Redox-Responsive Peptide-Based Complex Coacervates as Delivery Vehicles with Controlled Release of Proteinous Drugs",
+    "authors_text": "Jiahua Wang, Manzar Abbas, Yu Huang, Junyou Wang, Yuehua Li.",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2023,
+    "venue": "Communications Chemistry",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 6.9",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1038/s42004-023-01044-8",
+    "links": {
+      "doi": "https://doi.org/10.1038/s42004-023-01044-8",
+      "pdf": "https://doi.org/10.1038/s42004-023-01044-8"
+    },
+    "topic": [
+      "Nanomedicine",
+      "Drug Delivery"
+    ],
+    "featured": false,
+    "abstract": "Proteinous drugs are highly promising therapeutics but suffer from limited circulation times and severe off-target side effects. Inspired by active membraneless organelles capable of dynamic recruitment and release of specific proteins, this study designs coacervates as therapeutic protocells from small metabolites, providing redox-responsive controlled release of proteinous drugs.",
+    "lab": true
+  },
+  {
+    "file": "stress-perfusion-cardiac-mr-review.json",
+    "id": "stress-perfusion-cardiac-mr-review",
+    "title": "Qualitative and Quantitative Stress Perfusion Cardiac Magnetic Resonance in Clinical Practice: A Comprehensive Review",
+    "authors_text": "Wenli Zhou, Jason Sin, Andrew T. Yan, Haonan Wang, Jing Lu, Yuehua Li, Paul Kim, Amit R. Patel, Ming-Yen Ng.",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2023,
+    "venue": "Diagnostics",
+    "tags": [
+      {
+        "label": "Review",
+        "kind": "type"
+      },
+      {
+        "label": "Q2",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 3.8",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.3390/diagnostics13030524",
+    "links": {
+      "doi": "https://doi.org/10.3390/diagnostics13030524",
+      "pdf": "https://doi.org/10.3390/diagnostics13030524"
+    },
+    "topic": [
+      "Cardiac Imaging",
+      "MRI Imaging"
+    ],
+    "featured": false,
+    "abstract": "This comprehensive review covers qualitative and quantitative stress perfusion cardiac magnetic resonance methods in clinical practice, including acquisition protocols, analysis techniques, and clinical applications for ischemic heart disease assessment.",
+    "lab": true
+  },
+  {
+    "file": "prevalence-unruptured-cerebral-aneurysms.json",
+    "id": "prevalence-unruptured-cerebral-aneurysms",
+    "title": "Prevalence of unruptured cerebral aneurysms in Chinese adults aged 35 to 75 years: a cross-sectional study",
+    "authors_text": "… Y Li, et al.",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2023,
+    "venue": "Annals of Internal Medicine, 2023",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 17.2",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.7326/0003-4819-159-8-201310150-00004",
+    "links": {
+      "pdf": "https://doi.org/10.7326/0003-4819-159-8-201310150-00004"
+    },
+    "topic": [
+      "Neuroimaging",
+      "CT Imaging"
+    ],
+    "featured": false,
+    "abstract": "Cross-sectional study reporting a 7.0% prevalence of unruptured cerebral aneurysms in Chinese adults aged 35–75, with most lesions <5 mm.",
+    "lab": true
+  },
+  {
+    "file": "grace-enhancing-federated-learning.json",
+    "id": "grace-enhancing-federated-learning",
+    "title": "GRACE: Enhancing Federated Learning for Medical Imaging with Generalized and Personalized Gradient Correction",
+    "authors_text": "Ruipeng Zhang, Ziqing Fan, Qinwei Xu, Jiangchao Yao*, Ya Zhang*, Yanfeng Wang*.",
+    "author_ids": [
+      "ruipeng-zhang"
+    ],
+    "type": "conference",
+    "year": 2023,
+    "venue": "MICCAI, 2023",
+    "cover": "images/grace-total.png",
+    "tags": [
+      {
+        "label": "CCF-B",
+        "kind": "ccf"
+      }
+    ],
+    "doi": "",
+    "links": {
+      "pdf": "https://link.springer.com/chapter/10.1007/978-3-031-43898-1_2",
+      "project": "https://github.com/MediaBrain-SJTU/GPFL-GRACE"
+    },
+    "topic": [],
+    "featured": false,
+    "lab": false
+  },
+  {
+    "file": "fourierbased-augmentation-applications-domain.json",
+    "id": "fourierbased-augmentation-applications-domain",
+    "title": "Fourier-based augmentation with applications to domain generalization",
+    "authors_text": "Qinwei Xu, Ruipeng Zhang, Ziqing Fan, Yanfeng Wang, Yi-Yan Wu, Ya Zhang.",
+    "author_ids": [
+      "ruipeng-zhang"
+    ],
+    "type": "journal",
+    "year": 2023,
+    "venue": "Pattern Recognition, 2023",
+    "cover": "images/fact-pr.jpg",
+    "tags": [
+      {
+        "label": "CCF-B",
+        "kind": "ccf"
+      },
+      {
+        "label": "JCR Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "CAS Tier 1",
+        "kind": "cas"
+      },
+      {
+        "label": "IF 7.5",
+        "kind": "if"
+      }
+    ],
+    "doi": "",
+    "links": {
+      "pdf": "https://www.sciencedirect.com/science/article/pii/S0031320323001747"
+    },
+    "topic": [],
+    "featured": false,
+    "lab": false
+  },
+  {
+    "file": "federated-learning-bilateral-curation.json",
+    "id": "federated-learning-bilateral-curation",
+    "title": "Federated Learning with Bilateral Curation for Partially Class-Disjoint Data",
+    "authors_text": "Ziqing Fan, Ruipeng Zhang, Jiangchao Yao*, Bo Han, Ya Zhang, Yanfeng Wang*.",
+    "author_ids": [
+      "ruipeng-zhang"
+    ],
+    "type": "conference",
+    "year": 2023,
+    "venue": "NeurIPS, 2023",
+    "cover": "images/neurips2023_fedgela.jpg",
+    "tags": [
+      {
+        "label": "CCF-A",
+        "kind": "ccf"
+      }
+    ],
+    "doi": "",
+    "links": {
+      "pdf": "https://openreview.net/pdf?id=wwmKVO8bsR",
+      "project": "https://github.com/MediaBrain-SJTU/FedGELA"
+    },
+    "topic": [],
+    "featured": false,
+    "lab": false
+  },
+  {
+    "file": "federated-domain-generalization-generalization.json",
+    "id": "federated-domain-generalization-generalization",
+    "title": "Federated Domain Generalization with Generalization Adjustment",
+    "authors_text": "Ruipeng Zhang, Qinwei Xu, Jiangchao Yao, Ya Zhang*, Qi Tian, Yanfeng Wang*.",
+    "author_ids": [
+      "ruipeng-zhang"
+    ],
+    "type": "conference",
+    "year": 2023,
+    "venue": "CVPR, 2023",
+    "cover": "images/FedDG-GA.png",
+    "tags": [
+      {
+        "label": "CCF-A",
+        "kind": "ccf"
+      }
+    ],
+    "doi": "",
+    "links": {
+      "pdf": "https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Federated_Domain_Generalization_With_Generalization_Adjustment_CVPR_2023_paper.pdf",
+      "project": "https://github.com/MediaBrain-SJTU/FedDG-GA",
+      "video": "https://www.bilibili.com/video/BV1Po4y137Pn/"
+    },
+    "topic": [],
+    "featured": true,
+    "lab": false
+  },
+  {
+    "file": "federated-adversarial-domain-hallucination.json",
+    "id": "federated-adversarial-domain-hallucination",
+    "title": "Federated Adversarial Domain Hallucination for Privacy-preserving Domain Generalization",
+    "authors_text": "Qinwei Xu, Ruipeng Zhang, Ya Zhang, Yi-Yan Wu, Yanfeng Wang.",
+    "author_ids": [
+      "ruipeng-zhang"
+    ],
+    "type": "journal",
+    "year": 2023,
+    "venue": "IEEE Transactions on Multimedia, 2023",
+    "cover": "images/fadh.jpg",
+    "tags": [
+      {
+        "label": "CCF-B",
+        "kind": "ccf"
+      },
+      {
+        "label": "JCR Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "CAS Tier 1",
+        "kind": "cas"
+      },
+      {
+        "label": "IF 8.4",
+        "kind": "if"
+      }
+    ],
+    "doi": "",
+    "links": {
+      "pdf": "https://ieeexplore.ieee.org/abstract/document/10073578/"
+    },
+    "topic": [],
+    "featured": false,
+    "lab": false
+  },
+  {
+    "file": "clotbased-radiomics-model-cardioembolic.json",
+    "id": "clotbased-radiomics-model-cardioembolic",
+    "title": "Clot-based radiomics model for cardioembolic stroke prediction with CT imaging before recanalization: a multicenter study",
+    "authors_text": "J Jiang, J Wei, Y Zhu, … Y Li, et al.",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2023,
+    "venue": "European Radiology, 2023",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 6",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1007/s00330-022-09116-4",
+    "links": {
+      "pdf": "https://doi.org/10.1007/s00330-022-09116-4"
+    },
+    "topic": [
+      "Neuroimaging",
+      "Stroke Imaging",
+      "CT Imaging"
+    ],
+    "featured": false,
+    "abstract": "A clot-based radiomics model on pre-treatment CT to predict cardioembolic stroke source before recanalization, validated multicenter.",
+    "lab": true
+  },
+  {
+    "file": "assessment-automatic-rib-fracture.json",
+    "id": "assessment-automatic-rib-fracture",
+    "title": "Assessment of automatic rib fracture detection on chest CT using a deep learning algorithm",
+    "authors_text": "S Wang, D Wu, L Ye, Z Chen, Y Zhan, Y Li",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2023,
+    "venue": "European Radiology, 2023",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 6",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1007/s00330-022-09156-w",
+    "links": {
+      "pdf": "https://doi.org/10.1007/s00330-022-09156-w"
+    },
+    "topic": [
+      "Deep Learning",
+      "CT Imaging"
+    ],
+    "featured": false,
+    "abstract": "Deep-learning algorithm for automatic rib fracture detection on chest CT with high sensitivity, assessed for clinical deployment.",
+    "lab": true
+  },
+  {
+    "file": "transferrin-bbb-nanozyme-ischemic-stroke.json",
+    "id": "transferrin-bbb-nanozyme-ischemic-stroke",
+    "title": "Transferrin-Enabled Blood–Brain Barrier Crossing Manganese-Based Nanozyme for Rebalancing the Reactive Oxygen Species Level in Ischemic Stroke",
+    "authors_text": "Qianqian Zhao, Wenxian Du, Lingling Zhou, Jianrong Wu, Xiaoxing Zhang, Xiaoer Wei, Sijia Wang, Yu Huang, Yuehua Li.",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2022,
+    "venue": "Pharmaceutics",
+    "tags": [
+      {
+        "label": "Q2",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 6.9",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.3390/pharmaceutics14061122",
+    "links": {
+      "doi": "https://doi.org/10.3390/pharmaceutics14061122",
+      "pdf": "https://doi.org/10.3390/pharmaceutics14061122"
+    },
+    "topic": [
+      "Nanomedicine",
+      "Stroke Imaging"
+    ],
+    "featured": false,
+    "abstract": "This study presents a transferrin-enabled, manganese-based nanozyme that crosses the blood–brain barrier to rebalance reactive oxygen species levels in ischemic stroke, offering a theranostic nanomedicine approach combining antioxidant therapy with manganese-based imaging contrast.",
+    "lab": true
+  },
+  {
+    "file": "semisupervised-domain-generalization-medical.json",
+    "id": "semisupervised-domain-generalization-medical",
+    "title": "Semi-Supervised Domain Generalization for Medical Image Analysis",
+    "authors_text": "Ruipeng Zhang, Qinwei Xu, Chaoqing Huang, Ya Zhang*, Yanfeng Wang.",
+    "author_ids": [
+      "ruipeng-zhang"
+    ],
+    "type": "conference",
+    "year": 2022,
+    "venue": "ISBI, 2022",
+    "cover": "images/isbi2022.png",
+    "tags": [],
+    "doi": "",
+    "links": {
+      "pdf": "https://ieeexplore.ieee.org/abstract/document/9761561"
+    },
+    "topic": [],
+    "featured": false,
+    "lab": false
+  },
+  {
+    "file": "prussian-blue-nanozyme-promotes.json",
+    "id": "prussian-blue-nanozyme-promotes",
+    "title": "Prussian Blue Nanozyme Promotes the Survival Rate of Skin Flaps",
+    "authors_text": "… Y Li, et al.",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2022,
+    "venue": "ACS Nano, 2022",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 17.3",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1021/acsnano.2c02832",
+    "links": {
+      "pdf": "https://doi.org/10.1021/acsnano.2c02832"
+    },
+    "topic": [
+      "Nanomedicine"
+    ],
+    "featured": false,
+    "abstract": "Prussian blue nanozyme promotes skin flap survival by scavenging ROS and maintaining a normal microenvironment against ischemia-reperfusion injury.",
+    "lab": true
+  },
+  {
+    "file": "black-phosphorus-nanosheet-bioimaging.json",
+    "id": "black-phosphorus-nanosheet-bioimaging",
+    "title": "Facile Synthesis of Black Phosphorus Nanosheet@NaReF4 Nanocomposites for Potential Bioimaging",
+    "authors_text": "Dongya Wang, Jingcan Qin, Chuan Zhang, Yuehua Li.",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2022,
+    "venue": "Nanomaterials",
+    "tags": [
+      {
+        "label": "Q2",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 4.8",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.3390/nano12193383",
+    "links": {
+      "doi": "https://doi.org/10.3390/nano12193383",
+      "pdf": "https://doi.org/10.3390/nano12193383"
+    },
+    "topic": [
+      "Nanomedicine",
+      "Neuroimaging"
+    ],
+    "featured": false,
+    "abstract": "This work reports a facile synthesis of black phosphorus nanosheet@NaReF4 nanocomposites for potential bioimaging applications, combining the photothermal and photodynamic properties of black phosphorus with rare-earth-doped upconversion nanoparticles.",
+    "lab": true
+  },
+  {
+    "file": "engineering-vanadium-carbide-mxene.json",
+    "id": "engineering-vanadium-carbide-mxene",
+    "title": "Engineering vanadium carbide MXene as multienzyme mimetics for efficient in vivo ischemic stroke treatment",
+    "authors_text": "… Y Li, et al.",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2022,
+    "venue": "Chemical Engineering Journal, 2022",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 12.5",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1016/j.cej.2022.135921",
+    "links": {
+      "pdf": "https://doi.org/10.1016/j.cej.2022.135921"
+    },
+    "topic": [
+      "Neuroimaging",
+      "Stroke Imaging",
+      "Nanomedicine"
+    ],
+    "featured": false,
+    "abstract": "Engineered vanadium carbide MXene as multienzyme mimetics for efficient in vivo ischemic stroke treatment by alleviating oxidative stress.",
+    "lab": true
+  },
+  {
+    "file": "domainconditioned-normalization-testtime-domain.json",
+    "id": "domainconditioned-normalization-testtime-domain",
+    "title": "Domain-Conditioned Normalization for Test-Time Domain Generalization",
+    "authors_text": "Yuxuan Jiang, Yanfeng Wang, Ruipeng Zhang, Qinwei Xu, Ya Zhang, Xin Chen, Qi Tian.",
+    "author_ids": [
+      "ruipeng-zhang"
+    ],
+    "type": "conference",
+    "year": 2022,
+    "venue": "ECCV Workshop, 2022",
+    "cover": "images/dcn.jpg",
+    "tags": [
+      {
+        "label": "Best Long Paper",
+        "kind": "award"
+      }
+    ],
+    "doi": "",
+    "links": {
+      "pdf": "https://link.springer.com/chapter/10.1007/978-3-031-25085-9_17"
+    },
+    "topic": [],
+    "featured": false,
+    "lab": false
+  },
+  {
+    "file": "plasma-tau181-nfl-cognitive-decline.json",
+    "id": "plasma-tau181-nfl-cognitive-decline",
+    "title": "Associations of Plasma Phosphorylated Tau181 and Neurofilament Light Chain with Brain Amyloid Burden and Cognition in Objectively Defined Subtle Cognitive Decline Patients",
+    "authors_text": "Yanlu Huang, Yuehua Li, Fang Xie, Qihao Guo.",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2022,
+    "venue": "CNS Neuroscience & Therapeutics",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 6.6",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1111/cns.13962",
+    "links": {
+      "doi": "https://doi.org/10.1111/cns.13962",
+      "pdf": "https://doi.org/10.1111/cns.13962"
+    },
+    "topic": [
+      "Neuroimaging",
+      "Alzheimer's Disease"
+    ],
+    "featured": false,
+    "abstract": "This study examines the associations of plasma phosphorylated tau181 and neurofilament light chain with brain amyloid burden and cognition in patients with objectively defined subtle cognitive decline, exploring blood biomarkers for early Alzheimer's disease detection.",
+    "lab": true
+  },
+  {
+    "file": "visualization-thrombus-enhancement-thinslab.json",
+    "id": "visualization-thrombus-enhancement-thinslab",
+    "title": "Visualization of thrombus enhancement on thin-slab maximum intensity projection of CT angiography: an imaging sign for predicting stroke source and thrombus compositions",
+    "authors_text": "L Wei, Y Zhu, J Deng, Y Li, M Li, H Lu, Y Zhao",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2021,
+    "venue": "Radiology, 2021",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 17.6",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1148/radiol.2020201548",
+    "links": {
+      "pdf": "https://doi.org/10.1148/radiol.2020201548"
+    },
+    "topic": [
+      "Neuroimaging",
+      "Stroke Imaging",
+      "CT Imaging"
+    ],
+    "featured": false,
+    "abstract": "Describes a thin-slab MIP imaging sign on CT angiography for predicting stroke source and thrombus histological composition.",
+    "lab": true
+  },
+  {
+    "file": "neutrophillike-cellmembranecoated-nanozyme-therapy.json",
+    "id": "neutrophillike-cellmembranecoated-nanozyme-therapy",
+    "title": "Neutrophil-like cell-membrane-coated nanozyme therapy for ischemic stroke",
+    "authors_text": "… Y Li, et al.",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2021,
+    "venue": "ACS Nano, 2021",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 17.3",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1021/acsnano.0c07973",
+    "links": {
+      "pdf": "https://doi.org/10.1021/acsnano.0c07973"
+    },
+    "topic": [
+      "Neuroimaging",
+      "Stroke Imaging",
+      "Nanomedicine"
+    ],
+    "featured": false,
+    "abstract": "Neutrophil-like cell-membrane-coated nanozyme enabling active targeting therapy for ischemic brain damage and long-term neurological recovery.",
+    "lab": true
+  },
+  {
+    "file": "joint-learning-3d-lesion.json",
+    "id": "joint-learning-3d-lesion",
+    "title": "Joint learning of 3D lesion segmentation and classification for explainable COVID-19 diagnosis",
+    "authors_text": "X Wang, L Jiang, L Li, M Xu, X Deng, L Dai, et al.",
+    "author_ids": [
+      "lisong-dai"
+    ],
+    "type": "journal",
+    "year": 2021,
+    "venue": "IEEE Transactions on Medical Imaging, 2021",
+    "tags": [],
+    "doi": "",
+    "links": {},
+    "topic": [],
+    "featured": false,
+    "lab": false
+  },
+  {
+    "file": "inorganic-nanomaterial-brain-imaging.json",
+    "id": "inorganic-nanomaterial-brain-imaging",
+    "title": "Inorganic Nanomaterial for Biomedical Imaging of Brain Diseases",
+    "authors_text": "Wenxian Du, Lingling Zhou, Qiang Zhang, Xin Liu, Xiaoer Wei, Yuehua Li.",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2021,
+    "venue": "Molecules",
+    "tags": [
+      {
+        "label": "Q2",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 5.1",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.3390/molecules26237340",
+    "links": {
+      "doi": "https://doi.org/10.3390/molecules26237340",
+      "pdf": "https://doi.org/10.3390/molecules26237340"
+    },
+    "topic": [
+      "Nanomedicine",
+      "Neuroimaging"
+    ],
+    "featured": false,
+    "abstract": "This review surveys inorganic nanomaterials used for biomedical imaging of brain diseases, covering design principles, imaging modalities, and translational considerations for nanomaterial-based neuroimaging probes.",
+    "lab": true
+  },
+  {
+    "file": "encephalomalacia-flair-posttraumatic-epilepsy.json",
+    "id": "encephalomalacia-flair-posttraumatic-epilepsy",
+    "title": "Experimental Imaging Study of Encephalomalacia Fluid-Attenuated Inversion Recovery (FLAIR) Hyperintense Lesions in Posttraumatic Epilepsy",
+    "authors_text": "Dan Wang, Kai Shang, Zheng Sun, Yue-Hua Li.",
+    "author_ids": [
+      "zheng-sun",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2021,
+    "venue": "Neural Plasticity",
+    "tags": [],
+    "doi": "10.1155/2021/2678379",
+    "links": {
+      "doi": "https://doi.org/10.1155/2021/2678379",
+      "pdf": "https://doi.org/10.1155/2021/2678379"
+    },
+    "topic": [
+      "Neuroimaging",
+      "MRI Imaging"
+    ],
+    "featured": false,
+    "abstract": "This study applies advanced MRI techniques, including neurite orientation dispersion and density imaging (NODDI), to characterize encephalomalacia FLAIR hyperintense lesions in posttraumatic epilepsy. The three-compartment tissue model enables examination of intra- and extracellular white matter properties, distinguishing aspects of axonal pathology underlying posttraumatic epileptogenic lesions.",
+    "lab": true
+  },
+  {
+    "file": "deep-learningbased-classification-lower.json",
+    "id": "deep-learningbased-classification-lower",
+    "title": "Deep learning-based classification of lower extremity arterial stenosis in computed tomography angiography",
+    "authors_text": "L Dai, Q Zhou, H Zhou, H Zhang, P Cheng, et al.",
+    "author_ids": [
+      "lisong-dai"
+    ],
+    "type": "journal",
+    "year": 2021,
+    "venue": "European Journal of Radiology, 2021",
+    "tags": [],
+    "doi": "10.1016/j.ejrad.2021.109528",
+    "links": {
+      "doi": "https://doi.org/10.1016/j.ejrad.2021.109528",
+      "pdf": "https://doi.org/10.1016/j.ejrad.2021.109528"
+    },
+    "topic": [],
+    "featured": false,
+    "lab": false
+  },
+  {
+    "file": "fourierbased-framework-domain-generalization.json",
+    "id": "fourierbased-framework-domain-generalization",
+    "title": "A Fourier-based Framework for Domain Generalization",
+    "authors_text": "Qinwei Xu, Ruipeng Zhang, Ya Zhang, Yanfeng Wang, Qi Tian.",
+    "author_ids": [
+      "ruipeng-zhang"
+    ],
+    "type": "conference",
+    "year": 2021,
+    "venue": "CVPR, 2021",
+    "cover": "images/fact.jpg",
+    "tags": [
+      {
+        "label": "CCF-A",
+        "kind": "ccf"
+      }
+    ],
+    "doi": "",
+    "links": {
+      "pdf": "https://openaccess.thecvf.com/content/CVPR2021/papers/Xu_A_Fourier-Based_Framework_for_Domain_Generalization_CVPR_2021_paper.pdf",
+      "project": "https://github.com/MediaBrain-SJTU/FACT"
+    },
+    "topic": [],
+    "featured": true,
+    "lab": false
+  },
+  {
+    "file": "2d-vanadium-carbide-mxenzyme.json",
+    "id": "2d-vanadium-carbide-mxenzyme",
+    "title": "2D vanadium carbide MXenzyme to alleviate ROS-mediated disorders",
+    "authors_text": "… Y Li, et al.",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2021,
+    "venue": "Nature Communications, 2021",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 18.1",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1038/s41467-021-22278-x",
+    "links": {
+      "pdf": "https://doi.org/10.1038/s41467-021-22278-x"
+    },
+    "topic": [
+      "Nanomedicine"
+    ],
+    "featured": false,
+    "abstract": "2D V₂C MXene nanozyme that scavenges reactive oxygen species to alleviate ROS-mediated inflammatory and neurodegenerative diseases.",
+    "lab": true
+  },
+  {
+    "file": "rapid-vessel-segmentation-reconstruction.json",
+    "id": "rapid-vessel-segmentation-reconstruction",
+    "title": "Rapid vessel segmentation and reconstruction of head and neck angiograms using 3D convolutional neural network",
+    "authors_text": "F Fu, J Wei, M Zhang, F Yu, … Y Li, et al.",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2020,
+    "venue": "Nature Communications, 2020",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 18.1",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1038/s41467-020-18606-2",
+    "links": {
+      "pdf": "https://doi.org/10.1038/s41467-020-18606-2"
+    },
+    "topic": [
+      "Vascular Imaging",
+      "Deep Learning",
+      "CT Imaging"
+    ],
+    "featured": false,
+    "abstract": "A 3D CNN that rapidly segments and reconstructs head and neck vessels from CT angiograms with high accuracy and efficiency, validated across multiple centers.",
+    "lab": true
+  },
+  {
+    "file": "opportunistic-screening-using-lowdose.json",
+    "id": "opportunistic-screening-using-lowdose",
+    "title": "Opportunistic screening using low-dose CT and the prevalence of osteoporosis in China: a nationwide, multicenter study",
+    "authors_text": "X Cheng, K Zhao, X Zha, … Y Li, et al.",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2020,
+    "venue": "Journal of Bone and Mineral Research, 2020",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 6.5",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1002/jbmr.4187",
+    "links": {
+      "pdf": "https://doi.org/10.1002/jbmr.4187"
+    },
+    "topic": [
+      "CT Imaging"
+    ],
+    "featured": false,
+    "abstract": "Nationwide multicenter study establishing Chinese reference data for opportunistic osteoporosis screening using low-dose chest CT.",
+    "lab": true
+  },
+  {
+    "file": "transient-ischemic-attack-carotid-web.json",
+    "id": "transient-ischemic-attack-carotid-web",
+    "title": "Transient Ischemic Attack and Carotid Web",
+    "authors_text": "H. Hu, X. Zhang, J. Zhao, Y. Li, Y. Zhao.",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2019,
+    "venue": "American Journal of Neuroradiology",
+    "tags": [
+      {
+        "label": "Q2",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 3.7",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.3174/ajnr.A5946",
+    "links": {
+      "doi": "https://doi.org/10.3174/ajnr.A5946",
+      "pdf": "https://doi.org/10.3174/ajnr.A5946"
+    },
+    "topic": [
+      "Stroke Imaging",
+      "Vascular Imaging"
+    ],
+    "featured": false,
+    "abstract": "This study describes the association between carotid web—a thin, fibrous intimal shelf in the internal carotid artery—and transient ischemic attack, highlighting the vascular imaging features of this under-recognized cause of ischemic stroke in young patients.",
+    "lab": true
+  },
+  {
+    "file": "detection-hemodynamically-significant-coronary.json",
+    "id": "detection-hemodynamically-significant-coronary",
+    "title": "Detection of hemodynamically significant coronary stenosis: CT myocardial perfusion versus machine learning CT fractional flow reserve",
+    "authors_text": "Y Li, M Yu, X Dai, Z Lu, C Shen, et al.",
+    "author_ids": [
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2019,
+    "venue": "Radiology, 2019",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 17.6",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1148/radiol.2019190098",
+    "links": {
+      "pdf": "https://doi.org/10.1148/radiol.2019190098"
+    },
+    "topic": [
+      "Cardiac Imaging",
+      "Deep Learning",
+      "CT Imaging"
+    ],
+    "featured": false,
+    "abstract": "Compares CT myocardial perfusion versus machine-learning CT fractional flow reserve for detecting hemodynamically significant coronary stenosis.",
+    "lab": true
+  },
+  {
+    "file": "brain-structural-functional-changes.json",
+    "id": "brain-structural-functional-changes",
+    "title": "Brain structural and functional changes in patients with major depressive disorder: a literature review",
+    "authors_text": "L Dai, H Zhou, X Xu, Z Zuo",
+    "author_ids": [
+      "lisong-dai"
+    ],
+    "type": "journal",
+    "year": 2019,
+    "venue": "PeerJ, 2019",
+    "tags": [],
+    "doi": "",
+    "links": {},
+    "topic": [],
+    "featured": false,
+    "lab": false
+  }
+]

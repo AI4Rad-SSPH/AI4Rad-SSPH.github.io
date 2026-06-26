@@ -1,0 +1,20 @@
+{
+  "id": "simde-simple-domain-expansion",
+  "title": "SimDE: A Simple Domain Expansion Approach for Single-Source Domain Generalization",
+  "authors_text": "Qinwei Xu, Ruipeng Zhang, Yi-Yan Wu, Ya Zhang, Ning Liu, Yanfeng Wang.",
+  "author_ids": [
+    "ruipeng-zhang"
+  ],
+  "type": "conference",
+  "year": 2023,
+  "venue": "CVPR Workshop, 2023",
+  "tags": [],
+  "doi": "",
+  "links": {
+    "pdf": "https://openaccess.thecvf.com/content/CVPR2023W/L3D-IVU/papers/Xu_SimDE_A_Simple_Domain_Expansion_Approach_for_Single-Source_Domain_Generalization_CVPRW_2023_paper.pdf"
+  },
+  "topic": [],
+  "featured": false,
+  "cover": "images/simde.jpg",
+  "lab": false
+}

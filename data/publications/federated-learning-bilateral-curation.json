@@ -1,0 +1,26 @@
+{
+  "id": "federated-learning-bilateral-curation",
+  "title": "Federated Learning with Bilateral Curation for Partially Class-Disjoint Data",
+  "authors_text": "Ziqing Fan, Ruipeng Zhang, Jiangchao Yao*, Bo Han, Ya Zhang, Yanfeng Wang*.",
+  "author_ids": [
+    "ruipeng-zhang"
+  ],
+  "type": "conference",
+  "year": 2023,
+  "venue": "NeurIPS, 2023",
+  "tags": [
+    {
+      "label": "CCF-A",
+      "kind": "ccf"
+    }
+  ],
+  "doi": "",
+  "links": {
+    "pdf": "https://openreview.net/pdf?id=wwmKVO8bsR",
+    "project": "https://github.com/MediaBrain-SJTU/FedGELA"
+  },
+  "topic": [],
+  "featured": false,
+  "cover": "images/neurips2023_fedgela.jpg",
+  "lab": false
+}

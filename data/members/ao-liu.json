@@ -1,0 +1,18 @@
+{
+  "id": "ao-liu",
+  "name_en": "Ao Liu",
+  "name_cn": "刘奥",
+  "title_en": "Alumni · MS in Engineering",
+  "title_cn": "校友 · 工科硕士",
+  "bio_en": "Alumni of AI4Rad Lab. Received a Master's degree in Engineering in 2023. Worked on medical imaging AI and CT report analysis during his time in the lab.",
+  "bio_cn": "AI4Rad Lab 校友。2023 年获工科硕士学位。在实验室期间从事医学影像人工智能与 CT 报告分析相关研究。",
+  "links": {},
+  "interests_en": [
+    "Medical imaging AI",
+    "CT report analysis with large language models"
+  ],
+  "interests_cn": [
+    "医学影像人工智能",
+    "基于大语言模型的 CT 报告分析"
+  ]
+}

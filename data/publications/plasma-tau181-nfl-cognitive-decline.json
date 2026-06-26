@@ -1,0 +1,33 @@
+{
+  "id": "plasma-tau181-nfl-cognitive-decline",
+  "title": "Associations of Plasma Phosphorylated Tau181 and Neurofilament Light Chain with Brain Amyloid Burden and Cognition in Objectively Defined Subtle Cognitive Decline Patients",
+  "authors_text": "Yanlu Huang, Yuehua Li, Fang Xie, Qihao Guo.",
+  "author_ids": [
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2022,
+  "venue": "CNS Neuroscience & Therapeutics",
+  "doi": "10.1111/cns.13962",
+  "topic": [
+    "Neuroimaging",
+    "Alzheimer's Disease"
+  ],
+  "tags": [
+    {
+      "label": "Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 6.6",
+      "kind": "if"
+    }
+  ],
+  "abstract": "This study examines the associations of plasma phosphorylated tau181 and neurofilament light chain with brain amyloid burden and cognition in patients with objectively defined subtle cognitive decline, exploring blood biomarkers for early Alzheimer's disease detection.",
+  "links": {
+    "doi": "https://doi.org/10.1111/cns.13962",
+    "pdf": "https://doi.org/10.1111/cns.13962"
+  },
+  "lab": true,
+  "featured": false
+}

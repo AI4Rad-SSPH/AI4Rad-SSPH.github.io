@@ -1,0 +1,34 @@
+{
+  "id": "deep-learningbased-automatic-aspects",
+  "title": "Deep learning-based automatic ASPECTS calculation can improve diagnosis efficiency in patients with acute ischemic stroke: a multicenter study",
+  "authors_text": "J Wei, K Shang, X Wei, … L Dai, Z Sun, … Y Li",
+  "author_ids": [
+    "lisong-dai",
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2025,
+  "venue": "European Radiology, 2025",
+  "tags": [
+    {
+      "label": "Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 6",
+      "kind": "if"
+    }
+  ],
+  "doi": "10.1007/s00330-024-10960-9",
+  "links": {
+    "pdf": "https://doi.org/10.1007/s00330-024-10960-9"
+  },
+  "topic": [
+    "Neuroimaging",
+    "Stroke Imaging",
+    "Deep Learning",
+    "CT Imaging"
+  ],
+  "featured": false,
+  "abstract": "Deep-learning ASPECTS scoring on non-contrast CT improves diagnostic efficiency for acute ischemic stroke across multiple centers."
+}

@@ -1,0 +1,30 @@
+{
+  "id": "2d-vanadium-carbide-mxenzyme",
+  "title": "2D vanadium carbide MXenzyme to alleviate ROS-mediated disorders",
+  "authors_text": "… Y Li, et al.",
+  "author_ids": [
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2021,
+  "venue": "Nature Communications, 2021",
+  "tags": [
+    {
+      "label": "Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 18.1",
+      "kind": "if"
+    }
+  ],
+  "doi": "10.1038/s41467-021-22278-x",
+  "links": {
+    "pdf": "https://doi.org/10.1038/s41467-021-22278-x"
+  },
+  "topic": [
+    "Nanomedicine"
+  ],
+  "featured": false,
+  "abstract": "2D V₂C MXene nanozyme that scavenges reactive oxygen species to alleviate ROS-mediated inflammatory and neurodegenerative diseases."
+}

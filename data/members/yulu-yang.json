@@ -1,0 +1,18 @@
+{
+  "id": "yulu-yang",
+  "name_en": "Yulu Yang",
+  "name_cn": "杨雨露",
+  "title_en": "Alumni · MS in Biomedical Engineering · University of Shanghai for Science and Technology",
+  "title_cn": "校友 · 生物医学工程硕士 · 上海理工大学",
+  "bio_en": "Alumni of AI4Rad Lab. Received a Master's degree in Biomedical Engineering from the University of Shanghai for Science and Technology in 2023. Worked on medical imaging AI and CT report analysis during her time in the lab.",
+  "bio_cn": "AI4Rad Lab 校友。2023 年于上海理工大学获生物医学工程硕士学位。在实验室期间从事医学影像人工智能与 CT 报告分析相关研究。",
+  "links": {},
+  "interests_en": [
+    "Medical imaging AI",
+    "CT report analysis with large language models"
+  ],
+  "interests_cn": [
+    "医学影像人工智能",
+    "基于大语言模型的 CT 报告分析"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "autorgbrain-grounded-report-generation",
+  "title": "AutoRG-Brain: Grounded report generation for brain MRI",
+  "authors_text": "J Lei, X Zhang, C Wu, L Dai, … Y Li",
+  "author_ids": [
+    "lisong-dai",
+    "yuehua-li"
+  ],
+  "type": "preprint",
+  "year": 2024,
+  "venue": "arXiv preprint, 2024",
+  "tags": [],
+  "doi": "10.48550/arXiv.2407.16684",
+  "links": {
+    "pdf": "https://arxiv.org/abs/2407.16684",
+    "code": "https://github.com/JiayuLei1520/AutoRG-Brain"
+  },
+  "topic": [
+    "Neuroimaging",
+    "Deep Learning"
+  ],
+  "featured": false,
+  "abstract": "The first brain MRI report generation system with pixel-level grounded visual clues, using a two-stage segmentation-then-generation framework."
+}

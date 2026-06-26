@@ -1,0 +1,35 @@
+{
+  "id": "predicting-infarct-thrombectomy-knowledge-guided",
+  "title": "Predicting Infarct Outcomes After Extended Time Window Thrombectomy in Large Vessel Occlusion Using Knowledge-Guided Deep Learning",
+  "authors_text": "Lisong Dai, Lei Yuan, Houwang Zhang, Zheng Sun, Jingxuan Jiang, Zhaohui Li, Yuehua Li, Yunfei Zha.",
+  "author_ids": [
+    "lisong-dai",
+    "zheng-sun",
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2026,
+  "venue": "Journal of NeuroInterventional Surgery",
+  "doi": "10.1136/jnis-2025-023355",
+  "topic": [
+    "Stroke Imaging",
+    "Deep Learning"
+  ],
+  "tags": [
+    {
+      "label": "Q2",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 4.4",
+      "kind": "if"
+    }
+  ],
+  "abstract": "This study develops a knowledge-guided deep learning model to predict final infarct outcomes after extended time window thrombectomy in large vessel occlusion. By incorporating clinical and imaging knowledge priors, the model supports patient selection for reperfusion therapy in the extended treatment window.",
+  "links": {
+    "doi": "https://doi.org/10.1136/jnis-2025-023355",
+    "pdf": "https://doi.org/10.1136/jnis-2025-023355"
+  },
+  "lab": true,
+  "featured": false
+}

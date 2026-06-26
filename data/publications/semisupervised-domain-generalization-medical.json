@@ -1,0 +1,20 @@
+{
+  "id": "semisupervised-domain-generalization-medical",
+  "title": "Semi-Supervised Domain Generalization for Medical Image Analysis",
+  "authors_text": "Ruipeng Zhang, Qinwei Xu, Chaoqing Huang, Ya Zhang*, Yanfeng Wang.",
+  "author_ids": [
+    "ruipeng-zhang"
+  ],
+  "type": "conference",
+  "year": 2022,
+  "venue": "ISBI, 2022",
+  "tags": [],
+  "doi": "",
+  "links": {
+    "pdf": "https://ieeexplore.ieee.org/abstract/document/9761561"
+  },
+  "topic": [],
+  "featured": false,
+  "cover": "images/isbi2022.png",
+  "lab": false
+}

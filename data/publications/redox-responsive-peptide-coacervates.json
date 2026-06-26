@@ -1,0 +1,33 @@
+{
+  "id": "redox-responsive-peptide-coacervates",
+  "title": "Redox-Responsive Peptide-Based Complex Coacervates as Delivery Vehicles with Controlled Release of Proteinous Drugs",
+  "authors_text": "Jiahua Wang, Manzar Abbas, Yu Huang, Junyou Wang, Yuehua Li.",
+  "author_ids": [
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2023,
+  "venue": "Communications Chemistry",
+  "doi": "10.1038/s42004-023-01044-8",
+  "topic": [
+    "Nanomedicine",
+    "Drug Delivery"
+  ],
+  "tags": [
+    {
+      "label": "Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 6.9",
+      "kind": "if"
+    }
+  ],
+  "abstract": "Proteinous drugs are highly promising therapeutics but suffer from limited circulation times and severe off-target side effects. Inspired by active membraneless organelles capable of dynamic recruitment and release of specific proteins, this study designs coacervates as therapeutic protocells from small metabolites, providing redox-responsive controlled release of proteinous drugs.",
+  "links": {
+    "doi": "https://doi.org/10.1038/s42004-023-01044-8",
+    "pdf": "https://doi.org/10.1038/s42004-023-01044-8"
+  },
+  "lab": true,
+  "featured": false
+}

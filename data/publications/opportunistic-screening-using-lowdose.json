@@ -1,0 +1,30 @@
+{
+  "id": "opportunistic-screening-using-lowdose",
+  "title": "Opportunistic screening using low-dose CT and the prevalence of osteoporosis in China: a nationwide, multicenter study",
+  "authors_text": "X Cheng, K Zhao, X Zha, … Y Li, et al.",
+  "author_ids": [
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2020,
+  "venue": "Journal of Bone and Mineral Research, 2020",
+  "tags": [
+    {
+      "label": "Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 6.5",
+      "kind": "if"
+    }
+  ],
+  "doi": "10.1002/jbmr.4187",
+  "links": {
+    "pdf": "https://doi.org/10.1002/jbmr.4187"
+  },
+  "topic": [
+    "CT Imaging"
+  ],
+  "featured": false,
+  "abstract": "Nationwide multicenter study establishing Chinese reference data for opportunistic osteoporosis screening using low-dose chest CT."
+}

@@ -3,14 +3,15 @@
   "name_en": "Yuehua Li",
   "name_cn": "李跃华",
   "photo": "images/members/yuehua-li.jpg",
-  "title_en": "Lab Leader · AI4Rad Lab · Shanghai Sixth People's Hospital",
-  "title_cn": "团队负责人 · AI4Rad Lab · 上海市第六人民医院",
-  "bio_en": "Yuehua Li is the Lab Leader of <strong>AI4Rad Lab</strong> and a radiologist at the Department of Radiology, <strong>Shanghai Sixth People's Hospital</strong>, Shanghai Jiao Tong University School of Medicine. His research centers on vascular and stroke imaging, cardiac and coronary CT, and the clinical translation of AI across radiology — from vessel segmentation and perfusion analysis to large-scale disease diagnosis and automated reporting.",
-  "bio_cn": "李跃华是 <strong>AI4Rad 实验室</strong>负责人，上海交通大学医学院附属<strong>第六人民医院放射介入科</strong>医师。研究方向涵盖血管与卒中影像、心脏与冠脉 CT，以及人工智能在放射领域的临床转化——从血管分割、灌注分析到大规模疾病诊断与报告自动生成。",
+  "title_en": "MD & PhD · Professor · Chief Physician · Lab Leader, AI4Rad Lab",
+  "title_cn": "MD & PhD · 教授 · 主任医师 · AI4Rad 实验室负责人",
+  "bio_en": "Yuehua Li (MD & PhD, Professor, Chief Physician) leads <strong>AI4Rad Lab</strong>. He is Vice President of <strong>Shanghai Sixth People's Hospital</strong>, Executive Director of the <strong>Institute of Medical Imaging, Shanghai Jiao Tong University</strong>, and a radiologist at the hospital's Department of Radiology, SJTU School of Medicine. His research centers on vascular and stroke imaging, cardiac and coronary CT, and the clinical translation of AI across radiology — from vessel segmentation and perfusion analysis to large-scale disease diagnosis and automated reporting.",
+  "bio_cn": "李跃华，<strong>MD & PhD</strong>、<strong>教授</strong>、<strong>主任医师</strong>，<strong>AI4Rad 实验室</strong>负责人。现任<strong>上海市第六人民医院副院长</strong>、<strong>上海交通大学影像医学研究所执行所长</strong>，上海交通大学医学院附属第六人民医院放射介入科医师。研究方向涵盖血管与卒中影像、心脏与冠脉 CT，以及人工智能在放射领域的临床转化——从血管分割、灌注分析到大规模疾病诊断与报告自动生成。",
   "links": {
-    "scholar": "https://scholar.google.com/citations?user=zj4WqewAAAAJ&hl=en"
+    "email": "liyuehua77@sjtu.edu.cn",
+    "scholar": "https://scholar.google.com/citations?user=zj4WqewAAAAJ&hl=en",
+    "orcid": "https://orcid.org/0000-0001-8028-248X"
   },
-  "scholar": { "citations": "2,513" },
   "interests_en": [
     "<strong>Vascular & Stroke Imaging</strong> — CT/MR angiography, perfusion, thrombus characterization",
     "<strong>Cardiac & Coronary CT</strong> — CT-FFR, myocardial perfusion, plaque analysis",
@@ -23,23 +24,38 @@
     "<strong>AI 辅助诊断与报告</strong> — 检测、分割、结构化报告",
     "<strong>临床转化</strong> — 医学 AI 的多中心验证"
   ],
-  "publications": [
+  "news_en": [
     {
-      "group_en": "Selected Publications", "group_cn": "代表性论文",
-      "items": [
-        { "title": "Opportunistic screening using low-dose CT and the prevalence of osteoporosis in China: a nationwide, multicenter study", "authors": "X Cheng, K Zhao, X Zha, … <strong>Y Li</strong>, et al.", "venue": "Journal of Bone and Mineral Research, 2020", "cites": 239 },
-        { "title": "Rapid vessel segmentation and reconstruction of head and neck angiograms using 3D convolutional neural network", "authors": "F Fu, J Wei, M Zhang, F Yu, … <strong>Y Li</strong>, et al.", "venue": "Nature Communications, 2020", "cites": 204 },
-        { "title": "Detection of hemodynamically significant coronary stenosis: CT myocardial perfusion versus machine learning CT fractional flow reserve", "authors": "<strong>Y Li</strong>, M Yu, X Dai, Z Lu, C Shen, et al.", "venue": "Radiology, 2019", "cites": 103 },
-        { "title": "Visualization of thrombus enhancement on thin-slab maximum intensity projection of CT angiography: an imaging sign for predicting stroke source and thrombus compositions", "authors": "L Wei, Y Zhu, J Deng, <strong>Y Li</strong>, M Li, H Lu, Y Zhao", "venue": "Radiology, 2021", "cites": 45 },
-        { "title": "Clot-based radiomics model for cardioembolic stroke prediction with CT imaging before recanalization: a multicenter study", "authors": "J Jiang, J Wei, Y Zhu, … <strong>Y Li</strong>, et al.", "venue": "European Radiology, 2023", "cites": 42 },
-        { "title": "Large-scale long-tailed disease diagnosis on radiology images", "authors": "Q Zheng, W Zhao, C Wu, X Zhang, L Dai, … <strong>Y Li</strong>, et al.", "venue": "Nature Communications, 2024", "cites": 40 },
-        { "title": "Assessment of automatic rib fracture detection on chest CT using a deep learning algorithm", "authors": "S Wang, D Wu, L Ye, Z Chen, Y Zhan, <strong>Y Li</strong>", "venue": "European Radiology, 2023", "cites": 38 },
-        { "title": "Knowledge-augmented deep learning for segmenting and detecting cerebral aneurysms with CT angiography: a multicenter study", "authors": "J Wei, X Song, X Wei, Z Yang, L Dai, M Wang, Z Sun, … <strong>Y Li</strong>", "venue": "Radiology, 2024", "cites": 32 },
-        { "title": "AutoRG-Brain: Grounded report generation for brain MRI", "authors": "J Lei, X Zhang, C Wu, L Dai, … <strong>Y Li</strong>", "venue": "arXiv preprint, 2024", "cites": 30 },
-        { "title": "UniBrain: Universal brain MRI diagnosis with hierarchical knowledge-enhanced pre-training", "authors": "J Lei, L Dai, H Jiang, C Wu, X Zhang, et al.", "venue": "Computerized Medical Imaging and Graphics, 2025", "cites": 28 },
-        { "title": "Deep learning-based automatic ASPECTS calculation can improve diagnosis efficiency in patients with acute ischemic stroke: a multicenter study", "authors": "J Wei, K Shang, X Wei, … L Dai, Z Sun, … <strong>Y Li</strong>", "venue": "European Radiology, 2025", "cites": 26 },
-        { "title": "Boosting deep learning for interpretable brain MRI lesion detection through the integration of radiology report information", "authors": "L Dai, J Lei, F Ma, Z Sun, … J Wei, … <strong>Y Li</strong>, et al.", "venue": "Radiology: Artificial Intelligence, 2024", "cites": 13 }
-      ]
+      "date": "Jun 2026",
+      "highlight": true,
+      "text": "<strong>LumbarSR</strong> — a paired clinical CT &amp; micro-CT dataset for lumbar vertebra super-resolution — accepted by <strong><em>Scientific Data</em></strong> (IF 7.2)."
+    },
+    {
+      "date": "Apr 2026",
+      "highlight": true,
+      "text": "<strong>BrainMIND</strong> — a multicenter benchmark of LLMs for brain MRI diagnostic impression generation — published in <strong><em>npj Digital Medicine</em></strong> (IF 18.0)."
+    },
+    {
+      "date": "Jun 2026",
+      "highlight": true,
+      "text": "<strong>HR-LLM-Stroke</strong> — a multi-agent LLM framework for emergency stroke treatment recommendation — published in <strong><em>Journal of Medical Internet Research</em></strong> (IF 8.2)."
+    }
+  ],
+  "news_cn": [
+    {
+      "date": "2026年6月",
+      "highlight": true,
+      "text": "<strong>LumbarSR</strong> —— 配对临床 CT 与显微 CT 的腰椎超分辨率数据集，被 <strong><em>Scientific Data</em></strong> 接收（IF 7.2）。"
+    },
+    {
+      "date": "2026年4月",
+      "highlight": true,
+      "text": "<strong>BrainMIND</strong> —— 大语言模型脑 MRI 诊断印象生成多中心基准，发表于 <strong><em>npj Digital Medicine</em></strong>（IF 18.0）。"
+    },
+    {
+      "date": "2026年6月",
+      "highlight": true,
+      "text": "<strong>HR-LLM-Stroke</strong> —— 面向急诊卒中治疗推荐的多智能体大语言模型框架，发表于 <strong><em>Journal of Medical Internet Research</em></strong>（IF 8.2）。"
     }
   ]
 }

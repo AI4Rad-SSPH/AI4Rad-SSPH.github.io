@@ -1,0 +1,33 @@
+{
+  "id": "black-phosphorus-nanosheet-bioimaging",
+  "title": "Facile Synthesis of Black Phosphorus Nanosheet@NaReF4 Nanocomposites for Potential Bioimaging",
+  "authors_text": "Dongya Wang, Jingcan Qin, Chuan Zhang, Yuehua Li.",
+  "author_ids": [
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2022,
+  "venue": "Nanomaterials",
+  "doi": "10.3390/nano12193383",
+  "topic": [
+    "Nanomedicine",
+    "Neuroimaging"
+  ],
+  "tags": [
+    {
+      "label": "Q2",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 4.8",
+      "kind": "if"
+    }
+  ],
+  "abstract": "This work reports a facile synthesis of black phosphorus nanosheet@NaReF4 nanocomposites for potential bioimaging applications, combining the photothermal and photodynamic properties of black phosphorus with rare-earth-doped upconversion nanoparticles.",
+  "links": {
+    "doi": "https://doi.org/10.3390/nano12193383",
+    "pdf": "https://doi.org/10.3390/nano12193383"
+  },
+  "lab": true,
+  "featured": false
+}

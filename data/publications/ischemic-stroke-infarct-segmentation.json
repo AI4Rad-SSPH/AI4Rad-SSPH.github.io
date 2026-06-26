@@ -1,0 +1,21 @@
+{
+  "id": "ischemic-stroke-infarct-segmentation",
+  "title": "Ischemic stroke infarct segmentation model based on depthwise separable convolution for multimodal magnetic resonance imaging",
+  "authors_text": "Yidong Jin, Mengfei Wang, Jiayan Chen, Yuehua Li.",
+  "author_ids": [
+    "mengfei-wang",
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2024,
+  "venue": "Journal of Biomedical Engineering, 2024",
+  "tags": [],
+  "doi": "10.7507/1001-5515.202308001",
+  "links": {
+    "pdf": "https://doi.org/10.7507/1001-5515.202308001",
+    "doi": "https://doi.org/10.7507/1001-5515.202308001"
+  },
+  "topic": [],
+  "featured": false,
+  "lab": false
+}

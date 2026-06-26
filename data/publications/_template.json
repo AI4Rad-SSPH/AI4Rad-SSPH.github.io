@@ -1,0 +1,24 @@
+{
+  "id": "paper-id-year",
+  "title": "Full Paper Title",
+  "authors_text": "First Author*, <strong>Corresponding/Member Name</strong>, Co-author, et al.",
+  "author_ids": ["member-id-from-team-json"],
+  "type": "journal",
+  "year": 2026,
+  "venue": "Journal or Conference Name",
+  "abstract": "Optional one-or-two sentence summary.",
+  "cover": "images/pubs/cover.png",
+  "tags": [
+    { "label": "JCR Q1", "kind": "jcr" },
+    { "label": "CCF-A", "kind": "ccf" }
+  ],
+  "doi": "10.xxxx/xxxxx",
+  "links": {
+    "pdf": "https://...",
+    "code": "https://github.com/...",
+    "project": "https://...",
+    "pages": "https://..."
+  },
+  "topic": ["llm", "neuro"],
+  "featured": false
+}

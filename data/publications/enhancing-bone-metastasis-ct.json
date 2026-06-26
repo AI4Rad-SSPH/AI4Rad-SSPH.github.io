@@ -1,0 +1,27 @@
+{
+  "id": "enhancing-bone-metastasis-ct",
+  "title": "Enhancing bone metastasis CT report analysis: a comparison of local and proprietary large language models for privacy and resource efficiency",
+  "authors_text": "Zhuo Li*, Mengfei Wang*, Ao Liu, Yao Zeng, Bicong Yan, Zhongzheng Cao, Jinyu Zhu, Yulu Yang, Yuehua Li. <em>* Co-first authors.</em>",
+  "author_ids": [
+    "mengfei-wang",
+    "yao-zeng",
+    "bicong-yan",
+    "zhongzheng-cao",
+    "yulu-yang",
+    "zhuo-li",
+    "ao-liu",
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2026,
+  "venue": "BMC Health Services Research, 2026",
+  "tags": [],
+  "doi": "10.1186/s12913-026-14350-3",
+  "links": {
+    "pdf": "https://doi.org/10.1186/s12913-026-14350-3",
+    "doi": "https://doi.org/10.1186/s12913-026-14350-3"
+  },
+  "topic": [],
+  "featured": false,
+  "lab": false
+}

@@ -7,22 +7,23 @@
   <title>AI4Rad Lab · Medical Imaging AI</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="images/brand/ai4rad-emblem.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/brand/team-logo.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <nav class="nav">
     <div class="nav__inner">
       <a href="./" class="nav__brand">
-        <img src="images/brand/ai4rad-emblem.svg" alt="AI4Rad" class="nav__brand-logo">
+        <img src="images/brand/team-logo.png" alt="AI4Rad" class="nav__brand-logo">
         <span class="nav__brand-text">AI4Rad Lab</span>
       </a>
       <div class="nav__links">
         <a href="./" class="nav__link active">Home</a>
+        <a href="./about.html" class="nav__link">About</a>
         <a href="./team.html" class="nav__link">Team</a>
-        <a href="https://scholar.google.com/citations?user=zj4WqewAAAAJ" class="nav__link" target="_blank" rel="noopener">Publications</a>
-        <a href="mailto:zhangrp@sjtu.edu.cn" class="nav__link">Contact</a>
+        <a href="./publications.html" class="nav__link">Publications</a>
+        <a href="./contact.html" class="nav__link">Contact</a>
         <a href="./index_ch.html" class="nav__link--lang">中文</a>
       </div>
       <button class="nav__theme-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode"></button>
@@ -31,47 +32,48 @@
 
   <main class="wrapper">
     <section class="hero reveal">
-      <h1 class="hero__title">AI4Rad Lab</h1>
+      <div class="hero__brandrow">
+        <img class="hero__emblem" src="images/brand/team-logo.png" alt="AI4Rad">
+        <h1 class="hero__title">AI4Rad Lab</h1>
+      </div>
       <p class="hero__subtitle">Medical imaging AI research at Shanghai Sixth People's Hospital, Shanghai Jiao Tong University School of Medicine.</p>
       <p class="hero__links">
         <a href="./team.html">Team</a>
         <span class="hero__sep">·</span>
-        <a href="https://scholar.google.com/citations?user=zj4WqewAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-        <span class="hero__sep">·</span>
         <a href="https://github.com/AI4Rad-SSPH" target="_blank" rel="noopener">GitHub</a>
-        <span class="hero__sep">·</span>
-        <a href="mailto:zhangrp@sjtu.edu.cn">Email</a>
       </p>
     </section>
 
-    <section class="reveal" style="margin-top:64px;">
-      <h2 class="section-title">Research</h2>
-      <ul class="text-list">
-        <li><strong>Vision foundation models</strong> for detection, segmentation, and quantitative biomarkers in vascular and musculoskeletal imaging.</li>
-        <li><strong>Multimodal large language models</strong> integrating imaging, reports, and clinical data for structured reporting and diagnostic reasoning.</li>
-        <li><strong>Medical image generation</strong>, denoising, and enhancement to improve image quality and reduce scan time.</li>
-        <li><strong>Clinical AI generalization</strong> across sites, scanners, and patient distributions.</li>
+    <section class="reveal">
+      <h2 class="section-title">News</h2>
+      <ul class="news-list-plain">
+        <li><span class="news-date">2026.06</span> <strong>HR-LLM-Stroke</strong> — a multi-agent LLM framework for emergency stroke treatment recommendation — published in <em>Journal of Medical Internet Research</em>. <a href="https://doi.org/10.2196/96304" target="_blank" rel="noopener">Paper</a> · <a href="https://frankzhangrp.github.io/HR-LLM-Stroke/" target="_blank" rel="noopener">Demo</a></li>
+        <li><span class="news-date">2026.06</span> <strong>LumbarSR</strong> — paired clinical CT &amp; micro-CT dataset for lumbar vertebra super-resolution — accepted by <em>Scientific Data</em>. <a href="https://github.com/FrankZhangRp/LumbarSR-Challenge" target="_blank" rel="noopener">Challenge</a></li>
+        <li><span class="news-date">2026.04</span> <strong>BrainMIND</strong> — benchmarking LLMs for brain MRI diagnostic impression generation — published in <em>npj Digital Medicine</em>. <a href="https://www.nature.com/articles/s41746-026-02380-4" target="_blank" rel="noopener">Paper</a> · <a href="https://github.com/FrankZhangRp/BrainMIND" target="_blank" rel="noopener">Code</a></li>
       </ul>
     </section>
 
-    <section class="reveal" style="margin-top:64px;">
+    <section class="reveal">
+      <h2 class="section-title">Research</h2>
+      <p class="text-body">Our research is built on four core AI capabilities, applied across the lab's seven clinical imaging directions.</p>
+      <ul class="text-list">
+        <li><strong>Vision foundation models</strong> — visual representation and structured understanding of medical images: diagnosis, segmentation, detection, and quantification.</li>
+        <li><strong>Multimodal large language models</strong> integrating images, reports, clinical history, and knowledge for diagnostic reasoning and structured reporting.</li>
+        <li><strong>Medical image generation</strong> — clinically useful synthesis, restoration, denoising, and enhancement, including cross-modal generation.</li>
+        <li><strong>Spatial intelligence &amp; physical simulation</strong> — 3D modeling, registration, blood-flow and musculoskeletal mechanics, and interpretable quantitative analysis.</li>
+      </ul>
+    </section>
+
+    <section class="reveal">
       <h2 class="section-title">Selected Projects</h2>
       <div class="text-list">
-        <p><strong>BrainMIND</strong> — LLM-based diagnostic impression generation from brain MRI reports. <em>npj Digital Medicine</em>, 2026. <a href="https://www.nature.com/articles/s41746-026-02380-4" target="_blank" rel="noopener">Paper</a> · <a href="https://github.com/FrankZhangRp/BrainMIND" target="_blank" rel="noopener">Code</a></p>
-        <p><strong>Cerebrovascular & Stroke AI</strong> — Aneurysm detection on CTA, automatic ASPECTS scoring, and thrombus characterization in acute stroke. <em>Radiology</em> / <em>European Radiology</em>.</p>
+        <p><strong>HR-LLM-Stroke</strong> — A multi-agent large language model framework for emergency treatment recommendation in acute ischemic stroke. <em>Journal of Medical Internet Research</em>, 2026. <a href="https://doi.org/10.2196/96304" target="_blank" rel="noopener">Paper</a> · <a href="https://github.com/FrankZhangRp/HR-LLM-Stroke" target="_blank" rel="noopener">Code</a> · <a href="https://frankzhangrp.github.io/HR-LLM-Stroke/" target="_blank" rel="noopener">Demo</a></p>
+        <p><strong>BrainMIND</strong> — A multicenter benchmark and reader study evaluating 10 LLMs on diagnostic impression generation from brain MRI reports. <em>npj Digital Medicine</em>, 2026. <a href="https://www.nature.com/articles/s41746-026-02380-4" target="_blank" rel="noopener">Paper</a> · <a href="https://github.com/FrankZhangRp/BrainMIND" target="_blank" rel="noopener">Code</a></p>
+        <p><strong>Cerebrovascular &amp; Stroke AI</strong> — Aneurysm detection on CTA, automatic ASPECTS scoring, and thrombus characterization in acute stroke. <em>Radiology</em> / <em>European Radiology</em>.</p>
       </div>
     </section>
 
-    <section class="reveal" style="margin-top:64px;">
-      <h2 class="section-title">News</h2>
-      <ul class="news-list-plain">
-        <li><span class="news-date">2026.04</span> BrainMIND published in <em>npj Digital Medicine</em>.</li>
-        <li><span class="news-date">2025.09</span> Multicenter ASPECTS stroke study accepted by <em>European Radiology</em>.</li>
-        <li><span class="news-date">2024.10</span> Cerebral aneurysm CTA detection work published in <em>Radiology</em>.</li>
-      </ul>
-    </section>
-
-    <section class="reveal" style="margin-top:64px;">
+    <section class="reveal">
       <h2 class="section-title">Join Us</h2>
       <p class="text-body">We recruit PhD and Master students in medical imaging AI and machine learning. Send your CV to <a href="mailto:zhangrp@sjtu.edu.cn">zhangrp@sjtu.edu.cn</a>.</p>
     </section>
@@ -79,7 +81,8 @@
 
   <footer class="footer">
     <div class="footer__brand">
-      <img src="images/brand/ai4rad-logo-full.svg" alt="AI4Rad Lab" class="footer__brandlogo">
+      <img src="images/brand/team-logo.png" alt="AI4Rad Lab" class="footer__brandlogo">
+      <p class="footer__brand-cap"><span class="footer__brand-intro">Medical Imaging AI Lab · Department of Radiology, Shanghai Sixth People's Hospital · SJTU School of Medicine</span><span class="footer__brand-vision">Supporting clinical care · Diagnostic efficiency &amp; quality · Mechanisms behind the image</span></p>
     </div>
     <div class="footer__links">
       <a href="./">Home</a>
@@ -91,8 +94,11 @@
     <p class="footer__meta">AI4Rad Lab · Department of Radiology · Shanghai Sixth People's Hospital · &copy; 2026</p>
     <div class="footer__affil">
       <span class="footer__affil-cap">Affiliated with</span>
-      <img src="images/brand/ssph-med-logo.svg" alt="Shanghai Sixth People's Hospital" class="a-ssph">
-      <img src="images/brand/sjtu-logo-en.svg" alt="Shanghai Jiao Tong University" class="a-sjtu">
+      <div class="footer__affil-logos">
+        <img src="images/brand/ssph-med-logo.svg" alt="Shanghai Sixth People's Hospital" class="a-ssph">
+        <span class="footer__affil-sep" aria-hidden="true"></span>
+        <img src="images/brand/sjtu-logo-en.svg" alt="Shanghai Jiao Tong University" class="a-sjtu">
+      </div>
     </div>
   </footer>
 

@@ -1,0 +1,26 @@
+{
+  "id": "fourierbased-framework-domain-generalization",
+  "title": "A Fourier-based Framework for Domain Generalization",
+  "authors_text": "Qinwei Xu, Ruipeng Zhang, Ya Zhang, Yanfeng Wang, Qi Tian.",
+  "author_ids": [
+    "ruipeng-zhang"
+  ],
+  "type": "conference",
+  "year": 2021,
+  "venue": "CVPR, 2021",
+  "tags": [
+    {
+      "label": "CCF-A",
+      "kind": "ccf"
+    }
+  ],
+  "doi": "",
+  "links": {
+    "pdf": "https://openaccess.thecvf.com/content/CVPR2021/papers/Xu_A_Fourier-Based_Framework_for_Domain_Generalization_CVPR_2021_paper.pdf",
+    "project": "https://github.com/MediaBrain-SJTU/FACT"
+  },
+  "topic": [],
+  "featured": true,
+  "cover": "images/fact.jpg",
+  "lab": false
+}

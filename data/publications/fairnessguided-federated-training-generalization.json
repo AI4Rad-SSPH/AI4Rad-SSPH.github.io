@@ -1,0 +1,37 @@
+{
+  "id": "fairnessguided-federated-training-generalization",
+  "title": "Fairness-guided federated training for generalization and personalization in cross-silo federated learning",
+  "authors_text": "Ruipeng Zhang, Ziqing Fan, Jiangchao Yao, Ya Zhang, Yanfeng Wang.",
+  "author_ids": [
+    "ruipeng-zhang"
+  ],
+  "type": "journal",
+  "year": 2024,
+  "venue": "Frontiers of Information Technology & Electronic Engineering, 2024",
+  "tags": [
+    {
+      "label": "CCF-C",
+      "kind": "ccf"
+    },
+    {
+      "label": "JCR Q3",
+      "kind": "jcr"
+    },
+    {
+      "label": "CAS Tier 4",
+      "kind": "cas"
+    },
+    {
+      "label": "IF 2.7",
+      "kind": "if"
+    }
+  ],
+  "doi": "",
+  "links": {
+    "pdf": "https://link.springer.com/article/10.1631/FITEE.2400279"
+  },
+  "topic": [],
+  "featured": false,
+  "cover": "images/fftgp.png",
+  "lab": false
+}

@@ -1,0 +1,20 @@
+{
+  "id": "jianyong-wei",
+  "name_en": "Jianyong Wei",
+  "name_cn": "韦建雍",
+  "title_en": "PI, AI4Rad Lab · Assistant Researcher · Shanghai Sixth People's Hospital",
+  "title_cn": "AI4Rad Lab 课题组 PI · 助理研究员 · 上海交通大学医学院附属第六人民医院",
+  "bio_en": "PI of AI4Rad Lab and Assistant Researcher at the Clinical Research Center, Shanghai Sixth People's Hospital. PhD in Biomedical Engineering from the University of Shanghai for Science and Technology. Research focuses on clinical translation of medical imaging AI, radiology report analysis, and structured reporting with large language models.",
+  "bio_cn": "AI4Rad 实验室课题组 PI、上海市第六人民医院临床研究中心助理研究员。博士毕业于上海理工大学生物医学工程专业。研究方向聚焦医学影像人工智能的临床转化、放射报告分析及基于大语言模型的结构化报告。",
+  "links": {},
+  "interests_en": [
+    "Medical imaging AI and clinical translation",
+    "Radiology report analysis and structured reporting",
+    "Large language models for clinical text"
+  ],
+  "interests_cn": [
+    "医学影像人工智能与临床转化",
+    "放射报告分析与结构化报告",
+    "面向临床文本的大语言模型"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "joint-learning-3d-lesion",
+  "title": "Joint learning of 3D lesion segmentation and classification for explainable COVID-19 diagnosis",
+  "authors_text": "X Wang, L Jiang, L Li, M Xu, X Deng, L Dai, et al.",
+  "author_ids": [
+    "lisong-dai"
+  ],
+  "type": "journal",
+  "year": 2021,
+  "venue": "IEEE Transactions on Medical Imaging, 2021",
+  "tags": [],
+  "doi": "",
+  "links": {},
+  "topic": [],
+  "featured": false,
+  "lab": false
+}

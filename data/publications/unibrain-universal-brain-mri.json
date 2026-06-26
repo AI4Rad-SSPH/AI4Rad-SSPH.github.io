@@ -1,0 +1,33 @@
+{
+  "id": "unibrain-universal-brain-mri",
+  "title": "UniBrain: Universal brain MRI diagnosis with hierarchical knowledge-enhanced pre-training",
+  "authors_text": "J Lei, L Dai, H Jiang, C Wu, X Zhang, et al.",
+  "author_ids": [
+    "lisong-dai",
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2025,
+  "venue": "Computerized Medical Imaging and Graphics, 2025",
+  "tags": [
+    {
+      "label": "Q2",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 4.9",
+      "kind": "if"
+    }
+  ],
+  "doi": "10.1016/j.compmedimag.2025.102516",
+  "links": {
+    "pdf": "https://doi.org/10.1016/j.compmedimag.2025.102516",
+    "code": "https://github.com/ljy19970415/unibrain"
+  },
+  "topic": [
+    "Neuroimaging",
+    "Deep Learning"
+  ],
+  "featured": false,
+  "abstract": "Hierarchical knowledge-enhanced pre-training framework for universal brain MRI diagnosis, validated on in-domain and out-of-domain datasets."
+}

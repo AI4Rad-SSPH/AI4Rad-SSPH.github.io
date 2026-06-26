@@ -1,0 +1,25 @@
+{
+  "id": "precision-structuring-freetext-surgical",
+  "title": "Precision Structuring of Free-Text Surgical Record for Enhanced Stroke Management: A Comparative Evaluation of Large Language Models",
+  "authors_text": "Mengfei Wang, Jianyong Wei, Yao Zeng, Lisong Dai, Bicong Yan, Yueqi Zhu, Xiaoer Wei, Yidong Jin, Yuehua Li.",
+  "author_ids": [
+    "mengfei-wang",
+    "jianyong-wei",
+    "yao-zeng",
+    "lisong-dai",
+    "bicong-yan",
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2024,
+  "venue": "Journal of Multidisciplinary Healthcare, 2024",
+  "tags": [],
+  "doi": "10.2147/JMDH.S486449",
+  "links": {
+    "pdf": "https://doi.org/10.2147/JMDH.S486449",
+    "doi": "https://doi.org/10.2147/JMDH.S486449"
+  },
+  "topic": [],
+  "featured": false,
+  "lab": false
+}

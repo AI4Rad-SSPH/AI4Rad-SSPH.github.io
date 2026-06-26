@@ -1,0 +1,32 @@
+{
+  "id": "rapid-vessel-segmentation-reconstruction",
+  "title": "Rapid vessel segmentation and reconstruction of head and neck angiograms using 3D convolutional neural network",
+  "authors_text": "F Fu, J Wei, M Zhang, F Yu, … Y Li, et al.",
+  "author_ids": [
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2020,
+  "venue": "Nature Communications, 2020",
+  "tags": [
+    {
+      "label": "Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 18.1",
+      "kind": "if"
+    }
+  ],
+  "doi": "10.1038/s41467-020-18606-2",
+  "links": {
+    "pdf": "https://doi.org/10.1038/s41467-020-18606-2"
+  },
+  "topic": [
+    "Vascular Imaging",
+    "Deep Learning",
+    "CT Imaging"
+  ],
+  "featured": false,
+  "abstract": "A 3D CNN that rapidly segments and reconstructs head and neck vessels from CT angiograms with high accuracy and efficiency, validated across multiple centers."
+}

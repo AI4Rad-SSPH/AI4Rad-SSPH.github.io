@@ -1,0 +1,26 @@
+{
+  "id": "grace-enhancing-federated-learning",
+  "title": "GRACE: Enhancing Federated Learning for Medical Imaging with Generalized and Personalized Gradient Correction",
+  "authors_text": "Ruipeng Zhang, Ziqing Fan, Qinwei Xu, Jiangchao Yao*, Ya Zhang*, Yanfeng Wang*.",
+  "author_ids": [
+    "ruipeng-zhang"
+  ],
+  "type": "conference",
+  "year": 2023,
+  "venue": "MICCAI, 2023",
+  "tags": [
+    {
+      "label": "CCF-B",
+      "kind": "ccf"
+    }
+  ],
+  "doi": "",
+  "links": {
+    "pdf": "https://link.springer.com/chapter/10.1007/978-3-031-43898-1_2",
+    "project": "https://github.com/MediaBrain-SJTU/GPFL-GRACE"
+  },
+  "topic": [],
+  "featured": false,
+  "cover": "images/grace-total.png",
+  "lab": false
+}

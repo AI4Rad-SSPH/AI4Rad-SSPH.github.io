@@ -1,0 +1,33 @@
+{
+  "id": "largescale-longtailed-disease-diagnosis",
+  "title": "Large-scale long-tailed disease diagnosis on radiology images",
+  "authors_text": "Q Zheng, W Zhao, C Wu, X Zhang, L Dai, … et al.",
+  "author_ids": [
+    "lisong-dai",
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2024,
+  "venue": "Nature Communications, 2024",
+  "tags": [
+    {
+      "label": "Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 18.1",
+      "kind": "if"
+    }
+  ],
+  "doi": "10.1038/s41467-024-54424-6",
+  "links": {
+    "pdf": "https://doi.org/10.1038/s41467-024-54424-6",
+    "doi": "https://doi.org/10.1038/s41467-024-54424-6"
+  },
+  "topic": [
+    "Deep Learning",
+    "Clinical Decision Support"
+  ],
+  "featured": false,
+  "abstract": "A foundation-model approach addressing the long-tailed distribution of radiology diagnoses, improving recognition of rare conditions on medical images."
+}

@@ -1,0 +1,38 @@
+{
+  "id": "brainmind-evaluation-large-language",
+  "title": "Evaluation of Large Language Models for Diagnostic Impression Generation from Brain MRI Report Findings: A Multicenter Benchmark and Reader Study",
+  "authors_text": "Ming-Liang Wang*, Rui-Peng Zhang*, Wen-Juan Wu*, Yu Lu*, Xiao-Er Wei, Zheng Sun, Bao-Hui Guan, Jun-Jie Zhang, Xue Wu, Lei Zhang#, Tian-Le Wang#, Yue-Hua Li#. <em>* Co-first authors. # Corresponding authors.</em>",
+  "author_ids": [
+    "ruipeng-zhang",
+    "zheng-sun",
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2026,
+  "venue": "npj Digital Medicine",
+  "cover": "images/brainmind-flowchart.png",
+  "doi": "10.1038/s41746-026-02380-4",
+  "topic": [
+    "Large Language Models",
+    "Neuroimaging",
+    "Clinical Decision Support"
+  ],
+  "tags": [
+    {
+      "label": "Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 18.0",
+      "kind": "if"
+    }
+  ],
+  "abstract": "Benchmarked 10 large language models on generating diagnostic impressions from brain MRI report findings across a multicenter dataset, establishing a reproducible evaluation framework and reader study for LLM-based radiology reporting.",
+  "links": {
+    "pdf": "https://www.nature.com/articles/s41746-026-02380-4",
+    "doi": "https://doi.org/10.1038/s41746-026-02380-4",
+    "code": "https://github.com/FrankZhangRp/BrainMIND"
+  },
+  "lab": true,
+  "featured": true
+}

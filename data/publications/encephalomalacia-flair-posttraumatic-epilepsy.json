@@ -1,0 +1,25 @@
+{
+  "id": "encephalomalacia-flair-posttraumatic-epilepsy",
+  "title": "Experimental Imaging Study of Encephalomalacia Fluid-Attenuated Inversion Recovery (FLAIR) Hyperintense Lesions in Posttraumatic Epilepsy",
+  "authors_text": "Dan Wang, Kai Shang, Zheng Sun, Yue-Hua Li.",
+  "author_ids": [
+    "zheng-sun",
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2021,
+  "venue": "Neural Plasticity",
+  "doi": "10.1155/2021/2678379",
+  "topic": [
+    "Neuroimaging",
+    "MRI Imaging"
+  ],
+  "tags": [],
+  "abstract": "This study applies advanced MRI techniques, including neurite orientation dispersion and density imaging (NODDI), to characterize encephalomalacia FLAIR hyperintense lesions in posttraumatic epilepsy. The three-compartment tissue model enables examination of intra- and extracellular white matter properties, distinguishing aspects of axonal pathology underlying posttraumatic epileptogenic lesions.",
+  "links": {
+    "doi": "https://doi.org/10.1155/2021/2678379",
+    "pdf": "https://doi.org/10.1155/2021/2678379"
+  },
+  "lab": true,
+  "featured": false
+}

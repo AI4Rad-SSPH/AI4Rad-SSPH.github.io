@@ -1,0 +1,34 @@
+{
+  "id": "zheng-sun",
+  "name_en": "Zheng Sun",
+  "name_cn": "孙正",
+  "title_en": "PI, AI4Rad Lab · Chief Technician · Department of Radiology",
+  "title_cn": "AI4Rad Lab 课题组 PI · 主管技师 · 放射介入科",
+  "bio_en": "PI of AI4Rad Lab and Chief Technician in the Department of Radiology, Shanghai Sixth People's Hospital. PhD in Biomedical Engineering from the University of Shanghai for Science and Technology. Research interests span neuroradiology, vascular imaging, and the application of large language models and deep learning to radiology workflow.",
+  "bio_cn": "AI4Rad 实验室课题组 PI、上海市第六人民医院放射介入科主管技师。博士毕业于上海理工大学生物医学工程专业。研究方向涵盖神经放射学、血管影像，以及大语言模型与深度学习在放射工作流中的应用。",
+  "links": {},
+  "interests_en": [
+    "Neuroradiology and vascular imaging",
+    "Large language models for diagnostic radiology",
+    "Point-cloud statistical shape modeling of vascular structures"
+  ],
+  "interests_cn": [
+    "神经放射学与血管影像",
+    "面向放射诊断的大语言模型",
+    "血管结构的点云统计形状建模"
+  ],
+  "news_en": [
+    {
+      "date": "Apr 2026",
+      "highlight": true,
+      "text": "<strong>BrainMIND</strong> — a multicenter benchmark of LLMs for brain MRI diagnostic impression generation — published in <strong><em>npj Digital Medicine</em></strong> (IF 18.0)."
+    }
+  ],
+  "news_cn": [
+    {
+      "date": "2026年4月",
+      "highlight": true,
+      "text": "<strong>BrainMIND</strong> —— 大语言模型脑 MRI 诊断印象生成多中心基准，发表于 <strong><em>npj Digital Medicine</em></strong>（IF 18.0）。"
+    }
+  ]
+}

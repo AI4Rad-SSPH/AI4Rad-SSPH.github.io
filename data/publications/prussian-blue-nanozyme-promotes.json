@@ -1,0 +1,30 @@
+{
+  "id": "prussian-blue-nanozyme-promotes",
+  "title": "Prussian Blue Nanozyme Promotes the Survival Rate of Skin Flaps",
+  "authors_text": "… Y Li, et al.",
+  "author_ids": [
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2022,
+  "venue": "ACS Nano, 2022",
+  "tags": [
+    {
+      "label": "Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 17.3",
+      "kind": "if"
+    }
+  ],
+  "doi": "10.1021/acsnano.2c02832",
+  "links": {
+    "pdf": "https://doi.org/10.1021/acsnano.2c02832"
+  },
+  "topic": [
+    "Nanomedicine"
+  ],
+  "featured": false,
+  "abstract": "Prussian blue nanozyme promotes skin flap survival by scavenging ROS and maintaining a normal microenvironment against ischemia-reperfusion injury."
+}

@@ -1,0 +1,31 @@
+{
+  "id": "biomimetic-microenvironment-nanomodulators-reactive",
+  "title": "Biomimetic microenvironment nanomodulators for reactive oxygen species regulation",
+  "authors_text": "… Y Li, et al.",
+  "author_ids": [
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2025,
+  "venue": "ACS Nano, 2025",
+  "tags": [
+    {
+      "label": "Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 17.3",
+      "kind": "if"
+    }
+  ],
+  "doi": "10.1021/acsnano.5c21630",
+  "links": {
+    "pdf": "https://doi.org/10.1021/acsnano.5c21630"
+  },
+  "topic": [
+    "Nanomedicine",
+    "CT Imaging"
+  ],
+  "featured": false,
+  "abstract": "ROS-responsive T1-T2 dual-modal MRI nanomodulators for visualized treatment of atherosclerosis."
+}

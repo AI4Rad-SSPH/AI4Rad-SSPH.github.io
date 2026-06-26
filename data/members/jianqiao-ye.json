@@ -1,0 +1,32 @@
+{
+  "id": "jianqiao-ye",
+  "name_en": "Jianqiao Ye",
+  "name_cn": "叶剑桥",
+  "photo": "images/members/jianqiao-ye.jpg",
+  "title_en": "PhD Candidate · AI4Rad Lab · Shanghai Sixth People's Hospital",
+  "title_cn": "博士候选人 · AI4Rad Lab · 上海市第六人民医院",
+  "bio_en": "PhD Candidate in Biomedical Engineering at University of Shanghai for Science and Technology (2025–present). Holds a Master's degree from Johns Hopkins University. Affiliated with AI4Rad Lab, Shanghai Sixth People's Hospital. Research interests include medical image segmentation, super-resolution reconstruction, and musculoskeletal imaging analysis.",
+  "bio_cn": "上海理工大学生物医学工程专业博士候选人（2025 年至今）。约翰斯·霍普金斯大学硕士。工作单位为上海市第六人民医院 AI4Rad Lab。研究方向包括医学影像分割、超分辨率重建与骨肌影像分析。",
+  "links": {
+    "email": "jianqiay857197347@gmail.com",
+    "scholar": "",
+    "github": "",
+    "homepage": ""
+  },
+  "interests_en": [
+    "<strong>Medical Image Segmentation</strong> — vascular and ischemic region segmentation in cardiac CT",
+    "<strong>Super-Resolution Reconstruction</strong> — CT image quality enhancement for lumbar spine imaging",
+    "<strong>Musculoskeletal Imaging Analysis</strong> — bone morphology assessment in CT scans"
+  ],
+  "interests_cn": [
+    "<strong>医学影像分割</strong> — 心脏 CT 血管与缺血区域分割",
+    "<strong>超分辨率重建</strong> — 腰椎 CT 图像质量增强",
+    "<strong>骨肌影像分析</strong> — CT 骨形态学评估"
+  ],
+  "news_en": [],
+  "news_cn": [],
+  "awards_en": [],
+  "awards_cn": [],
+  "services_en": [],
+  "services_cn": []
+}

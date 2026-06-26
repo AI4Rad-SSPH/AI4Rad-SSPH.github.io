@@ -1,0 +1,25 @@
+{
+  "id": "expanding-point-cloud-statistical",
+  "title": "Expanding point cloud statistical shape model applications: Generalized vascular modeling for population-level hemodynamic simulations",
+  "authors_text": "Yao Zeng, Zheng Sun, Mengfei Wang, Zhuo Li, Ao Liu, Meixiu Pan, Haifeng Zhao, Yuehua Li.",
+  "author_ids": [
+    "mengfei-wang",
+    "yao-zeng",
+    "zheng-sun",
+    "zhuo-li",
+    "ao-liu",
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2025,
+  "venue": "Computer Methods and Programs in Biomedicine, 2025",
+  "tags": [],
+  "doi": "10.1016/j.cmpb.2025.108924",
+  "links": {
+    "pdf": "https://doi.org/10.1016/j.cmpb.2025.108924",
+    "doi": "https://doi.org/10.1016/j.cmpb.2025.108924"
+  },
+  "topic": [],
+  "featured": false,
+  "lab": false
+}

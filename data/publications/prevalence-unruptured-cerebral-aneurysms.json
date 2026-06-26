@@ -1,0 +1,31 @@
+{
+  "id": "prevalence-unruptured-cerebral-aneurysms",
+  "title": "Prevalence of unruptured cerebral aneurysms in Chinese adults aged 35 to 75 years: a cross-sectional study",
+  "authors_text": "… Y Li, et al.",
+  "author_ids": [
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2023,
+  "venue": "Annals of Internal Medicine, 2023",
+  "tags": [
+    {
+      "label": "Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 17.2",
+      "kind": "if"
+    }
+  ],
+  "doi": "10.7326/0003-4819-159-8-201310150-00004",
+  "links": {
+    "pdf": "https://doi.org/10.7326/0003-4819-159-8-201310150-00004"
+  },
+  "topic": [
+    "Neuroimaging",
+    "CT Imaging"
+  ],
+  "featured": false,
+  "abstract": "Cross-sectional study reporting a 7.0% prevalence of unruptured cerebral aneurysms in Chinese adults aged 35–75, with most lesions <5 mm."
+}

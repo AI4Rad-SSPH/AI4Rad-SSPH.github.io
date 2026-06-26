@@ -1,0 +1,32 @@
+{
+  "id": "clotbased-radiomics-model-cardioembolic",
+  "title": "Clot-based radiomics model for cardioembolic stroke prediction with CT imaging before recanalization: a multicenter study",
+  "authors_text": "J Jiang, J Wei, Y Zhu, … Y Li, et al.",
+  "author_ids": [
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2023,
+  "venue": "European Radiology, 2023",
+  "tags": [
+    {
+      "label": "Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 6",
+      "kind": "if"
+    }
+  ],
+  "doi": "10.1007/s00330-022-09116-4",
+  "links": {
+    "pdf": "https://doi.org/10.1007/s00330-022-09116-4"
+  },
+  "topic": [
+    "Neuroimaging",
+    "Stroke Imaging",
+    "CT Imaging"
+  ],
+  "featured": false,
+  "abstract": "A clot-based radiomics model on pre-treatment CT to predict cardioembolic stroke source before recanalization, validated multicenter."
+}

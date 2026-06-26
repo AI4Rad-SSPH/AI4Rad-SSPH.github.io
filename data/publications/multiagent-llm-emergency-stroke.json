@@ -1,0 +1,44 @@
+{
+  "id": "multiagent-llm-emergency-stroke",
+  "title": "A Multi-Agent Large Language Model Framework for Emergency Treatment Recommendation in Acute Ischemic Stroke: Development and Validation Study",
+  "authors_text": "Bicong Yan, Ruipeng Zhang, Yanfeng Fan, Ying Li, Li Chen, Xinyu Song, Yixiao Tang, Zhongzheng Cao, Li Shen, Mengfei Wang, Zhuo Li, Yijia Xiong, Yuehua Li.",
+  "author_ids": [
+    "bicong-yan",
+    "ruipeng-zhang",
+    "xinyu-song",
+    "yixiao-tang",
+    "zhongzheng-cao",
+    "mengfei-wang",
+    "zhuo-li",
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2026,
+  "venue": "Journal of Medical Internet Research",
+  "cover": "images/hr-llm-stroke-framework.png",
+  "doi": "10.2196/96304",
+  "topic": [
+    "Large Language Models",
+    "Stroke Imaging",
+    "Clinical Decision Support"
+  ],
+  "tags": [
+    {
+      "label": "Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 8.2",
+      "kind": "if"
+    }
+  ],
+  "abstract": "Acute ischemic stroke requires rapid, guideline-driven treatment decisions within narrow time windows. This study presents a multi-agent large language model framework (HR-LLM-Stroke) that orchestrates specialized agents for imaging interpretation, clinical feature extraction, and treatment recommendation, supporting real-world clinical decision-making in acute ischemic stroke. Developed and validated on multicenter data, the framework demonstrates the feasibility of agentic LLM systems for time-critical emergency stroke workflows.",
+  "links": {
+    "doi": "https://doi.org/10.2196/96304",
+    "pdf": "https://doi.org/10.2196/96304",
+    "code": "https://github.com/FrankZhangRp/HR-LLM-Stroke",
+    "project": "https://frankzhangrp.github.io/HR-LLM-Stroke/"
+  },
+  "lab": true,
+  "featured": true
+}

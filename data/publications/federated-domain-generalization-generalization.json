@@ -1,0 +1,27 @@
+{
+  "id": "federated-domain-generalization-generalization",
+  "title": "Federated Domain Generalization with Generalization Adjustment",
+  "authors_text": "Ruipeng Zhang, Qinwei Xu, Jiangchao Yao, Ya Zhang*, Qi Tian, Yanfeng Wang*.",
+  "author_ids": [
+    "ruipeng-zhang"
+  ],
+  "type": "conference",
+  "year": 2023,
+  "venue": "CVPR, 2023",
+  "tags": [
+    {
+      "label": "CCF-A",
+      "kind": "ccf"
+    }
+  ],
+  "doi": "",
+  "links": {
+    "pdf": "https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Federated_Domain_Generalization_With_Generalization_Adjustment_CVPR_2023_paper.pdf",
+    "project": "https://github.com/MediaBrain-SJTU/FedDG-GA",
+    "video": "https://www.bilibili.com/video/BV1Po4y137Pn/"
+  },
+  "topic": [],
+  "featured": true,
+  "cover": "images/FedDG-GA.png",
+  "lab": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "domaininspired-sharpnessaware-minimization-under",
+  "title": "Domain-Inspired Sharpness-Aware Minimization Under Domain Shifts",
+  "authors_text": "Ruipeng Zhang, Ziqing Fan, Jiangchao Yao*, Ya Zhang, Yanfeng Wang*.",
+  "author_ids": [
+    "ruipeng-zhang"
+  ],
+  "type": "conference",
+  "year": 2024,
+  "venue": "ICLR, 2024",
+  "tags": [
+    {
+      "label": "CCF-A",
+      "kind": "ccf"
+    }
+  ],
+  "doi": "",
+  "links": {
+    "pdf": "https://openreview.net/pdf?id=I4wB3HA3dJ",
+    "project": "https://github.com/MediaBrain-SJTU/DISAM"
+  },
+  "topic": [],
+  "featured": true,
+  "cover": "images/DISAM.png",
+  "lab": false
+}

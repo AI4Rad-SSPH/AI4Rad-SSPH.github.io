@@ -9,9 +9,9 @@
   "bio_cn": "代立松，人工智能医学研究者，现就职于<strong>武汉大学</strong>与<strong>上海交通大学</strong>，<strong>AI4Rad 实验室</strong>校友（上海交通大学医学院博士，2022 届）。研究聚焦放射影像、肿瘤影像与医学机器学习——涵盖病灶检测与分割、报告生成及可信临床 AI。",
   "links": {
     "scholar": "https://scholar.google.com/citations?user=QwhqAc8AAAAJ&hl=en",
+    "orcid": "https://orcid.org/0000-0003-3608-9732",
     "github": "https://github.com/LisongDai"
   },
-  "scholar": { "citations": "594" },
   "interests_en": [
     "<strong>Radiology</strong> — multimodal medical image analysis",
     "<strong>Cancer Imaging</strong> — detection, characterization, prognosis",
@@ -23,24 +23,5 @@
     "<strong>肿瘤影像</strong> — 检测、表征与预后",
     "<strong>机器学习</strong> — 病灶分割、分类与报告生成",
     "<strong>医学人工智能</strong> — 可信、可解释的临床 AI"
-  ],
-  "publications": [
-    {
-      "group_en": "Selected Publications", "group_cn": "代表性论文",
-      "items": [
-        { "title": "Brain structural and functional changes in patients with major depressive disorder: a literature review", "authors": "<strong>L Dai</strong>, H Zhou, X Xu, Z Zuo", "venue": "PeerJ, 2019", "cites": 151 },
-        { "title": "Joint learning of 3D lesion segmentation and classification for explainable COVID-19 diagnosis", "authors": "X Wang, L Jiang, L Li, M Xu, X Deng, <strong>L Dai</strong>, et al.", "venue": "IEEE Transactions on Medical Imaging, 2021", "cites": 85 },
-        { "title": "Large-scale long-tailed disease diagnosis on radiology images", "authors": "Q Zheng, W Zhao, C Wu, X Zhang, <strong>L Dai</strong>, … et al.", "venue": "Nature Communications, 2024", "cites": 40 },
-        { "title": "Deep learning-based classification of lower extremity arterial stenosis in computed tomography angiography", "authors": "<strong>L Dai</strong>, Q Zhou, H Zhou, H Zhang, P Cheng, et al.", "venue": "European Journal of Radiology, 2021", "cites": 37 },
-        { "title": "Knowledge-augmented deep learning for segmenting and detecting cerebral aneurysms with CT angiography: a multicenter study", "authors": "J Wei, X Song, X Wei, Z Yang, <strong>L Dai</strong>, M Wang, Z Sun, et al.", "venue": "Radiology, 2024", "cites": 32 },
-        { "title": "AutoRG-Brain: Grounded report generation for brain MRI", "authors": "J Lei, X Zhang, C Wu, <strong>L Dai</strong>, … Y Li", "venue": "arXiv preprint, 2024", "cites": 30 },
-        { "title": "UniBrain: Universal brain MRI diagnosis with hierarchical knowledge-enhanced pre-training", "authors": "J Lei, <strong>L Dai</strong>, H Jiang, C Wu, X Zhang, et al.", "venue": "Computerized Medical Imaging and Graphics, 2025", "cites": 28 },
-        { "title": "Deep learning-based automatic ASPECTS calculation can improve diagnosis efficiency in patients with acute ischemic stroke: a multicenter study", "authors": "J Wei, K Shang, X Wei, … <strong>L Dai</strong>, Z Sun, … Y Li", "venue": "European Radiology, 2025", "cites": 26 },
-        { "title": "Coronary inflammation based on pericoronary adipose tissue attenuation in type 2 diabetic mellitus: effect of diabetes management", "authors": "Y Liu, <strong>L Dai</strong>, Y Dong, C Ma, P Cheng, et al.", "venue": "Cardiovascular Diabetology, 2024", "cites": 24 },
-        { "title": "Boosting deep learning for interpretable brain MRI lesion detection through the integration of radiology report information", "authors": "<strong>L Dai</strong>, J Lei, F Ma, Z Sun, … Y Li, et al.", "venue": "Radiology: Artificial Intelligence, 2024", "cites": 13 },
-        { "title": "Development and validation of a deep learning model to reduce the interference of rectal artifacts in MRI-based prostate cancer diagnosis", "authors": "L Hu, X Guo, D Zhou, Z Wang, <strong>L Dai</strong>, … Y Li, et al.", "venue": "Radiology: Artificial Intelligence, 2024", "cites": 12 },
-        { "title": "Rethinking whole-body CT image interpretation: an abnormality-centric approach", "authors": "Z Zhao, <strong>L Dai</strong>, Y Zhang, W Xie, Y Wang", "venue": "CVPR, 2026", "cites": 3 }
-      ]
-    }
   ]
 }

@@ -1,0 +1,34 @@
+{
+  "id": "bicong-yan",
+  "name_en": "Bi-Cong Yan",
+  "name_cn": "颜碧丛",
+  "title_en": "PhD Candidate · SJTU School of Medicine · AI4Rad Lab",
+  "title_cn": "博士研究生 · 上海交通大学医学院 · AI4Rad Lab",
+  "bio_en": "MD and PhD candidate at SJTU School of Medicine and a member of AI4Rad Lab. Research focuses on clinical radiology and the application of large language models and deep learning to acute stroke imaging and clinical decision support.",
+  "bio_cn": "上海交通大学医学院博士研究生，AI4Rad Lab 成员。研究方向聚焦临床放射学，以及大语言模型与深度学习在急性卒中影像与临床决策支持中的应用。",
+  "links": {},
+  "interests_en": [
+    "Clinical radiology and neuroradiology",
+    "Large language models for acute stroke decision support",
+    "Deep learning for clinical imaging"
+  ],
+  "interests_cn": [
+    "临床放射学与神经放射学",
+    "面向急性卒中决策支持的大语言模型",
+    "面向临床影像的深度学习"
+  ],
+  "news_en": [
+    {
+      "date": "Jun 2026",
+      "highlight": true,
+      "text": "<strong>HR-LLM-Stroke</strong> — a multi-agent LLM framework for emergency stroke treatment recommendation — published in <strong><em>Journal of Medical Internet Research</em></strong> (IF 8.2)."
+    }
+  ],
+  "news_cn": [
+    {
+      "date": "2026年6月",
+      "highlight": true,
+      "text": "<strong>HR-LLM-Stroke</strong> —— 面向急诊卒中治疗推荐的多智能体大语言模型框架，发表于 <strong><em>Journal of Medical Internet Research</em></strong>（IF 8.2）。"
+    }
+  ]
+}

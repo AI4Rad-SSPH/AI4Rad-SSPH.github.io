@@ -1,0 +1,37 @@
+{
+  "id": "fourierbased-augmentation-applications-domain",
+  "title": "Fourier-based augmentation with applications to domain generalization",
+  "authors_text": "Qinwei Xu, Ruipeng Zhang, Ziqing Fan, Yanfeng Wang, Yi-Yan Wu, Ya Zhang.",
+  "author_ids": [
+    "ruipeng-zhang"
+  ],
+  "type": "journal",
+  "year": 2023,
+  "venue": "Pattern Recognition, 2023",
+  "tags": [
+    {
+      "label": "CCF-B",
+      "kind": "ccf"
+    },
+    {
+      "label": "JCR Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "CAS Tier 1",
+      "kind": "cas"
+    },
+    {
+      "label": "IF 7.5",
+      "kind": "if"
+    }
+  ],
+  "doi": "",
+  "links": {
+    "pdf": "https://www.sciencedirect.com/science/article/pii/S0031320323001747"
+  },
+  "topic": [],
+  "featured": false,
+  "cover": "images/fact-pr.jpg",
+  "lab": false
+}

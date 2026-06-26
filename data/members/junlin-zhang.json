@@ -1,0 +1,39 @@
+{
+  "id": "junlin-zhang",
+  "name_en": "Junlin Zhang",
+  "name_cn": "张俊林",
+  "photo": "images/members/junlin-zhang.jpg",
+  "title_en": "Master Student · Medical Imaging & AI · AI4Rad Lab",
+  "title_cn": "硕士研究生 · 医学影像与人工智能 · AI4Rad Lab",
+  "bio_en": "Junlin Zhang is a master's student at Shanghai Jiao Tong University School of Medicine and a member of AI4Rad Lab. His research focuses on artificial intelligence for medical imaging and clinical text analysis, with particular interest in prognostic modeling for acute ischemic stroke after mechanical thrombectomy and large language model-enabled structuring of electronic medical records.",
+  "bio_cn": "张俊林，上海交通大学医学院硕士研究生，AI4Rad Lab 成员。研究方向聚焦医学影像人工智能与临床文本分析，主要关注急性缺血性卒中机械取栓术后预后建模，以及基于大语言模型的电子病历结构化分析。",
+  "links": {
+    "github": "https://github.com/zhangjunlin006"
+  },
+  "interests_en": [
+    "<strong>Medical Imaging AI</strong> — imaging-based analysis and clinical decision support",
+    "<strong>Stroke Prognosis</strong> — prognostic modeling after mechanical thrombectomy in acute ischemic stroke",
+    "<strong>Clinical Textomics</strong> — structuring real-world electronic medical records using large language models",
+    "<strong>Multimodal Clinical AI</strong> — integrating imaging, clinical variables, and free-text information for outcome prediction"
+  ],
+  "interests_cn": [
+    "<strong>医学影像人工智能</strong> — 基于影像的分析与临床决策支持",
+    "<strong>卒中预后研究</strong> — 急性缺血性卒中机械取栓术后预后建模",
+    "<strong>临床文本组学</strong> — 基于大语言模型的真实世界电子病历结构化分析",
+    "<strong>多模态临床人工智能</strong> — 融合影像、临床变量与自由文本信息进行结局预测"
+  ],
+  "news_en": [
+    {
+      "date": "2025",
+      "highlight": true,
+      "text": "Joined AI4Rad Lab as a master's student."
+    }
+  ],
+  "news_cn": [
+    {
+      "date": "2025年",
+      "highlight": true,
+      "text": "作为硕士研究生加入 AI4Rad Lab。"
+    }
+  ]
+}

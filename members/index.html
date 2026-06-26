@@ -7,51 +7,46 @@
   <title>Member · AI4Rad Lab</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="../images/brand/ai4rad-emblem.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../images/brand/team-logo.png">
   <link rel="stylesheet" href="../css/style.css">
   <style>
-    .mp-profile { display: grid; grid-template-columns: 1fr 220px; gap: 48px; align-items: start; padding: 48px 0 32px; }
-    .mp-photo { width: 100%; aspect-ratio: 3/4; object-fit: cover; border-radius: var(--radius-md); border: 1px solid var(--border); }
-    .mp-avatar-fallback { width: 100%; aspect-ratio: 3/4; border-radius: var(--radius-md); background: var(--ai4rad-teal-soft); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; }
-    .mp-avatar-fallback .avatar-ph { font-size: 2.6rem; border-radius: var(--radius-md); }
-    .mp-back { display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; font-weight: 500; color: var(--text-muted); margin-bottom: 20px; }
+    /* Member profile — the only page that renders .mp-*; styles live here, with
+       sizes driven by the shared --fs-* / clamp tokens in css/style.css so this
+       page scales (phone → 4K) on the same logic as the rest of the site.
+       Publications render as shared .pub-card (styled in css/style.css). */
+    .mp-profile { --mp-photo-w: clamp(184px, 15vw, 300px); display: grid; grid-template-columns: minmax(0, 1fr) var(--mp-photo-w); gap: clamp(28px, 4vw, 56px); align-items: start; padding: clamp(28px, 4vw, 56px) 0 32px; }
+    .mp-profile > div:first-child { min-width: 0; }
+    .mp-photo-wrap { width: var(--mp-photo-w); aspect-ratio: 3 / 4; }
+    .mp-photo { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-md); border: 1px solid var(--border); }
+    .mp-avatar-fallback { width: 100%; height: 100%; border-radius: var(--radius-md); background: var(--ai4rad-teal-soft); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; }
+    .mp-avatar-fallback .avatar-ph { font-size: clamp(2.2rem, 1.4rem + 2vw, 3.4rem); border-radius: var(--radius-md); }
+    .mp-back { display: inline-flex; align-items: center; gap: 6px; font-size: var(--fs-meta); font-weight: 500; color: var(--text-muted); margin-bottom: 20px; }
     .mp-back:hover { color: var(--text-primary); }
-    .mp-name { font-family: var(--font-display); font-size: 2.2rem; font-weight: 600; line-height: 1.15; color: var(--text-primary); margin-bottom: 4px; }
-    .mp-name-sub { font-size: 1rem; color: var(--text-secondary); margin-left: 8px; }
-    .mp-title { font-size: 0.78rem; font-weight: 600; color: var(--ai4rad-teal-dark); text-transform: uppercase; letter-spacing: 0.06em; margin: 8px 0 14px; }
-    .mp-bio { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.75; }
-    .mp-contacts { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 18px; font-size: 0.88rem; font-weight: 500; }
+    .mp-name { font-family: var(--font-display); font-size: var(--fs-h1); font-weight: 600; line-height: 1.12; color: var(--text-primary); margin-bottom: 4px; letter-spacing: -0.01em; }
+    .mp-name-sub { font-size: var(--fs-lead); color: var(--text-secondary); margin-left: 8px; }
+    .mp-title { font-size: var(--fs-meta); font-weight: 600; color: var(--ai4rad-teal-dark); text-transform: uppercase; letter-spacing: 0.06em; margin: 10px 0 16px; }
+    .mp-bio { color: var(--text-secondary); font-size: var(--fs-copy); line-height: 1.78; }
+    .mp-contacts { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 18px; font-size: var(--fs-meta); font-weight: 500; }
     .mp-interests { list-style: none; padding: 0; margin: 0; }
-    .mp-interests li { position: relative; padding: 7px 0 7px 18px; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; }
+    .mp-interests li { position: relative; padding: 8px 0 8px 20px; color: var(--text-secondary); font-size: var(--fs-copy); line-height: 1.65; }
     .mp-interests li::before { content: '—'; position: absolute; left: 0; color: var(--ai4rad-teal); font-weight: 500; }
     .news-list { list-style: none; padding: 0; margin: 0; }
-    .news-list li { padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; border-bottom: 1px solid var(--border-light); }
+    .news-list li { padding: 9px 0; color: var(--text-secondary); font-size: var(--fs-copy); line-height: 1.65; border-bottom: 1px solid var(--border-light); }
     .news-list li:last-child { border-bottom: none; }
-    .news-list .date { display: inline-block; min-width: 64px; font-weight: 500; color: var(--text-primary); margin-right: 10px; }
-    .pub-list { list-style: none; padding: 0; margin: 0; }
-    .pub-item { padding: 16px 0; border-bottom: 1px solid var(--border-light); }
-    .pub-item:last-child { border-bottom: none; }
-    .pub-title { font-size: 0.95rem; font-weight: 600; line-height: 1.45; color: var(--text-primary); margin-bottom: 4px; }
-    .pub-title a { color: inherit; }
-    .pub-title a:hover { color: var(--ai4rad-teal-dark); }
-    .pub-authors { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.55; }
-    .pub-venue { font-size: 0.82rem; font-style: italic; color: var(--text-muted); margin-top: 2px; }
-    .pub-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
-    .pub-links a { font-size: 0.78rem; font-weight: 500; color: var(--text-muted); }
-    .pub-links a:hover { color: var(--text-primary); }
+    .news-list .date { display: inline-block; min-width: 72px; font-weight: 600; color: var(--text-primary); margin-right: 12px; font-feature-settings: 'tnum'; }
     .mp-list { list-style: none; padding: 0; margin: 0; }
-    .mp-list li { position: relative; padding: 7px 0 7px 18px; color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6; }
+    .mp-list li { position: relative; padding: 8px 0 8px 20px; color: var(--text-secondary); font-size: var(--fs-copy); line-height: 1.65; }
     .mp-list li::before { content: '—'; position: absolute; left: 0; color: var(--ai4rad-teal); font-weight: 500; }
     .mp-empty { text-align: center; color: var(--text-muted); padding: 80px 0; }
     @media (max-width: 768px) {
-      .mp-profile { grid-template-columns: 1fr; gap: 28px; padding: 32px 0 20px; }
-      .mp-photo-wrap { order: -1; max-width: 180px; margin: 0 auto; }
-      .mp-name { font-size: 1.8rem; text-align: center; }
-      .mp-name-sub { display: block; margin: 4px 0 0; text-align: center; }
+      .mp-profile { grid-template-columns: 1fr; gap: 24px; padding: 24px 0 12px; }
+      .mp-photo-wrap { order: -1; width: clamp(160px, 52vw, 200px); margin: 0 auto; }
+      /* Center the short header lines, but keep the multi-line bio left-aligned
+         for readability (centered paragraphs are hard to scan). */
+      .mp-name, .mp-name-sub { text-align: center; }
+      .mp-name-sub { display: block; margin: 4px 0 0; }
       .mp-title, .mp-contacts { justify-content: center; text-align: center; }
-      .mp-bio { text-align: center; }
-      .mp-avatar-fallback .avatar-ph { font-size: 2.2rem; }
     }
   </style>
 </head>
@@ -59,12 +54,15 @@
   <nav class="nav">
     <div class="nav__inner">
       <a href="../" class="nav__brand">
-        <img src="../images/brand/ai4rad-emblem.svg" alt="AI4Rad" class="nav__brand-logo">
+        <img src="../images/brand/team-logo.png" alt="AI4Rad" class="nav__brand-logo">
         <span class="nav__brand-text">AI4Rad Lab</span>
       </a>
       <div class="nav__links">
         <a href="../" class="nav__link">Home</a>
+        <a href="../about.html" class="nav__link">About</a>
         <a href="../team.html" class="nav__link">Team</a>
+        <a href="../publications.html" class="nav__link">Publications</a>
+        <a href="../contact.html" class="nav__link">Contact</a>
         <a href="../" id="langToggle" class="nav__link--lang">中文</a>
       </div>
       <button class="nav__theme-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode"></button>
@@ -79,7 +77,8 @@
 
   <footer class="footer">
     <div class="footer__brand">
-      <img src="../images/brand/ai4rad-logo-full.svg" alt="AI4Rad Lab" class="footer__brandlogo">
+      <img src="../images/brand/team-logo.png" alt="AI4Rad Lab" class="footer__brandlogo">
+      <p class="footer__brand-cap"><span class="footer__brand-intro">Medical Imaging AI Lab · Department of Radiology, Shanghai Sixth People's Hospital · SJTU School of Medicine</span><span class="footer__brand-vision">Supporting clinical care · Diagnostic efficiency &amp; quality · Mechanisms behind the image</span></p>
     </div>
     <div class="footer__links">
       <a href="../">Home</a>
@@ -89,12 +88,16 @@
     <p class="footer__meta">AI4Rad Lab · Department of Radiology · Shanghai Sixth People's Hospital · &copy; 2026</p>
     <div class="footer__affil">
       <span class="footer__affil-cap">Affiliated with</span>
-      <img src="../images/brand/ssph-med-logo.svg" alt="Shanghai Sixth People's Hospital" class="a-ssph">
-      <img src="../images/brand/sjtu-logo-en.svg" alt="Shanghai Jiao Tong University" class="a-sjtu">
+      <div class="footer__affil-logos">
+        <img src="../images/brand/ssph-med-logo.svg" alt="Shanghai Sixth People's Hospital" class="a-ssph">
+        <span class="footer__affil-sep" aria-hidden="true"></span>
+        <img src="../images/brand/sjtu-logo-en.svg" alt="Shanghai Jiao Tong University" class="a-sjtu">
+      </div>
     </div>
   </footer>
 
   <script src="../js/main.js"></script>
+  <script src="../js/pub.js"></script>
   <script>
   (function(){
     var params = new URLSearchParams(location.search);
@@ -125,7 +128,10 @@
     }
 
     function renderPhoto(m) {
-      if (m.photo) return '<img class="mp-photo" src="' + asset(m.photo) + '" alt="' + esc(t(m.name_en, m.name_cn)) + '" loading="lazy">';
+      if (m.photo) {
+        var initials = esc(memberInitials(m));
+        return '<img class="mp-photo" src="' + asset(m.photo) + '" alt="' + esc(t(m.name_en, m.name_cn)) + '" loading="lazy"><div class="mp-avatar-fallback" style="display:none;"><div class="avatar-ph" aria-hidden="true">' + initials + '</div></div>';
+      }
       return '<div class="mp-avatar-fallback"><div class="avatar-ph" aria-hidden="true">' + memberInitials(m) + '</div></div>';
     }
 
@@ -139,7 +145,7 @@
       });
 
     function sectionHead(title){
-      return '<h2 class="section-title" style="margin-top:48px;">' + title + '</h2>';
+      return '<h2 class="section-title" style="margin-top:var(--space-section);">' + title + '</h2>';
     }
 
     function render(m){
@@ -157,6 +163,7 @@
       if (m.bio_en || m.bio_cn) html += '<p class="mp-bio">' + t(m.bio_en, m.bio_cn) + '</p>';
       html += '<div class="mp-contacts">';
       if (L.email) html += '<a href="mailto:' + L.email + '">' + t('Email', '邮箱') + '</a>';
+      if (L.orcid) html += '<a href="' + L.orcid + '" target="_blank" rel="noopener">ORCID</a>';
       if (L.scholar) html += '<a href="' + L.scholar + '" target="_blank" rel="noopener">Google Scholar</a>';
       if (L.github) html += '<a href="' + L.github + '" target="_blank" rel="noopener">GitHub</a>';
       if (L.homepage) html += '<a href="' + L.homepage + '" target="_blank" rel="noopener">' + t('Homepage', '个人主页') + '</a>';
@@ -164,6 +171,15 @@
       html += '<div class="mp-photo-wrap">' + renderPhoto(m) + '</div></section>';
 
       var interests = t(m.interests_en, m.interests_cn);
+
+      var education = t(m.education_en, m.education_cn);
+      if (education && education.length) {
+        html += '<section class="reveal">' + sectionHead(t('Education & Experience', '教育与经历'));
+        html += '<ul class="news-list">' + education.map(function(e){
+          return '<li><span class="date">' + esc(e.period) + '</span><strong>' + esc(e.place) + '</strong> — ' + esc(e.detail) + '</li>';
+        }).join('') + '</ul></section>';
+      }
+
       if (interests && interests.length) {
         html += '<section class="reveal">' + sectionHead(t('Research', '研究方向'));
         html += '<ul class="mp-interests">' + interests.map(function(x){ return '<li>' + x + '</li>'; }).join('') + '</ul></section>';
@@ -172,28 +188,15 @@
       var news = t(m.news_en, m.news_cn);
       if (news && news.length) {
         html += '<section class="reveal">' + sectionHead(t('News', '最新动态'));
-        html += '<ul class="news-list">' + news.map(function(n){
+        var newsShown = news.slice(0, 5);
+        html += '<ul class="news-list">' + newsShown.map(function(n){
           return '<li><span class="date">' + esc(n.date) + '</span>' + n.text + '</li>';
         }).join('') + '</ul></section>';
       }
 
-      if (m.publications && m.publications.length) {
-        html += '<section class="reveal">' + sectionHead(t('Publications', '论文成果'));
-        html += '<ul class="pub-list">';
-        m.publications.forEach(function(group){
-          if (group.group_en || group.group_cn) html += '<li class="mp-group-label" style="list-style:none;padding-left:0;margin:16px 0 8px;">' + esc(t(group.group_en, group.group_cn)) + '</li>';
-          (group.items || []).forEach(function(p){
-            html += '<li class="pub-item">';
-            var titleInner = (p.featured ? '<span class="pub-featured">' + t('Featured', '代表作') + '</span>' : '') + esc(p.title);
-            html += '<div class="pub-title">' + (p.url ? '<a href="' + p.url + '" target="_blank" rel="noopener">' + titleInner + '</a>' : titleInner) + '</div>';
-            if (p.authors) html += '<div class="pub-authors">' + p.authors + '</div>';
-            if (p.venue) html += '<div class="pub-venue">' + esc(p.venue) + '</div>';
-            if (p.links && p.links.length) html += '<div class="pub-links">' + p.links.map(function(lk){ return '<a href="' + lk.url + '" target="_blank" rel="noopener">' + esc(lk.label) + '</a>'; }).join('') + '</div>';
-            html += '</li>';
-          });
-        });
-        html += '</ul></section>';
-      }
+      // Publications: rendered from the shared manifest, filtered to this member.
+      // Falls back to any legacy embedded publications if manifest is unavailable.
+      html += '<section class="reveal" id="mp-pubs">' + sectionHead(t('Publications', '论文成果')) + '</section>';
 
       var awards = t(m.awards_en, m.awards_cn);
       if (awards && awards.length) {
@@ -208,12 +211,56 @@
       }
 
       root.innerHTML = html;
+
+      // Fill the publications section from the shared manifest, filtered to
+      // papers whose author_ids include this member. Falls back gracefully.
+      (function () {
+        var pubSec = document.getElementById('mp-pubs');
+        if (!pubSec) return;
+        // Build {id:{en,cn}} member map from team.json so author names can be
+        // hyperlinked and the current member highlighted.
+        function fetchJson(url) {
+          return fetch(url).then(function (r) { return r.ok ? r.json() : null; });
+        }
+        if (!window.Pub) { pubSec.remove(); return; }
+        Promise.all([
+          fetchJson('../data/publications/manifest.json'),
+          fetchJson('../data/team.json')
+        ]).then(function (res) {
+          var papers = res[0] || [];
+          var team = res[1] || {};
+          var members = {};
+          Object.keys(team).forEach(function (cat) {
+            (team[cat] || []).forEach(function (mm) {
+              members[mm.id] = { en: mm.name_en, cn: mm.name_cn };
+            });
+          });
+          var ctx = { members: members, currentId: m.id };
+          var mine = papers.filter(function (p) {
+            return (p.author_ids || []).indexOf(m.id) >= 0;
+          });
+          if (!mine.length) { pubSec.remove(); return; }
+          // newest first
+          mine.sort(function (a, b) { return (b.year || 0) - (a.year || 0); });
+          pubSec.innerHTML += '<ul class="pub-list pub-list--cards">' +
+            mine.map(function (p) { return window.Pub.renderCard(p, lang, ctx); }).join('') +
+            '</ul>';
+          pubSec.classList.add('visible');
+        }).catch(function () { pubSec.remove(); });
+      })();
+
+      root.querySelectorAll('.mp-photo').forEach(function(img){
+        img.addEventListener('error', function(){
+          this.style.display = 'none';
+          if (this.nextElementSibling) this.nextElementSibling.style.display = 'flex';
+        });
+        if (img.complete && img.naturalWidth === 0) {
+          img.dispatchEvent(new Event('error'));
+        }
+      });
       if (lang === 'cn') document.documentElement.setAttribute('lang', 'zh-CN');
 
-      var obs = new IntersectionObserver(function(entries){
-        entries.forEach(function(e){ if (e.isIntersecting) e.target.classList.add('visible'); });
-      }, { threshold: 0.05 });
-      root.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
+      root.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('visible'); });
     }
   })();
   </script>

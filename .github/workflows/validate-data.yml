@@ -1,0 +1,54 @@
+name: Validate data
+
+# Runs on every pull request that touches data or the build tool, so a broken
+# JSON or a malformed paper from a member PR is caught *before* the owner merges
+# — protecting the "everyone opens a PR, the PI reviews & merges" workflow.
+
+on:
+  pull_request:
+    paths:
+      - 'data/**'
+      - 'tools/**'
+      - '.github/workflows/validate-data.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Every JSON file must parse
+        run: |
+          python3 - <<'PY'
+          import json, sys, pathlib
+          bad = []
+          for p in sorted(pathlib.Path('data').rglob('*.json')):
+              try:
+                  json.loads(p.read_text(encoding='utf-8'))
+              except Exception as e:
+                  bad.append(f"{p}: {e}")
+          if bad:
+              print("✗ Invalid JSON:")
+              for b in bad:
+                  print("  •", b)
+              sys.exit(1)
+          print("✓ all JSON files parse")
+          PY
+
+      - name: Publications must validate (required fields, types, unique ids, author_ids)
+        run: python3 tools/build-pubs.py
+
+      - name: Note if the committed manifest is stale
+        run: |
+          if ! git diff --quiet data/publications/manifest.json; then
+            echo "::warning::data/publications/manifest.json is out of date. It will be"
+            echo "::warning::rebuilt automatically when this PR is merged — no action needed,"
+            echo "::warning::but you can run 'python3 tools/build-pubs.py' to refresh it now."
+          fi

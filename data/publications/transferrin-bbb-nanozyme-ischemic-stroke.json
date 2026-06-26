@@ -1,0 +1,33 @@
+{
+  "id": "transferrin-bbb-nanozyme-ischemic-stroke",
+  "title": "Transferrin-Enabled Blood–Brain Barrier Crossing Manganese-Based Nanozyme for Rebalancing the Reactive Oxygen Species Level in Ischemic Stroke",
+  "authors_text": "Qianqian Zhao, Wenxian Du, Lingling Zhou, Jianrong Wu, Xiaoxing Zhang, Xiaoer Wei, Sijia Wang, Yu Huang, Yuehua Li.",
+  "author_ids": [
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2022,
+  "venue": "Pharmaceutics",
+  "doi": "10.3390/pharmaceutics14061122",
+  "topic": [
+    "Nanomedicine",
+    "Stroke Imaging"
+  ],
+  "tags": [
+    {
+      "label": "Q2",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 6.9",
+      "kind": "if"
+    }
+  ],
+  "abstract": "This study presents a transferrin-enabled, manganese-based nanozyme that crosses the blood–brain barrier to rebalance reactive oxygen species levels in ischemic stroke, offering a theranostic nanomedicine approach combining antioxidant therapy with manganese-based imaging contrast.",
+  "links": {
+    "doi": "https://doi.org/10.3390/pharmaceutics14061122",
+    "pdf": "https://doi.org/10.3390/pharmaceutics14061122"
+  },
+  "lab": true,
+  "featured": false
+}

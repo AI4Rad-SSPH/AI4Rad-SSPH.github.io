@@ -1,0 +1,37 @@
+{
+  "id": "synchronous-superficial-middle-cerebral-vein",
+  "title": "Synchronous Superficial Middle Cerebral Vein Outflow Correlates Favorable Tissue Fate After Mechanical Thrombectomy for Acute Ischemic Stroke",
+  "authors_text": "Lisong Dai, Zheng Sun, Jingxuan Jiang, Jianyong Wei, Xinyu Song, Shen Chen, Yuehua Li.",
+  "author_ids": [
+    "lisong-dai",
+    "zheng-sun",
+    "jianyong-wei",
+    "xinyu-song",
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2024,
+  "venue": "Academic Radiology",
+  "doi": "10.1016/j.acra.2023.07.005",
+  "topic": [
+    "Stroke Imaging",
+    "Vascular Imaging"
+  ],
+  "tags": [
+    {
+      "label": "Q2",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 4.7",
+      "kind": "if"
+    }
+  ],
+  "abstract": "This study investigates the relationship between superficial middle cerebral vein (SMCV) outflow patterns and tissue outcomes following mechanical thrombectomy in acute ischemic stroke. Synchronous SMCV outflow was found to correlate with favorable tissue fate, supporting venous outflow assessment as an imaging marker for prognosis after reperfusion therapy.",
+  "links": {
+    "doi": "https://doi.org/10.1016/j.acra.2023.07.005",
+    "pdf": "https://doi.org/10.1016/j.acra.2023.07.005"
+  },
+  "lab": true,
+  "featured": false
+}

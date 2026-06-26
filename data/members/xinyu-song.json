@@ -1,0 +1,42 @@
+{
+  "id": "xinyu-song",
+  "name_en": "Xinyu Song",
+  "name_cn": "宋心雨",
+  "title_en": "PhD Student · SJTU School of Medicine · AI4Rad Lab",
+  "title_cn": "博士研究生 · 上海交通大学医学院 · AI4Rad Lab",
+  "bio_en": "PhD student at SJTU School of Medicine and a member of AI4Rad Lab. Research focuses on clinical radiology and large language model frameworks for emergency treatment recommendation and clinical decision support.",
+  "bio_cn": "上海交通大学医学院博士研究生，AI4Rad Lab 成员。研究方向聚焦临床放射学，以及面向急诊治疗推荐与临床决策支持的大语言模型框架。",
+  "links": {},
+  "interests_en": [
+    "Clinical radiology",
+    "Large language model frameworks for emergency treatment recommendation"
+  ],
+  "interests_cn": [
+    "临床放射学",
+    "面向急诊治疗推荐的大语言模型框架"
+  ],
+  "news_en": [
+    {
+      "date": "Jun 2026",
+      "highlight": true,
+      "text": "<strong>LumbarSR</strong> — a paired clinical CT &amp; micro-CT dataset for lumbar vertebra super-resolution — accepted by <strong><em>Scientific Data</em></strong> (IF 7.2)."
+    },
+    {
+      "date": "Jun 2026",
+      "highlight": true,
+      "text": "<strong>HR-LLM-Stroke</strong> — a multi-agent LLM framework for emergency stroke treatment recommendation — published in <strong><em>Journal of Medical Internet Research</em></strong> (IF 8.2)."
+    }
+  ],
+  "news_cn": [
+    {
+      "date": "2026年6月",
+      "highlight": true,
+      "text": "<strong>LumbarSR</strong> —— 配对临床 CT 与显微 CT 的腰椎超分辨率数据集，被 <strong><em>Scientific Data</em></strong> 接收（IF 7.2）。"
+    },
+    {
+      "date": "2026年6月",
+      "highlight": true,
+      "text": "<strong>HR-LLM-Stroke</strong> —— 面向急诊卒中治疗推荐的多智能体大语言模型框架，发表于 <strong><em>Journal of Medical Internet Research</em></strong>（IF 8.2）。"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "zhuo-li",
+  "name_en": "Zhuo Li",
+  "name_cn": "李卓",
+  "title_en": "Alumni · MS in Engineering · Shenyang University of Technology",
+  "title_cn": "校友 · 工科硕士 · 沈阳工业大学",
+  "bio_en": "Alumni of AI4Rad Lab. Received a Master's degree in Engineering from Shenyang University of Technology in 2023, and is now pursuing a PhD (2026 cohort) at the School of Information Science and Technology, Donghua University. Worked on medical imaging AI and CT report analysis in the lab.",
+  "bio_cn": "AI4Rad Lab 校友。2023 年于沈阳工业大学获工科硕士学位，现为 2026 级东华大学信息科学与技术学院博士研究生。在实验室期间从事医学影像人工智能与 CT 报告分析相关研究。",
+  "links": {},
+  "interests_en": [
+    "Medical imaging AI",
+    "CT report analysis with large language models",
+    "Point-cloud statistical shape modeling"
+  ],
+  "interests_cn": [
+    "医学影像人工智能",
+    "基于大语言模型的 CT 报告分析",
+    "点云统计形状建模"
+  ],
+  "news_en": [
+    {
+      "date": "Jun 2026",
+      "highlight": true,
+      "text": "<strong>HR-LLM-Stroke</strong> — a multi-agent LLM framework for emergency stroke treatment recommendation — published in <strong><em>Journal of Medical Internet Research</em></strong> (IF 8.2)."
+    }
+  ],
+  "news_cn": [
+    {
+      "date": "2026年6月",
+      "highlight": true,
+      "text": "<strong>HR-LLM-Stroke</strong> —— 面向急诊卒中治疗推荐的多智能体大语言模型框架，发表于 <strong><em>Journal of Medical Internet Research</em></strong>（IF 8.2）。"
+    }
+  ]
+}
