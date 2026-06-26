@@ -164,7 +164,7 @@ function renderMemberCard(member, lang) {
     if (member.major) u += ' · ' + (lang === 'cn' ? member.major_cn : member.major);
     metaParts.push(u);
   }
-  if (member.year) metaParts.push((lang === 'cn' ? '' : 'Class of ') + member.year + (lang === 'cn' ? '级' : ''));
+  if (member.year) metaParts.push((lang === 'cn' ? '' : '') + member.year + (lang === 'cn' ? '级' : ' batch'));
   if (member.note) metaParts.push(lang === 'cn' ? member.note_cn : member.note);
   var meta = metaParts.join(' · ');
   if (member.links && member.links.github) {

@@ -167,6 +167,45 @@
     "lab": false
   },
   {
+    "file": "c1-pedicle-screw-ponticulus-posticus.json",
+    "id": "c1-pedicle-screw-ponticulus-posticus",
+    "title": "C1 pedicle screw placement risks in patients with ponticulus posticus: a CTA retrospective simulation study",
+    "authors_text": "Ping Wang, Han Meng, Lifeng Yu, Ruipeng Zhang, Xinyu Song, Tiantian She, Dan Wang, Yuehua Li.",
+    "author_ids": [
+      "ping-wang",
+      "ruipeng-zhang",
+      "xinyu-song",
+      "tiantian-she",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "Journal of Orthopaedic Surgery and Research",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 2.8",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1186/s13018-026-07046-1",
+    "links": {
+      "pdf": "https://doi.org/10.1186/s13018-026-07046-1",
+      "doi": "https://doi.org/10.1186/s13018-026-07046-1"
+    },
+    "topic": [
+      "Musculoskeletal Imaging",
+      "Spine Surgery",
+      "CT Imaging"
+    ],
+    "featured": false,
+    "abstract": "Ponticulus posticus (POPO) may distort C1 surface landmarks for C1 pedicle screw (CPS) placement, raising concern for vertebral artery compromise (VAC). This single-center retrospective CTA simulation study of 141 subjects (bilateral POPO, unilateral POPO, and pure non-POPO) establishes a CTA-based workflow to identify POPO anatomies potentially suitable for CPS placement, simulating trajectories with PedicleScrewSimulator to quantify placement risk.",
+    "lab": true
+  },
+  {
     "file": "multiagent-llm-emergency-stroke.json",
     "id": "multiagent-llm-emergency-stroke",
     "title": "A Multi-Agent Large Language Model Framework for Emergency Treatment Recommendation in Acute Ischemic Stroke: Development and Validation Study",
