@@ -10,10 +10,6 @@
   "venue": "ECCV Workshop, 2022",
   "tags": [
     {
-      "label": "Workshop",
-      "kind": "venue"
-    },
-    {
       "label": "Best Long Paper",
       "kind": "award"
     }

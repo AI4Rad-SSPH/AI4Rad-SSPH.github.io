@@ -32,10 +32,6 @@
     "venue": "Journal of NeuroInterventional Surgery",
     "tags": [
       {
-        "label": "JNIS",
-        "kind": "venue"
-      },
-      {
         "label": "Q2",
         "kind": "jcr"
       },
@@ -74,10 +70,6 @@
     "venue": "Scientific Data (in press)",
     "cover": "images/lumbar-sr-viz.jpg",
     "tags": [
-      {
-        "label": "Scientific Data",
-        "kind": "venue"
-      },
       {
         "label": "Dataset",
         "kind": "type"
@@ -120,10 +112,6 @@
     "venue": "npj Digital Medicine",
     "cover": "images/brainmind-flowchart.png",
     "tags": [
-      {
-        "label": "npj Digital Medicine",
-        "kind": "venue"
-      },
       {
         "label": "Q1",
         "kind": "jcr"
@@ -196,10 +184,6 @@
     "venue": "Journal of Medical Internet Research",
     "cover": "images/hr-llm-stroke-framework.png",
     "tags": [
-      {
-        "label": "JMIR",
-        "kind": "venue"
-      },
       {
         "label": "Q1",
         "kind": "jcr"
@@ -411,10 +395,6 @@
     "year": 2024,
     "venue": "Academic Radiology",
     "tags": [
-      {
-        "label": "Academic Radiology",
-        "kind": "venue"
-      },
       {
         "label": "Q2",
         "kind": "jcr"
@@ -709,12 +689,7 @@
     "type": "preprint",
     "year": 2024,
     "venue": "arXiv preprint, 2024",
-    "tags": [
-      {
-        "label": "Preprint",
-        "kind": "venue"
-      }
-    ],
+    "tags": [],
     "doi": "10.48550/arXiv.2407.16684",
     "links": {
       "pdf": "https://arxiv.org/abs/2407.16684",
@@ -741,10 +716,6 @@
     "year": 2024,
     "venue": "European Radiology",
     "tags": [
-      {
-        "label": "European Radiology",
-        "kind": "venue"
-      },
       {
         "label": "Q1",
         "kind": "jcr"
@@ -782,10 +753,6 @@
     "venue": "Academic Radiology",
     "tags": [
       {
-        "label": "Academic Radiology",
-        "kind": "venue"
-      },
-      {
         "label": "Q2",
         "kind": "jcr"
       },
@@ -820,12 +787,7 @@
     "year": 2023,
     "venue": "CVPR Workshop, 2023",
     "cover": "images/simde.jpg",
-    "tags": [
-      {
-        "label": "Workshop",
-        "kind": "venue"
-      }
-    ],
+    "tags": [],
     "doi": "",
     "links": {
       "pdf": "https://openaccess.thecvf.com/content/CVPR2023W/L3D-IVU/papers/Xu_SimDE_A_Simple_Domain_Expansion_Approach_for_Single-Source_Domain_Generalization_CVPRW_2023_paper.pdf"
@@ -846,14 +808,6 @@
     "year": 2023,
     "venue": "Communications Chemistry",
     "tags": [
-      {
-        "label": "Communications Chemistry",
-        "kind": "venue"
-      },
-      {
-        "label": "Nature",
-        "kind": "venue"
-      },
       {
         "label": "Q1",
         "kind": "jcr"
@@ -888,10 +842,6 @@
     "year": 2023,
     "venue": "Diagnostics",
     "tags": [
-      {
-        "label": "Diagnostics",
-        "kind": "venue"
-      },
       {
         "label": "Review",
         "kind": "type"
@@ -1189,10 +1139,6 @@
     "venue": "Pharmaceutics",
     "tags": [
       {
-        "label": "Pharmaceutics",
-        "kind": "venue"
-      },
-      {
         "label": "Q2",
         "kind": "jcr"
       },
@@ -1280,10 +1226,6 @@
     "venue": "Nanomaterials",
     "tags": [
       {
-        "label": "Nanomaterials",
-        "kind": "venue"
-      },
-      {
         "label": "Q2",
         "kind": "jcr"
       },
@@ -1353,10 +1295,6 @@
     "cover": "images/dcn.jpg",
     "tags": [
       {
-        "label": "Workshop",
-        "kind": "venue"
-      },
-      {
         "label": "Best Long Paper",
         "kind": "award"
       }
@@ -1381,10 +1319,6 @@
     "year": 2022,
     "venue": "CNS Neuroscience & Therapeutics",
     "tags": [
-      {
-        "label": "CNS Neurosci Ther",
-        "kind": "venue"
-      },
       {
         "label": "Q1",
         "kind": "jcr"
@@ -1506,10 +1440,6 @@
     "venue": "Molecules",
     "tags": [
       {
-        "label": "Molecules",
-        "kind": "venue"
-      },
-      {
         "label": "Q2",
         "kind": "jcr"
       },
@@ -1543,12 +1473,7 @@
     "type": "journal",
     "year": 2021,
     "venue": "Neural Plasticity",
-    "tags": [
-      {
-        "label": "Neural Plasticity",
-        "kind": "venue"
-      }
-    ],
+    "tags": [],
     "doi": "10.1155/2021/2678379",
     "links": {
       "doi": "https://doi.org/10.1155/2021/2678379",
@@ -1720,10 +1645,6 @@
     "year": 2019,
     "venue": "American Journal of Neuroradiology",
     "tags": [
-      {
-        "label": "AJNR",
-        "kind": "venue"
-      },
       {
         "label": "Q2",
         "kind": "jcr"

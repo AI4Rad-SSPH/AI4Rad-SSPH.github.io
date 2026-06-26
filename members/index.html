@@ -213,7 +213,8 @@
       var news = t(m.news_en, m.news_cn);
       if (news && news.length) {
         html += '<section class="reveal">' + sectionHead(t('News', '最新动态'));
-        html += '<ul class="news-list">' + news.map(function(n){
+        var newsShown = news.slice(0, 5);
+        html += '<ul class="news-list">' + newsShown.map(function(n){
           return '<li><span class="date">' + esc(n.date) + '</span>' + n.text + '</li>';
         }).join('') + '</ul></section>';
       }

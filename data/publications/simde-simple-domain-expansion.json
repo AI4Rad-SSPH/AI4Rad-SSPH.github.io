@@ -8,12 +8,7 @@
   "type": "conference",
   "year": 2023,
   "venue": "CVPR Workshop, 2023",
-  "tags": [
-    {
-      "label": "Workshop",
-      "kind": "venue"
-    }
-  ],
+  "tags": [],
   "doi": "",
   "links": {
     "pdf": "https://openaccess.thecvf.com/content/CVPR2023W/L3D-IVU/papers/Xu_SimDE_A_Simple_Domain_Expansion_Approach_for_Single-Source_Domain_Generalization_CVPRW_2023_paper.pdf"

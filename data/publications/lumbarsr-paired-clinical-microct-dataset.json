@@ -21,10 +21,6 @@
   ],
   "tags": [
     {
-      "label": "Scientific Data",
-      "kind": "venue"
-    },
-    {
       "label": "Dataset",
       "kind": "type"
     },

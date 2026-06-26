@@ -16,5 +16,19 @@
     "神经放射学与血管影像",
     "面向放射诊断的大语言模型",
     "血管结构的点云统计形状建模"
+  ],
+  "news_en": [
+    {
+      "date": "Apr 2026",
+      "highlight": true,
+      "text": "<strong>BrainMIND</strong> — a multicenter benchmark of LLMs for brain MRI diagnostic impression generation — published in <strong><em>npj Digital Medicine</em></strong> (IF 18.0)."
+    }
+  ],
+  "news_cn": [
+    {
+      "date": "2026年4月",
+      "highlight": true,
+      "text": "<strong>BrainMIND</strong> —— 大语言模型脑 MRI 诊断印象生成多中心基准，发表于 <strong><em>npj Digital Medicine</em></strong>（IF 18.0）。"
+    }
   ]
 }
