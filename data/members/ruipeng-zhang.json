@@ -8,14 +8,38 @@
   "bio_en": "PI of AI4Rad Lab and Assistant Researcher at the Department of Radiology, Shanghai Sixth People's Hospital, SJTU School of Medicine. He received his PhD in Information and Communication Engineering from Shanghai Jiao Tong University (2024), advised by Prof. Ya Zhang, and was a Research Intern at the Shanghai Artificial Intelligence Laboratory (2021–2024). Before that, he earned his B.Eng. in Communication Engineering from the Honors College of the University of Electronic Science and Technology of China (2019).",
   "bio_cn": "AI4Rad 实验室课题组 PI、上海交通大学医学院附属第六人民医院放射介入科助理研究员。2024 年于上海交通大学电子系获信息与通信工程博士学位（师从张娅教授），2021–2024 年任上海人工智能实验室见习研究员；本科毕业于电子科技大学英才实验学院通信工程专业（2019）。",
   "education_en": [
-    {"period": "2019.09 – 2024.06", "place": "Shanghai Jiao Tong University", "detail": "PhD, Information and Communication Engineering (advisor: Prof. Ya Zhang)"},
-    {"period": "2021.03 – 2024.05", "place": "Shanghai Artificial Intelligence Laboratory", "detail": "Research Intern"},
-    {"period": "2015.09 – 2019.06", "place": "University of Electronic Science and Technology of China (UESTC)", "detail": "B.Eng., Communication Engineering, Honors College (英才实验学院)"}
+    {
+      "period": "2019.09 – 2024.06",
+      "place": "Shanghai Jiao Tong University",
+      "detail": "PhD, Information and Communication Engineering (advisor: Prof. Ya Zhang)"
+    },
+    {
+      "period": "2021.03 – 2024.05",
+      "place": "Shanghai Artificial Intelligence Laboratory",
+      "detail": "Research Intern"
+    },
+    {
+      "period": "2015.09 – 2019.06",
+      "place": "University of Electronic Science and Technology of China (UESTC)",
+      "detail": "B.Eng., Communication Engineering, Honors College (英才实验学院)"
+    }
   ],
   "education_cn": [
-    {"period": "2019.09 – 2024.06", "place": "上海交通大学 电子系", "detail": "信息与通信工程 博士（导师：张娅教授）"},
-    {"period": "2021.03 – 2024.05", "place": "上海人工智能实验室", "detail": "见习研究员"},
-    {"period": "2015.09 – 2019.06", "place": "电子科技大学 英才实验学院", "detail": "通信工程 学士"}
+    {
+      "period": "2019.09 – 2024.06",
+      "place": "上海交通大学 电子系",
+      "detail": "信息与通信工程 博士（导师：张娅教授）"
+    },
+    {
+      "period": "2021.03 – 2024.05",
+      "place": "上海人工智能实验室",
+      "detail": "见习研究员"
+    },
+    {
+      "period": "2015.09 – 2019.06",
+      "place": "电子科技大学 英才实验学院",
+      "detail": "通信工程 学士"
+    }
   ],
   "links": {
     "email": "zhangrp@sjtu.edu.cn",
@@ -47,7 +71,7 @@
     {
       "date": "Jun 2026",
       "highlight": true,
-      "text": "<strong>LumbarSR</strong> — paired clinical CT &amp; micro-CT dataset for lumbar vertebra super-resolution — accepted by <strong><em>Scientific Data</em></strong>. Co-first author."
+      "text": "<strong>LumbarSR</strong> — paired clinical CT &amp; micro-CT dataset for lumbar vertebra super-resolution — published in <strong><em>Scientific Data</em></strong>. Co-first author."
     },
     {
       "date": "Jan 2026",
@@ -88,7 +112,7 @@
     {
       "date": "2026年6月",
       "highlight": true,
-      "text": "<strong>LumbarSR</strong> —— 配对临床 CT 与显微 CT 的腰椎超分辨率数据集，被 <strong><em>Scientific Data</em></strong> 接收。共同第一作者。"
+      "text": "<strong>LumbarSR</strong> —— 配对临床 CT 与显微 CT 的腰椎超分辨率数据集，发表于 <strong><em>Scientific Data</em></strong>。共同第一作者。"
     },
     {
       "date": "2026年1月",

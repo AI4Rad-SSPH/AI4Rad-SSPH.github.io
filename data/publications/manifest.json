@@ -67,7 +67,7 @@
     ],
     "type": "journal",
     "year": 2026,
-    "venue": "Scientific Data (in press)",
+    "venue": "Scientific Data",
     "cover": "images/lumbar-sr-viz.jpg",
     "tags": [
       {
@@ -83,8 +83,10 @@
         "kind": "if"
       }
     ],
-    "doi": "",
+    "doi": "10.1038/s41597-026-07748-5",
     "links": {
+      "pdf": "https://www.nature.com/articles/s41597-026-07748-5",
+      "doi": "https://doi.org/10.1038/s41597-026-07748-5",
       "code": "https://github.com/FrankZhangRp/LumbarSR-Challenge",
       "project": "https://frankzhangrp.github.io/LumbarSR-Challenge/"
     },

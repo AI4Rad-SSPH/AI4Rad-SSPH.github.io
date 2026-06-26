@@ -44,7 +44,7 @@
 |---|---|---|
 | **HR-LLM-Stroke** — 面向急诊卒中治疗推荐的多智能体大语言模型框架 | 《医学互联网研究杂志》, 2026 | [论文](https://doi.org/10.2196/96304) · [代码](https://github.com/FrankZhangRp/HR-LLM-Stroke) · [演示](https://frankzhangrp.github.io/HR-LLM-Stroke/) |
 | **BrainMIND** — 多中心基准与读片研究，评测 10 个大语言模型从脑 MRI 报告生成诊断印象的能力 | 《npj 数字医学》, 2026 | [论文](https://www.nature.com/articles/s41746-026-02380-4) · [代码](https://github.com/FrankZhangRp/BrainMIND) |
-| **LumbarSR** — 配对临床 CT 与显微 CT 的腰椎超分辨率数据集 | 《科学数据》, 2026 | [挑战赛](https://github.com/FrankZhangRp/LumbarSR-Challenge) |
+| **LumbarSR** — 配对临床 CT 与显微 CT 的腰椎超分辨率数据集 | 《科学数据》, 2026 | [论文](https://www.nature.com/articles/s41597-026-07748-5) · [挑战赛](https://github.com/FrankZhangRp/LumbarSR-Challenge) |
 | **脑血管与卒中 AI** — 动脉瘤检测、ASPECTS 评分、血栓表征 | 《Radiology》/《European Radiology》 | — |
 
 > 完整论文列表见 **[Publications](https://ai4rad-ssph.github.io/publications_ch.html)**。

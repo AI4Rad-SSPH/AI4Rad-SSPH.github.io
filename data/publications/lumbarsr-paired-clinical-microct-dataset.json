@@ -11,9 +11,9 @@
   ],
   "type": "journal",
   "year": 2026,
-  "venue": "Scientific Data (in press)",
+  "venue": "Scientific Data",
   "cover": "images/lumbar-sr-viz.jpg",
-  "doi": "",
+  "doi": "10.1038/s41597-026-07748-5",
   "topic": [
     "Musculoskeletal Imaging",
     "Super-Resolution",
@@ -35,6 +35,8 @@
   ],
   "abstract": "LumbarSR provides the first paired clinical CT and photon-counting micro-CT dataset of human lumbar vertebrae, enabling super-resolution benchmarks that bridge the resolution gap between in-vivo imaging and high-resolution ex-vivo micro-CT. The dataset and challenge foster reproducible evaluation of medical image super-resolution methods.",
   "links": {
+    "pdf": "https://www.nature.com/articles/s41597-026-07748-5",
+    "doi": "https://doi.org/10.1038/s41597-026-07748-5",
     "code": "https://github.com/FrankZhangRp/LumbarSR-Challenge",
     "project": "https://frankzhangrp.github.io/LumbarSR-Challenge/"
   },
