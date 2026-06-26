@@ -4,9 +4,9 @@
   "name_cn": "曹中正",
   "photo": "images/members/zhongzheng-cao.jpg",
   "title_en": "Master Student · AI4Rad Lab · Shanghai Sixth People's Hospital",
-  "title_cn": "硕士研究生 · AI4Rad Lab · 上海市第六人民医院",
-  "bio_en": "I am a master's student at AI4Rad Lab, Shanghai Sixth People's Hospital, Shanghai Jiao Tong University School of Medicine. My research interests focus on medical imaging artificial intelligence, musculoskeletal radiology, and clinical validation of AI models.",
-  "bio_cn": "我是上海交通大学医学院附属第六人民医院 AI4Rad Lab 的硕士研究生。主要研究方向为医学影像人工智能、骨肌影像智能分析以及医学 AI 模型的临床验证。",
+  "title_cn": "硕士研究生 · AI4Rad Lab · 上海市第六人民医院"
+  "bio_en": "I am a master's student at AI4Rad Lab, Shanghai Sixth People's Hospital, Shanghai Jiao Tong University School of Medicine. My research focuses on medical imaging artificial intelligence, musculoskeletal radiology, bone tumor X-ray analysis, and clinical validation of AI models.",
+ "bio_cn": "我是上海交通大学医学院附属第六人民医院 AI4Rad Lab 的硕士研究生，主要研究方向为医学影像人工智能、骨肌影像分析、骨肿瘤 X 线分析以及医学 AI 模型的临床验证。"
   "links": {
     "email": "",
     "scholar": "",
