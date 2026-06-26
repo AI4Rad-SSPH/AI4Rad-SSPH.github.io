@@ -221,10 +221,6 @@ AI4Rad Lab 是上海市第六人民医院放射介入科下属的医学影像人
 
 | 来源 | 路径/URL | 用途 |
 |------|----------|------|
-| 医院 AI 平台 | http://192.168.8.110:8080/ | 色彩、字体、视觉风格参考 |
-| Beamer 模板仓库 | http://192.168.8.67:3000/ruipeng/ssph-presentation-skills | Logo、水印、布局规则 |
-| 视觉系统文档 | `skills/ssph-sixth-beamer/references/visual-system.md` | 配色与排版规范 |
-| 飞书 AI4Rad 团队知识库 | `团队地图｜七大医学方向与四类技术能力协作入口` | 团队研究方向框架 |
 | Yuehua Li Google Scholar | https://scholar.google.com/citations?user=zj4WqewAAAAJ | 公开发表论文梳理 |
 | Lisong Dai Google Scholar | https://scholar.google.com/citations?user=QwhqAc8AAAAJ | 公开发表论文梳理 |
 

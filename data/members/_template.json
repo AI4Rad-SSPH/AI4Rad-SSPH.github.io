@@ -1,4 +1,5 @@
 {
+  "_README": "Copy this file to <your-id>.json and fill it in. All sections are optional — delete any you don't need. Publications are NOT defined here; they live in data/publications/ and appear on your page automatically via author_ids. See MEMBER_GUIDE.md.",
   "id": "your-id",
   "name_en": "Your Name",
   "name_cn": "你的中文名",
@@ -9,11 +10,11 @@
   "bio_cn": "一段关于你自己的简介。可使用 <strong>加粗</strong> 与 <a href=\"https://example.com\">链接</a>。",
   "links": {
     "email": "you@sjtu.edu.cn",
+    "orcid": "https://orcid.org/0000-0000-0000-0000",
     "scholar": "https://scholar.google.com/citations?user=XXXX",
     "github": "https://github.com/your-handle",
     "homepage": ""
   },
-  "scholar": { "citations": "0", "h_index": 0, "i10_index": 0 },
   "interests_en": [
     "<strong>Topic A</strong> — one line on what you work on",
     "<strong>Topic B</strong> — another line"
@@ -27,23 +28,6 @@
   ],
   "news_cn": [
     { "date": "2026年1月", "highlight": true, "text": "值得标注的进展。" }
-  ],
-  "publications": [
-    {
-      "group_en": "Conference Papers", "group_cn": "会议论文",
-      "items": [
-        {
-          "img": "images/members/your-paper.png",
-          "featured": false,
-          "title": "Your Paper Title",
-          "url": "https://link-to-paper",
-          "authors": "<strong>Your Name</strong>, Co-author, Advisor.",
-          "venue": "Venue, 2026",
-          "tags": [{ "label": "CCF-A", "kind": "ccf" }],
-          "links": [{ "label": "pdf", "url": "https://link-to-pdf" }, { "label": "code", "url": "https://github.com/..." }]
-        }
-      ]
-    }
   ],
   "awards_en": [ "Some award (2025)" ],
   "awards_cn": [ "某项奖励（2025）" ],

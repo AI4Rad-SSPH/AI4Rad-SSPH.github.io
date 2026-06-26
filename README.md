@@ -127,9 +127,11 @@ translation** of medical AI.
 Members without a photo get an initials-avatar fallback automatically. Set `"page": true`
 to give a member a personal page.
 
-**Members** can update their own page — see **[MEMBER_GUIDE.md](MEMBER_GUIDE.md)**. In short:
-copy `data/members/_template.json` to `data/members/<your-id>.json`, fill it in, drop a photo
-in `images/members/`, preview locally, and open a Pull Request.
+**Members** can update their own page — see **[MEMBER_GUIDE.md](MEMBER_GUIDE.md)** (bilingual,
+human- and agent-friendly). It covers updating your profile, photo, and publications, and
+the Pull-Request → owner-review-and-merge workflow. In short: copy
+`data/members/_template.json` to `data/members/<your-id>.json`, fill it in, drop a photo in
+`images/members/`, preview locally, and open a Pull Request.
 
 ## 🚀 Local preview · 本地预览
 
