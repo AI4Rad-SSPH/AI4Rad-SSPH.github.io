@@ -206,6 +206,46 @@
     "lab": true
   },
   {
+    "file": "bonecot-skeleton-foundation-model.json",
+    "id": "bonecot-skeleton-foundation-model",
+    "title": "BoneCoT: Multi-center validation of a whole-body skeleton foundation model for bone metastases guided by clinician-derived chain of thought",
+    "authors_text": "Hui Zhao*,# Ruipeng Zhang*, Zhiyu Wang*, Yifeng Gu, Shengyuan Xu, Sheng Wang#, Yuehua Li#.",
+    "author_ids": [
+      "ruipeng-zhang",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "Nature Biomedical Engineering",
+    "cover": "images/bonecot-workflow.png",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 26.3",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1038/s41551-026-01736-1",
+    "links": {
+      "pdf": "https://doi.org/10.1038/s41551-026-01736-1",
+      "doi": "https://doi.org/10.1038/s41551-026-01736-1",
+      "code": "https://github.com/FrankZhangRp/BoneCoT",
+      "project": "https://frankzhangrp.github.io/BoneCoT/"
+    },
+    "topic": [
+      "Musculoskeletal Imaging",
+      "Foundation Models",
+      "Bone Metastasis",
+      "Chain of Thought"
+    ],
+    "featured": true,
+    "abstract": "BoneCoT is a clinician-guided chain-of-thought framework for bone metastasis and bone-related disease assessment from whole-body skeletal CT. It is built on BoneFM, a skeleton-focused CT foundation backbone adapted from DINOv2-style self-supervised pretraining, and uses clinician-derived task dependencies to support downstream bone lesion reasoning. The model is validated across multiple centers for robust, interpretable bone metastasis assessment.",
+    "lab": true
+  },
+  {
     "file": "multiagent-llm-emergency-stroke.json",
     "id": "multiagent-llm-emergency-stroke",
     "title": "A Multi-Agent Large Language Model Framework for Emergency Treatment Recommendation in Acute Ischemic Stroke: Development and Validation Study",
