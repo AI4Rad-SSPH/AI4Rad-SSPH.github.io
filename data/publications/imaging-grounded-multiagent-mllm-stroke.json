@@ -1,0 +1,39 @@
+{
+  "id": "imaging-grounded-multiagent-mllm-stroke",
+  "title": "A Multi-Agent MLLM Framework for Imaging-Grounded Treatment Recommendation in Acute Ischemic Stroke",
+  "authors_text": "Bicong Yan*, Zhuo Li*, Yanfeng Fan*, Ying Li, Li Chen, Xinyu Song, Yixiao Tang, Li Shen, Ruipeng Zhang#, Yuehua Li#. <em>* Co-first authors. # Corresponding authors.</em>",
+  "author_ids": [
+    "bicong-yan",
+    "zhuo-li",
+    "xinyu-song",
+    "yixiao-tang",
+    "ruipeng-zhang",
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2026,
+  "venue": "npj Digital Medicine",
+  "doi": "10.1038/s41746-026-03066-7",
+  "topic": [
+    "Multimodal Large Language Models",
+    "Stroke Imaging",
+    "Clinical Decision Support"
+  ],
+  "tags": [
+    {
+      "label": "Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 18.0",
+      "kind": "if"
+    }
+  ],
+  "abstract": "An imaging-grounded multi-agent multimodal large language model emulates a multidisciplinary stroke team through coordinated agents for triage, time-window assessment, multimodal imaging interpretation, contraindication screening, and treatment recommendation. In a retrospective evaluation of 1,658 suspected acute ischemic stroke cases from two centers, multi-agent coordination with retrieval-augmented generation improved treatment recommendation accuracy from 0.636 to 0.785 and Macro-F1 from 0.562 to 0.768.",
+  "links": {
+    "pdf": "https://www.nature.com/articles/s41746-026-03066-7",
+    "doi": "https://doi.org/10.1038/s41746-026-03066-7"
+  },
+  "lab": true,
+  "featured": true
+}
