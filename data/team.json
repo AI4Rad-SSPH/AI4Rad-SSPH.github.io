@@ -252,25 +252,11 @@
       "role": "phd",
       "role_cn": "博士研究生",
       "avatar_type": "initials",
-      "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
-      "year": "2024",
-      "page": true
-    },
-    {
-      "id": "bicong-yan",
-      "name_en": "Bicong Yan",
-      "name_cn": "颜碧丛",
-      "role": "phd",
-      "role_cn": "博士研究生",
-      "avatar_type": "initials",
       "degree": "MD",
       "degree_cn": "MD",
       "university": "SJTU School of Medicine",
       "university_cn": "交大医学院",
-      "year": "2023",
-      "note": "PhD Candidate",
-      "note_cn": "博士在读",
+      "year": "2024",
       "page": true
     },
     {
@@ -422,6 +408,21 @@
     }
   ],
   "alumni": [
+    {
+      "id": "bicong-yan",
+      "name_en": "Bicong Yan",
+      "name_cn": "颜碧从",
+      "role": "alumni",
+      "role_cn": "校友",
+      "avatar_type": "initials",
+      "degree": "MD",
+      "degree_cn": "MD",
+      "university": "SJTU School of Medicine",
+      "university_cn": "交大医学院",
+      "note": "2023–2026",
+      "note_cn": "2023–2026",
+      "page": true
+    },
     {
       "id": "yulu-yang",
       "name_en": "Yulu Yang",

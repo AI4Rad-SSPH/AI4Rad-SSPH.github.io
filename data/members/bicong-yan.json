@@ -1,11 +1,11 @@
 {
   "id": "bicong-yan",
   "name_en": "Bi-Cong Yan",
-  "name_cn": "颜碧丛",
-  "title_en": "PhD Candidate · SJTU School of Medicine · AI4Rad Lab",
-  "title_cn": "博士研究生 · 上海交通大学医学院 · AI4Rad Lab",
-  "bio_en": "MD and PhD candidate at SJTU School of Medicine and a member of AI4Rad Lab. Research focuses on clinical radiology and the application of large language models and deep learning to acute stroke imaging and clinical decision support.",
-  "bio_cn": "上海交通大学医学院博士研究生，AI4Rad Lab 成员。研究方向聚焦临床放射学，以及大语言模型与深度学习在急性卒中影像与临床决策支持中的应用。",
+  "name_cn": "颜碧从",
+  "title_en": "Alumni · MD (2023–2026) · SJTU School of Medicine",
+  "title_cn": "校友 · 医学博士（2023–2026）· 上海交通大学医学院",
+  "bio_en": "Former AI4Rad Lab member who completed MD doctoral training at SJTU School of Medicine from 2023 to 2026. Research focuses on clinical radiology and the application of large language models and deep learning to acute stroke imaging and clinical decision support.",
+  "bio_cn": "AI4Rad Lab 毕业成员，2023–2026 年于上海交通大学医学院攻读医学博士。研究方向聚焦临床放射学，以及大语言模型与深度学习在急性卒中影像与临床决策支持中的应用。",
   "links": {},
   "interests_en": [
     "Clinical radiology and neuroradiology",
