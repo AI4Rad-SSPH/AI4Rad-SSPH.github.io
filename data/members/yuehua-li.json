@@ -28,6 +28,11 @@
     {
       "date": "Jul 2026",
       "highlight": true,
+      "text": "<strong>Imaging-Grounded Stroke MLLM</strong> — a multi-agent multimodal LLM framework for imaging-grounded treatment recommendation in acute ischemic stroke — published in <strong><em>npj Digital Medicine</em></strong> (IF 18.0). Corresponding author."
+    },
+    {
+      "date": "Jul 2026",
+      "highlight": true,
       "text": "<strong>BoneCoT</strong> — a whole-body skeleton foundation model for bone metastases guided by clinician-derived chain of thought — accepted by <strong><em>Nature Biomedical Engineering</em></strong> (IF 26.3)."
     },
     {
@@ -52,6 +57,11 @@
     }
   ],
   "news_cn": [
+    {
+      "date": "2026年7月",
+      "highlight": true,
+      "text": "<strong>影像驱动卒中 MLLM</strong> —— 面向急性缺血性卒中影像驱动治疗推荐的多智能体多模态大语言模型框架，发表于 <strong><em>npj Digital Medicine</em></strong>（IF 18.0）。通讯作者。"
+    },
     {
       "date": "2026年7月",
       "highlight": true,

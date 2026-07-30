@@ -120,6 +120,22 @@
   ],
   "phd_engineering": [
     {
+      "id": "zhuo-li",
+      "name_en": "Zhuo Li",
+      "name_cn": "李卓",
+      "role": "phd",
+      "role_cn": "博士研究生",
+      "avatar_type": "initials",
+      "degree": "PhD",
+      "degree_cn": "博士",
+      "university": "Donghua University",
+      "university_cn": "东华大学",
+      "school": "School of Information Science",
+      "school_cn": "信智学院",
+      "year": "2026",
+      "page": true
+    },
+    {
       "id": "mengfei-wang",
       "name_en": "Mengfei Wang",
       "name_cn": "王孟飞",
@@ -179,6 +195,20 @@
     }
   ],
   "phd_medical": [
+    {
+      "id": "jingying-tao",
+      "name_en": "Jingying Tao",
+      "name_cn": "陶晶莹",
+      "role": "phd",
+      "role_cn": "博士研究生",
+      "avatar_type": "initials",
+      "degree": "MD",
+      "degree_cn": "MD",
+      "university": "SJTU School of Medicine",
+      "university_cn": "交大医学院",
+      "year": "2026",
+      "page": true
+    },
     {
       "id": "ping-wang",
       "name_en": "Ping Wang",
@@ -406,40 +436,6 @@
       "major": "Biomedical Engineering",
       "major_cn": "生物医学工程",
       "year": "2023",
-      "page": true
-    },
-    {
-      "id": "jingying-tao",
-      "name_en": "Jingying Tao",
-      "name_cn": "陶晶莹",
-      "role": "alumni",
-      "role_cn": "校友",
-      "avatar_type": "initials",
-      "degree": "Master",
-      "degree_cn": "硕士",
-      "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
-      "year": "2023",
-      "note": "Graduated 2026, continuing PhD",
-      "note_cn": "2026年毕业，继续攻读博士",
-      "page": true
-    },
-    {
-      "id": "zhuo-li",
-      "name_en": "Zhuo Li",
-      "name_cn": "李卓",
-      "role": "alumni",
-      "role_cn": "校友",
-      "avatar_type": "initials",
-      "degree": "Master",
-      "degree_cn": "硕士",
-      "university": "Shenyang University of Technology",
-      "university_cn": "沈阳工业大学",
-      "major": "Engineering",
-      "major_cn": "工科",
-      "year": "2023",
-      "note": "PhD at Donghua University · 2026",
-      "note_cn": "2026级东华大学信智学院博士",
       "page": true
     },
     {
