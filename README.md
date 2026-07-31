@@ -48,7 +48,7 @@ Our research is built on four core AI capabilities, applied across the lab's sev
 | Project | Venue | Links |
 |---|---|---|
 | **Imaging-Grounded Stroke MLLM** — multi-agent multimodal LLM framework for imaging-grounded acute ischemic stroke treatment recommendation | *npj Digital Medicine*, 2026 | [Paper](https://www.nature.com/articles/s41746-026-03066-7) |
-| **HR-LLM-Stroke** — multi-agent LLM framework for emergency stroke treatment recommendation | *J Med Internet Res*, 2026 | [Paper](https://doi.org/10.2196/96304) · [Code](https://github.com/FrankZhangRp/HR-LLM-Stroke) · [Demo](https://frankzhangrp.github.io/HR-LLM-Stroke/) |
+| **HR-LLM-Stroke** — multi-agent LLM framework for emergency stroke treatment recommendation | *J Med Internet Res*, 2026 | [Paper](https://www.jmir.org/2026/1/e96304) · [Code](https://github.com/FrankZhangRp/HR-LLM-Stroke) · [Demo](https://frankzhangrp.github.io/HR-LLM-Stroke/) |
 | **BrainMIND** — multicenter benchmark & reader study evaluating 10 LLMs on brain MRI diagnostic impression generation | *npj Digital Medicine*, 2026 | [Paper](https://www.nature.com/articles/s41746-026-02380-4) · [Code](https://github.com/FrankZhangRp/BrainMIND) |
 | **LumbarSR** — paired clinical CT & micro-CT dataset for lumbar vertebra super-resolution | *Scientific Data*, 2026 | [Paper](https://www.nature.com/articles/s41597-026-07748-5) · [Challenge](https://github.com/FrankZhangRp/LumbarSR-Challenge) |
 | **Cerebrovascular & Stroke AI** — aneurysm detection, ASPECTS scoring, thrombus characterization | *Radiology* / *European Radiology* | — |
