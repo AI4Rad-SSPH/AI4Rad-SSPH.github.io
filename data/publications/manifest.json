@@ -246,6 +246,52 @@
     "lab": true
   },
   {
+    "file": "foundation-model-acute-abdomen-triage.json",
+    "id": "foundation-model-acute-abdomen-triage",
+    "title": "A foundation model for acute abdomen diagnosis stratification and triage on noncontrast computed tomography",
+    "authors_text": "Chao Zhu*, Ruipeng Zhang*, Xinyu Song, Kai Shang, Yu Lu, Wenjuan Wu, Jian Ma, Yixiao Tang, Zhongzheng Cao, Li Shen, Jianyong Wei, Lisong Dai, Ping Wang, Dan Wang, Xiaoer Wei, Qing Lu#, Lei Zhang#, Tianle Wang#, Yuehua Li#. <em>* Co-first authors. # Corresponding authors.</em>",
+    "author_ids": [
+      "chao-zhu",
+      "ruipeng-zhang",
+      "xinyu-song",
+      "yixiao-tang",
+      "zhongzheng-cao",
+      "jianyong-wei",
+      "lisong-dai",
+      "ping-wang",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "Nature Communications",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 15.7",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1038/s41467-026-76634-w",
+    "links": {
+      "pdf": "https://www.nature.com/articles/s41467-026-76634-w.pdf",
+      "doi": "https://doi.org/10.1038/s41467-026-76634-w",
+      "code": "https://github.com/FrankZhangRp/Acute_abdomen",
+      "project": "https://frankzhangrp.github.io/Acute_abdomen/"
+    },
+    "topic": [
+      "Abdominal Imaging",
+      "Foundation Models",
+      "Emergency Radiology",
+      "Triage"
+    ],
+    "featured": true,
+    "abstract": "AbdomenNet is a multi-task foundation model for non-contrast CT that detects 11 acute abdominal conditions and performs three risk-stratification subtasks. Pretrained on over 100,000 NCCT examinations and fine-tuned on nearly 6,000 annotated cases, it reaches a macro-average AUROC of 0.919 for five emergent conditions across three independent external cohorts. In a multi-reader multi-case crossover study, AI assistance raised radiologists' mean AUROC from 0.812 to 0.924 and cut median reading time by 52.5 seconds per case; workflow simulation indicates AI-driven case prioritization could shorten median report turnaround by 37 minutes.",
+    "lab": true
+  },
+  {
     "file": "imaging-grounded-multiagent-mllm-stroke.json",
     "id": "imaging-grounded-multiagent-mllm-stroke",
     "title": "A Multi-Agent MLLM Framework for Imaging-Grounded Treatment Recommendation in Acute Ischemic Stroke",
