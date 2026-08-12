@@ -25,7 +25,7 @@
   ],
   "tags": [
     { "label": "Q1", "kind": "jcr" },
-    { "label": "IF 15.7", "kind": "if" }
+    { "label": "IF 18.1", "kind": "if" }
   ],
   "abstract": "AbdomenNet is a multi-task foundation model for non-contrast CT that detects 11 acute abdominal conditions and performs three risk-stratification subtasks. Pretrained on over 100,000 NCCT examinations and fine-tuned on nearly 6,000 annotated cases, it reaches a macro-average AUROC of 0.919 for five emergent conditions across three independent external cohorts. In a multi-reader multi-case crossover study, AI assistance raised radiologists' mean AUROC from 0.812 to 0.924 and cut median reading time by 52.5 seconds per case; workflow simulation indicates AI-driven case prioritization could shorten median report turnaround by 37 minutes.",
   "links": {
