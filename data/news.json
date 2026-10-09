@@ -12,7 +12,7 @@
     ]
   },
   {
-    "date": "2026",
+    "date": "2026.09",
     "text_en": "Our report-based carotid plaque AHA classification study was accepted by Insights into Imaging. Publication is forthcoming.",
     "text_cn": "基于 MRI 报告的大语言模型辅助颈动脉斑块 AHA 分型研究获 Insights into Imaging 接收，待正式发表。",
     "links": [
@@ -21,19 +21,6 @@
         "label_en": "Publications",
         "label_cn": "论文成果",
         "href_cn": "publications_ch.html"
-      }
-    ]
-  },
-  {
-    "date": "2026",
-    "text_en": "Welcome to our 2026 cohort of medical and engineering graduate students. Their profiles and degree programs are now listed on the team page.",
-    "text_cn": "欢迎 2026 级医学与工学研究生加入团队！成员页已更新新同学的个人资料及学硕、专硕、直博等培养类型。",
-    "links": [
-      {
-        "href": "team.html",
-        "label_en": "Meet the team",
-        "label_cn": "认识新同学",
-        "href_cn": "team_ch.html"
       }
     ]
   },
