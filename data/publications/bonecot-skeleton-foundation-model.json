@@ -37,5 +37,14 @@
   "lab": true,
   "featured": true,
   "status": "published",
-  "published_date": "2026-07-02"
+  "published_date": "2026-07-02",
+  "author_roles": {
+    "ruipeng-zhang": [
+      "co_first"
+    ],
+    "yuehua-li": [
+      "co_corresponding"
+    ]
+  },
+  "authorship_source": "https://www.nature.com/articles/s41551-026-01736-1"
 }

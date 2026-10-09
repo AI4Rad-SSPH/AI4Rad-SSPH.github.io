@@ -111,6 +111,99 @@ check('News has both languages and valid internal destinations', () => {
     }
   }
 });
+const linkedPaper = {
+  id: 'role-aware-study', author_ids: ['co-first', 'co-corresponding', 'ordinary'],
+  author_roles: { 'co-first': ['co_first'], 'co-corresponding': ['co_corresponding'] }
+};
+const linkedAnnouncement = {
+  publication_id: linkedPaper.id, date: '2026.09',
+  text_en: 'Our study was accepted.', text_cn: '研究已被接收。',
+  links: [{ href: 'publications.html', href_cn: 'publications_ch.html', label_en: 'Publications', label_cn: '论文成果' }]
+};
+check('Publication news reaches only verified first and corresponding authors', () => {
+  for (const [id, role] of [['co-first', '共同第一作者'], ['co-corresponding', '共同通讯作者']]) {
+    const items = sandbox.Pub.memberNews({ id }, [linkedPaper], [linkedAnnouncement], 'cn');
+    assert.equal(items.length, 1);
+    assert.match(items[0].text, new RegExp(role));
+  }
+  for (const id of ['ordinary', 'not-an-author']) {
+    assert.equal(sandbox.Pub.memberNews({ id }, [linkedPaper], [linkedAnnouncement], 'cn').length, 0);
+  }
+  const unknown = { ...linkedPaper, author_roles: undefined };
+  assert.equal(sandbox.Pub.memberNews({ id: 'co-first' }, [unknown], [linkedAnnouncement], 'cn').length, 0);
+  const invalid = { ...linkedPaper, author_ids: ['ordinary'] };
+  assert.equal(sandbox.Pub.memberNews({ id: 'co-first' }, [invalid], [linkedAnnouncement], 'cn').length, 0);
+});
+check('Shared news replaces stale member copies and keeps personal milestones', () => {
+  const member = { id: 'co-first', news_cn: [
+    { publication_id: linkedPaper.id, date: '2026年8月', text: '旧的投稿动态' },
+    { date: '2025年', text: '加入团队' }
+  ] };
+  const before = JSON.stringify(member);
+  const items = sandbox.Pub.memberNews(member, [linkedPaper], [linkedAnnouncement], 'cn');
+  assert.equal(items.length, 2);
+  assert.equal(items[0].publication_id, linkedPaper.id);
+  assert.match(items[0].text, /研究已被接收/);
+  assert.doesNotMatch(items[0].text, /旧的投稿动态/);
+  assert.equal(items[1].text, '加入团队');
+  assert.equal(JSON.stringify(member), before);
+  member.id = 'ordinary';
+  assert.equal(sandbox.Pub.memberNews(member, [linkedPaper], [linkedAnnouncement], 'cn').length, 1);
+});
+check('Member news preserves language and safely renders shared text and links', () => {
+  const cn = sandbox.Pub.memberNews({ id: 'co-first' }, [linkedPaper], [linkedAnnouncement], 'cn')[0];
+  const en = sandbox.Pub.memberNews({ id: 'co-first' }, [linkedPaper], [linkedAnnouncement], 'en')[0];
+  assert.match(cn.text, /href="\/publications_ch.html"/);
+  assert.match(en.text, /href="\/publications.html"/);
+  assert.match(en.text, /Co-first author/);
+  const escaped = sandbox.Pub.memberNews({ id: 'co-first' }, [linkedPaper], [{ ...linkedAnnouncement, text_en: '<script>unsafe</script>' }], 'en')[0];
+  assert.doesNotMatch(escaped.text, /<script>/);
+  assert.match(escaped.text, /&lt;script&gt;/);
+});
+check('News sorting understands Chinese, English, and numeric dates', () => {
+  const member = { id: 'co-first', news_en: [
+    { date: '2025', text: 'Joined' }, { date: 'August 2026', text: 'August' },
+    { date: '2026.10', text: 'October' }, { date: '2026年7月', text: 'July' }
+  ] };
+  const dates = sandbox.Pub.memberNews(member, [linkedPaper], [linkedAnnouncement], 'en').map(n => n.date);
+  assert.equal(JSON.stringify(dates), JSON.stringify(['2026.10', '2026.09', 'August 2026', '2026年7月', '2025']));
+});
+check('A failed manifest cannot leak unverified publication news', () => {
+  const member = { id: 'ordinary', news_cn: [
+    { publication_id: linkedPaper.id, date: '2026.09', text: '论文动态' },
+    { date: '2026年', text: '入学' }
+  ] };
+  const items = sandbox.Pub.memberNews(member, [], [], 'cn');
+  assert.equal(items.length, 1);
+  assert.equal(items[0].text, '入学');
+});
+check('Real member news matches verified roles in both languages without duplicates', () => {
+  const papers = JSON.parse(fs.readFileSync(path.join(root, 'data/publications/manifest.json'), 'utf8'));
+  const announcements = JSON.parse(fs.readFileSync(path.join(root, 'data/news.json'), 'utf8'));
+  const sharedIds = new Set(announcements.map(n => n.publication_id).filter(Boolean));
+  const byId = Object.fromEntries(papers.map(p => [p.id, p]));
+  for (const file of fs.readdirSync(path.join(root, 'data/members')).filter(f => f.endsWith('.json') && f !== '_template.json')) {
+    const member = JSON.parse(fs.readFileSync(path.join(root, 'data/members', file), 'utf8'));
+    for (const lang of ['en', 'cn']) {
+      assert.ok(!(member['news_' + lang] || []).some(n => sharedIds.has(n.publication_id)),
+        member.id + ': shared publication announcements belong only in news.json');
+    }
+    const expected = announcements.filter(n => {
+      const paper = byId[n.publication_id];
+      return paper && paper.author_ids.includes(member.id) && (paper.author_roles || {})[member.id]?.length;
+    }).map(n => n.publication_id).sort();
+    for (const lang of ['en', 'cn']) {
+      const items = sandbox.Pub.memberNews(member, papers, announcements, lang);
+      const linkedIds = items.filter(n => sharedIds.has(n.publication_id)).map(n => n.publication_id).sort();
+      assert.equal(JSON.stringify(linkedIds), JSON.stringify(expected), member.id + ' ' + lang);
+    }
+  }
+  for (const paper of papers) {
+    if (!paper.author_roles) continue;
+    const source = JSON.parse(fs.readFileSync(path.join(root, 'data/publications', paper.file), 'utf8'));
+    assert.deepEqual(paper.author_roles, source.author_roles);
+  }
+});
 check('All page scripts compile', () => {
   const pages = fs.readdirSync(root).filter(file => file.endsWith('.html')).concat('members/index.html');
   for (const file of pages) {

@@ -36,5 +36,17 @@
   ],
   "abstract": "A 16-year cohort study examining age-related risk of acute intracranial injury after craniomaxillofacial trauma, with a focus on older adults with isolated facial fractures.",
   "lab": true,
-  "featured": false
+  "featured": false,
+  "author_roles": {
+    "zhongzheng-cao": [
+      "first"
+    ],
+    "ruipeng-zhang": [
+      "co_corresponding"
+    ],
+    "yuehua-li": [
+      "co_corresponding"
+    ]
+  },
+  "authorship_source": "https://link.springer.com/article/10.1186/s12880-026-02801-6"
 }

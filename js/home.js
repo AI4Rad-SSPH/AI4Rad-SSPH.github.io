@@ -19,7 +19,7 @@
         esc(item['text_' + lang]) + (links ? ' ' + links : '') + '</div></li>';
     }).join('') + '</ul>';
   }
-  fetch('data/news.json?v=20261009').then(function (response) {
+  fetch('data/news.json?v=20261009-news').then(function (response) {
     if (!response.ok) throw new Error('News request failed');
     return response.json();
   }).then(function (items) {

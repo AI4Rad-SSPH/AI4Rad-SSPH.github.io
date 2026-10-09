@@ -35,5 +35,22 @@
     "doi": "https://doi.org/10.1038/s41746-026-03066-7"
   },
   "lab": true,
-  "featured": true
+  "featured": true,
+  "author_roles": {
+    "bicong-yan": [
+      "co_first"
+    ],
+    "zhuo-li": [
+      "co_first"
+    ],
+    "ruipeng-zhang": [
+      "co_corresponding"
+    ],
+    "yuehua-li": [
+      "co_corresponding"
+    ]
+  },
+  "authorship_source": "https://www.nature.com/articles/s41746-026-03066-7",
+  "status": "published",
+  "published_date": "2026-07-29"
 }

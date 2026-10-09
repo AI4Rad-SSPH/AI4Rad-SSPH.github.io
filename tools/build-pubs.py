@@ -23,18 +23,20 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PUB_DIR = ROOT / "data" / "publications"
 TEAM_JSON = ROOT / "data" / "team.json"
+NEWS_JSON = ROOT / "data" / "news.json"
 MANIFEST = PUB_DIR / "manifest.json"
 SKIP = {"_template.json", "manifest.json"}
 
 REQUIRED = ["id", "title", "type", "year", "venue"]
 VALID_TYPES = {"journal", "conference", "preprint", "other"}
 VALID_STATUSES = {"published", "early_access", "accepted", "preprint"}
+VALID_AUTHOR_ROLES = {"first", "co_first", "corresponding", "co_corresponding"}
 
 # Fields copied into the manifest (enough to render a card + filter).
 MANIFEST_FIELDS = [
     "id", "file", "title", "authors_text", "author_ids",
     "type", "year", "venue", "cover", "tags", "doi", "links",
-    "topic", "featured", "abstract", "lab", "status", "published_date",
+    "topic", "featured", "abstract", "lab", "status", "published_date", "author_roles",
 ]
 
 
@@ -47,6 +49,26 @@ def load_member_ids():
             if "id" in m:
                 ids.add(m["id"])
     return ids
+
+
+def validate_author_roles(paper, member_ids):
+    """News eligibility must be explicit and refer to real authors."""
+    errors = []
+    roles_by_author = paper.get("author_roles", {})
+    if not isinstance(roles_by_author, dict):
+        return ["author_roles must be an object mapping member IDs to role arrays"]
+    for author_id, roles in roles_by_author.items():
+        if author_id not in member_ids or author_id not in (paper.get("author_ids") or []):
+            errors.append(f"author_roles '{author_id}' must be a team member in author_ids")
+        if not isinstance(roles, list) or not roles or any(
+                not isinstance(role, str) or role not in VALID_AUTHOR_ROLES for role in roles):
+            errors.append(f"author_roles '{author_id}' must contain verified first/corresponding roles")
+            continue
+        if len(roles) != len(set(roles)):
+            errors.append(f"author_roles '{author_id}' contains duplicate roles")
+        if {"first", "co_first"} <= set(roles) or {"corresponding", "co_corresponding"} <= set(roles):
+            errors.append(f"author_roles '{author_id}' mixes sole and shared versions of the same role")
+    return errors
 
 
 def main():
@@ -95,6 +117,8 @@ def main():
                 warnings.append(f"{rel}: author_id '{aid}' not found "
                                 f"in team.json (paper may not show on that member's page)")
 
+        errors.extend(f"{rel}: {error}" for error in validate_author_roles(p, member_ids))
+
         # build manifest entry
         entry = {}
         entry["file"] = rel
@@ -114,6 +138,18 @@ def main():
 
     papers.sort(key=lambda x: (x.get("year", 0), x.get("published_date", ""),
                                x.get("title", "")), reverse=True)
+
+    # Each publication announcement is maintained once and shared with members.
+    news_ids = set()
+    for item in json.loads(NEWS_JSON.read_text(encoding="utf-8")):
+        pid = item.get("publication_id")
+        if not pid:
+            continue
+        if pid not in seen_ids:
+            errors.append(f"news.json: unknown publication_id '{pid}'")
+        if pid in news_ids:
+            errors.append(f"news.json: duplicate publication announcement '{pid}'")
+        news_ids.add(pid)
 
     if errors:
         print("✗ Validation errors — manifest NOT written:")

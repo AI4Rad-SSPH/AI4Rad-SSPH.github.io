@@ -72,7 +72,7 @@ All sections are **optional** — omit/delete any you don't need. 所有字段�
 | `links` | object | `email`, `orcid`, `scholar`, `github`, `homepage` — any can be empty `""`. 联系方式，可留空。 |
 | `education_en` / `education_cn` | object[] | `{ "period": "2019.09 – 2024.06", "place": "University", "detail": "PhD, …" }`. Education & experience timeline. 教育与经历时间线。 |
 | `interests_en` / `interests_cn` | string[] | Bullet list of research interests. 研究兴趣。 |
-| `news_en` / `news_cn` | object[] | `{ "date": "2026.06", "highlight": true, "text": "…" }`. 动态时间线。 |
+| `news_en` / `news_cn` | object[] | `{ "date": "2026.06", "highlight": true, "text": "…" }`. Personal milestones; publication stories may include `publication_id` for role checks and deduplication. 个人动态；论文动态可用 `publication_id` 关联角色校验及去重。 |
 | `awards_en` / `awards_cn` | string[] | Honors & awards. 荣誉奖项。 |
 | `services_en` / `services_cn` | string[] | Academic services (reviewing, etc.). 学术服务。 |
 
@@ -123,6 +123,8 @@ cp data/publications/_template.json data/publications/<paper-id>.json
 | `title` | ✅ | Full paper title. 完整标题。 |
 | `authors_text` | — | Verified author list when available, e.g. `"Bicong Yan, Ruipeng Zhang, …, Yuehua Li."`. HTML ok (`<strong>`, `<em>`). 作者字符串。 |
 | `author_ids` | ✅ | Array of team-member `id`s who are co-authors, e.g. `["bicong-yan","ruipeng-zhang"]`. These auto-link names to member pages and pull the paper onto each author's page. 团队合著者的 id 列表，用于自动关联。 |
+| `author_roles` | — | Map member IDs to verified role arrays, e.g. `{"ruipeng-zhang": ["co_first"], "yuehua-li": ["co_corresponding"]}`. Allowed roles: `first`, `co_first`, `corresponding`, `co_corresponding`. Only these authors receive linked personal news. 一作、共一、通讯、共通的明确角色；普通合著者不自动同步论文动态。 |
+| `authorship_source` | — | Publisher URL or a description of the author manuscript used to verify the notes; keep private file paths out of public data. 出版社链接或作者原稿的核实说明，不在公开数据中写私人文件路径。 |
 | `type` | ✅ | `"journal"` / `"conference"` / `"preprint"`. 类型。 |
 | `year` | ✅ | Publication year (number). 年份。 |
 | `venue` | ✅ | Journal/conference name. 期刊或会议。 |
@@ -141,6 +143,22 @@ cp data/publications/_template.json data/publications/<paper-id>.json
 
 You usually don't need to do anything extra — the paper appears on a member's page
 automatically when their `id` is in the paper's `author_ids`. 论文会自动出现在 `author_ids` 所列成员的页面上。
+
+For **personal news**, give the shared announcement in `data/news.json` a
+`publication_id` matching this paper, and record verified `author_roles` in the paper
+file. First/co-first and corresponding/co-corresponding authors then receive the
+same bilingual announcement, date, and links, with their own role label. Ordinary
+coauthors retain the paper in their publication list without receiving that news.
+Unknown roles remain unset; do not infer equal contribution or correspondence from
+author order, email recipients, or `author_ids`.
+**个人最新动态**由统一公告的 `publication_id` 和论文的 `author_roles` 联动；只有已核实的一作、共一、通讯、共通显示公告，并标注本人角色。未知身份留空，不根据作者顺序、邮件收件人或合著者列表猜测。
+
+Update each shared publication announcement in place when acceptance becomes
+publication, and remove migrated copies from member files. A legacy member story
+with the same `publication_id` is also checked against the role boundary and replaced
+by the shared story. Personal
+milestones stay in the member file; the latest five items are visible and earlier
+items are expandable. 接收转为发表时修改原公告，不重复新增；相同论文的旧动态自动替换，入学等个人动态保留，前五条展示，其余可展开。
 
 ### D. The manifest rebuilds itself · 索引会自动重建
 
@@ -170,6 +188,7 @@ For an accepted paper without a public article, leave `links` empty and omit an 
 Homepage announcements are maintained once in `data/news.json`, with `text_en`, `text_cn`, and bilingual link labels. Keep the newest announcements first; the homepage shows five and offers earlier news in an expandable list. 首页动态统一维护在 `data/news.json`，新动态放在前面，中英文同步填写；前五条直接展示，其余可展开。
 
 Run `node tools/test-site.js` to check bilingual routes, publication filters, member profiles, and JavaScript syntax. PR validation runs these checks automatically. 本地可运行该命令检查中英文跳转、论文筛选、成员资料和脚本语法；PR 会自动执行。
+Run `python3 tools/test-build-pubs.py` for author-role validation regressions. `build-pubs.py` also rejects invalid role recipients and unknown or duplicate announcement references. 作者角色及动态引用由构建脚本校验，PR 同时执行相应回归检查。
 
 ---
 

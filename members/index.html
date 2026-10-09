@@ -97,7 +97,7 @@
   </footer>
 
   <script src="../js/main.js?v=20261009"></script>
-  <script src="../js/pub.js?v=20261009"></script>
+  <script src="../js/pub.js?v=20261009-news"></script>
   <script>
   (function(){
     var params = new URLSearchParams(location.search);
@@ -164,7 +164,7 @@
 
     if (!id) { root.innerHTML = '<p class="mp-empty">' + t('No member specified.', '未指定成员。') + ' <a href="' + teamHref + '">' + t('Back to the team page →', '返回团队页面 →') + '</a></p>'; return; }
 
-    fetch('../data/members/' + id + '.json?v=20261009')
+    fetch('../data/members/' + id + '.json?v=20261009-news')
       .then(function(r){ if (!r.ok) throw new Error('not found'); return r.json(); })
       .then(function(m){ render(m); })
       .catch(function(){
@@ -173,6 +173,22 @@
 
     function sectionHead(title){
       return '<h2 class="section-title" style="margin-top:var(--space-section);">' + title + '</h2>';
+    }
+
+    function renderNews(items) {
+      var section = document.getElementById('mp-news');
+      section.hidden = !items.length;
+      function list(news) {
+        return '<ul class="news-list">' + news.map(function (n) {
+          return '<li><span class="date">' + Pub.esc(n.date) + '</span>' + n.text + '</li>';
+        }).join('') + '</ul>';
+      }
+      section.innerHTML = sectionHead(t('News', '最新动态')) + list(items.slice(0, 5));
+      if (items.length > 5) {
+        section.innerHTML += '<details class="news-archive"><summary>' +
+          t('Earlier news', '更多动态') + '</summary>' + list(items.slice(5)) + '</details>';
+      }
+      section.classList.add('visible');
     }
 
     function render(m){
@@ -212,14 +228,7 @@
         html += '<ul class="mp-interests">' + interests.map(function(x){ return '<li>' + x + '</li>'; }).join('') + '</ul></section>';
       }
 
-      var news = t(m.news_en, m.news_cn);
-      if (news && news.length) {
-        html += '<section class="reveal">' + sectionHead(t('News', '最新动态'));
-        var newsShown = news.slice(0, 5);
-        html += '<ul class="news-list">' + newsShown.map(function(n){
-          return '<li><span class="date">' + esc(n.date) + '</span>' + n.text + '</li>';
-        }).join('') + '</ul></section>';
-      }
+      html += '<section class="reveal" id="mp-news" hidden></section>';
 
       // Publications: rendered from the shared manifest, filtered to this member.
       // Falls back to any legacy embedded publications if manifest is unavailable.
@@ -239,23 +248,26 @@
 
       root.innerHTML = html;
 
-      // Fill the publications section from the shared manifest, filtered to
-      // papers whose author_ids include this member. Falls back gracefully.
+      // Paper lists include all authors; news includes only verified key roles.
       (function () {
         var pubSec = document.getElementById('mp-pubs');
         if (!pubSec) return;
         // Build {id:{en,cn}} member map from team.json so author names can be
         // hyperlinked and the current member highlighted.
         function fetchJson(url) {
-          return fetch(url).then(function (r) { return r.ok ? r.json() : null; });
+          return fetch(url).then(function (r) { return r.ok ? r.json() : null; })
+            .catch(function () { return null; });
         }
         if (!window.Pub) { pubSec.remove(); return; }
+        renderNews(Pub.memberNews(m, [], [], lang));
         Promise.all([
-          fetchJson('../data/publications/manifest.json?v=20261009'),
-          fetchJson('../data/team.json?v=20261009')
+          fetchJson('../data/publications/manifest.json?v=20261009-news'),
+          fetchJson('../data/team.json?v=20261009-news'),
+          fetchJson('../data/news.json?v=20261009-news')
         ]).then(function (res) {
           var papers = res[0] || [];
           var team = res[1] || {};
+          renderNews(Pub.memberNews(m, papers, res[2] || [], lang));
           var members = {};
           Object.keys(team).forEach(function (cat) {
             (team[cat] || []).forEach(function (mm) {

@@ -13,38 +13,6 @@
   "interests_cn": [
     "医学影像人工智能"
   ],
-  "news_en": [
-    {
-      "date": "Aug 2026",
-      "highlight": true,
-      "text": "<strong>AbdomenNet</strong> — a foundation model for acute abdomen diagnosis stratification and triage on non-contrast CT, detecting 11 conditions and raising radiologists' mean AUROC from 0.812 to 0.924 — published in <strong><em>Nature Communications</em></strong> (IF 18.1)."
-    },
-    {
-      "date": "Jul 2026",
-      "highlight": true,
-      "text": "<strong>Imaging-Grounded Stroke MLLM</strong> — a multi-agent multimodal LLM framework for imaging-grounded treatment recommendation in acute ischemic stroke — published in <strong><em>npj Digital Medicine</em></strong> (IF 18.0)."
-    },
-    {
-      "date": "Jun 2026",
-      "highlight": true,
-      "text": "<strong>HR-LLM-Stroke</strong> — a multi-agent LLM framework for emergency stroke treatment recommendation — published in <strong><em>Journal of Medical Internet Research</em></strong> (IF 8.2)."
-    }
-  ],
-  "news_cn": [
-    {
-      "date": "2026年8月",
-      "highlight": true,
-      "text": "<strong>AbdomenNet</strong> —— 面向非增强 CT 急腹症诊断分层与分诊的基础模型，可检测 11 种急腹症并将放射科医生平均 AUROC 从 0.812 提升至 0.924，发表于 <strong><em>Nature Communications</em></strong>（IF 18.1）。"
-    },
-    {
-      "date": "2026年7月",
-      "highlight": true,
-      "text": "<strong>影像驱动卒中 MLLM</strong> —— 面向急性缺血性卒中影像驱动治疗推荐的多智能体多模态大语言模型框架，发表于 <strong><em>npj Digital Medicine</em></strong>（IF 18.0）。"
-    },
-    {
-      "date": "2026年6月",
-      "highlight": true,
-      "text": "<strong>HR-LLM-Stroke</strong> —— 面向急诊卒中治疗推荐的多智能体大语言模型框架，发表于 <strong><em>Journal of Medical Internet Research</em></strong>（IF 8.2）。"
-    }
-  ]
+  "news_en": [],
+  "news_cn": []
 }

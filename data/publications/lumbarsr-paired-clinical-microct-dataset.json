@@ -41,5 +41,19 @@
     "project": "https://frankzhangrp.github.io/LumbarSR-Challenge/"
   },
   "featured": true,
-  "lab": true
+  "lab": true,
+  "author_roles": {
+    "ping-wang": [
+      "co_first"
+    ],
+    "ruipeng-zhang": [
+      "co_first"
+    ],
+    "yuehua-li": [
+      "co_corresponding"
+    ]
+  },
+  "authorship_source": "https://www.nature.com/articles/s41597-026-07748-5",
+  "status": "published",
+  "published_date": "2026-06-26"
 }

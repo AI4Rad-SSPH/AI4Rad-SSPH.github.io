@@ -44,5 +44,17 @@
   "lab": true,
   "featured": true,
   "status": "published",
-  "published_date": "2026-08-12"
+  "published_date": "2026-08-12",
+  "author_roles": {
+    "chao-zhu": [
+      "co_first"
+    ],
+    "ruipeng-zhang": [
+      "co_first"
+    ],
+    "yuehua-li": [
+      "co_corresponding"
+    ]
+  },
+  "authorship_source": "https://www.nature.com/articles/s41467-026-76634-w"
 }

@@ -34,5 +34,16 @@
     "code": "https://github.com/FrankZhangRp/BrainMIND"
   },
   "lab": true,
-  "featured": true
+  "featured": true,
+  "author_roles": {
+    "ruipeng-zhang": [
+      "co_first"
+    ],
+    "yuehua-li": [
+      "co_corresponding"
+    ]
+  },
+  "authorship_source": "https://www.nature.com/articles/s41746-026-02380-4",
+  "status": "published",
+  "published_date": "2026-01-22"
 }

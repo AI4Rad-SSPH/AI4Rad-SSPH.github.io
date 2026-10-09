@@ -34,5 +34,16 @@
     "doi": "https://doi.org/10.1186/s13018-026-07046-1"
   },
   "lab": true,
-  "featured": false
+  "featured": false,
+  "author_roles": {
+    "ping-wang": [
+      "first"
+    ],
+    "yuehua-li": [
+      "co_corresponding"
+    ]
+  },
+  "authorship_source": "https://link.springer.com/article/10.1186/s13018-026-07046-1",
+  "status": "published",
+  "published_date": "2026-06-23"
 }
