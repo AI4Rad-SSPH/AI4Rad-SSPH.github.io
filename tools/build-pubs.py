@@ -28,12 +28,13 @@ SKIP = {"_template.json", "manifest.json"}
 
 REQUIRED = ["id", "title", "type", "year", "venue"]
 VALID_TYPES = {"journal", "conference", "preprint", "other"}
+VALID_STATUSES = {"published", "early_access", "accepted", "preprint"}
 
 # Fields copied into the manifest (enough to render a card + filter).
 MANIFEST_FIELDS = [
     "id", "file", "title", "authors_text", "author_ids",
     "type", "year", "venue", "cover", "tags", "doi", "links",
-    "topic", "featured", "abstract", "lab",
+    "topic", "featured", "abstract", "lab", "status", "published_date",
 ]
 
 
@@ -41,7 +42,7 @@ def load_member_ids():
     team = json.loads(TEAM_JSON.read_text(encoding="utf-8"))
     ids = set()
     for cat in ("leader", "pi", "postdoc", "phd_engineering", "phd_medical",
-                "master_engineering", "master_medical", "alumni"):
+                "master_engineering", "master_medical", "honors_students", "alumni"):
         for m in team.get(cat, []):
             if "id" in m:
                 ids.add(m["id"])
@@ -77,6 +78,9 @@ def main():
             errors.append(f"{rel}: invalid type '{p.get('type')}' "
                           f"(must be one of {sorted(VALID_TYPES)})")
 
+        if "status" in p and p["status"] not in VALID_STATUSES:
+            errors.append(f"{rel}: invalid status '{p['status']}'")
+
         # unique id
         pid = p.get("id")
         if not pid:
@@ -108,7 +112,8 @@ def main():
         entry.setdefault("lab", True)  # only lab papers show on the site-wide list
         papers.append(entry)
 
-    papers.sort(key=lambda x: (x.get("year", 0), x.get("title", "")), reverse=True)
+    papers.sort(key=lambda x: (x.get("year", 0), x.get("published_date", ""),
+                               x.get("title", "")), reverse=True)
 
     if errors:
         print("✗ Validation errors — manifest NOT written:")

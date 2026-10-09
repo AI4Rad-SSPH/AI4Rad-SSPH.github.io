@@ -27,8 +27,19 @@
   // /members/. Detect once: if the URL contains /members/, links are relative
   // to the current dir; otherwise they need the /members/ prefix.
   var inMembers = /\/members\//.test(location.pathname);
-  function memberHref(id) {
-    return inMembers ? '?id=' + encodeURIComponent(id) : 'members/?id=' + encodeURIComponent(id);
+  function memberHref(id, lang) {
+    return (inMembers ? '?id=' : 'members/?id=') + encodeURIComponent(id) + (lang === 'cn' ? '&lang=cn' : '');
+  }
+
+  function statusOf(p) { return p.status || (p.type === 'preprint' ? 'preprint' : 'published'); }
+  function statusLabel(status, lang) {
+    var labels = {
+      published: ['Published', '已发表'],
+      early_access: ['Online first', '在线发表'],
+      accepted: ['Accepted · awaiting publication', '已接收 · 待发表'],
+      preprint: ['Preprint', '预印本']
+    };
+    return labels[status] ? labels[status][lang === 'cn' ? 1 : 0] : status;
   }
 
   // Build name variants for matching an author_id against free-form authors_text.
@@ -102,7 +113,7 @@
       var origName = html.substring(h.start, h.end);
       var isCurrent = h.id === currentId;
       var cls = 'pub-author' + (isCurrent ? ' pub-author--me' : '');
-      var replacement = '<a class="' + cls + '" href="' + memberHref(h.id) + '">' + esc(origName) + '</a>';
+      var replacement = '<a class="' + cls + '" href="' + memberHref(h.id, opts.lang) + '">' + esc(origName) + '</a>';
       html = html.substring(0, h.start) + replacement + html.substring(h.end);
     }
     return html;
@@ -115,7 +126,7 @@
     var title = esc(p.title);
     var titleInner = (p.featured ? '<span class="pub-featured">' +
       (lang === 'cn' ? '代表作' : 'Featured') + '</span>' : '') + title;
-    var url = p.links && (p.links.pdf || p.links.doi) || p.url ||
+    var url = p.links && (p.links.pages || p.links.doi || p.links.pdf) || p.url ||
       (p.doi ? 'https://doi.org/' + p.doi : '');
     var titleHtml = url
       ? '<a href="' + escAttr(url) + '" target="_blank" rel="noopener">' + titleInner + '</a>'
@@ -135,6 +146,7 @@
       h += '<div class="pub-authors">' + authorsHtml + '</div>';
     }
     if (p.venue) h += '<div class="pub-venue">' + esc(p.venue) + '</div>';
+    if (p.status) h += '<div class="pub-status">' + esc(statusLabel(p.status, lang)) + '</div>';
 
     if (p.tags && p.tags.length) {
       h += '<div class="pub-tags">' + p.tags.map(function (tg) {
@@ -146,9 +158,10 @@
     // links row: pdf, code, project, pages, doi — in a stable order
     var order = ['pdf', 'code', 'project', 'pages', 'doi', 'video'];
     var links = p.links || {};
+    var linkLabels = { pdf: ['PDF', 'PDF'], code: ['Code', '代码'], project: ['Project', '项目'], pages: ['Paper', '论文'], doi: ['DOI', 'DOI'], video: ['Video', '视频'] };
     var linkHtml = order.filter(function (k) { return links[k]; }).map(function (k) {
       return '<a class="pub-link pub-link--' + k + '" href="' + escAttr(links[k]) +
-             '" target="_blank" rel="noopener">' + k + '</a>';
+             '" target="_blank" rel="noopener">' + linkLabels[k][lang === 'cn' ? 1 : 0] + '</a>';
     }).join('');
     if (linkHtml) h += '<div class="pub-links">' + linkHtml + '</div>';
 
@@ -165,17 +178,18 @@
     var root = document.getElementById(containerId);
     if (!root) return;
 
-    var state = { type: 'all', year: 'all', topic: 'all', author: 'all', q: '' };
+    var state = { type: 'all', status: 'all', year: 'all', topic: 'all', author: 'all', q: '', advancedOpen: false };
 
     // build filter facets
     var types = uniq(papers.map(function (p) { return p.type; }));
+    var statuses = uniq(papers.map(statusOf));
     var years = uniq(papers.map(function (p) { return p.year; })).sort(function (a, b) { return b - a; });
     var topics = uniq([].concat.apply([], papers.map(function (p) { return p.topic || []; }))).sort();
     var authors = uniq([].concat.apply([], papers.map(function (p) { return p.author_ids || []; }))).sort();
 
     function chip(label, value, active, facet) {
       return '<button class="chip' + (active ? ' chip--active' : '') +
-        '" data-facet="' + facet + '" data-value="' + escAttr(value) + '">' + esc(label) + '</button>';
+        '" aria-pressed="' + active + '" data-facet="' + facet + '" data-value="' + escAttr(value) + '">' + esc(label) + '</button>';
     }
 
     function renderFilters() {
@@ -184,9 +198,17 @@
            (lang === 'cn' ? '类型' : 'Type') + '</span>';
       h += chip(lang === 'cn' ? '全部' : 'All', 'all', state.type === 'all', 'type');
       types.forEach(function (t) {
-        h += chip(t, t, state.type === t, 'type');
+        var labels = { journal: ['Journal', '期刊'], conference: ['Conference', '会议'], preprint: ['Preprint', '预印本'], other: ['Other', '其他'] };
+        h += chip(labels[t] ? labels[t][lang === 'cn' ? 1 : 0] : t, t, state.type === t, 'type');
       });
       h += '</div>';
+
+      if (statuses.length > 1) {
+        h += '<div class="filter-row"><span class="filter-label">' + (lang === 'cn' ? '状态' : 'Status') + '</span>';
+        h += chip(lang === 'cn' ? '全部' : 'All', 'all', state.status === 'all', 'status');
+        statuses.forEach(function (s) { h += chip(statusLabel(s, lang), s, state.status === s, 'status'); });
+        h += '</div>';
+      }
 
       if (years.length > 1) {
         h += '<div class="filter-row"><span class="filter-label">' +
@@ -197,6 +219,10 @@
         });
         h += '</div>';
       }
+
+      var hasAdvanced = topics.length > 1 || authors.length > 1;
+      if (hasAdvanced) h += '<details class="filter-advanced"' + (state.advancedOpen ? ' open' : '') + '><summary>' +
+        (lang === 'cn' ? '更多筛选：主题与作者' : 'More filters: topic and author') + '</summary>';
 
       if (topics.length > 1) {
         h += '<div class="filter-row"><span class="filter-label">' +
@@ -218,8 +244,10 @@
         });
         h += '</div>';
       }
+      if (hasAdvanced) h += '</details>';
 
-      h += '<div class="filter-row"><input class="filter-search" type="search" placeholder="' +
+      h += '<div class="filter-row"><input class="filter-search" type="search" aria-label="' +
+           (lang === 'cn' ? '搜索论文' : 'Search publications') + '" placeholder="' +
            (lang === 'cn' ? '搜索标题 / 作者 / 期刊…' : 'Search title / author / venue…') +
            '" value="' + escAttr(state.q) + '"></div>';
       root.querySelector('.filters').innerHTML = h;
@@ -229,12 +257,17 @@
       var q = state.q.toLowerCase();
       var shown = papers.filter(function (p) {
         if (state.type !== 'all' && p.type !== state.type) return false;
+        if (state.status !== 'all' && statusOf(p) !== state.status) return false;
         if (state.year !== 'all' && String(p.year) !== state.year) return false;
         if (state.topic !== 'all' && !(p.topic || []).length) return false;
         if (state.topic !== 'all' && (p.topic || []).indexOf(state.topic) < 0) return false;
         if (state.author !== 'all' && (p.author_ids || []).indexOf(state.author) < 0) return false;
         if (q) {
           var hay = (p.title + ' ' + (p.authors_text || '') + ' ' + (p.venue || '')).toLowerCase();
+          (p.author_ids || []).forEach(function (id) {
+            var member = (ctx.members || {})[id];
+            if (member) hay += ' ' + (member.en || '').toLowerCase() + ' ' + (member.cn || '');
+          });
           if (hay.indexOf(q) < 0) return false;
         }
         return true;
@@ -262,6 +295,10 @@
         applyFilters();
       }
     });
+
+    root.addEventListener('toggle', function (e) {
+      if (e.target.classList.contains('filter-advanced')) state.advancedOpen = e.target.open;
+    }, true);
 
     renderFilters();
     applyFilters();

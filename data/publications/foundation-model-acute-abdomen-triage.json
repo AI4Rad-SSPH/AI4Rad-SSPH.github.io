@@ -24,16 +24,25 @@
     "Triage"
   ],
   "tags": [
-    { "label": "Q1", "kind": "jcr" },
-    { "label": "IF 18.1", "kind": "if" }
+    {
+      "label": "Q1",
+      "kind": "jcr"
+    },
+    {
+      "label": "IF 18.1",
+      "kind": "if"
+    }
   ],
-  "abstract": "AbdomenNet is a multi-task foundation model for non-contrast CT that detects 11 acute abdominal conditions and performs three risk-stratification subtasks. Pretrained on over 100,000 NCCT examinations and fine-tuned on nearly 6,000 annotated cases, it reaches a macro-average AUROC of 0.919 for five emergent conditions across three independent external cohorts. In a multi-reader multi-case crossover study, AI assistance raised radiologists' mean AUROC from 0.812 to 0.924 and cut median reading time by 52.5 seconds per case; workflow simulation indicates AI-driven case prioritization could shorten median report turnaround by 37 minutes.",
+  "abstract": "Published online on 12 August 2026. AbdomenNet uses self-supervised pretraining on 103,989 non-contrast CT examinations and fine-tuning on 5,816 annotated cases to identify 11 acute abdominal conditions and perform three risk-stratification tasks. External testing included 2,528 patients across three independent cohorts, with a macro-average AUROC of 0.919 for five emergent conditions. In the reader crossover study, mean AUROC improved from 0.812 to 0.924 with AI assistance, while median reading time fell by 52.5 seconds per case. Retrospective workflow reconstruction estimated a potential 37-minute reduction in median report turnaround time.",
   "links": {
     "pdf": "https://www.nature.com/articles/s41467-026-76634-w.pdf",
     "doi": "https://doi.org/10.1038/s41467-026-76634-w",
     "code": "https://github.com/FrankZhangRp/Acute_abdomen",
-    "project": "https://frankzhangrp.github.io/Acute_abdomen/"
+    "project": "https://frankzhangrp.github.io/Acute_abdomen/",
+    "pages": "https://www.nature.com/articles/s41467-026-76634-w"
   },
   "lab": true,
-  "featured": true
+  "featured": true,
+  "status": "published",
+  "published_date": "2026-08-12"
 }

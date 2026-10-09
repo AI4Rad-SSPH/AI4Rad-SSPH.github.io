@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="images/brand/team-logo.png">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20261009">
 </head>
 <body>
   <nav class="nav">
@@ -33,12 +33,12 @@
   <main class="wrapper">
     <section class="hero reveal">
       <h1 class="hero__title">论文成果</h1>
-      <p class="hero__subtitle">实验室代表性期刊与会议论文。完整列表亦见 <a href="https://scholar.google.com/citations?user=zj4WqewAAAAJ" target="_blank" rel="noopener">Google Scholar</a>。</p>
+      <p class="hero__subtitle">团队论文成果，包含已接收、待发表的研究。另可查看李跃华教授的 <a href="https://scholar.google.com/citations?user=zj4WqewAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>。</p>
     </section>
 
     <div id="pub-root" class="reveal">
       <div class="filters"></div>
-      <p class="filter-count"></p>
+      <p class="filter-count" aria-live="polite"></p>
       <ul class="pub-list pub-list--cards"></ul>
     </div>
   </main>
@@ -66,14 +66,14 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
-  <script src="js/pub.js"></script>
+  <script src="js/main.js?v=20261009"></script>
+  <script src="js/pub.js?v=20261009"></script>
   <script>
   (function () {
     var memberNameById = null;
     Promise.all([
-      fetch('data/publications/manifest.json').then(function (r) { return r.json(); }),
-      fetch('data/team.json').then(function (r) { return r.json(); })
+      fetch('data/publications/manifest.json?v=20261009').then(function (r) { return r.json(); }),
+      fetch('data/team.json?v=20261009').then(function (r) { return r.json(); })
     ]).then(function (res) {
       var papers = res[0], team = res[1];
       // 全站列表只显示 lab 论文（含 Yuehua Li 的）。
@@ -81,7 +81,7 @@
       var names = {};
       var members = {};
       ['leader', 'pi', 'postdoc', 'phd_engineering', 'phd_medical',
-       'master_engineering', 'master_medical', 'alumni'].forEach(function (cat) {
+       'master_engineering', 'master_medical', 'honors_students', 'alumni'].forEach(function (cat) {
         (team[cat] || []).forEach(function (m) {
           names[m.id] = m.name_cn;
           members[m.id] = { en: m.name_en, cn: m.name_cn };

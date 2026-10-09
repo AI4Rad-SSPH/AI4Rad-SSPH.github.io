@@ -1,0 +1,35 @@
+{
+  "id": "pulmonary-artery-vein-volume-difference",
+  "title": "Pulmonary Artery-to-Vein Volume Difference: A New Imaging Biomarker for Risk Stratification in Acute Pulmonary Embolism",
+  "authors_text": "Xinyu Song, Lifang Ye, Bicong Yan, Ruipeng Zhang, Shuhao Wang, Yuanyuan Chen, Jia Zhou, Yuehua Li",
+  "author_ids": [
+    "xinyu-song",
+    "bicong-yan",
+    "ruipeng-zhang",
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2026,
+  "venue": "Academic Radiology",
+  "status": "early_access",
+  "published_date": "2026-08-25",
+  "doi": "10.1016/j.acra.2026.08.007",
+  "links": {
+    "pages": "https://www.sciencedirect.com/science/article/pii/S1076633226005945",
+    "doi": "https://doi.org/10.1016/j.acra.2026.08.007"
+  },
+  "topic": [
+    "Vascular Imaging",
+    "CT Imaging",
+    "Pulmonary Embolism"
+  ],
+  "tags": [
+    {
+      "label": "IF 4.7",
+      "kind": "if"
+    }
+  ],
+  "abstract": "This study evaluates pulmonary artery-to-vein volume difference as an imaging biomarker for risk stratification in acute pulmonary embolism.",
+  "lab": true,
+  "featured": false
+}

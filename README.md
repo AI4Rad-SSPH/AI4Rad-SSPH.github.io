@@ -17,8 +17,8 @@ Shanghai Jiao Tong University School of Medicine
 <img src="ai4rad_home_light_v2.png" alt="AI4Rad Lab homepage" width="880">
 
 [![Website](https://img.shields.io/badge/website-live-0d9488?style=flat-square)](https://ai4rad-ssph.github.io/)
-[![Publications](https://img.shields.io/badge/lab%20papers-33-0d9488?style=flat-square)](https://ai4rad-ssph.github.io/publications.html)
-[![Team](https://img.shields.io/badge/team-30-0d9488?style=flat-square)](https://ai4rad-ssph.github.io/team.html)
+[![Publications](https://img.shields.io/badge/lab%20papers-41-0d9488?style=flat-square)](https://ai4rad-ssph.github.io/publications.html)
+[![Team](https://img.shields.io/badge/team-39-0d9488?style=flat-square)](https://ai4rad-ssph.github.io/team.html)
 [![License](https://img.shields.io/badge/license-MIT-0d9488?style=flat-square)](LICENSE)
 
 </div>
@@ -69,9 +69,11 @@ Our research is built on four core AI capabilities, applied across the lab's sev
 ├── css/style.css                      # Styles, dark mode, responsive 2K/4K
 ├── js/
 │   ├── main.js                        # Theme toggle, scroll reveal, team renderer
-│   └── pub.js                         # Publication card renderer + filters + author links
+│   ├── pub.js                         # Publication card renderer + filters + author links
+│   └── home.js                        # Shared bilingual news and expandable archive
 ├── data/
-│   ├── team.json                      # Team roster (PI-maintained, 30 members)
+│   ├── news.json                      # Homepage announcements (EN / 中文)
+│   ├── team.json                      # Team roster (PI-maintained, 39 members)
 │   ├── members/<id>.json              # One file per member — owned by that member
 │   ├── publications/<paper-id>.json   # One file per paper + auto-generated manifest.json
 │   └── members/_template.json         # Copy to start your own page
@@ -88,6 +90,9 @@ Our research is built on four core AI capabilities, applied across the lab's sev
 
 - **Data-driven.** Pages `fetch()` JSON and render with vanilla JS — no build step, no
   framework. Everything is static and served by GitHub Pages (with `.nojekyll`).
+- **News** reads `data/news.json` for both languages. Five current announcements are visible; earlier news is expandable.
+- **Publication status** distinguishes accepted work from online and published articles. Known publication dates order papers within each year; filters also support status and Chinese author names.
+- **Frontend checks** run with `node tools/test-site.js` and in PR CI. Shared CSS/JS URLs carry a dated version; bump it across pages when changing these assets.
 - **Team page** reads `data/team.json`; a member's card links to a personal page once their
   entry has `"page": true`.
 - **Member pages** share one template, `members/index.html`, addressed as
@@ -105,7 +110,7 @@ Our research is built on four core AI capabilities, applied across the lab's sev
 
 **PI** edits `data/team.json`, adding an entry under the relevant category:
 `leader`, `pi`, `postdoc`, `phd_engineering`, `phd_medical`, `master_engineering`,
-`master_medical`, `alumni`.
+`master_medical`, `honors_students`, `alumni`.
 
 Members without a photo get an initials-avatar fallback automatically. Set `"page": true`
 to give a member a personal page.

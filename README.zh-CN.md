@@ -17,8 +17,8 @@
 <img src="ai4rad_home_light_v2.png" alt="AI4Rad Lab 首页" width="880">
 
 [![Website](https://img.shields.io/badge/网站-已上线-0d9488?style=flat-square)](https://ai4rad-ssph.github.io/)
-[![Publications](https://img.shields.io/badge/实验室论文-33-0d9488?style=flat-square)](https://ai4rad-ssph.github.io/publications_ch.html)
-[![Team](https://img.shields.io/badge/团队-30人-0d9488?style=flat-square)](https://ai4rad-ssph.github.io/team_ch.html)
+[![Publications](https://img.shields.io/badge/实验室论文-41-0d9488?style=flat-square)](https://ai4rad-ssph.github.io/publications_ch.html)
+[![Team](https://img.shields.io/badge/团队-39人-0d9488?style=flat-square)](https://ai4rad-ssph.github.io/team_ch.html)
 [![License](https://img.shields.io/badge/许可证-MIT-0d9488?style=flat-square)](LICENSE)
 
 </div>
@@ -66,7 +66,7 @@
 │   ├── main.js                        # 主题切换、滚动动画、团队渲染
 │   └── pub.js                         # 论文卡片渲染 + 筛选 + 作者超链接
 ├── data/
-│   ├── team.json                      # 团队花名册（PI 维护，30 人）
+│   ├── team.json                      # 团队花名册（PI 维护，39 人）
 │   ├── members/<id>.json              # 每人一个文件（由本人维护）
 │   ├── publications/<paper-id>.json   # 每篇论文一个文件 + 自动生成的 manifest.json
 │   └── members/_template.json         # 复制以创建你自己的页面
@@ -87,10 +87,12 @@
 - **论文**以「一篇一文件」存放在 `data/publications/`。`manifest.json` 由 `tools/build-pubs.py` 生成（校验必填字段、核对 `team.json` 的 author IDs、去重）。**CI 会自动处理**：PR 会被校验，合并时索引自动重建并提交——见 `.github/workflows/`。本地运行脚本仅供预览。
 - **作者姓名**在论文列表中自动链接到成员主页，并在其个人主页上加粗高亮（容错匹配，如 "Bicong Yan" ↔ "Bi-Cong Yan"）。
 
+首页动态统一维护在 `data/news.json`，中英文共享数据，展示最新五条并可展开历史动态。论文列表支持发表状态筛选与中文作者姓名搜索；已接收但未公开的论文单独标注。运行 `node tools/test-site.js` 可检查中英文跳转、筛选、资料及脚本语法，PR 也会自动执行。修改共用 CSS/JS 后，应同步更新各页面资源 URL 的日期版本。
+
 ## 👥 维护团队成员
 
 **PI** 编辑 `data/team.json`，在相应类别下添加条目：
-`leader`、`pi`、`postdoc`、`phd_engineering`、`phd_medical`、`master_engineering`、`master_medical`、`alumni`。
+`leader`、`pi`、`postdoc`、`phd_engineering`、`phd_medical`、`master_engineering`、`master_medical`、`honors_students`、`alumni`。
 
 没有照片的成员会自动使用首字母头像。设 `"page": true` 可为成员开通个人主页。
 

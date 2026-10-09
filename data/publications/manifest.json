@@ -1,5 +1,208 @@
 [
   {
+    "file": "flowpredictor-corrector-vascular-flow.json",
+    "id": "flowpredictor-corrector-vascular-flow",
+    "title": "FlowPredictor–Corrector: A Hemodynamics-Guided Two-Step Deep Learning Framework for Vascular Flow Prediction",
+    "authors_text": "Zhuo Li, Yao Zeng, Mengfei Wang, Yulu Yang, Meixiu Pan, Ao Liu, Qiang Sun, Haifeng Zhao, Ruipeng Zhang, Yuehua Li",
+    "author_ids": [
+      "zhuo-li",
+      "yao-zeng",
+      "mengfei-wang",
+      "yulu-yang",
+      "ao-liu",
+      "qiang-sun",
+      "ruipeng-zhang",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "IEEE Journal of Biomedical and Health Informatics",
+    "tags": [],
+    "doi": "10.1109/JBHI.2026.3741575",
+    "links": {
+      "pages": "https://ieeexplore.ieee.org/document/11726865",
+      "doi": "https://doi.org/10.1109/JBHI.2026.3741575"
+    },
+    "topic": [
+      "Vascular Imaging",
+      "Deep Learning",
+      "Hemodynamics"
+    ],
+    "featured": false,
+    "abstract": "A hemodynamics-guided, two-step deep learning framework for predicting vascular flow.",
+    "lab": true,
+    "status": "early_access",
+    "published_date": "2026-10-08"
+  },
+  {
+    "file": "age-related-intracranial-injury-facial-trauma.json",
+    "id": "age-related-intracranial-injury-facial-trauma",
+    "title": "Age-related risk of acute intracranial injury in craniomaxillofacial trauma: a 16-year cohort study with focus on older adults with isolated facial fractures",
+    "authors_text": "Zhongzheng Cao, Ruipeng Zhang, Ping Wang, Xinyu Song, Yulu Yang, Yifan Tu, Yixiao Tang, Mengfei Wang, Yunyi Li, Jia Wang, Han Zhang, Xiaoer Wei, Dan Wang, Yuehua Li",
+    "author_ids": [
+      "zhongzheng-cao",
+      "ruipeng-zhang",
+      "ping-wang",
+      "xinyu-song",
+      "yulu-yang",
+      "yifan-tu",
+      "yixiao-tang",
+      "mengfei-wang",
+      "yunyi-li",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "BMC Medical Imaging",
+    "tags": [
+      {
+        "label": "IF 3.9",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1186/s12880-026-02801-6",
+    "links": {
+      "pages": "https://link.springer.com/article/10.1186/s12880-026-02801-6",
+      "doi": "https://doi.org/10.1186/s12880-026-02801-6"
+    },
+    "topic": [
+      "Emergency Radiology",
+      "Trauma Imaging"
+    ],
+    "featured": false,
+    "abstract": "A 16-year cohort study examining age-related risk of acute intracranial injury after craniomaxillofacial trauma, with a focus on older adults with isolated facial fractures.",
+    "lab": true,
+    "status": "early_access",
+    "published_date": "2026-09-15"
+  },
+  {
+    "file": "pulmonary-artery-vein-volume-difference.json",
+    "id": "pulmonary-artery-vein-volume-difference",
+    "title": "Pulmonary Artery-to-Vein Volume Difference: A New Imaging Biomarker for Risk Stratification in Acute Pulmonary Embolism",
+    "authors_text": "Xinyu Song, Lifang Ye, Bicong Yan, Ruipeng Zhang, Shuhao Wang, Yuanyuan Chen, Jia Zhou, Yuehua Li",
+    "author_ids": [
+      "xinyu-song",
+      "bicong-yan",
+      "ruipeng-zhang",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "Academic Radiology",
+    "tags": [
+      {
+        "label": "IF 4.7",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1016/j.acra.2026.08.007",
+    "links": {
+      "pages": "https://www.sciencedirect.com/science/article/pii/S1076633226005945",
+      "doi": "https://doi.org/10.1016/j.acra.2026.08.007"
+    },
+    "topic": [
+      "Vascular Imaging",
+      "CT Imaging",
+      "Pulmonary Embolism"
+    ],
+    "featured": false,
+    "abstract": "This study evaluates pulmonary artery-to-vein volume difference as an imaging biomarker for risk stratification in acute pulmonary embolism.",
+    "lab": true,
+    "status": "early_access",
+    "published_date": "2026-08-25"
+  },
+  {
+    "file": "foundation-model-acute-abdomen-triage.json",
+    "id": "foundation-model-acute-abdomen-triage",
+    "title": "A foundation model for acute abdomen diagnosis stratification and triage on noncontrast computed tomography",
+    "authors_text": "Chao Zhu*, Ruipeng Zhang*, Xinyu Song, Kai Shang, Yu Lu, Wenjuan Wu, Jian Ma, Yixiao Tang, Zhongzheng Cao, Li Shen, Jianyong Wei, Lisong Dai, Ping Wang, Dan Wang, Xiaoer Wei, Qing Lu#, Lei Zhang#, Tianle Wang#, Yuehua Li#. <em>* Co-first authors. # Corresponding authors.</em>",
+    "author_ids": [
+      "chao-zhu",
+      "ruipeng-zhang",
+      "xinyu-song",
+      "yixiao-tang",
+      "zhongzheng-cao",
+      "jianyong-wei",
+      "lisong-dai",
+      "ping-wang",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "Nature Communications",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 18.1",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1038/s41467-026-76634-w",
+    "links": {
+      "pdf": "https://www.nature.com/articles/s41467-026-76634-w.pdf",
+      "doi": "https://doi.org/10.1038/s41467-026-76634-w",
+      "code": "https://github.com/FrankZhangRp/Acute_abdomen",
+      "project": "https://frankzhangrp.github.io/Acute_abdomen/",
+      "pages": "https://www.nature.com/articles/s41467-026-76634-w"
+    },
+    "topic": [
+      "Abdominal Imaging",
+      "Foundation Models",
+      "Emergency Radiology",
+      "Triage"
+    ],
+    "featured": true,
+    "abstract": "Published online on 12 August 2026. AbdomenNet uses self-supervised pretraining on 103,989 non-contrast CT examinations and fine-tuning on 5,816 annotated cases to identify 11 acute abdominal conditions and perform three risk-stratification tasks. External testing included 2,528 patients across three independent cohorts, with a macro-average AUROC of 0.919 for five emergent conditions. In the reader crossover study, mean AUROC improved from 0.812 to 0.924 with AI assistance, while median reading time fell by 52.5 seconds per case. Retrospective workflow reconstruction estimated a potential 37-minute reduction in median report turnaround time.",
+    "lab": true,
+    "status": "published",
+    "published_date": "2026-08-12"
+  },
+  {
+    "file": "bonecot-skeleton-foundation-model.json",
+    "id": "bonecot-skeleton-foundation-model",
+    "title": "BoneCoT: multicentre validation of a whole-body skeleton foundation model for bone metastases guided by clinician-derived chain of thought",
+    "authors_text": "Hui Zhao*,# Ruipeng Zhang*, Zhiyu Wang*, Yifeng Gu, Shengyuan Xu, Sheng Wang#, Yuehua Li#.",
+    "author_ids": [
+      "ruipeng-zhang",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "Nature Biomedical Engineering",
+    "cover": "images/bonecot-workflow.png",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 26.3",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1038/s41551-026-01736-1",
+    "links": {
+      "pdf": "https://doi.org/10.1038/s41551-026-01736-1",
+      "doi": "https://doi.org/10.1038/s41551-026-01736-1",
+      "code": "https://github.com/FrankZhangRp/BoneCoT",
+      "project": "https://frankzhangrp.github.io/BoneCoT/"
+    },
+    "topic": [
+      "Musculoskeletal Imaging",
+      "Foundation Models",
+      "Bone Metastasis",
+      "Chain of Thought"
+    ],
+    "featured": true,
+    "abstract": "BoneCoT is a clinician-guided chain-of-thought framework for bone metastasis and bone-related disease assessment from whole-body skeletal CT. It is built on BoneFM, a skeleton-focused CT foundation backbone adapted from DINOv2-style self-supervised pretraining, and uses clinician-derived task dependencies to support downstream bone lesion reasoning. The model is validated across multiple centers for robust, interpretable bone metastasis assessment.",
+    "lab": true,
+    "status": "published",
+    "published_date": "2026-07-02"
+  },
+  {
     "file": "rethinking-wholebody-ct-image.json",
     "id": "rethinking-wholebody-ct-image",
     "title": "Rethinking whole-body CT image interpretation: an abnormality-centric approach",
@@ -98,6 +301,26 @@
     "featured": true,
     "abstract": "LumbarSR provides the first paired clinical CT and photon-counting micro-CT dataset of human lumbar vertebrae, enabling super-resolution benchmarks that bridge the resolution gap between in-vivo imaging and high-resolution ex-vivo micro-CT. The dataset and challenge foster reproducible evaluation of medical image super-resolution methods.",
     "lab": true
+  },
+  {
+    "file": "llm-report-carotid-plaque-aha-classification.json",
+    "id": "llm-report-carotid-plaque-aha-classification",
+    "title": "Large Language Model Assistance for Report-Based Carotid Plaque AHA Classification: A Multi-Reader Study",
+    "author_ids": [],
+    "type": "journal",
+    "year": 2026,
+    "venue": "Insights into Imaging",
+    "tags": [],
+    "links": {},
+    "topic": [
+      "Large Language Models",
+      "Vascular Imaging",
+      "Radiology Reports"
+    ],
+    "featured": false,
+    "abstract": "A retrospective multicenter, report-based reader study of large language model assistance for modified AHA classification of carotid plaques from free-text MRI reports. The reference standard is expert consensus based on report text.",
+    "lab": true,
+    "status": "accepted"
   },
   {
     "file": "brainmind-evaluation-large-language.json",
@@ -203,92 +426,6 @@
     ],
     "featured": false,
     "abstract": "Ponticulus posticus (POPO) may distort C1 surface landmarks for C1 pedicle screw (CPS) placement, raising concern for vertebral artery compromise (VAC). This single-center retrospective CTA simulation study of 141 subjects (bilateral POPO, unilateral POPO, and pure non-POPO) establishes a CTA-based workflow to identify POPO anatomies potentially suitable for CPS placement, simulating trajectories with PedicleScrewSimulator to quantify placement risk.",
-    "lab": true
-  },
-  {
-    "file": "bonecot-skeleton-foundation-model.json",
-    "id": "bonecot-skeleton-foundation-model",
-    "title": "BoneCoT: Multi-center validation of a whole-body skeleton foundation model for bone metastases guided by clinician-derived chain of thought",
-    "authors_text": "Hui Zhao*,# Ruipeng Zhang*, Zhiyu Wang*, Yifeng Gu, Shengyuan Xu, Sheng Wang#, Yuehua Li#.",
-    "author_ids": [
-      "ruipeng-zhang",
-      "yuehua-li"
-    ],
-    "type": "journal",
-    "year": 2026,
-    "venue": "Nature Biomedical Engineering",
-    "cover": "images/bonecot-workflow.png",
-    "tags": [
-      {
-        "label": "Q1",
-        "kind": "jcr"
-      },
-      {
-        "label": "IF 26.3",
-        "kind": "if"
-      }
-    ],
-    "doi": "10.1038/s41551-026-01736-1",
-    "links": {
-      "pdf": "https://doi.org/10.1038/s41551-026-01736-1",
-      "doi": "https://doi.org/10.1038/s41551-026-01736-1",
-      "code": "https://github.com/FrankZhangRp/BoneCoT",
-      "project": "https://frankzhangrp.github.io/BoneCoT/"
-    },
-    "topic": [
-      "Musculoskeletal Imaging",
-      "Foundation Models",
-      "Bone Metastasis",
-      "Chain of Thought"
-    ],
-    "featured": true,
-    "abstract": "BoneCoT is a clinician-guided chain-of-thought framework for bone metastasis and bone-related disease assessment from whole-body skeletal CT. It is built on BoneFM, a skeleton-focused CT foundation backbone adapted from DINOv2-style self-supervised pretraining, and uses clinician-derived task dependencies to support downstream bone lesion reasoning. The model is validated across multiple centers for robust, interpretable bone metastasis assessment.",
-    "lab": true
-  },
-  {
-    "file": "foundation-model-acute-abdomen-triage.json",
-    "id": "foundation-model-acute-abdomen-triage",
-    "title": "A foundation model for acute abdomen diagnosis stratification and triage on noncontrast computed tomography",
-    "authors_text": "Chao Zhu*, Ruipeng Zhang*, Xinyu Song, Kai Shang, Yu Lu, Wenjuan Wu, Jian Ma, Yixiao Tang, Zhongzheng Cao, Li Shen, Jianyong Wei, Lisong Dai, Ping Wang, Dan Wang, Xiaoer Wei, Qing Lu#, Lei Zhang#, Tianle Wang#, Yuehua Li#. <em>* Co-first authors. # Corresponding authors.</em>",
-    "author_ids": [
-      "chao-zhu",
-      "ruipeng-zhang",
-      "xinyu-song",
-      "yixiao-tang",
-      "zhongzheng-cao",
-      "jianyong-wei",
-      "lisong-dai",
-      "ping-wang",
-      "yuehua-li"
-    ],
-    "type": "journal",
-    "year": 2026,
-    "venue": "Nature Communications",
-    "tags": [
-      {
-        "label": "Q1",
-        "kind": "jcr"
-      },
-      {
-        "label": "IF 18.1",
-        "kind": "if"
-      }
-    ],
-    "doi": "10.1038/s41467-026-76634-w",
-    "links": {
-      "pdf": "https://www.nature.com/articles/s41467-026-76634-w.pdf",
-      "doi": "https://doi.org/10.1038/s41467-026-76634-w",
-      "code": "https://github.com/FrankZhangRp/Acute_abdomen",
-      "project": "https://frankzhangrp.github.io/Acute_abdomen/"
-    },
-    "topic": [
-      "Abdominal Imaging",
-      "Foundation Models",
-      "Emergency Radiology",
-      "Triage"
-    ],
-    "featured": true,
-    "abstract": "AbdomenNet is a multi-task foundation model for non-contrast CT that detects 11 acute abdominal conditions and performs three risk-stratification subtasks. Pretrained on over 100,000 NCCT examinations and fine-tuned on nearly 6,000 annotated cases, it reaches a macro-average AUROC of 0.919 for five emergent conditions across three independent external cohorts. In a multi-reader multi-case crossover study, AI assistance raised radiologists' mean AUROC from 0.812 to 0.924 and cut median reading time by 52.5 seconds per case; workflow simulation indicates AI-driven case prioritization could shorten median report turnaround by 37 minutes.",
     "lab": true
   },
   {

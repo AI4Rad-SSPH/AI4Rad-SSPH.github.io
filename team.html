@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="images/brand/team-logo.png">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20261009">
 </head>
 <body>
   <nav class="nav">
@@ -49,7 +49,7 @@
     <div class="footer__links">
       <a href="./">Home</a>
       <a href="./team.html">Team</a>
-      <a href="https://scholar.google.com/citations?user=zj4WqewAAAAJ" target="_blank" rel="noopener">Publications</a>
+      <a href="./publications.html">Publications</a>
       <a href="mailto:zhangrp@sjtu.edu.cn">Email</a>
       <a href="https://github.com/AI4Rad-SSPH" target="_blank" rel="noopener">GitHub</a>
     </div>
@@ -64,10 +64,10 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=20261009"></script>
   <script>
     (function(){
-      fetch('data/team.json')
+      fetch('data/team.json?v=20261009')
         .then(function(r){ return r.json(); })
         .then(function(data){ renderTeam(data, 'en'); })
         .catch(function(e){
