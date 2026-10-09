@@ -31,5 +31,11 @@
   ],
   "abstract": "This study evaluates pulmonary artery-to-vein volume difference as an imaging biomarker for risk stratification in acute pulmonary embolism.",
   "lab": true,
-  "featured": false
+  "featured": false,
+  "author_roles": {
+    "xinyu-song": [
+      "first"
+    ]
+  },
+  "authorship_source": "https://www.sciencedirect.com/science/article/pii/S1076633226005945"
 }

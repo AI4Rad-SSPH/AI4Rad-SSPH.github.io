@@ -42,6 +42,62 @@
     return labels[status] ? labels[status][lang === 'cn' ? 1 : 0] : status;
   }
 
+  var roleLabels = {
+    first: ['First author', '第一作者'],
+    co_first: ['Co-first author', '共同第一作者'],
+    corresponding: ['Corresponding author', '通讯作者'],
+    co_corresponding: ['Co-corresponding author', '共同通讯作者']
+  };
+  function newsRoles(paper, memberId) {
+    if (!paper || (paper.author_ids || []).indexOf(memberId) < 0) return [];
+    return ((paper.author_roles || {})[memberId] || []).filter(function (role) {
+      return Object.prototype.hasOwnProperty.call(roleLabels, role);
+    });
+  }
+  function newsDate(date) {
+    var text = String(date || '');
+    var year = text.match(/\b(\d{4})/);
+    if (!year) return 0;
+    var numeric = text.match(/\d{4}[.\-/年]\s*(\d{1,2})/);
+    var month = numeric ? Number(numeric[1]) : 0;
+    if (!month) {
+      var english = text.slice(0, 3).toLowerCase();
+      month = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'].indexOf(english) + 1;
+    }
+    return Number(year[1]) * 100 + month;
+  }
+  // Shared announcements drive personal news only for explicitly verified
+  // first/corresponding roles. author_ids alone only controls publication lists.
+  function memberNews(member, papers, announcements, lang) {
+    var byId = {}, sharedIds = {};
+    papers.forEach(function (paper) { byId[paper.id] = paper; });
+    var items = [];
+    announcements.forEach(function (item) {
+      if (!item.publication_id) return;
+      sharedIds[item.publication_id] = true;
+      var roles = newsRoles(byId[item.publication_id], member.id);
+      if (!roles.length) return;
+      var links = (item.links || []).map(function (link) {
+        var href = lang === 'cn' ? (link.href_cn || link.href) : link.href;
+        return '<a href="' + esc(assetRoot(href)) + '"' +
+          (/^https?:/.test(href) ? ' target="_blank" rel="noopener"' : '') + '>' +
+          esc(link['label_' + lang]) + '</a>';
+      }).join(' · ');
+      var labels = roles.map(function (role) { return roleLabels[role][lang === 'cn' ? 1 : 0]; }).join(' / ');
+      items.push({
+        publication_id: item.publication_id, date: item.date,
+        text: esc(item['text_' + lang]) + ' <strong>' + labels + '</strong>' +
+          (lang === 'cn' ? '。' : '.') + (links ? ' ' + links : '')
+      });
+    });
+    (member['news_' + lang] || []).forEach(function (item) {
+      if (item.publication_id && (sharedIds[item.publication_id] ||
+          !newsRoles(byId[item.publication_id], member.id).length)) return;
+      items.push(item);
+    });
+    return items.sort(function (a, b) { return newsDate(b.date) - newsDate(a.date); });
+  }
+
   // Build name variants for matching an author_id against free-form authors_text.
   // Handles "Bi-Cong Yan"/"BiCong Yan"/"Bi Cong Yan", and Chinese names.
   // Returns an array (longest first) for robust matching.
@@ -310,5 +366,5 @@
     return out;
   }
 
-  global.Pub = { renderCard: renderCard, initFilter: initFilter, esc: esc };
+  global.Pub = { renderCard: renderCard, initFilter: initFilter, memberNews: memberNews, esc: esc };
 })(window);

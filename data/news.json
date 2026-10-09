@@ -9,7 +9,8 @@
         "label_en": "Paper",
         "label_cn": "论文"
       }
-    ]
+    ],
+    "publication_id": "flowpredictor-corrector-vascular-flow"
   },
   {
     "date": "2026.09",
@@ -22,7 +23,8 @@
         "label_cn": "论文成果",
         "href_cn": "publications_ch.html"
       }
-    ]
+    ],
+    "publication_id": "llm-report-carotid-plaque-aha-classification"
   },
   {
     "date": "2026.09",
@@ -34,7 +36,8 @@
         "label_en": "Paper",
         "label_cn": "论文"
       }
-    ]
+    ],
+    "publication_id": "age-related-intracranial-injury-facial-trauma"
   },
   {
     "date": "2026.08",
@@ -46,7 +49,8 @@
         "label_en": "Paper",
         "label_cn": "论文"
       }
-    ]
+    ],
+    "publication_id": "pulmonary-artery-vein-volume-difference"
   },
   {
     "date": "2026.08",
@@ -68,7 +72,8 @@
         "label_en": "Project",
         "label_cn": "项目"
       }
-    ]
+    ],
+    "publication_id": "foundation-model-acute-abdomen-triage"
   },
   {
     "date": "2026.07",
@@ -80,7 +85,8 @@
         "label_en": "Paper",
         "label_cn": "论文"
       }
-    ]
+    ],
+    "publication_id": "imaging-grounded-multiagent-mllm-stroke"
   },
   {
     "date": "2026.07",
@@ -97,7 +103,8 @@
         "label_en": "Demo",
         "label_cn": "演示"
       }
-    ]
+    ],
+    "publication_id": "bonecot-skeleton-foundation-model"
   },
   {
     "date": "2026.07",
@@ -114,7 +121,8 @@
         "label_en": "Demo",
         "label_cn": "演示"
       }
-    ]
+    ],
+    "publication_id": "multiagent-llm-emergency-stroke"
   },
   {
     "date": "2026.06",
@@ -131,10 +139,11 @@
         "label_en": "Challenge",
         "label_cn": "挑战赛"
       }
-    ]
+    ],
+    "publication_id": "lumbarsr-paired-clinical-microct-dataset"
   },
   {
-    "date": "2026.04",
+    "date": "2026.01",
     "text_en": "BrainMIND, our benchmark evaluating LLM diagnostic impressions from brain MRI report findings, was published in npj Digital Medicine.",
     "text_cn": "BrainMIND 基于脑 MRI 报告所见生成诊断结论的大语言模型评测研究发表于 npj Digital Medicine。",
     "links": [
@@ -148,6 +157,7 @@
         "label_en": "Code",
         "label_cn": "代码"
       }
-    ]
+    ],
+    "publication_id": "brainmind-evaluation-large-language"
   }
 ]

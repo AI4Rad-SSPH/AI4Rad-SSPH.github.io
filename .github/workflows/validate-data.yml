@@ -53,6 +53,9 @@ jobs:
       - name: Publications must validate (required fields, types, unique ids, author_ids)
         run: python3 tools/build-pubs.py
 
+      - name: Publication roles must reject invalid news recipients
+        run: python3 tools/test-build-pubs.py
+
       - name: Bilingual navigation, publication filters, profiles and scripts must validate
         run: node tools/test-site.js
 

@@ -30,5 +30,17 @@
   "tags": [],
   "abstract": "A hemodynamics-guided, two-step deep learning framework for predicting vascular flow.",
   "lab": true,
-  "featured": false
+  "featured": false,
+  "author_roles": {
+    "zhuo-li": [
+      "first"
+    ],
+    "ruipeng-zhang": [
+      "co_corresponding"
+    ],
+    "yuehua-li": [
+      "co_corresponding"
+    ]
+  },
+  "authorship_source": "Author manuscript (R2), title-page corresponding-author footnote; published author list: https://ieeexplore.ieee.org/document/11726865/authors"
 }

@@ -1,15 +1,12 @@
 {
   "id": "multiagent-llm-emergency-stroke",
   "title": "A Multi-Agent Large Language Model Framework for Emergency Treatment Recommendation in Acute Ischemic Stroke: Development and Validation Study",
-  "authors_text": "Bicong Yan, Ruipeng Zhang, Yanfeng Fan, Ying Li, Li Chen, Xinyu Song, Yixiao Tang, Zhongzheng Cao, Li Shen, Mengfei Wang, Zhuo Li, Yijia Xiong, Yuehua Li.",
+  "authors_text": "Bicong Yan*, Ruipeng Zhang*, Li Chen, Xinyu Song, Zhongzheng Cao, Yuehua Li#. <em>* Co-first authors. # Corresponding author.</em>",
   "author_ids": [
     "bicong-yan",
     "ruipeng-zhang",
     "xinyu-song",
-    "yixiao-tang",
     "zhongzheng-cao",
-    "mengfei-wang",
-    "zhuo-li",
     "yuehua-li"
   ],
   "type": "journal",
@@ -40,5 +37,19 @@
     "project": "https://frankzhangrp.github.io/HR-LLM-Stroke/"
   },
   "lab": true,
-  "featured": true
+  "featured": true,
+  "author_roles": {
+    "bicong-yan": [
+      "co_first"
+    ],
+    "ruipeng-zhang": [
+      "co_first"
+    ],
+    "yuehua-li": [
+      "corresponding"
+    ]
+  },
+  "authorship_source": "https://www.jmir.org/2026/1/e96304",
+  "status": "published",
+  "published_date": "2026-07-30"
 }

@@ -67,12 +67,12 @@
   </footer>
 
   <script src="js/main.js?v=20261009"></script>
-  <script src="js/pub.js?v=20261009"></script>
+  <script src="js/pub.js?v=20261009-news"></script>
   <script>
   (function () {
     var memberNameById = null;
     Promise.all([
-      fetch('data/publications/manifest.json?v=20261009').then(function (r) { return r.json(); }),
+      fetch('data/publications/manifest.json?v=20261009-news').then(function (r) { return r.json(); }),
       fetch('data/team.json?v=20261009').then(function (r) { return r.json(); })
     ]).then(function (res) {
       var papers = res[0], team = res[1];

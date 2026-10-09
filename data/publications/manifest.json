@@ -32,7 +32,18 @@
     "abstract": "A hemodynamics-guided, two-step deep learning framework for predicting vascular flow.",
     "lab": true,
     "status": "early_access",
-    "published_date": "2026-10-08"
+    "published_date": "2026-10-08",
+    "author_roles": {
+      "zhuo-li": [
+        "first"
+      ],
+      "ruipeng-zhang": [
+        "co_corresponding"
+      ],
+      "yuehua-li": [
+        "co_corresponding"
+      ]
+    }
   },
   {
     "file": "age-related-intracranial-injury-facial-trauma.json",
@@ -73,7 +84,18 @@
     "abstract": "A 16-year cohort study examining age-related risk of acute intracranial injury after craniomaxillofacial trauma, with a focus on older adults with isolated facial fractures.",
     "lab": true,
     "status": "early_access",
-    "published_date": "2026-09-15"
+    "published_date": "2026-09-15",
+    "author_roles": {
+      "zhongzheng-cao": [
+        "first"
+      ],
+      "ruipeng-zhang": [
+        "co_corresponding"
+      ],
+      "yuehua-li": [
+        "co_corresponding"
+      ]
+    }
   },
   {
     "file": "pulmonary-artery-vein-volume-difference.json",
@@ -109,7 +131,12 @@
     "abstract": "This study evaluates pulmonary artery-to-vein volume difference as an imaging biomarker for risk stratification in acute pulmonary embolism.",
     "lab": true,
     "status": "early_access",
-    "published_date": "2026-08-25"
+    "published_date": "2026-08-25",
+    "author_roles": {
+      "xinyu-song": [
+        "first"
+      ]
+    }
   },
   {
     "file": "foundation-model-acute-abdomen-triage.json",
@@ -158,7 +185,129 @@
     "abstract": "Published online on 12 August 2026. AbdomenNet uses self-supervised pretraining on 103,989 non-contrast CT examinations and fine-tuning on 5,816 annotated cases to identify 11 acute abdominal conditions and perform three risk-stratification tasks. External testing included 2,528 patients across three independent cohorts, with a macro-average AUROC of 0.919 for five emergent conditions. In the reader crossover study, mean AUROC improved from 0.812 to 0.924 with AI assistance, while median reading time fell by 52.5 seconds per case. Retrospective workflow reconstruction estimated a potential 37-minute reduction in median report turnaround time.",
     "lab": true,
     "status": "published",
-    "published_date": "2026-08-12"
+    "published_date": "2026-08-12",
+    "author_roles": {
+      "chao-zhu": [
+        "co_first"
+      ],
+      "ruipeng-zhang": [
+        "co_first"
+      ],
+      "yuehua-li": [
+        "co_corresponding"
+      ]
+    }
+  },
+  {
+    "file": "multiagent-llm-emergency-stroke.json",
+    "id": "multiagent-llm-emergency-stroke",
+    "title": "A Multi-Agent Large Language Model Framework for Emergency Treatment Recommendation in Acute Ischemic Stroke: Development and Validation Study",
+    "authors_text": "Bicong Yan*, Ruipeng Zhang*, Li Chen, Xinyu Song, Zhongzheng Cao, Yuehua Li#. <em>* Co-first authors. # Corresponding author.</em>",
+    "author_ids": [
+      "bicong-yan",
+      "ruipeng-zhang",
+      "xinyu-song",
+      "zhongzheng-cao",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "Journal of Medical Internet Research",
+    "cover": "images/hr-llm-stroke-framework.png",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 8.2",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.2196/96304",
+    "links": {
+      "doi": "https://doi.org/10.2196/96304",
+      "pdf": "https://www.jmir.org/2026/1/e96304",
+      "code": "https://github.com/FrankZhangRp/HR-LLM-Stroke",
+      "project": "https://frankzhangrp.github.io/HR-LLM-Stroke/"
+    },
+    "topic": [
+      "Large Language Models",
+      "Stroke Imaging",
+      "Clinical Decision Support"
+    ],
+    "featured": true,
+    "abstract": "Acute ischemic stroke requires rapid, guideline-driven treatment decisions within narrow time windows. This study presents a multi-agent large language model framework (HR-LLM-Stroke) that orchestrates specialized agents for imaging interpretation, clinical feature extraction, and treatment recommendation, supporting real-world clinical decision-making in acute ischemic stroke. Developed and validated on multicenter data, the framework demonstrates the feasibility of agentic LLM systems for time-critical emergency stroke workflows.",
+    "lab": true,
+    "status": "published",
+    "published_date": "2026-07-30",
+    "author_roles": {
+      "bicong-yan": [
+        "co_first"
+      ],
+      "ruipeng-zhang": [
+        "co_first"
+      ],
+      "yuehua-li": [
+        "corresponding"
+      ]
+    }
+  },
+  {
+    "file": "imaging-grounded-multiagent-mllm-stroke.json",
+    "id": "imaging-grounded-multiagent-mllm-stroke",
+    "title": "A Multi-Agent MLLM Framework for Imaging-Grounded Treatment Recommendation in Acute Ischemic Stroke",
+    "authors_text": "Bicong Yan*, Zhuo Li*, Yanfeng Fan*, Ying Li, Li Chen, Xinyu Song, Yixiao Tang, Li Shen, Ruipeng Zhang#, Yuehua Li#. <em>* Co-first authors. # Corresponding authors.</em>",
+    "author_ids": [
+      "bicong-yan",
+      "zhuo-li",
+      "xinyu-song",
+      "yixiao-tang",
+      "ruipeng-zhang",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "npj Digital Medicine",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 18.0",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1038/s41746-026-03066-7",
+    "links": {
+      "pdf": "https://www.nature.com/articles/s41746-026-03066-7",
+      "doi": "https://doi.org/10.1038/s41746-026-03066-7"
+    },
+    "topic": [
+      "Multimodal Large Language Models",
+      "Stroke Imaging",
+      "Clinical Decision Support"
+    ],
+    "featured": true,
+    "abstract": "An imaging-grounded multi-agent multimodal large language model emulates a multidisciplinary stroke team through coordinated agents for triage, time-window assessment, multimodal imaging interpretation, contraindication screening, and treatment recommendation. In a retrospective evaluation of 1,658 suspected acute ischemic stroke cases from two centers, multi-agent coordination with retrieval-augmented generation improved treatment recommendation accuracy from 0.636 to 0.785 and Macro-F1 from 0.562 to 0.768.",
+    "lab": true,
+    "status": "published",
+    "published_date": "2026-07-29",
+    "author_roles": {
+      "bicong-yan": [
+        "co_first"
+      ],
+      "zhuo-li": [
+        "co_first"
+      ],
+      "ruipeng-zhang": [
+        "co_corresponding"
+      ],
+      "yuehua-li": [
+        "co_corresponding"
+      ]
+    }
   },
   {
     "file": "bonecot-skeleton-foundation-model.json",
@@ -200,7 +349,172 @@
     "abstract": "BoneCoT is a clinician-guided chain-of-thought framework for bone metastasis and bone-related disease assessment from whole-body skeletal CT. It is built on BoneFM, a skeleton-focused CT foundation backbone adapted from DINOv2-style self-supervised pretraining, and uses clinician-derived task dependencies to support downstream bone lesion reasoning. The model is validated across multiple centers for robust, interpretable bone metastasis assessment.",
     "lab": true,
     "status": "published",
-    "published_date": "2026-07-02"
+    "published_date": "2026-07-02",
+    "author_roles": {
+      "ruipeng-zhang": [
+        "co_first"
+      ],
+      "yuehua-li": [
+        "co_corresponding"
+      ]
+    }
+  },
+  {
+    "file": "lumbarsr-paired-clinical-microct-dataset.json",
+    "id": "lumbarsr-paired-clinical-microct-dataset",
+    "title": "LumbarSR: A Paired Clinical CT and Photon-Counting Micro-CT Dataset for Human Lumbar Vertebrae",
+    "authors_text": "Ping Wang*, Ruipeng Zhang*, Mengfei Wang, Shenyan Zong, Jinyu Zhu, Xinyu Song, Zhenzhen Cao, Xuefei Hu, Dan Wang, Yuehua Li.",
+    "author_ids": [
+      "ping-wang",
+      "ruipeng-zhang",
+      "mengfei-wang",
+      "xinyu-song",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "Scientific Data",
+    "cover": "images/lumbar-sr-viz.jpg",
+    "tags": [
+      {
+        "label": "Dataset",
+        "kind": "type"
+      },
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 7.2",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1038/s41597-026-07748-5",
+    "links": {
+      "pdf": "https://www.nature.com/articles/s41597-026-07748-5",
+      "doi": "https://doi.org/10.1038/s41597-026-07748-5",
+      "code": "https://github.com/FrankZhangRp/LumbarSR-Challenge",
+      "project": "https://frankzhangrp.github.io/LumbarSR-Challenge/"
+    },
+    "topic": [
+      "Musculoskeletal Imaging",
+      "Super-Resolution",
+      "Dataset"
+    ],
+    "featured": true,
+    "abstract": "LumbarSR provides the first paired clinical CT and photon-counting micro-CT dataset of human lumbar vertebrae, enabling super-resolution benchmarks that bridge the resolution gap between in-vivo imaging and high-resolution ex-vivo micro-CT. The dataset and challenge foster reproducible evaluation of medical image super-resolution methods.",
+    "lab": true,
+    "status": "published",
+    "published_date": "2026-06-26",
+    "author_roles": {
+      "ping-wang": [
+        "co_first"
+      ],
+      "ruipeng-zhang": [
+        "co_first"
+      ],
+      "yuehua-li": [
+        "co_corresponding"
+      ]
+    }
+  },
+  {
+    "file": "c1-pedicle-screw-ponticulus-posticus.json",
+    "id": "c1-pedicle-screw-ponticulus-posticus",
+    "title": "C1 pedicle screw placement risks in patients with ponticulus posticus: a CTA retrospective simulation study",
+    "authors_text": "Ping Wang, Han Meng, Lifeng Yu, Ruipeng Zhang, Xinyu Song, Tiantian She, Dan Wang, Yuehua Li.",
+    "author_ids": [
+      "ping-wang",
+      "ruipeng-zhang",
+      "xinyu-song",
+      "tiantian-she",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "Journal of Orthopaedic Surgery and Research",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 3.8",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1186/s13018-026-07046-1",
+    "links": {
+      "pdf": "https://doi.org/10.1186/s13018-026-07046-1",
+      "doi": "https://doi.org/10.1186/s13018-026-07046-1"
+    },
+    "topic": [
+      "Musculoskeletal Imaging",
+      "Spine Surgery",
+      "CT Imaging"
+    ],
+    "featured": false,
+    "abstract": "Ponticulus posticus (POPO) may distort C1 surface landmarks for C1 pedicle screw (CPS) placement, raising concern for vertebral artery compromise (VAC). This single-center retrospective CTA simulation study of 141 subjects (bilateral POPO, unilateral POPO, and pure non-POPO) establishes a CTA-based workflow to identify POPO anatomies potentially suitable for CPS placement, simulating trajectories with PedicleScrewSimulator to quantify placement risk.",
+    "lab": true,
+    "status": "published",
+    "published_date": "2026-06-23",
+    "author_roles": {
+      "ping-wang": [
+        "first"
+      ],
+      "yuehua-li": [
+        "co_corresponding"
+      ]
+    }
+  },
+  {
+    "file": "brainmind-evaluation-large-language.json",
+    "id": "brainmind-evaluation-large-language",
+    "title": "Evaluation of Large Language Models for Diagnostic Impression Generation from Brain MRI Report Findings: A Multicenter Benchmark and Reader Study",
+    "authors_text": "Ming-Liang Wang*, Rui-Peng Zhang*, Wen-Juan Wu*, Yu Lu*, Xiao-Er Wei, Zheng Sun, Bao-Hui Guan, Jun-Jie Zhang, Xue Wu, Lei Zhang#, Tian-Le Wang#, Yue-Hua Li#. <em>* Co-first authors. # Corresponding authors.</em>",
+    "author_ids": [
+      "ruipeng-zhang",
+      "zheng-sun",
+      "yuehua-li"
+    ],
+    "type": "journal",
+    "year": 2026,
+    "venue": "npj Digital Medicine",
+    "cover": "images/brainmind-flowchart.png",
+    "tags": [
+      {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
+        "label": "IF 18.0",
+        "kind": "if"
+      }
+    ],
+    "doi": "10.1038/s41746-026-02380-4",
+    "links": {
+      "pdf": "https://www.nature.com/articles/s41746-026-02380-4",
+      "doi": "https://doi.org/10.1038/s41746-026-02380-4",
+      "code": "https://github.com/FrankZhangRp/BrainMIND"
+    },
+    "topic": [
+      "Large Language Models",
+      "Neuroimaging",
+      "Clinical Decision Support"
+    ],
+    "featured": true,
+    "abstract": "Benchmarked 10 large language models on generating diagnostic impressions from brain MRI report findings across a multicenter dataset, establishing a reproducible evaluation framework and reader study for LLM-based radiology reporting.",
+    "lab": true,
+    "status": "published",
+    "published_date": "2026-01-22",
+    "author_roles": {
+      "ruipeng-zhang": [
+        "co_first"
+      ],
+      "yuehua-li": [
+        "co_corresponding"
+      ]
+    }
   },
   {
     "file": "rethinking-wholebody-ct-image.json",
@@ -257,52 +571,6 @@
     "lab": true
   },
   {
-    "file": "lumbarsr-paired-clinical-microct-dataset.json",
-    "id": "lumbarsr-paired-clinical-microct-dataset",
-    "title": "LumbarSR: A Paired Clinical CT and Photon-Counting Micro-CT Dataset for Human Lumbar Vertebrae",
-    "authors_text": "Ping Wang*, Ruipeng Zhang*, Mengfei Wang, Shenyan Zong, Jinyu Zhu, Xinyu Song, Zhenzhen Cao, Xuefei Hu, Dan Wang, Yuehua Li.",
-    "author_ids": [
-      "ping-wang",
-      "ruipeng-zhang",
-      "mengfei-wang",
-      "xinyu-song",
-      "yuehua-li"
-    ],
-    "type": "journal",
-    "year": 2026,
-    "venue": "Scientific Data",
-    "cover": "images/lumbar-sr-viz.jpg",
-    "tags": [
-      {
-        "label": "Dataset",
-        "kind": "type"
-      },
-      {
-        "label": "Q1",
-        "kind": "jcr"
-      },
-      {
-        "label": "IF 7.2",
-        "kind": "if"
-      }
-    ],
-    "doi": "10.1038/s41597-026-07748-5",
-    "links": {
-      "pdf": "https://www.nature.com/articles/s41597-026-07748-5",
-      "doi": "https://doi.org/10.1038/s41597-026-07748-5",
-      "code": "https://github.com/FrankZhangRp/LumbarSR-Challenge",
-      "project": "https://frankzhangrp.github.io/LumbarSR-Challenge/"
-    },
-    "topic": [
-      "Musculoskeletal Imaging",
-      "Super-Resolution",
-      "Dataset"
-    ],
-    "featured": true,
-    "abstract": "LumbarSR provides the first paired clinical CT and photon-counting micro-CT dataset of human lumbar vertebrae, enabling super-resolution benchmarks that bridge the resolution gap between in-vivo imaging and high-resolution ex-vivo micro-CT. The dataset and challenge foster reproducible evaluation of medical image super-resolution methods.",
-    "lab": true
-  },
-  {
     "file": "llm-report-carotid-plaque-aha-classification.json",
     "id": "llm-report-carotid-plaque-aha-classification",
     "title": "Large Language Model Assistance for Report-Based Carotid Plaque AHA Classification: A Multi-Reader Study",
@@ -321,45 +589,6 @@
     "abstract": "A retrospective multicenter, report-based reader study of large language model assistance for modified AHA classification of carotid plaques from free-text MRI reports. The reference standard is expert consensus based on report text.",
     "lab": true,
     "status": "accepted"
-  },
-  {
-    "file": "brainmind-evaluation-large-language.json",
-    "id": "brainmind-evaluation-large-language",
-    "title": "Evaluation of Large Language Models for Diagnostic Impression Generation from Brain MRI Report Findings: A Multicenter Benchmark and Reader Study",
-    "authors_text": "Ming-Liang Wang*, Rui-Peng Zhang*, Wen-Juan Wu*, Yu Lu*, Xiao-Er Wei, Zheng Sun, Bao-Hui Guan, Jun-Jie Zhang, Xue Wu, Lei Zhang#, Tian-Le Wang#, Yue-Hua Li#. <em>* Co-first authors. # Corresponding authors.</em>",
-    "author_ids": [
-      "ruipeng-zhang",
-      "zheng-sun",
-      "yuehua-li"
-    ],
-    "type": "journal",
-    "year": 2026,
-    "venue": "npj Digital Medicine",
-    "cover": "images/brainmind-flowchart.png",
-    "tags": [
-      {
-        "label": "Q1",
-        "kind": "jcr"
-      },
-      {
-        "label": "IF 18.0",
-        "kind": "if"
-      }
-    ],
-    "doi": "10.1038/s41746-026-02380-4",
-    "links": {
-      "pdf": "https://www.nature.com/articles/s41746-026-02380-4",
-      "doi": "https://doi.org/10.1038/s41746-026-02380-4",
-      "code": "https://github.com/FrankZhangRp/BrainMIND"
-    },
-    "topic": [
-      "Large Language Models",
-      "Neuroimaging",
-      "Clinical Decision Support"
-    ],
-    "featured": true,
-    "abstract": "Benchmarked 10 large language models on generating diagnostic impressions from brain MRI report findings across a multicenter dataset, establishing a reproducible evaluation framework and reader study for LLM-based radiology reporting.",
-    "lab": true
   },
   {
     "file": "enhancing-bone-metastasis-ct.json",
@@ -388,130 +617,6 @@
     "topic": [],
     "featured": false,
     "lab": false
-  },
-  {
-    "file": "c1-pedicle-screw-ponticulus-posticus.json",
-    "id": "c1-pedicle-screw-ponticulus-posticus",
-    "title": "C1 pedicle screw placement risks in patients with ponticulus posticus: a CTA retrospective simulation study",
-    "authors_text": "Ping Wang, Han Meng, Lifeng Yu, Ruipeng Zhang, Xinyu Song, Tiantian She, Dan Wang, Yuehua Li.",
-    "author_ids": [
-      "ping-wang",
-      "ruipeng-zhang",
-      "xinyu-song",
-      "tiantian-she",
-      "yuehua-li"
-    ],
-    "type": "journal",
-    "year": 2026,
-    "venue": "Journal of Orthopaedic Surgery and Research",
-    "tags": [
-      {
-        "label": "Q1",
-        "kind": "jcr"
-      },
-      {
-        "label": "IF 3.8",
-        "kind": "if"
-      }
-    ],
-    "doi": "10.1186/s13018-026-07046-1",
-    "links": {
-      "pdf": "https://doi.org/10.1186/s13018-026-07046-1",
-      "doi": "https://doi.org/10.1186/s13018-026-07046-1"
-    },
-    "topic": [
-      "Musculoskeletal Imaging",
-      "Spine Surgery",
-      "CT Imaging"
-    ],
-    "featured": false,
-    "abstract": "Ponticulus posticus (POPO) may distort C1 surface landmarks for C1 pedicle screw (CPS) placement, raising concern for vertebral artery compromise (VAC). This single-center retrospective CTA simulation study of 141 subjects (bilateral POPO, unilateral POPO, and pure non-POPO) establishes a CTA-based workflow to identify POPO anatomies potentially suitable for CPS placement, simulating trajectories with PedicleScrewSimulator to quantify placement risk.",
-    "lab": true
-  },
-  {
-    "file": "imaging-grounded-multiagent-mllm-stroke.json",
-    "id": "imaging-grounded-multiagent-mllm-stroke",
-    "title": "A Multi-Agent MLLM Framework for Imaging-Grounded Treatment Recommendation in Acute Ischemic Stroke",
-    "authors_text": "Bicong Yan*, Zhuo Li*, Yanfeng Fan*, Ying Li, Li Chen, Xinyu Song, Yixiao Tang, Li Shen, Ruipeng Zhang#, Yuehua Li#. <em>* Co-first authors. # Corresponding authors.</em>",
-    "author_ids": [
-      "bicong-yan",
-      "zhuo-li",
-      "xinyu-song",
-      "yixiao-tang",
-      "ruipeng-zhang",
-      "yuehua-li"
-    ],
-    "type": "journal",
-    "year": 2026,
-    "venue": "npj Digital Medicine",
-    "tags": [
-      {
-        "label": "Q1",
-        "kind": "jcr"
-      },
-      {
-        "label": "IF 18.0",
-        "kind": "if"
-      }
-    ],
-    "doi": "10.1038/s41746-026-03066-7",
-    "links": {
-      "pdf": "https://www.nature.com/articles/s41746-026-03066-7",
-      "doi": "https://doi.org/10.1038/s41746-026-03066-7"
-    },
-    "topic": [
-      "Multimodal Large Language Models",
-      "Stroke Imaging",
-      "Clinical Decision Support"
-    ],
-    "featured": true,
-    "abstract": "An imaging-grounded multi-agent multimodal large language model emulates a multidisciplinary stroke team through coordinated agents for triage, time-window assessment, multimodal imaging interpretation, contraindication screening, and treatment recommendation. In a retrospective evaluation of 1,658 suspected acute ischemic stroke cases from two centers, multi-agent coordination with retrieval-augmented generation improved treatment recommendation accuracy from 0.636 to 0.785 and Macro-F1 from 0.562 to 0.768.",
-    "lab": true
-  },
-  {
-    "file": "multiagent-llm-emergency-stroke.json",
-    "id": "multiagent-llm-emergency-stroke",
-    "title": "A Multi-Agent Large Language Model Framework for Emergency Treatment Recommendation in Acute Ischemic Stroke: Development and Validation Study",
-    "authors_text": "Bicong Yan, Ruipeng Zhang, Yanfeng Fan, Ying Li, Li Chen, Xinyu Song, Yixiao Tang, Zhongzheng Cao, Li Shen, Mengfei Wang, Zhuo Li, Yijia Xiong, Yuehua Li.",
-    "author_ids": [
-      "bicong-yan",
-      "ruipeng-zhang",
-      "xinyu-song",
-      "yixiao-tang",
-      "zhongzheng-cao",
-      "mengfei-wang",
-      "zhuo-li",
-      "yuehua-li"
-    ],
-    "type": "journal",
-    "year": 2026,
-    "venue": "Journal of Medical Internet Research",
-    "cover": "images/hr-llm-stroke-framework.png",
-    "tags": [
-      {
-        "label": "Q1",
-        "kind": "jcr"
-      },
-      {
-        "label": "IF 8.2",
-        "kind": "if"
-      }
-    ],
-    "doi": "10.2196/96304",
-    "links": {
-      "doi": "https://doi.org/10.2196/96304",
-      "pdf": "https://www.jmir.org/2026/1/e96304",
-      "code": "https://github.com/FrankZhangRp/HR-LLM-Stroke",
-      "project": "https://frankzhangrp.github.io/HR-LLM-Stroke/"
-    },
-    "topic": [
-      "Large Language Models",
-      "Stroke Imaging",
-      "Clinical Decision Support"
-    ],
-    "featured": true,
-    "abstract": "Acute ischemic stroke requires rapid, guideline-driven treatment decisions within narrow time windows. This study presents a multi-agent large language model framework (HR-LLM-Stroke) that orchestrates specialized agents for imaging interpretation, clinical feature extraction, and treatment recommendation, supporting real-world clinical decision-making in acute ischemic stroke. Developed and validated on multicenter data, the framework demonstrates the feasibility of agentic LLM systems for time-critical emergency stroke workflows.",
-    "lab": true
   },
   {
     "file": "unibrain-universal-brain-mri.json",
