@@ -9,6 +9,10 @@ on:
     paths:
       - 'data/**'
       - 'tools/**'
+      - 'js/**'
+      - '*.html'
+      - 'members/*.html'
+      - 'css/**'
       - '.github/workflows/validate-data.yml'
 
 permissions:
@@ -23,6 +27,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
 
       - name: Every JSON file must parse
         run: |
@@ -44,6 +52,9 @@ jobs:
 
       - name: Publications must validate (required fields, types, unique ids, author_ids)
         run: python3 tools/build-pubs.py
+
+      - name: Bilingual navigation, publication filters, profiles and scripts must validate
+        run: node tools/test-site.js
 
       - name: Note if the committed manifest is stale
         run: |

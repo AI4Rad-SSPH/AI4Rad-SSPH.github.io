@@ -1,0 +1,34 @@
+{
+  "id": "flowpredictor-corrector-vascular-flow",
+  "title": "FlowPredictor–Corrector: A Hemodynamics-Guided Two-Step Deep Learning Framework for Vascular Flow Prediction",
+  "authors_text": "Zhuo Li, Yao Zeng, Mengfei Wang, Yulu Yang, Meixiu Pan, Ao Liu, Qiang Sun, Haifeng Zhao, Ruipeng Zhang, Yuehua Li",
+  "author_ids": [
+    "zhuo-li",
+    "yao-zeng",
+    "mengfei-wang",
+    "yulu-yang",
+    "ao-liu",
+    "qiang-sun",
+    "ruipeng-zhang",
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2026,
+  "venue": "IEEE Journal of Biomedical and Health Informatics",
+  "status": "early_access",
+  "published_date": "2026-10-08",
+  "doi": "10.1109/JBHI.2026.3741575",
+  "links": {
+    "pages": "https://ieeexplore.ieee.org/document/11726865",
+    "doi": "https://doi.org/10.1109/JBHI.2026.3741575"
+  },
+  "topic": [
+    "Vascular Imaging",
+    "Deep Learning",
+    "Hemodynamics"
+  ],
+  "tags": [],
+  "abstract": "A hemodynamics-guided, two-step deep learning framework for predicting vascular flow.",
+  "lab": true,
+  "featured": false
+}

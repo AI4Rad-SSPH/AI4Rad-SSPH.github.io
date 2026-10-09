@@ -102,8 +102,8 @@
       "role": "postdoc",
       "role_cn": "博士后",
       "avatar_type": "initials",
-      "degree": "MD, PhD",
-      "degree_cn": "MD，博士",
+      "degree": "M.D.",
+      "degree_cn": "M.D.",
       "major": "Radiology & Artificial Intelligence",
       "major_cn": "放射学与人工智能",
       "university": "Anhui Medical University",
@@ -116,6 +116,18 @@
       "department": "Department of Radiology",
       "department_cn": "放射介入科",
       "page": true
+    },
+    {
+      "id": "shuting-bu",
+      "name_en": "Shuting Bu",
+      "name_cn": "卜书婷",
+      "role": "postdoc",
+      "role_cn": "博士后",
+      "avatar_type": "initials",
+      "page": true,
+      "year": "2026",
+      "position": "Postdoctoral Fellow",
+      "position_cn": "博士后"
     }
   ],
   "phd_engineering": [
@@ -210,6 +222,54 @@
       "page": true
     },
     {
+      "id": "yixian-hu",
+      "name_en": "Yiguang Hu",
+      "name_cn": "胡义銧",
+      "role": "phd",
+      "role_cn": "直博生",
+      "avatar_type": "initials",
+      "page": true,
+      "degree": "PhD",
+      "degree_cn": "博士",
+      "year": "2026",
+      "school": "College of Health Science and Technology",
+      "school_cn": "医学技术学院",
+      "program": "Direct-entry PhD Program",
+      "program_cn": "直博生",
+      "university": "Shanghai Jiao Tong University School of Medicine",
+      "university_cn": "上海交通大学医学院"
+    },
+    {
+      "id": "xiuqi-yang",
+      "name_en": "Xiuqi Yang",
+      "name_cn": "杨修奇",
+      "role": "phd",
+      "role_cn": "直博生",
+      "avatar_type": "initials",
+      "page": true,
+      "program": "Direct-entry PhD Program",
+      "program_cn": "直博生",
+      "university": "Shanghai Jiao Tong University School of Medicine",
+      "university_cn": "上海交通大学医学院",
+      "year": "2026",
+      "degree": "PhD",
+      "degree_cn": "博士"
+    },
+    {
+      "id": "yiqi-sun",
+      "name_en": "Yiqi Sun",
+      "name_cn": "孙奕骐",
+      "role": "phd",
+      "role_cn": "直博生",
+      "avatar_type": "initials",
+      "degree": "PhD",
+      "degree_cn": "博士",
+      "program": "Direct-entry PhD Program",
+      "program_cn": "直博生",
+      "year": "2026",
+      "page": true
+    },
+    {
       "id": "ping-wang",
       "name_en": "Ping Wang",
       "name_cn": "王平",
@@ -231,6 +291,20 @@
       "university": "SJTU School of Medicine",
       "university_cn": "交大医学院",
       "year": "2025",
+      "page": true
+    },
+    {
+      "id": "hongda-wan",
+      "name_en": "Hongda Wan",
+      "name_cn": "万宏达",
+      "role": "phd",
+      "role_cn": "博士研究生",
+      "avatar_type": "initials",
+      "university": "SJTU School of Medicine",
+      "university_cn": "交大医学院",
+      "year": "2025",
+      "note": "Ruijin Hospital",
+      "note_cn": "瑞金医院",
       "page": true
     },
     {
@@ -258,49 +332,31 @@
       "university_cn": "交大医学院",
       "year": "2024",
       "page": true
-    },
-    {
-      "id": "hongda-wan",
-      "name_en": "Hongda Wan",
-      "name_cn": "万宏达",
-      "role": "phd",
-      "role_cn": "博士研究生",
-      "avatar_type": "initials",
-      "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
-      "year": "2025",
-      "note": "Ruijin Hospital",
-      "note_cn": "瑞金医院",
-      "page": true
     }
   ],
   "master_engineering": [
     {
-      "id": "yunyi-li",
-      "name_en": "Yunyi Li",
-      "name_cn": "李昀顗",
+      "id": "shixin-yang",
+      "name_en": "Shixin Yang",
+      "name_cn": "杨仕昕",
       "role": "master",
       "role_cn": "硕士研究生",
       "avatar_type": "initials",
-      "university": "Donghua University",
-      "university_cn": "东华大学",
-      "school": "School of Biomedical Engineering",
-      "school_cn": "生医工学院",
-      "year": "2024",
+      "university": "University of Shanghai for Science and Technology",
+      "university_cn": "上海理工大学",
+      "year": "2026",
       "page": true
     },
     {
-      "id": "yuanyi-wang",
-      "name_en": "Yuanyi Wang",
-      "name_cn": "汪源仪",
+      "id": "wenjie-yang",
+      "name_en": "Wenjie Yang",
+      "name_cn": "杨文杰",
       "role": "master",
       "role_cn": "硕士研究生",
       "avatar_type": "initials",
-      "university": "Donghua University",
-      "university_cn": "东华大学",
-      "school": "School of Information Science",
-      "school_cn": "信智学院",
-      "year": "2024",
+      "university": "Shanghai Polytechnic University",
+      "university_cn": "上海第二工业大学",
+      "year": "2026",
       "page": true
     },
     {
@@ -341,9 +397,104 @@
       "university_cn": "沈阳工业大学",
       "year": "2025",
       "page": true
+    },
+    {
+      "id": "yunyi-li",
+      "name_en": "Yunyi Li",
+      "name_cn": "李昀顗",
+      "role": "master",
+      "role_cn": "硕士研究生",
+      "avatar_type": "initials",
+      "university": "Donghua University",
+      "university_cn": "东华大学",
+      "school": "School of Biomedical Engineering",
+      "school_cn": "生医工学院",
+      "year": "2024",
+      "page": true
+    },
+    {
+      "id": "yuanyi-wang",
+      "name_en": "Yuanyi Wang",
+      "name_cn": "汪源仪",
+      "role": "master",
+      "role_cn": "硕士研究生",
+      "avatar_type": "initials",
+      "university": "Donghua University",
+      "university_cn": "东华大学",
+      "school": "School of Information Science",
+      "school_cn": "信智学院",
+      "year": "2024",
+      "page": true
     }
   ],
   "master_medical": [
+    {
+      "id": "nannan-dong",
+      "name_en": "Nannan Dong",
+      "name_cn": "董楠楠",
+      "role": "master",
+      "role_cn": "硕士研究生",
+      "avatar_type": "initials",
+      "page": true,
+      "year": "2026",
+      "program": "Academic Master’s Program",
+      "program_cn": "学术型硕士",
+      "university": "Shanghai Jiao Tong University School of Medicine",
+      "university_cn": "上海交通大学医学院"
+    },
+    {
+      "id": "huiyan-gan",
+      "name_en": "Huiyan Gan",
+      "name_cn": "甘慧艳",
+      "role": "master",
+      "role_cn": "硕士研究生",
+      "avatar_type": "initials",
+      "page": true,
+      "year": "2026",
+      "program": "Academic Master’s Program",
+      "program_cn": "学术型硕士",
+      "university": "Shanghai Jiao Tong University School of Medicine",
+      "university_cn": "上海交通大学医学院"
+    },
+    {
+      "id": "wei-wang",
+      "name_en": "Wei Wang",
+      "name_cn": "王薇",
+      "role": "master",
+      "role_cn": "硕士研究生",
+      "avatar_type": "initials",
+      "page": true,
+      "year": "2026",
+      "program": "Professional Master’s Program",
+      "program_cn": "专业型硕士",
+      "university": "Shanghai Jiao Tong University School of Medicine",
+      "university_cn": "上海交通大学医学院"
+    },
+    {
+      "id": "junlin-zhang",
+      "name_en": "Junlin Zhang",
+      "name_cn": "张俊林",
+      "role": "master",
+      "role_cn": "硕士研究生",
+      "avatar_type": "photo",
+      "avatar_path": "images/members/junlin-zhang.jpg",
+      "university": "SJTU School of Medicine",
+      "university_cn": "交大医学院",
+      "year": "2025",
+      "page": true
+    },
+    {
+      "id": "kaiyue-sun",
+      "name_en": "Kaiyue Sun",
+      "name_cn": "孙楷玥",
+      "role": "master",
+      "role_cn": "硕士研究生",
+      "avatar_type": "initials",
+      "university": "SJTU School of Medicine",
+      "university_cn": "交大医学院",
+      "year": "2025",
+      "page": true
+    },
     {
       "id": "zhongzheng-cao",
       "name_en": "Zhongzheng Cao",
@@ -379,31 +530,6 @@
       "university": "SJTU School of Medicine",
       "university_cn": "交大医学院",
       "year": "2024",
-      "page": true
-    },
-    {
-      "id": "junlin-zhang",
-      "name_en": "Junlin Zhang",
-      "name_cn": "张俊林",
-      "role": "master",
-      "role_cn": "硕士研究生",
-      "avatar_type": "photo",
-      "avatar_path": "images/members/junlin-zhang.jpg",
-      "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
-      "year": "2025",
-      "page": true
-    },
-    {
-      "id": "kaiyue-sun",
-      "name_en": "Kaiyue Sun",
-      "name_cn": "孙楷玥",
-      "role": "master",
-      "role_cn": "硕士研究生",
-      "avatar_type": "initials",
-      "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
-      "year": "2025",
       "page": true
     }
   ],
@@ -471,5 +597,6 @@
         "github": "https://github.com/LisongDai"
       }
     }
-  ]
+  ],
+  "honors_students": []
 }

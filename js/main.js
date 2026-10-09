@@ -21,8 +21,10 @@
     var c = h.getAttribute('data-theme');
     var icon = c === 'dark' ? 'sun' : 'moon';
     b.innerHTML = '<span class="ic ic--' + icon + ' nav__theme-icon"></span>';
-    b.setAttribute('title', c === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
-    b.setAttribute('aria-label', c === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    var cn = h.lang === 'zh-CN' || new URLSearchParams(window.location.search).get('lang') === 'cn';
+    var label = cn ? (c === 'dark' ? '切换浅色模式' : '切换深色模式') : (c === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    b.setAttribute('title', label);
+    b.setAttribute('aria-label', label);
   }
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e){
     if (!localStorage.getItem('ai4rad-theme')) {
@@ -99,8 +101,8 @@ function avatarUrl(member) {
 
 // Where a member's avatar should link: internal member page if they have one,
 // otherwise their external homepage, otherwise nowhere.
-function memberLink(member) {
-  if (member.page) return 'members/?id=' + encodeURIComponent(member.id);
+function memberLink(member, lang) {
+  if (member.page) return 'members/?id=' + encodeURIComponent(member.id) + (lang === 'cn' ? '&lang=cn' : '');
   if (member.homepage) return member.homepage;
   return '';
 }
@@ -112,11 +114,11 @@ function renderLeader(member, lang) {
   var aff = lang === 'cn' ? member.affiliation_cn : member.affiliation;
   var tagArr = (lang === 'cn' ? member.tags_cn : member.tags_en) || member.tags || [];
   var tags = tagArr.map(function(x){ return '<span class="leader-card__tag">' + x + '</span>'; }).join('');
-  var link = memberLink(member);
+  var link = memberLink(member, lang);
   var aOpen = link ? '<a href="' + link + '"' + (member.page ? '' : ' target="_blank" rel="noopener"') + '>' : '';
   var aClose = link ? '</a>' : '';
   var title = lang === 'cn' ? member.title_cn : member.title;
-  return '<div class="leader-card reveal"><div class="leader-card__avatar">' + aOpen + renderAvatar(member, lang) + aClose + '</div><div><div class="leader-card__name">' + name + '<span class="leader-card__name-en">' + nameOther + '</span></div><div class="leader-card__tags">' + tags + '</div><div class="leader-card__meta">' + title + ' · ' + aff + '<br>' + dept + '</div></div></div>';
+  return '<div class="leader-card reveal"><div class="leader-card__avatar">' + aOpen + renderAvatar(member, lang) + aClose + '</div><div><div class="leader-card__name">' + aOpen + name + aClose + '<span class="leader-card__name-en">' + nameOther + '</span></div><div class="leader-card__tags">' + tags + '</div><div class="leader-card__meta">' + title + ' · ' + aff + '<br>' + dept + '</div></div></div>';
 }
 
 function renderPI(member, lang) {
@@ -128,7 +130,7 @@ function renderPI(member, lang) {
   var pos = lang === 'cn' ? member.position_cn : member.position;
   var dept = lang === 'cn' ? member.department_cn : member.department;
   var aff = lang === 'cn' ? member.affiliation_cn : member.affiliation;
-  var link = memberLink(member);
+  var link = memberLink(member, lang);
   var home = link ? '<a href="' + link + '"' + (member.page ? '' : ' target="_blank" rel="noopener"') + '>' : '';
   var homeEnd = link ? '</a>' : '';
   var line1Parts = [];
@@ -140,14 +142,15 @@ function renderPI(member, lang) {
   if (pos) line2Parts.push(pos);
   if (dept) line2Parts.push(dept);
   if (aff) line2Parts.push(aff);
+  if (member.role === 'postdoc' && member.year) line2Parts.push(lang === 'cn' ? member.year + '年入站' : 'Joined in ' + member.year);
   var line2 = line2Parts.join(', ');
-  return '<div class="pi-card reveal"><div class="pi-card__avatar">' + home + renderAvatar(member, lang) + homeEnd + '</div><div><div class="pi-card__name">' + name + '<span class="' + (lang === 'cn' ? 'pi-card__name-en' : 'pi-card__name-cn') + '">' + nameOther + '</span></div><div class="pi-card__meta">' + line1 + (line1 && line2 ? '<br>' : '') + line2 + '</div></div></div>';
+  return '<div class="pi-card reveal"><div class="pi-card__avatar">' + home + renderAvatar(member, lang) + homeEnd + '</div><div><div class="pi-card__name">' + home + name + homeEnd + '<span class="' + (lang === 'cn' ? 'pi-card__name-en' : 'pi-card__name-cn') + '">' + nameOther + '</span></div><div class="pi-card__meta">' + line1 + (line1 && line2 ? '<br>' : '') + line2 + '</div></div></div>';
 }
 
 function renderMemberCard(member, lang) {
   var name = lang === 'cn' ? member.name_cn : member.name_en;
   var nameOther = lang === 'cn' ? member.name_en : member.name_cn;
-  var link = memberLink(member);
+  var link = memberLink(member, lang);
   var home = link ? '<a href="' + link + '"' + (member.page ? '' : ' target="_blank" rel="noopener"') + '>' : '';
   var homeEnd = link ? '</a>' : '';
   var metaParts = [];
@@ -157,20 +160,16 @@ function renderMemberCard(member, lang) {
     ? (lang === 'cn' ? (member.degree_cn || member.degree) : member.degree)
     : (member.role === 'phd' ? (lang === 'cn' ? '博士' : 'PhD') : '');
   if (degreeText) metaParts.push(degreeText);
-  if (member.university) {
-    var u = lang === 'cn' ? member.university_cn : member.university;
-    if (member.school) u += ' · ' + (lang === 'cn' ? member.school_cn : member.school);
-    if (member.program) u += ' · ' + (lang === 'cn' ? member.program_cn : member.program);
-    if (member.major) u += ' · ' + (lang === 'cn' ? member.major_cn : member.major);
-    metaParts.push(u);
-  }
-  if (member.year) metaParts.push((lang === 'cn' ? '' : '') + member.year + (lang === 'cn' ? '级' : ' batch'));
-  if (member.note) metaParts.push(lang === 'cn' ? member.note_cn : member.note);
+  ['university', 'school', 'program', 'major', 'note'].forEach(function(field) {
+    var value = lang === 'cn' ? (member[field + '_cn'] || member[field]) : member[field];
+    if (value) metaParts.push(value);
+  });
+  if (member.year) metaParts.push(member.year + (lang === 'cn' ? '级' : ' cohort'));
   var meta = metaParts.join(' · ');
   if (member.links && member.links.github) {
     meta += ' · <a href="' + member.links.github + '" target="_blank" rel="noopener">GitHub</a>';
   }
-  return '<div class="member-card"><div class="member-card__avatar">' + home + renderAvatar(member, lang) + homeEnd + '</div><div class="member-card__info"><div class="member-card__name">' + name + ' <span class="' + (lang === 'cn' ? 'member-card__name-en' : 'member-card__name-cn') + '">' + nameOther + '</span></div><div class="member-card__meta">' + meta + '</div></div></div>';
+  return '<div class="member-card"><div class="member-card__avatar">' + home + renderAvatar(member, lang) + homeEnd + '</div><div class="member-card__info"><div class="member-card__name">' + home + name + homeEnd + ' <span class="' + (lang === 'cn' ? 'member-card__name-en' : 'member-card__name-cn') + '">' + nameOther + '</span></div><div class="member-card__meta">' + meta + '</div></div></div>';
 }
 
 function renderTeam(data, lang) {
@@ -190,14 +189,18 @@ function renderTeam(data, lang) {
   }
 
   html += '<div id="phd" class="student-category reveal"><div class="section-label"><span class="section-label__text">' + (lang === 'cn' ? '博士研究生' : 'Doctoral Students') + '</span><span class="section-label__line"></span></div>';
-  html += '<div class="student-category__sub"><div class="student-category__sub-label">' + (lang === 'cn' ? '医学博士（MD）' : 'Medicine · MD') + '</div><div class="member-grid">' + data.phd_medical.map(function(m){ m.degree = m.degree || (lang === 'cn' ? '医学博士' : 'MD'); return renderMemberCard(m, lang); }).join('') + '</div></div>';
-  html += '<div class="student-category__sub"><div class="student-category__sub-label">' + (lang === 'cn' ? '工学博士（PhD）' : 'Engineering · PhD') + '</div><div class="member-grid">' + data.phd_engineering.map(function(m){ m.degree = m.degree || (lang === 'cn' ? '博士' : 'PhD'); return renderMemberCard(m, lang); }).join('') + '</div></div>';
+  html += '<div class="student-category__sub"><div class="student-category__sub-label">' + (lang === 'cn' ? '医学与医学技术（MD / PhD）' : 'Medicine & Health Science · MD / PhD') + '</div><div class="member-grid">' + data.phd_medical.map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
+  html += '<div class="student-category__sub"><div class="student-category__sub-label">' + (lang === 'cn' ? '工学博士（PhD）' : 'Engineering · PhD') + '</div><div class="member-grid">' + data.phd_engineering.map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
   html += '</div>';
 
   html += '<div id="master" class="student-category reveal"><div class="section-label"><span class="section-label__text">' + (lang === 'cn' ? '硕士研究生' : 'Master Students') + '</span><span class="section-label__line"></span></div>';
   html += '<div class="student-category__sub"><div class="student-category__sub-label">' + (lang === 'cn' ? '医学硕士' : 'Medicine') + '</div><div class="member-grid">' + data.master_medical.map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
   html += '<div class="student-category__sub"><div class="student-category__sub-label">' + (lang === 'cn' ? '工学硕士' : 'Engineering') + '</div><div class="member-grid">' + data.master_engineering.map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
   html += '</div>';
+
+  if (data.honors_students && data.honors_students.length) {
+    html += '<div id="honors" class="student-category reveal"><div class="section-label"><span class="section-label__text">' + (lang === 'cn' ? '荣誉计划学生' : 'Honors Program Students') + '</span><span class="section-label__line"></span></div><div class="member-grid">' + data.honors_students.map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
+  }
 
   html += '<div id="alumni" class="alumni-section reveal" style="margin-top:48px;"><div class="section-label"><span class="section-label__text">' + (lang === 'cn' ? '毕业致谢' : 'Alumni') + '</span><span class="section-label__line"></span></div><div class="member-grid">' + data.alumni.map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
 

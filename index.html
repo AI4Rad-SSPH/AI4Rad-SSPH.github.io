@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="images/brand/team-logo.png">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20261009">
 </head>
 <body>
   <nav class="nav">
@@ -38,6 +38,8 @@
       </div>
       <p class="hero__subtitle">Medical imaging AI research at Shanghai Sixth People's Hospital, Shanghai Jiao Tong University School of Medicine.</p>
       <p class="hero__links">
+        <a href="./publications.html">Publications</a>
+        <span class="hero__sep">·</span>
         <a href="./team.html">Team</a>
         <span class="hero__sep">·</span>
         <a href="https://github.com/AI4Rad-SSPH" target="_blank" rel="noopener">GitHub</a>
@@ -46,14 +48,8 @@
 
     <section class="reveal">
       <h2 class="section-title">News</h2>
-      <ul class="news-list-plain">
-        <li><span class="news-date">2026.08</span> <strong>AbdomenNet</strong> — a foundation model for acute abdomen diagnosis stratification and triage on non-contrast CT — published in <em>Nature Communications</em> (IF 18.1). <a href="https://doi.org/10.1038/s41467-026-76634-w" target="_blank" rel="noopener">Paper</a> · <a href="https://github.com/FrankZhangRp/Acute_abdomen" target="_blank" rel="noopener">Code</a></li>
-        <li><span class="news-date">2026.07</span> <strong>Imaging-Grounded Stroke MLLM</strong> — a multi-agent multimodal LLM framework for imaging-grounded treatment recommendation in acute ischemic stroke — published in <em>npj Digital Medicine</em>. <a href="https://www.nature.com/articles/s41746-026-03066-7" target="_blank" rel="noopener">Paper</a></li>
-        <li><span class="news-date">2026.07</span> <strong>BoneCoT</strong> — a whole-body skeleton foundation model for bone metastases guided by clinician-derived chain of thought — accepted by <em>Nature Biomedical Engineering</em> (IF 26.3). <a href="https://doi.org/10.1038/s41551-026-01736-1" target="_blank" rel="noopener">Paper</a> · <a href="https://frankzhangrp.github.io/BoneCoT/" target="_blank" rel="noopener">Demo</a></li>
-        <li><span class="news-date">2026.07</span> <strong>HR-LLM-Stroke</strong> — a multi-agent LLM framework for emergency stroke treatment recommendation — published in <em>Journal of Medical Internet Research</em>. <a href="https://www.jmir.org/2026/1/e96304" target="_blank" rel="noopener">Paper</a> · <a href="https://frankzhangrp.github.io/HR-LLM-Stroke/" target="_blank" rel="noopener">Demo</a></li>
-        <li><span class="news-date">2026.06</span> <strong>LumbarSR</strong> — paired clinical CT &amp; micro-CT dataset for lumbar vertebra super-resolution — published in <em>Scientific Data</em>. <a href="https://www.nature.com/articles/s41597-026-07748-5" target="_blank" rel="noopener">Paper</a> · <a href="https://github.com/FrankZhangRp/LumbarSR-Challenge" target="_blank" rel="noopener">Challenge</a></li>
-        <li><span class="news-date">2026.04</span> <strong>BrainMIND</strong> — benchmarking LLMs for brain MRI diagnostic impression generation — published in <em>npj Digital Medicine</em>. <a href="https://www.nature.com/articles/s41746-026-02380-4" target="_blank" rel="noopener">Paper</a> · <a href="https://github.com/FrankZhangRp/BrainMIND" target="_blank" rel="noopener">Code</a></li>
-      </ul>
+      <div id="home-news"><p class="text-body">Loading the latest news…</p></div>
+      <p class="news-more"><a href="./publications.html">All publications →</a></p>
     </section>
 
     <section class="reveal">
@@ -91,7 +87,7 @@
     <div class="footer__links">
       <a href="./">Home</a>
       <a href="./team.html">Team</a>
-      <a href="https://scholar.google.com/citations?user=zj4WqewAAAAJ" target="_blank" rel="noopener">Publications</a>
+      <a href="./publications.html">Publications</a>
       <a href="mailto:zhangrp@sjtu.edu.cn">Email</a>
       <a href="https://github.com/AI4Rad-SSPH" target="_blank" rel="noopener">GitHub</a>
     </div>
@@ -106,6 +102,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=20261009"></script>
+  <script src="js/home.js?v=20261009"></script>
 </body>
 </html>

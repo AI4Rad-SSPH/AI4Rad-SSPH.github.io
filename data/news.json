@@ -1,0 +1,153 @@
+[
+  {
+    "date": "2026.10",
+    "text_en": "FlowPredictor–Corrector, our hemodynamics-guided vascular flow prediction study, was published online in IEEE Journal of Biomedical and Health Informatics on 8 October.",
+    "text_cn": "FlowPredictor–Corrector 血流动力学引导的血流预测研究于 10 月 8 日在线发表于 IEEE Journal of Biomedical and Health Informatics。",
+    "links": [
+      {
+        "href": "https://ieeexplore.ieee.org/document/11726865",
+        "label_en": "Paper",
+        "label_cn": "论文"
+      }
+    ]
+  },
+  {
+    "date": "2026.09",
+    "text_en": "Our report-based carotid plaque AHA classification study was accepted by Insights into Imaging. Publication is forthcoming.",
+    "text_cn": "基于 MRI 报告的大语言模型辅助颈动脉斑块 AHA 分型研究获 Insights into Imaging 接收，待正式发表。",
+    "links": [
+      {
+        "href": "publications.html",
+        "label_en": "Publications",
+        "label_cn": "论文成果",
+        "href_cn": "publications_ch.html"
+      }
+    ]
+  },
+  {
+    "date": "2026.09",
+    "text_en": "Our 16-year cohort study of age-related intracranial injury risk after craniomaxillofacial trauma was published online in BMC Medical Imaging.",
+    "text_cn": "颅颌面创伤后急性颅内损伤年龄相关风险的 16 年队列研究在线发表于 BMC Medical Imaging，重点关注孤立性面部骨折的老年患者。",
+    "links": [
+      {
+        "href": "https://link.springer.com/article/10.1186/s12880-026-02801-6",
+        "label_en": "Paper",
+        "label_cn": "论文"
+      }
+    ]
+  },
+  {
+    "date": "2026.08",
+    "text_en": "Our study of pulmonary artery-to-vein volume difference for acute pulmonary embolism risk stratification was published online in Academic Radiology.",
+    "text_cn": "肺动静脉体积差用于急性肺栓塞风险分层的研究在线发表于 Academic Radiology。",
+    "links": [
+      {
+        "href": "https://www.sciencedirect.com/science/article/pii/S1076633226005945",
+        "label_en": "Paper",
+        "label_cn": "论文"
+      }
+    ]
+  },
+  {
+    "date": "2026.08",
+    "text_en": "AbdomenNet, our non-contrast CT foundation model for acute abdominal diagnosis, risk stratification, and triage, was published online in Nature Communications on 12 August.",
+    "text_cn": "AbdomenNet 非增强 CT 急腹症诊断、风险分层与分诊基础模型于 8 月 12 日在线发表于 Nature Communications。",
+    "links": [
+      {
+        "href": "https://www.nature.com/articles/s41467-026-76634-w",
+        "label_en": "Paper",
+        "label_cn": "论文"
+      },
+      {
+        "href": "https://github.com/FrankZhangRp/Acute_abdomen",
+        "label_en": "Code",
+        "label_cn": "代码"
+      },
+      {
+        "href": "https://frankzhangrp.github.io/Acute_abdomen/",
+        "label_en": "Project",
+        "label_cn": "项目"
+      }
+    ]
+  },
+  {
+    "date": "2026.07",
+    "text_en": "Our imaging-grounded multi-agent MLLM study of acute ischemic stroke treatment recommendations was published in npj Digital Medicine.",
+    "text_cn": "影像驱动的急性缺血性卒中多智能体 MLLM 治疗推荐研究发表于 npj Digital Medicine。",
+    "links": [
+      {
+        "href": "https://www.nature.com/articles/s41746-026-03066-7",
+        "label_en": "Paper",
+        "label_cn": "论文"
+      }
+    ]
+  },
+  {
+    "date": "2026.07",
+    "text_en": "BoneCoT, our whole-body skeletal foundation model study for bone metastasis assessment, was published in Nature Biomedical Engineering on 2 July.",
+    "text_cn": "BoneCoT 全身骨骼基础模型与骨转移评估研究于 7 月 2 日发表于 Nature Biomedical Engineering。",
+    "links": [
+      {
+        "href": "https://doi.org/10.1038/s41551-026-01736-1",
+        "label_en": "Paper",
+        "label_cn": "论文"
+      },
+      {
+        "href": "https://frankzhangrp.github.io/BoneCoT/",
+        "label_en": "Demo",
+        "label_cn": "演示"
+      }
+    ]
+  },
+  {
+    "date": "2026.07",
+    "text_en": "HR-LLM-Stroke, our multi-agent LLM study of emergency stroke treatment recommendations, was published in Journal of Medical Internet Research.",
+    "text_cn": "HR-LLM-Stroke 急诊卒中多智能体大语言模型治疗推荐研究发表于 Journal of Medical Internet Research。",
+    "links": [
+      {
+        "href": "https://www.jmir.org/2026/1/e96304",
+        "label_en": "Paper",
+        "label_cn": "论文"
+      },
+      {
+        "href": "https://frankzhangrp.github.io/HR-LLM-Stroke/",
+        "label_en": "Demo",
+        "label_cn": "演示"
+      }
+    ]
+  },
+  {
+    "date": "2026.06",
+    "text_en": "LumbarSR, our paired clinical CT and micro-CT dataset for lumbar vertebra super-resolution, was published in Scientific Data.",
+    "text_cn": "LumbarSR 配对临床 CT 与显微 CT 的腰椎超分辨率数据集发表于 Scientific Data。",
+    "links": [
+      {
+        "href": "https://www.nature.com/articles/s41597-026-07748-5",
+        "label_en": "Paper",
+        "label_cn": "论文"
+      },
+      {
+        "href": "https://github.com/FrankZhangRp/LumbarSR-Challenge",
+        "label_en": "Challenge",
+        "label_cn": "挑战赛"
+      }
+    ]
+  },
+  {
+    "date": "2026.04",
+    "text_en": "BrainMIND, our benchmark evaluating LLM diagnostic impressions from brain MRI report findings, was published in npj Digital Medicine.",
+    "text_cn": "BrainMIND 基于脑 MRI 报告所见生成诊断结论的大语言模型评测研究发表于 npj Digital Medicine。",
+    "links": [
+      {
+        "href": "https://www.nature.com/articles/s41746-026-02380-4",
+        "label_en": "Paper",
+        "label_cn": "论文"
+      },
+      {
+        "href": "https://github.com/FrankZhangRp/BrainMIND",
+        "label_en": "Code",
+        "label_cn": "代码"
+      }
+    ]
+  }
+]

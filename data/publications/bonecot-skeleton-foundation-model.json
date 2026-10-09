@@ -1,6 +1,6 @@
 {
   "id": "bonecot-skeleton-foundation-model",
-  "title": "BoneCoT: Multi-center validation of a whole-body skeleton foundation model for bone metastases guided by clinician-derived chain of thought",
+  "title": "BoneCoT: multicentre validation of a whole-body skeleton foundation model for bone metastases guided by clinician-derived chain of thought",
   "authors_text": "Hui Zhao*,# Ruipeng Zhang*, Zhiyu Wang*, Yifeng Gu, Shengyuan Xu, Sheng Wang#, Yuehua Li#.",
   "author_ids": [
     "ruipeng-zhang",
@@ -35,5 +35,7 @@
     "project": "https://frankzhangrp.github.io/BoneCoT/"
   },
   "lab": true,
-  "featured": true
+  "featured": true,
+  "status": "published",
+  "published_date": "2026-07-02"
 }

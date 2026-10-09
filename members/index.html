@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="../images/brand/team-logo.png">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css?v=20261009">
   <style>
     /* Member profile — the only page that renders .mp-*; styles live here, with
        sizes driven by the shared --fs-* / clamp tokens in css/style.css so this
@@ -96,8 +96,8 @@
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
-  <script src="../js/pub.js"></script>
+  <script src="../js/main.js?v=20261009"></script>
+  <script src="../js/pub.js?v=20261009"></script>
   <script>
   (function(){
     var params = new URLSearchParams(location.search);
@@ -110,6 +110,33 @@
     lt.setAttribute('href', '?id=' + id + (lang === 'cn' ? '' : '&lang=cn'));
 
     function t(en, cn){ return lang === 'cn' ? cn : en; }
+    var teamHref = lang === 'cn' ? '../team_ch.html' : '../team.html';
+    document.documentElement.setAttribute('lang', lang === 'cn' ? 'zh-CN' : 'en');
+    var navPages = [
+      ['../', '../index_ch.html', 'Home', '首页'],
+      ['../about.html', '../about_ch.html', 'About', '关于'],
+      ['../team.html', '../team_ch.html', 'Team', '团队'],
+      ['../publications.html', '../publications_ch.html', 'Publications', '论文成果'],
+      ['../contact.html', '../contact_ch.html', 'Contact', '联系']
+    ];
+    document.querySelectorAll('.nav__link').forEach(function (link, index) {
+      var page = navPages[index];
+      link.href = t(page[0], page[1]);
+      link.textContent = t(page[2], page[3]);
+    });
+    document.querySelector('.nav__brand').href = t('../', '../index_ch.html');
+    document.querySelector('.nav__brand-text').textContent = t('AI4Rad Lab', 'AI4Rad 实验室');
+    if (lang === 'cn') {
+      document.querySelector('.footer__brand-intro').textContent = '上海市第六人民医院放射介入科 · 医学影像人工智能实验室 · 上海交通大学医学院';
+      document.querySelector('.footer__brand-vision').textContent = '辅助临床诊疗 · 提升诊疗效率与质量 · 探索影像背后的生理病理机制';
+      document.querySelector('.footer__affil-cap').textContent = '依托单位';
+      document.querySelector('.a-sjtu').src = '../images/brand/sjtu-logo-zh.svg';
+      var footerLinks = document.querySelectorAll('.footer__links a');
+      footerLinks[0].href = '../index_ch.html';
+      footerLinks[0].textContent = '首页';
+      footerLinks[1].href = teamHref;
+      footerLinks[1].textContent = '团队';
+    }
     function asset(p){ if (!p) return ''; return /^(https?:|data:)/.test(p) ? p : '../' + p; }
     function esc(s){ return String(s == null ? '' : s); }
 
@@ -135,13 +162,13 @@
       return '<div class="mp-avatar-fallback"><div class="avatar-ph" aria-hidden="true">' + memberInitials(m) + '</div></div>';
     }
 
-    if (!id) { root.innerHTML = '<p class="mp-empty">' + t('No member specified.', '未指定成员。') + ' <a href="../team.html">' + t('Back to the team page →', '返回团队页面 →') + '</a></p>'; return; }
+    if (!id) { root.innerHTML = '<p class="mp-empty">' + t('No member specified.', '未指定成员。') + ' <a href="' + teamHref + '">' + t('Back to the team page →', '返回团队页面 →') + '</a></p>'; return; }
 
-    fetch('../data/members/' + id + '.json')
+    fetch('../data/members/' + id + '.json?v=20261009')
       .then(function(r){ if (!r.ok) throw new Error('not found'); return r.json(); })
       .then(function(m){ render(m); })
       .catch(function(){
-        root.innerHTML = '<p class="mp-empty">' + t('This member has not set up a profile page yet.', '该成员尚未创建个人页面。') + '<br><a href="../team.html">' + t('Back to the team page →', '返回团队页面 →') + '</a></p>';
+        root.innerHTML = '<p class="mp-empty">' + t('This member has not set up a profile page yet.', '该成员尚未创建个人页面。') + '<br><a href="' + teamHref + '">' + t('Back to the team page →', '返回团队页面 →') + '</a></p>';
       });
 
     function sectionHead(title){
@@ -157,7 +184,7 @@
 
       html += '<section class="mp-profile reveal">';
       html += '<div>';
-      html += '<a href="../team.html" class="mp-back">← ' + t('Team', '团队') + '</a>';
+      html += '<a href="' + teamHref + '" class="mp-back">← ' + t('Team', '团队') + '</a>';
       html += '<h1 class="mp-name">' + name + '<span class="mp-name-sub">' + esc(other) + '</span></h1>';
       if (m.title_en || m.title_cn) html += '<p class="mp-title">' + esc(t(m.title_en, m.title_cn)) + '</p>';
       if (m.bio_en || m.bio_cn) html += '<p class="mp-bio">' + t(m.bio_en, m.bio_cn) + '</p>';
@@ -224,8 +251,8 @@
         }
         if (!window.Pub) { pubSec.remove(); return; }
         Promise.all([
-          fetchJson('../data/publications/manifest.json'),
-          fetchJson('../data/team.json')
+          fetchJson('../data/publications/manifest.json?v=20261009'),
+          fetchJson('../data/team.json?v=20261009')
         ]).then(function (res) {
           var papers = res[0] || [];
           var team = res[1] || {};
@@ -241,7 +268,9 @@
           });
           if (!mine.length) { pubSec.remove(); return; }
           // newest first
-          mine.sort(function (a, b) { return (b.year || 0) - (a.year || 0); });
+          mine.sort(function (a, b) {
+            return (b.year || 0) - (a.year || 0) || (b.published_date || '').localeCompare(a.published_date || '');
+          });
           pubSec.innerHTML += '<ul class="pub-list pub-list--cards">' +
             mine.map(function (p) { return window.Pub.renderCard(p, lang, ctx); }).join('') +
             '</ul>';

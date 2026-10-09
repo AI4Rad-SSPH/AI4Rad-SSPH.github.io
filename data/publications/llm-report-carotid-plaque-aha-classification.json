@@ -1,0 +1,19 @@
+{
+  "id": "llm-report-carotid-plaque-aha-classification",
+  "title": "Large Language Model Assistance for Report-Based Carotid Plaque AHA Classification: A Multi-Reader Study",
+  "author_ids": [],
+  "type": "journal",
+  "year": 2026,
+  "venue": "Insights into Imaging",
+  "status": "accepted",
+  "links": {},
+  "topic": [
+    "Large Language Models",
+    "Vascular Imaging",
+    "Radiology Reports"
+  ],
+  "tags": [],
+  "abstract": "A retrospective multicenter, report-based reader study of large language model assistance for modified AHA classification of carotid plaques from free-text MRI reports. The reference standard is expert consensus based on report text.",
+  "lab": true,
+  "featured": false
+}

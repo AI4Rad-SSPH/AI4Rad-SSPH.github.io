@@ -1,0 +1,40 @@
+{
+  "id": "age-related-intracranial-injury-facial-trauma",
+  "title": "Age-related risk of acute intracranial injury in craniomaxillofacial trauma: a 16-year cohort study with focus on older adults with isolated facial fractures",
+  "authors_text": "Zhongzheng Cao, Ruipeng Zhang, Ping Wang, Xinyu Song, Yulu Yang, Yifan Tu, Yixiao Tang, Mengfei Wang, Yunyi Li, Jia Wang, Han Zhang, Xiaoer Wei, Dan Wang, Yuehua Li",
+  "author_ids": [
+    "zhongzheng-cao",
+    "ruipeng-zhang",
+    "ping-wang",
+    "xinyu-song",
+    "yulu-yang",
+    "yifan-tu",
+    "yixiao-tang",
+    "mengfei-wang",
+    "yunyi-li",
+    "yuehua-li"
+  ],
+  "type": "journal",
+  "year": 2026,
+  "venue": "BMC Medical Imaging",
+  "status": "early_access",
+  "published_date": "2026-09-15",
+  "doi": "10.1186/s12880-026-02801-6",
+  "links": {
+    "pages": "https://link.springer.com/article/10.1186/s12880-026-02801-6",
+    "doi": "https://doi.org/10.1186/s12880-026-02801-6"
+  },
+  "topic": [
+    "Emergency Radiology",
+    "Trauma Imaging"
+  ],
+  "tags": [
+    {
+      "label": "IF 3.9",
+      "kind": "if"
+    }
+  ],
+  "abstract": "A 16-year cohort study examining age-related risk of acute intracranial injury after craniomaxillofacial trauma, with a focus on older adults with isolated facial fractures.",
+  "lab": true,
+  "featured": false
+}

@@ -121,13 +121,15 @@ cp data/publications/_template.json data/publications/<paper-id>.json
 |---|---|---|
 | `id` | ✅ | Same as filename, e.g. `"multiagent-llm-emergency-stroke"`. 与文件名一致。 |
 | `title` | ✅ | Full paper title. 完整标题。 |
-| `authors_text` | ✅ | Author list as a string, e.g. `"Bicong Yan, Ruipeng Zhang, …, Yuehua Li."`. HTML ok (`<strong>`, `<em>`). 作者字符串。 |
+| `authors_text` | — | Verified author list when available, e.g. `"Bicong Yan, Ruipeng Zhang, …, Yuehua Li."`. HTML ok (`<strong>`, `<em>`). 作者字符串。 |
 | `author_ids` | ✅ | Array of team-member `id`s who are co-authors, e.g. `["bicong-yan","ruipeng-zhang"]`. These auto-link names to member pages and pull the paper onto each author's page. 团队合著者的 id 列表，用于自动关联。 |
 | `type` | ✅ | `"journal"` / `"conference"` / `"preprint"`. 类型。 |
 | `year` | ✅ | Publication year (number). 年份。 |
 | `venue` | ✅ | Journal/conference name. 期刊或会议。 |
+| `status` | — | `published`, `early_access`, `accepted`, or `preprint`. Accepted work is displayed as awaiting publication. 发表状态；已接收、未公开的论文使用 `accepted`。 |
+| `published_date` | — | Verified online publication date, `YYYY-MM-DD`; used to order papers within a year. 正式在线发表日期，用于同年份内排序；未知时省略。 |
 | `doi` | — | DOI string, e.g. `"10.2196/96304"`. DOI。 |
-| `links` | — | `pdf`, `code`, `project`, `doi` — any subset. 各类链接。 |
+| `links` | — | `pdf`, `code`, `project`, `pages`, `doi` — any subset. 各类链接。 |
 | `topic` | — | Topic tags, e.g. `["Stroke Imaging","Large Language Models"]`. 主题标签。 |
 | `tags` | — | Badges, each `{ "label": "Q1", "kind": "jcr" }`. `kind` colors it: `jcr`/`if`/`venue`/`type`/`award`/`ccf`/`cas`. 徽章。 |
 | `abstract` | — | One-paragraph abstract. 摘要。 |
@@ -161,7 +163,13 @@ python3 tools/build-pubs.py
 ```
 
 This validates required fields, checks `author_ids` against `team.json`, and rewrites
-`data/publications/manifest.json` sorted by year (newest first). 该脚本会校验字段、核对 author_ids、按年份降序重写 manifest。 If you do commit it, the merge-time rebuild simply confirms it's already current. 若你一并提交，合并时的重建只会确认它已是最新。
+`data/publications/manifest.json` sorted by year and known publication date (newest first). 该脚本会校验字段、核对 author_ids、按年份及已知发表日期降序重写 manifest。 If you do commit it, the merge-time rebuild simply confirms it's already current. 若你一并提交，合并时的重建只会确认它已是最新。
+
+For an accepted paper without a public article, leave `links` empty and omit an unknown DOI or publication date. Add the verified author list when available. 已接收但未公开的论文不填写虚构链接、DOI 或发表日期；作者名单确认后再补齐。
+
+Homepage announcements are maintained once in `data/news.json`, with `text_en`, `text_cn`, and bilingual link labels. Keep the newest announcements first; the homepage shows five and offers earlier news in an expandable list. 首页动态统一维护在 `data/news.json`，新动态放在前面，中英文同步填写；前五条直接展示，其余可展开。
+
+Run `node tools/test-site.js` to check bilingual routes, publication filters, member profiles, and JavaScript syntax. PR validation runs these checks automatically. 本地可运行该命令检查中英文跳转、论文筛选、成员资料和脚本语法；PR 会自动执行。
 
 ---
 
