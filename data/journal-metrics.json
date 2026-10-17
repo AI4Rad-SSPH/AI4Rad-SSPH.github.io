@@ -1,0 +1,244 @@
+{
+  "checked_date": "2026-10-17",
+  "journals": {
+    "ACS Nano": {
+      "value": 17.3,
+      "year": 2025,
+      "source": "https://pubs.acs.org/ancac3/pages/about",
+      "evidence": "Journal Metrics lists 17.3 as 2-Year Impact Factor and labels the metrics block Data as of 2025; 5-Year Impact Factor is separately 17.0."
+    },
+    "Academic Radiology": {
+      "value": 4.7,
+      "year": 2025,
+      "source": "https://referencecitationanalysis.com/InCiteJournalInfo?id=301",
+      "evidence": "Reference Citation Analysis (Baishideng Publishing Group) explicitly reports 2025 JIF and attributes it to 2025 Journal Citation Reports (Clarivate, copyright 2026). This is a secondary source; current Elsevier journal metrics pages require browser verification."
+    },
+    "American Journal of Neuroradiology": {
+      "value": 3.5,
+      "year": null,
+      "source": "https://www.ajnr.org/page/content/About",
+      "evidence": "Current official about page lists Impact Factor (JCR) 3.5; statistical year is not stated.",
+      "year_note": "The source does not identify the JIF statistical year; checked 2026-10-17.",
+      "year_note_cn": "来源未标注 JIF 统计年度；核验日期为 2026-10-17。"
+    },
+    "Annals of Internal Medicine": {
+      "value": 17.3,
+      "year": 2025,
+      "source": "https://www.acponline.org/clinical-information/journals-publications/annals-of-internal-medicine",
+      "evidence": "About Annals > Impact explicitly says most recent (2025) Impact Factor is 17.3."
+    },
+    "BMC Health Services Research": {
+      "value": 3.3,
+      "year": 2025,
+      "source": "https://link.springer.com/journal/12913",
+      "evidence": "Official journal homepage Journal metrics explicitly lists Journal Impact Factor 3.3 (2025); distinct from 5-year 3.9."
+    },
+    "BMC Medical Imaging": {
+      "value": 3.9,
+      "year": 2025,
+      "source": "https://link.springer.com/journal/12880",
+      "evidence": "期刊首页 Journal metrics 明示 Journal Impact Factor 3.9 (2025)。"
+    },
+    "CNS Neuroscience & Therapeutics": {
+      "value": 6.6,
+      "year": 2025,
+      "source": "https://onlinelibrary.wiley.com/journal/17555949/journal-metrics",
+      "evidence": "Citation Impact section explicitly labels 2025 Journal Impact Factor (Clarivate): 6.6."
+    },
+    "Cardiovascular Diabetology": {
+      "value": 15.6,
+      "year": 2025,
+      "source": "https://link.springer.com/journal/12933",
+      "evidence": "Official journal homepage Journal metrics explicitly lists Journal Impact Factor 15.6 (2025); distinct from 5-year 13.6."
+    },
+    "Chemical Engineering Journal": {
+      "value": 12.5,
+      "year": null,
+      "source": "https://www.sciencedirect.com/browse/calls-for-papers?dgcid=STMJ_1686838576_STMJIN_OTR",
+      "evidence": "官方征稿列表 ISCRE29 & APCRE11 条目显示 Impact Factor12.5，CiteScore19.6，未标JIF统计年。另官方CEJ早期编委征集PDF明确2023 JIF13.4（历史证据）。",
+      "year_note": "The source does not identify the JIF statistical year; checked 2026-10-17.",
+      "year_note_cn": "来源未标注 JIF 统计年度；核验日期为 2026-10-17。"
+    },
+    "Communications Chemistry": {
+      "value": 6.9,
+      "year": 2025,
+      "source": "https://www.nature.com/nature-portfolio/about-journals/journal-metrics",
+      "evidence": "2025 Journal Metrics 表，本刊 Journal Impact Factor 列为6.9；旁列7.1为5-year指标。"
+    },
+    "Computer Methods and Programs in Biomedicine": {
+      "value": 6.4,
+      "year": null,
+      "source": "https://www.sciencedirect.com/browse/calls-for-papers?subject=computer-science",
+      "evidence": "Official ScienceDirect full indexed page lists CMPB Impact Factor 6.4 and CiteScore 11.9; metric year is not specified. Direct journal and insights endpoints return anti-bot pages. Do not assign 2025 from third-party values.",
+      "year_note": "The source does not identify the JIF statistical year; checked 2026-10-17.",
+      "year_note_cn": "来源未标注 JIF 统计年度；核验日期为 2026-10-17。"
+    },
+    "Computerized Medical Imaging and Graphics": {
+      "value": 5.5,
+      "year": 2025,
+      "source": "https://referencecitationanalysis.com/InCiteJournalInfo?id=169458",
+      "evidence": "Reference Citation Analysis (Baishideng Publishing Group) explicitly reports 2025 JIF and attributes it to 2025 Journal Citation Reports (Clarivate, copyright 2026). This is a secondary source; current Elsevier journal metrics pages require browser verification."
+    },
+    "Diagnostics": {
+      "value": 3.8,
+      "year": 2025,
+      "source": "https://www.mdpi.com/journal/diagnostics/imprint",
+      "evidence": "Official journal metric section explicitly identifies the 2025 impact factor."
+    },
+    "European Journal of Radiology": {
+      "value": 3.3,
+      "year": null,
+      "source": "https://assets.ctfassets.net/o78em1y1w4i4/FpAK2XSTwUe8quVNQ83jm/eb9eaf4a9fcc494c1111c932a03f8cb9/Elsevier_Radiology_A5_Catalogue_1025_2_October_2025_Final.pdf",
+      "evidence": "Elsevier Radiology 2025/2026 catalogue p.5 lists EJR Impact Factor 3.3; source text does not explicitly identify the metric year. Do not infer year from catalogue date. Current homepage blocked.",
+      "year_note": "The source does not identify the JIF statistical year; checked 2026-10-17.",
+      "year_note_cn": "来源未标注 JIF 统计年度；核验日期为 2026-10-17。"
+    },
+    "European Radiology": {
+      "value": 6.0,
+      "year": 2025,
+      "source": "https://link.springer.com/journal/330",
+      "evidence": "期刊首页 Journal metrics 明示 Journal Impact Factor 6.0 (2025)。"
+    },
+    "Frontiers of Information Technology & Electronic Engineering": {
+      "value": 2.9,
+      "year": 2024,
+      "source": "https://link.springer.com/journal/11714",
+      "evidence": "Official archived Springer journal homepage lists Journal Impact Factor 2.9 (2024). Journal ceased Springer publication January 2026 and renamed ENGINEERING Information Technology & Electronic Engineering with IEEE/Zhejiang University Press; no verified 2025 JIF found."
+    },
+    "IEEE Journal of Biomedical and Health Informatics": {
+      "value": 7.7,
+      "year": 2025,
+      "source": "https://open.ieee.org/wp-content/uploads/IEEE-Title-List-September-2026.pdf",
+      "evidence": "第1页 J-BHI 行 JIF 7.7；第3页脚注明确基于2025 JCR（2026年6月发布），数据截至2026-09-15。5-year JIF 为8.0，已区分。"
+    },
+    "IEEE Transactions on Medical Imaging": {
+      "value": 12.4,
+      "year": 2025,
+      "source": "https://ieeetmi.org/journal-stats/",
+      "evidence": "Official journal statistics updated June 17, 2026 explicitly lists 2025 Journal Impact Factor 12.4. Also confirmed IEEE September 2026 title list."
+    },
+    "IEEE Transactions on Multimedia": {
+      "value": 9.9,
+      "year": 2025,
+      "source": "https://open.ieee.org/wp-content/uploads/IEEE-Title-List-September-2026.pdf",
+      "evidence": "Official IEEE title list T-MM row has JIF 9.9 (distinct from five-year 9.4). Footnote identifies 2025 JCR released June 2026."
+    },
+    "Insights into Imaging": {
+      "value": 5.6,
+      "year": 2025,
+      "source": "https://link.springer.com/journal/13244",
+      "evidence": "期刊首页 Journal metrics 明示 Journal Impact Factor 5.6 (2025)。"
+    },
+    "Journal of Biomedical Engineering": {
+      "value": 1.122,
+      "year": 2025,
+      "metric": "chinese_if",
+      "source": "https://www.cqvip.com/journal/90574X/90574X",
+      "evidence": "VIP official journal record identifies ISSN1001-5515 and Chinese journal impact factor1.122 (2025 edition). This is not labelled as a Clarivate JIF."
+    },
+    "Journal of Bone and Mineral Research": {
+      "value": 6.5,
+      "year": 2025,
+      "source": "https://academic.oup.com/jbmr/pages/about",
+      "evidence": "Official journal metric section explicitly identifies the 2025 impact factor."
+    },
+    "Journal of Medical Internet Research": {
+      "value": 8.2,
+      "year": 2025,
+      "source": "https://www.jmir.org/",
+      "evidence": "Official journal metric section explicitly identifies the 2025 impact factor."
+    },
+    "Journal of Multidisciplinary Healthcare": {
+      "value": 3.0,
+      "year": 2025,
+      "source": "https://www.tandfonline.com/journals/djmd20/about-this-journal",
+      "evidence": "Official full indexed about page explicitly lists 3.0 (2025) Impact Factor, distinct from 3.1 (2025) 5-year IF."
+    },
+    "Journal of NeuroInterventional Surgery": {
+      "value": 4.4,
+      "year": 2025,
+      "source": "https://jnis.bmj.com/pages/about",
+      "evidence": "Official journal metric section explicitly identifies the 2025 impact factor."
+    },
+    "Journal of Orthopaedic Surgery and Research": {
+      "value": 3.8,
+      "year": 2025,
+      "source": "https://link.springer.com/journal/13018",
+      "evidence": "期刊首页 Journal metrics 明示 Journal Impact Factor 3.8 (2025)。"
+    },
+    "Molecules": {
+      "value": 5.1,
+      "year": 2025,
+      "source": "https://www.mdpi.com/journal/molecules/imprint",
+      "evidence": "Official journal metric section explicitly identifies the 2025 impact factor."
+    },
+    "Nanomaterials": {
+      "value": 4.8,
+      "year": 2025,
+      "source": "https://www.mdpi.com/journal/nanomaterials/imprint",
+      "evidence": "Official journal metric section explicitly identifies the 2025 impact factor."
+    },
+    "Nature Biomedical Engineering": {
+      "value": 26.3,
+      "year": 2025,
+      "source": "https://www.nature.com/nature-portfolio/about-journals/journal-metrics",
+      "evidence": "2025 Journal Metrics 表，Nature Research Journals 下本刊的 Journal Impact Factor 列为26.3。"
+    },
+    "Nature Communications": {
+      "value": 18.1,
+      "year": 2025,
+      "source": "https://www.nature.com/nature-portfolio/about-journals/journal-metrics",
+      "evidence": "2025 Journal Metrics 表，Multidisciplinary journals 下本刊的 Journal Impact Factor 列为18.1。旧 journal-information 页仍列2024值，采用已更新年度指标表。"
+    },
+    "Neural Plasticity": {
+      "value": 3.4,
+      "year": 2025,
+      "source": "https://onlinelibrary.wiley.com/journal/6020/journal-metrics",
+      "evidence": "Citation Impact section explicitly labels 2025 Journal Impact Factor (Clarivate): 3.4."
+    },
+    "Pattern Recognition": {
+      "value": 9.1,
+      "year": null,
+      "source": "https://www.sciencedirect.com/browse/calls-for-papers?subject=computer-science",
+      "evidence": "Current official ScienceDirect call for Multimodal Pattern Recognition for Biomedical Data lists Impact Factor 9.1, distinct from CiteScore17.3; JIF statistical year is not stated.",
+      "year_note": "The source does not identify the JIF statistical year; checked 2026-10-17.",
+      "year_note_cn": "来源未标注 JIF 统计年度；核验日期为 2026-10-17。"
+    },
+    "PeerJ": {
+      "value": 2.9,
+      "year": 2025,
+      "source": "https://peerj.com/journals/peerj/",
+      "evidence": "Official current homepage retrieved through https://r.jina.ai/https://peerj.com/journals/peerj/ explicitly shows 2.9 (2025) Journal impact factor; old factsheet 2.4 has been superseded."
+    },
+    "Pharmaceutics": {
+      "value": 6.9,
+      "year": 2025,
+      "source": "https://www.mdpi.com/journal/pharmaceutics/imprint",
+      "evidence": "Official journal metric section explicitly identifies the 2025 impact factor."
+    },
+    "Radiology": {
+      "value": 17.6,
+      "year": 2025,
+      "source": "https://pubs.rsna.org/page/radiology/about",
+      "evidence": "Official journal metric section explicitly identifies the 2025 impact factor."
+    },
+    "Radiology: Artificial Intelligence": {
+      "value": 20.1,
+      "year": 2025,
+      "source": "https://pubs.rsna.org/page/ai/about",
+      "evidence": "Official journal metric section explicitly identifies the 2025 impact factor."
+    },
+    "Scientific Data": {
+      "value": 7.2,
+      "year": 2025,
+      "source": "https://www.nature.com/nature-portfolio/about-journals/journal-metrics",
+      "evidence": "2025 Journal Metrics 表，Multidisciplinary journals 下本刊的 Journal Impact Factor 列为7.2。"
+    },
+    "npj Digital Medicine": {
+      "value": 18.0,
+      "year": 2025,
+      "source": "https://www.nature.com/nature-portfolio/about-journals/journal-metrics",
+      "evidence": "2025 Journal Metrics 表，本刊 Journal Impact Factor 列为18.0；旁列19.7为5-year指标。"
+    }
+  }
+}

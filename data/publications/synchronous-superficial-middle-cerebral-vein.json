@@ -21,10 +21,6 @@
     {
       "label": "Q2",
       "kind": "jcr"
-    },
-    {
-      "label": "IF 4.7",
-      "kind": "if"
     }
   ],
   "abstract": "This study investigates the relationship between superficial middle cerebral vein (SMCV) outflow patterns and tissue outcomes following mechanical thrombectomy in acute ischemic stroke. Synchronous SMCV outflow was found to correlate with favorable tissue fate, supporting venous outflow assessment as an imaging marker for prognosis after reperfusion therapy.",

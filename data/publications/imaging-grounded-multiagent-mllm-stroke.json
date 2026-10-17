@@ -23,10 +23,6 @@
     {
       "label": "Q1",
       "kind": "jcr"
-    },
-    {
-      "label": "IF 18.0",
-      "kind": "if"
     }
   ],
   "abstract": "An imaging-grounded multi-agent multimodal large language model emulates a multidisciplinary stroke team through coordinated agents for triage, time-window assessment, multimodal imaging interpretation, contraindication screening, and treatment recommendation. In a retrospective evaluation of 1,658 suspected acute ischemic stroke cases from two centers, multi-agent coordination with retrieval-augmented generation improved treatment recommendation accuracy from 0.636 to 0.785 and Macro-F1 from 0.562 to 0.768.",

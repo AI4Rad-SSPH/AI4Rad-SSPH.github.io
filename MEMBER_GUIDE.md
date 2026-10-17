@@ -133,7 +133,7 @@ cp data/publications/_template.json data/publications/<paper-id>.json
 | `doi` | — | DOI string, e.g. `"10.2196/96304"`. DOI。 |
 | `links` | — | `pdf`, `code`, `project`, `pages`, `doi` — any subset. 各类链接。 |
 | `topic` | — | Topic tags, e.g. `["Stroke Imaging","Large Language Models"]`. 主题标签。 |
-| `tags` | — | Badges, each `{ "label": "Q1", "kind": "jcr" }`. `kind` colors it: `jcr`/`if`/`venue`/`type`/`award`/`ccf`/`cas`. 徽章。 |
+| `tags` | — | Badges, each `{ "label": "Q1", "kind": "jcr" }`. Kinds: `jcr`/`venue`/`type`/`award`/`ccf`/`cas`. IF badges are generated from the journal registry below; do not add per-paper IF tags. IF 由期刊指标表统一生成，不在论文中重复填写。 |
 | `abstract` | — | One-paragraph abstract. 摘要。 |
 | `cover` | — | Cover figure path, e.g. `"images/hr-llm-stroke-framework.png"`. 封面图路径。 |
 | `featured` | — | `true` marks a representative work (shows a "Featured" badge). 标记为代表作。 |
@@ -160,7 +160,13 @@ by the shared story. Personal
 milestones stay in the member file; the latest five items are visible and earlier
 items are expandable. 接收转为发表时修改原公告，不重复新增；相同论文的旧动态自动替换，入学等个人动态保留，前五条展示，其余可展开。
 
-### D. The manifest rebuilds itself · 索引会自动重建
+### D. Journal impact factors · 期刊影响因子
+
+Maintain each journal once in `data/journal-metrics.json`: verified `value`, statistical `year`, HTTPS `source`, and an `evidence` note. The builder adds the same linked IF badge to every paper in that journal, including member pages, and rejects missing journals or per-paper IF overrides. Use the journal name without a trailing publication year as the key.
+
+每种期刊只维护一条指标，构建时自动同步论文页与成员页，缺项会阻止构建。`year` 是 JIF 统计年，不是论文发表年或 JCR 发布年。优先采用出版方来源；二手来源需在 `evidence` 中说明。来源未注明年度时填 `year: null`，并提供 `year_note` / `year_note_cn`，不得猜测。中文期刊数据库影响因子使用 `metric: "chinese_if"`，与 Clarivate JIF 分开标注；`year` 此时为数据库版本年。会议和预印本不添加期刊 IF。
+
+### E. The manifest rebuilds itself · 索引会自动重建
 
 You **do not** need to touch `data/publications/manifest.json` by hand. When your PR
 is merged, a GitHub Action runs `tools/build-pubs.py` and commits the refreshed

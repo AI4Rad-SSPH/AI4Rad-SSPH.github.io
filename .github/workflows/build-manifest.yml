@@ -11,6 +11,7 @@ on:
     paths:
       - 'data/publications/**'
       - 'data/team.json'
+      - 'data/journal-metrics.json'
       - 'tools/build-pubs.py'
 
 permissions:

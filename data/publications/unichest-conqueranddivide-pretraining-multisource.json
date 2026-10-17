@@ -20,10 +20,6 @@
     {
       "label": "CAS Tier 1 · Top",
       "kind": "cas"
-    },
-    {
-      "label": "IF 10.6",
-      "kind": "if"
     }
   ],
   "doi": "",

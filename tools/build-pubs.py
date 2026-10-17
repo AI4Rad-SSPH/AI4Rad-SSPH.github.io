@@ -16,7 +16,9 @@ What it does:
 No third-party dependencies. Run after adding/editing any paper file.
 """
 import json
+import math
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -24,6 +26,7 @@ ROOT = Path(__file__).resolve().parent.parent
 PUB_DIR = ROOT / "data" / "publications"
 TEAM_JSON = ROOT / "data" / "team.json"
 NEWS_JSON = ROOT / "data" / "news.json"
+METRICS_JSON = ROOT / "data" / "journal-metrics.json"
 MANIFEST = PUB_DIR / "manifest.json"
 SKIP = {"_template.json", "manifest.json"}
 
@@ -71,10 +74,47 @@ def validate_author_roles(paper, member_ids):
     return errors
 
 
+def journal_metric_tag(paper, metrics):
+    """Resolve one sourced journal metric, independently of publication year."""
+    if any(tag.get("kind") == "if" for tag in paper.get("tags", [])):
+        raise ValueError("per-paper IF tags must move to data/journal-metrics.json")
+    if paper.get("type") != "journal":
+        return None
+    venue = re.sub(r",\s*\d{4}$", "", paper.get("venue", "")).strip()
+    metric = metrics.get(venue)
+    if not isinstance(metric, dict):
+        raise ValueError(f"missing '{venue}' in data/journal-metrics.json")
+    value, year, source = metric.get("value"), metric.get("year"), metric.get("source", "")
+    if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value) or value < 0:
+        raise ValueError(f"invalid journal impact factor for '{venue}'")
+    if not isinstance(source, str) or not source.startswith("https://"):
+        raise ValueError(f"journal impact factor for '{venue}' needs an HTTPS source")
+    if year is None:
+        if not metric.get("year_note"):
+            raise ValueError(f"journal impact factor for '{venue}' needs a statistical year or an explicit year_note")
+    elif isinstance(year, bool) or not isinstance(year, int) or not 1900 <= year <= 2100:
+        raise ValueError(f"invalid journal metric year for '{venue}'")
+    kind = metric.get("metric", "jif")
+    if kind not in {"jif", "chinese_if"}:
+        raise ValueError(f"unsupported journal metric '{kind}' for '{venue}'")
+    label = f"IF {value:.1f}" + (f" ({year})" if year else "")
+    tag = {"kind": "if", "label": label, "source": source, "year": year}
+    if kind == "chinese_if":
+        if year is None:
+            raise ValueError(f"Chinese impact factor for '{venue}' needs an edition year")
+        tag["label"] = f"Chinese IF {value:g} ({year} ed.)"
+        tag["label_cn"] = f"中文 IF {value:g}（{year}版）"
+    if year is None:
+        tag["year_note"] = metric["year_note"]
+        tag["year_note_cn"] = metric.get("year_note_cn", metric["year_note"])
+    return tag
+
+
 def main():
     if not PUB_DIR.is_dir():
         sys.exit(f"✗ missing {PUB_DIR}")
     member_ids = load_member_ids()
+    metrics = json.loads(METRICS_JSON.read_text(encoding="utf-8"))["journals"]
 
     papers = []
     errors, warnings = [], []
@@ -134,6 +174,12 @@ def main():
         entry.setdefault("topic", [])
         entry.setdefault("featured", False)
         entry.setdefault("lab", True)  # only lab papers show on the site-wide list
+        try:
+            metric_tag = journal_metric_tag(p, metrics)
+            if metric_tag:
+                entry["tags"] = entry["tags"] + [metric_tag]
+        except ValueError as error:
+            errors.append(f"{rel}: {error}")
         papers.append(entry)
 
     papers.sort(key=lambda x: (x.get("year", 0), x.get("published_date", ""),

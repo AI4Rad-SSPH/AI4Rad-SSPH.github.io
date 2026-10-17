@@ -19,10 +19,6 @@
     {
       "label": "Q1",
       "kind": "jcr"
-    },
-    {
-      "label": "IF 6",
-      "kind": "if"
     }
   ],
   "abstract": "Accurate estimation of time since stroke onset is critical for treatment eligibility decisions. This multicenter study develops a dual-energy CT-based radiomics nomogram to predict onset time, combining quantitative iodine maps and radiomic features. The model provides a clinically actionable tool for refining treatment windows in acute ischemic stroke.",

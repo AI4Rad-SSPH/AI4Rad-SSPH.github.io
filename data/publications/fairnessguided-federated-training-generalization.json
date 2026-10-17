@@ -20,10 +20,6 @@
     {
       "label": "CAS Tier 4",
       "kind": "cas"
-    },
-    {
-      "label": "IF 2.7",
-      "kind": "if"
     }
   ],
   "doi": "",

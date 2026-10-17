@@ -21,10 +21,6 @@
     {
       "label": "Q2",
       "kind": "jcr"
-    },
-    {
-      "label": "IF 3.8",
-      "kind": "if"
     }
   ],
   "abstract": "This comprehensive review covers qualitative and quantitative stress perfusion cardiac magnetic resonance methods in clinical practice, including acquisition protocols, analysis techniques, and clinical applications for ischemic heart disease assessment.",

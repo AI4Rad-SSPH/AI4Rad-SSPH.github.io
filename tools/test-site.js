@@ -61,6 +61,41 @@ check('Paper titles open the article page before the PDF', () => {
   const html = sandbox.Pub.renderCard({ title: 'Study', links: { pages: 'https://example.org/article', pdf: 'https://example.org/article.pdf' } }, 'en');
   assert.match(html, /pub-title"><a href="https:\/\/example.org\/article"/);
 });
+check('IF badges retain statistical years, source links and localized metric names', () => {
+  const paper = { title: 'Study', tags: [{ kind: 'if', label: 'IF 5.6 (2025)', source: 'https://example.org/metrics' }] };
+  const html = sandbox.Pub.renderCard(paper, 'cn');
+  assert.match(html, /<a[^>]+class="pub-tag pub-tag--if"[^>]+href="https:\/\/example.org\/metrics"/);
+  assert.match(html, /IF 5.6 \(2025\)/);
+  paper.tags[0].label = 'Chinese IF 1.122 (2025 ed.)';
+  paper.tags[0].label_cn = '中文 IF 1.122（2025版）';
+  assert.match(sandbox.Pub.renderCard(paper, 'cn'), /中文 IF 1.122（2025版）/);
+});
+check('Every real journal paper shares one sourced IF across both publication views', () => {
+  const papers = JSON.parse(fs.readFileSync(path.join(root, 'data/publications/manifest.json'), 'utf8'));
+  const byVenue = new Map();
+  for (const paper of papers) {
+    const tags = paper.tags.filter(tag => tag.kind === 'if');
+    assert.equal(tags.length, paper.type === 'journal' ? 1 : 0, paper.id);
+    const source = JSON.parse(fs.readFileSync(path.join(root, 'data/publications', paper.file), 'utf8'));
+    assert.ok(!source.tags.some(tag => tag.kind === 'if'), paper.id + ': no duplicated IF data');
+    if (!tags.length) continue;
+    const metric = tags[0];
+    assert.match(metric.source, /^https:\/\//);
+    assert.ok(Number.isInteger(metric.year) || metric.year_note, paper.id + ': explicit metric year');
+    const venue = paper.venue.replace(/,\s*\d{4}$/, '').trim();
+    if (byVenue.has(venue)) assert.deepEqual(metric, byVenue.get(venue), venue);
+    byVenue.set(venue, metric);
+    for (const lang of ['en', 'cn']) {
+      const html = sandbox.Pub.renderCard(paper, lang);
+      assert.match(html, /<a class="pub-tag pub-tag--if"/);
+      assert.ok(html.includes(metric.source.replace(/&/g, '&amp;')));
+    }
+  }
+  for (const [venue, label] of [['Insights into Imaging', 'IF 5.6 (2025)'],
+    ['IEEE Journal of Biomedical and Health Informatics', 'IF 7.7 (2025)'], ['Neural Plasticity', 'IF 3.4 (2025)']]) {
+    assert.equal(byVenue.get(venue).label, label);
+  }
+});
 check('Status filters and Chinese author search compose correctly', () => {
   const elements = { '.filters': { innerHTML: '' }, '.pub-list': { innerHTML: '' }, '.filter-count': { textContent: '' } };
   const handlers = {};

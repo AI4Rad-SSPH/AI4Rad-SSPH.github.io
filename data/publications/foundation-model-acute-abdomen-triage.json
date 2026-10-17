@@ -27,10 +27,6 @@
     {
       "label": "Q1",
       "kind": "jcr"
-    },
-    {
-      "label": "IF 18.1",
-      "kind": "if"
     }
   ],
   "abstract": "Published online on 12 August 2026. AbdomenNet uses self-supervised pretraining on 103,989 non-contrast CT examinations and fine-tuning on 5,816 annotated cases to identify 11 acute abdominal conditions and perform three risk-stratification tasks. External testing included 2,528 patients across three independent cohorts, with a macro-average AUROC of 0.919 for five emergent conditions. In the reader crossover study, mean AUROC improved from 0.812 to 0.924 with AI assistance, while median reading time fell by 52.5 seconds per case. Retrospective workflow reconstruction estimated a potential 37-minute reduction in median report turnaround time.",

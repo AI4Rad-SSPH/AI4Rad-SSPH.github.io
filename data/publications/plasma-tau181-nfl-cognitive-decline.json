@@ -17,10 +17,6 @@
     {
       "label": "Q1",
       "kind": "jcr"
-    },
-    {
-      "label": "IF 6.6",
-      "kind": "if"
     }
   ],
   "abstract": "This study examines the associations of plasma phosphorylated tau181 and neurofilament light chain with brain amyloid burden and cognition in patients with objectively defined subtle cognitive decline, exploring blood biomarkers for early Alzheimer's disease detection.",

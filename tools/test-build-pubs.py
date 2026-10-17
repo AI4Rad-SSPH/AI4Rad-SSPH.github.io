@@ -34,5 +34,49 @@ class AuthorRoleValidation(unittest.TestCase):
         self.assertTrue(self.validate({"member": ["corresponding", "co_corresponding"]}))
 
 
+class JournalMetricValidation(unittest.TestCase):
+    def setUp(self):
+        self.paper = {"type": "journal", "venue": "Example Journal, 2026", "tags": []}
+        self.metric = {"value": 5.6, "year": 2025, "source": "https://example.org/metrics"}
+
+    def tag(self, metric=None, paper=None):
+        return build_pubs.journal_metric_tag(paper or self.paper, {"Example Journal": metric or self.metric})
+
+    def test_publication_year_does_not_replace_jif_year(self):
+        tag = self.tag()
+        self.assertEqual(tag["label"], "IF 5.6 (2025)")
+        self.assertEqual(tag["source"], self.metric["source"])
+
+    def test_conferences_and_preprints_receive_no_journal_metric(self):
+        for kind in ["conference", "preprint", "other"]:
+            self.assertIsNone(build_pubs.journal_metric_tag({"type": kind, "venue": "Unknown"}, {}))
+
+    def test_an_unknown_journal_cannot_silently_omit_if(self):
+        with self.assertRaisesRegex(ValueError, "journal-metrics"):
+            build_pubs.journal_metric_tag(self.paper, {})
+
+    def test_invalid_metric_data_is_rejected(self):
+        for patch in [{"value": -1}, {"value": "5.6"}, {"value": True}, {"value": float("nan")},
+                      {"year": 2026.5}, {"year": True}, {"source": "javascript:alert(1)"}]:
+            with self.subTest(patch=patch), self.assertRaises(ValueError):
+                self.tag({**self.metric, **patch})
+
+    def test_unknown_metric_year_must_be_explicit(self):
+        with self.assertRaises(ValueError):
+            self.tag({**self.metric, "year": None})
+        tag = self.tag({**self.metric, "year": None, "year_note": "Publisher does not identify the statistical year."})
+        self.assertEqual(tag["label"], "IF 5.6")
+        self.assertIn("statistical year", tag["year_note"])
+
+    def test_chinese_if_is_distinct_and_keeps_its_precision(self):
+        tag = self.tag({**self.metric, "value": 1.122, "metric": "chinese_if"})
+        self.assertEqual(tag["label"], "Chinese IF 1.122 (2025 ed.)")
+        self.assertEqual(tag["label_cn"], "中文 IF 1.122（2025版）")
+
+    def test_legacy_per_paper_if_cannot_override_the_journal_source(self):
+        with self.assertRaisesRegex(ValueError, "per-paper IF"):
+            self.tag(paper={**self.paper, "tags": [{"kind": "if", "label": "IF 99"}]})
+
+
 if __name__ == "__main__":
     unittest.main()
