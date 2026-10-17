@@ -261,9 +261,9 @@
         if (!window.Pub) { pubSec.remove(); return; }
         renderNews(Pub.memberNews(m, [], [], lang));
         Promise.all([
-          fetchJson('../data/publications/manifest.json?v=20261009-news'),
+          fetchJson('../data/publications/manifest.json?v=20261017-insights'),
           fetchJson('../data/team.json?v=20261009-news'),
-          fetchJson('../data/news.json?v=20261009-news')
+          fetchJson('../data/news.json?v=20261017-insights')
         ]).then(function (res) {
           var papers = res[0] || [];
           var team = res[1] || {};

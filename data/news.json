@@ -1,6 +1,19 @@
 [
   {
     "date": "2026.10",
+    "text_en": "Our study of LLM-assisted, report-based carotid plaque AHA classification was published online in Insights into Imaging on 16 October. The multicenter reader study found improved classification agreement and effective criteria-guided prompting with a lightweight 8B model.",
+    "text_cn": "基于 MRI 报告的大语言模型辅助颈动脉斑块 AHA 分型研究于 10 月 16 日在线发表于 Insights into Imaging。多中心报告判读研究表明，LLM 辅助可提高分型一致性，明确编码分型标准可支持轻量级 8B 模型的有效应用。",
+    "links": [
+      {
+        "href": "https://link.springer.com/article/10.1186/s13244-026-02421-2",
+        "label_en": "Paper",
+        "label_cn": "论文"
+      }
+    ],
+    "publication_id": "llm-report-carotid-plaque-aha-classification"
+  },
+  {
+    "date": "2026.10",
     "text_en": "FlowPredictor–Corrector, our hemodynamics-guided vascular flow prediction study, was published online in IEEE Journal of Biomedical and Health Informatics on 8 October.",
     "text_cn": "FlowPredictor–Corrector 血流动力学引导的血流预测研究于 10 月 8 日在线发表于 IEEE Journal of Biomedical and Health Informatics。",
     "links": [
@@ -11,20 +24,6 @@
       }
     ],
     "publication_id": "flowpredictor-corrector-vascular-flow"
-  },
-  {
-    "date": "2026.09",
-    "text_en": "Our report-based carotid plaque AHA classification study was accepted by Insights into Imaging. Publication is forthcoming.",
-    "text_cn": "基于 MRI 报告的大语言模型辅助颈动脉斑块 AHA 分型研究获 Insights into Imaging 接收，待正式发表。",
-    "links": [
-      {
-        "href": "publications.html",
-        "label_en": "Publications",
-        "label_cn": "论文成果",
-        "href_cn": "publications_ch.html"
-      }
-    ],
-    "publication_id": "llm-report-carotid-plaque-aha-classification"
   },
   {
     "date": "2026.09",
