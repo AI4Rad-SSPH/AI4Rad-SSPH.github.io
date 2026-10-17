@@ -36,7 +36,7 @@
       <p class="hero__subtitle">团队论文成果，包含已接收、待发表的研究。另可查看李跃华教授的 <a href="https://scholar.google.com/citations?user=zj4WqewAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>。</p>
     </section>
 
-    <div id="pub-root" class="reveal">
+    <div id="pub-root">
       <div class="filters"></div>
       <p class="filter-count" aria-live="polite"></p>
       <ul class="pub-list pub-list--cards"></ul>
@@ -72,7 +72,7 @@
   (function () {
     var memberNameById = null;
     Promise.all([
-      fetch('data/publications/manifest.json?v=20261009-news').then(function (r) { return r.json(); }),
+      fetch('data/publications/manifest.json?v=20261017-insights').then(function (r) { return r.json(); }),
       fetch('data/team.json?v=20261009').then(function (r) { return r.json(); })
     ]).then(function (res) {
       var papers = res[0], team = res[1];

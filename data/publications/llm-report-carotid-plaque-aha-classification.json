@@ -1,19 +1,43 @@
 {
   "id": "llm-report-carotid-plaque-aha-classification",
-  "title": "Large Language Model Assistance for Report-Based Carotid Plaque AHA Classification: A Multi-Reader Study",
-  "author_ids": [],
+  "title": "Large language model assistance for report-based carotid plaque AHA classification: a multi-reader study",
+  "authors_text": "Mengfei Wang*, Yixiao Tang*, Yulu Yang, Yifan Tu, Zhongzheng Cao, Runjianya Ling, Kaiyue Sun, Jian Ma, Zhicheng Zhang, Ruipeng Zhang#, Xiaoer Wei#, Dan Wang#, Yuehua Li#. <em>* Co-first authors. # Corresponding authors.</em>",
+  "author_ids": [
+    "mengfei-wang",
+    "yixiao-tang",
+    "yulu-yang",
+    "yifan-tu",
+    "zhongzheng-cao",
+    "kaiyue-sun",
+    "ruipeng-zhang",
+    "yuehua-li"
+  ],
   "type": "journal",
   "year": 2026,
   "venue": "Insights into Imaging",
-  "status": "accepted",
-  "links": {},
+  "status": "published",
+  "published_date": "2026-10-16",
+  "doi": "10.1186/s13244-026-02421-2",
+  "cover": "images/llm-carotid-plaque-aha-graphical-abstract.png",
+  "links": {
+    "pages": "https://link.springer.com/article/10.1186/s13244-026-02421-2",
+    "pdf": "https://link.springer.com/content/pdf/10.1186/s13244-026-02421-2.pdf",
+    "doi": "https://doi.org/10.1186/s13244-026-02421-2"
+  },
   "topic": [
     "Large Language Models",
     "Vascular Imaging",
     "Radiology Reports"
   ],
   "tags": [],
-  "abstract": "A retrospective multicenter, report-based reader study of large language model assistance for modified AHA classification of carotid plaques from free-text MRI reports. The reference standard is expert consensus based on report text.",
+  "abstract": "A retrospective multicenter study of 433 patients evaluated 10 large language models and a four-radiologist reader study for modified AHA classification of carotid plaques from free-text MRI reports. LLM assistance improved agreement with an expert-consensus, report-text reference standard, and criteria-guided prompting supported effective use of a lightweight 8B model.",
   "lab": true,
-  "featured": false
+  "featured": false,
+  "author_roles": {
+    "mengfei-wang": ["co_first"],
+    "yixiao-tang": ["co_first"],
+    "ruipeng-zhang": ["co_corresponding"],
+    "yuehua-li": ["co_corresponding"]
+  },
+  "authorship_source": "https://link.springer.com/article/10.1186/s13244-026-02421-2"
 }
