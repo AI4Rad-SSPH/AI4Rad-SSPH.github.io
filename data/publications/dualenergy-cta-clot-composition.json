@@ -19,10 +19,6 @@
     {
       "label": "Q2",
       "kind": "jcr"
-    },
-    {
-      "label": "IF 4.7",
-      "kind": "if"
     }
   ],
   "abstract": "This study evaluates dual-energy CT angiography-derived parameters for assessing clot composition in acute ischemic stroke, demonstrating the added value of dual-energy acquisition over conventional imaging for thrombus characterization and treatment planning.",

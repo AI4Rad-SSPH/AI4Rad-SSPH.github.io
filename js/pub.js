@@ -206,8 +206,15 @@
 
     if (p.tags && p.tags.length) {
       h += '<div class="pub-tags">' + p.tags.map(function (tg) {
-        return '<span class="pub-tag pub-tag--' + escAttr(tg.kind || 'venue') + '">' +
-               esc(tg.label) + '</span>';
+        var label = lang === 'cn' ? (tg.label_cn || tg.label) : tg.label;
+        var cls = 'pub-tag pub-tag--' + escAttr(tg.kind || 'venue');
+        if (tg.source) {
+          var title = lang === 'cn' ? '期刊指标来源' : 'Journal metric source';
+          if (tg.year_note) title += ' · ' + (lang === 'cn' ? (tg.year_note_cn || tg.year_note) : tg.year_note);
+          return '<a class="' + cls + '" href="' + escAttr(tg.source) +
+            '" target="_blank" rel="noopener" title="' + escAttr(title) + '">' + esc(label) + '</a>';
+        }
+        return '<span class="' + cls + '">' + esc(label) + '</span>';
       }).join('') + '</div>';
     }
 

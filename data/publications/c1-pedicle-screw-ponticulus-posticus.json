@@ -22,10 +22,6 @@
     {
       "label": "Q1",
       "kind": "jcr"
-    },
-    {
-      "label": "IF 3.8",
-      "kind": "if"
     }
   ],
   "abstract": "Ponticulus posticus (POPO) may distort C1 surface landmarks for C1 pedicle screw (CPS) placement, raising concern for vertebral artery compromise (VAC). This single-center retrospective CTA simulation study of 141 subjects (bilateral POPO, unilateral POPO, and pure non-POPO) establishes a CTA-based workflow to identify POPO anatomies potentially suitable for CPS placement, simulating trajectories with PedicleScrewSimulator to quantify placement risk.",

@@ -97,7 +97,7 @@
   </footer>
 
   <script src="../js/main.js?v=20261009"></script>
-  <script src="../js/pub.js?v=20261009-news"></script>
+  <script src="../js/pub.js?v=20261017-if"></script>
   <script>
   (function(){
     var params = new URLSearchParams(location.search);
@@ -261,7 +261,7 @@
         if (!window.Pub) { pubSec.remove(); return; }
         renderNews(Pub.memberNews(m, [], [], lang));
         Promise.all([
-          fetchJson('../data/publications/manifest.json?v=20261017-insights'),
+          fetchJson('../data/publications/manifest.json?v=20261017-if'),
           fetchJson('../data/team.json?v=20261009-news'),
           fetchJson('../data/news.json?v=20261017-insights')
         ]).then(function (res) {

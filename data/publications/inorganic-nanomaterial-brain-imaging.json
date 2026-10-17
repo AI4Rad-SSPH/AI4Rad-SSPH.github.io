@@ -17,10 +17,6 @@
     {
       "label": "Q2",
       "kind": "jcr"
-    },
-    {
-      "label": "IF 5.1",
-      "kind": "if"
     }
   ],
   "abstract": "This review surveys inorganic nanomaterials used for biomedical imaging of brain diseases, covering design principles, imaging modalities, and translational considerations for nanomaterial-based neuroimaging probes.",

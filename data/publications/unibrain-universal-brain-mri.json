@@ -13,10 +13,6 @@
     {
       "label": "Q2",
       "kind": "jcr"
-    },
-    {
-      "label": "IF 4.9",
-      "kind": "if"
     }
   ],
   "doi": "10.1016/j.compmedimag.2025.102516",

@@ -17,10 +17,6 @@
     {
       "label": "Q2",
       "kind": "jcr"
-    },
-    {
-      "label": "IF 6.9",
-      "kind": "if"
     }
   ],
   "abstract": "This study presents a transferrin-enabled, manganese-based nanozyme that crosses the blood–brain barrier to rebalance reactive oxygen species levels in ischemic stroke, offering a theranostic nanomedicine approach combining antioxidant therapy with manganese-based imaging contrast.",

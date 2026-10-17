@@ -21,10 +21,6 @@
     {
       "label": "Q1",
       "kind": "jcr"
-    },
-    {
-      "label": "IF 18.0",
-      "kind": "if"
     }
   ],
   "abstract": "Benchmarked 10 large language models on generating diagnostic impressions from brain MRI report findings across a multicenter dataset, establishing a reproducible evaluation framework and reader study for LLM-based radiology reporting.",

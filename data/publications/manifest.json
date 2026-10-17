@@ -18,7 +18,14 @@
     "year": 2026,
     "venue": "Insights into Imaging",
     "cover": "images/llm-carotid-plaque-aha-graphical-abstract.png",
-    "tags": [],
+    "tags": [
+      {
+        "kind": "if",
+        "label": "IF 5.6 (2025)",
+        "source": "https://link.springer.com/journal/13244",
+        "year": 2025
+      }
+    ],
     "doi": "10.1186/s13244-026-02421-2",
     "links": {
       "pages": "https://link.springer.com/article/10.1186/s13244-026-02421-2",
@@ -68,7 +75,14 @@
     "type": "journal",
     "year": 2026,
     "venue": "IEEE Journal of Biomedical and Health Informatics",
-    "tags": [],
+    "tags": [
+      {
+        "kind": "if",
+        "label": "IF 7.7 (2025)",
+        "source": "https://open.ieee.org/wp-content/uploads/IEEE-Title-List-September-2026.pdf",
+        "year": 2025
+      }
+    ],
     "doi": "10.1109/JBHI.2026.3741575",
     "links": {
       "pages": "https://ieeexplore.ieee.org/document/11726865",
@@ -118,8 +132,10 @@
     "venue": "BMC Medical Imaging",
     "tags": [
       {
-        "label": "IF 3.9",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 3.9 (2025)",
+        "source": "https://link.springer.com/journal/12880",
+        "year": 2025
       }
     ],
     "doi": "10.1186/s12880-026-02801-6",
@@ -164,8 +180,10 @@
     "venue": "Academic Radiology",
     "tags": [
       {
-        "label": "IF 4.7",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 4.7 (2025)",
+        "source": "https://referencecitationanalysis.com/InCiteJournalInfo?id=301",
+        "year": 2025
       }
     ],
     "doi": "10.1016/j.acra.2026.08.007",
@@ -214,8 +232,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 18.1",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 18.1 (2025)",
+        "source": "https://www.nature.com/nature-portfolio/about-journals/journal-metrics",
+        "year": 2025
       }
     ],
     "doi": "10.1038/s41467-026-76634-w",
@@ -271,8 +291,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 8.2",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 8.2 (2025)",
+        "source": "https://www.jmir.org/",
+        "year": 2025
       }
     ],
     "doi": "10.2196/96304",
@@ -326,8 +348,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 18.0",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 18.0 (2025)",
+        "source": "https://www.nature.com/nature-portfolio/about-journals/journal-metrics",
+        "year": 2025
       }
     ],
     "doi": "10.1038/s41746-026-03066-7",
@@ -379,8 +403,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 26.3",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 26.3 (2025)",
+        "source": "https://www.nature.com/nature-portfolio/about-journals/journal-metrics",
+        "year": 2025
       }
     ],
     "doi": "10.1038/s41551-026-01736-1",
@@ -436,8 +462,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 7.2",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 7.2 (2025)",
+        "source": "https://www.nature.com/nature-portfolio/about-journals/journal-metrics",
+        "year": 2025
       }
     ],
     "doi": "10.1038/s41597-026-07748-5",
@@ -490,8 +518,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 3.8",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 3.8 (2025)",
+        "source": "https://link.springer.com/journal/13018",
+        "year": 2025
       }
     ],
     "doi": "10.1186/s13018-026-07046-1",
@@ -538,8 +568,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 18.0",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 18.0 (2025)",
+        "source": "https://www.nature.com/nature-portfolio/about-journals/journal-metrics",
+        "year": 2025
       }
     ],
     "doi": "10.1038/s41746-026-02380-4",
@@ -575,7 +607,7 @@
     "author_ids": [
       "lisong-dai"
     ],
-    "type": "journal",
+    "type": "conference",
     "year": 2026,
     "venue": "CVPR, 2026",
     "tags": [],
@@ -604,8 +636,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 4.4",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 4.4 (2025)",
+        "source": "https://jnis.bmj.com/pages/about",
+        "year": 2025
       }
     ],
     "doi": "10.1136/jnis-2025-023355",
@@ -639,7 +673,14 @@
     "type": "journal",
     "year": 2026,
     "venue": "BMC Health Services Research, 2026",
-    "tags": [],
+    "tags": [
+      {
+        "kind": "if",
+        "label": "IF 3.3 (2025)",
+        "source": "https://link.springer.com/journal/12913",
+        "year": 2025
+      }
+    ],
     "doi": "10.1186/s12913-026-14350-3",
     "links": {
       "pdf": "https://doi.org/10.1186/s12913-026-14350-3",
@@ -667,8 +708,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 4.9",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 5.5 (2025)",
+        "source": "https://referencecitationanalysis.com/InCiteJournalInfo?id=169458",
+        "year": 2025
       }
     ],
     "doi": "10.1016/j.compmedimag.2025.102516",
@@ -700,7 +743,16 @@
     "type": "journal",
     "year": 2025,
     "venue": "Computer Methods and Programs in Biomedicine, 2025",
-    "tags": [],
+    "tags": [
+      {
+        "kind": "if",
+        "label": "IF 6.4",
+        "source": "https://www.sciencedirect.com/browse/calls-for-papers?subject=computer-science",
+        "year": null,
+        "year_note": "The source does not identify the JIF statistical year; checked 2026-10-17.",
+        "year_note_cn": "来源未标注 JIF 统计年度；核验日期为 2026-10-17。"
+      }
+    ],
     "doi": "10.1016/j.cmpb.2025.108924",
     "links": {
       "pdf": "https://doi.org/10.1016/j.cmpb.2025.108924",
@@ -728,8 +780,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 6",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 6.0 (2025)",
+        "source": "https://link.springer.com/journal/330",
+        "year": 2025
       }
     ],
     "doi": "10.1007/s00330-024-10960-9",
@@ -763,8 +817,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 17.3",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 17.3 (2025)",
+        "source": "https://pubs.acs.org/ancac3/pages/about",
+        "year": 2025
       }
     ],
     "doi": "10.1021/acsnano.5c21630",
@@ -805,8 +861,10 @@
         "kind": "cas"
       },
       {
-        "label": "IF 10.6",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 12.4 (2025)",
+        "source": "https://ieeetmi.org/journal-stats/",
+        "year": 2025
       }
     ],
     "doi": "",
@@ -840,8 +898,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 4.7",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 4.7 (2025)",
+        "source": "https://referencecitationanalysis.com/InCiteJournalInfo?id=301",
+        "year": 2025
       }
     ],
     "doi": "10.1016/j.acra.2023.07.005",
@@ -873,7 +933,14 @@
     "type": "journal",
     "year": 2024,
     "venue": "Journal of Multidisciplinary Healthcare, 2024",
-    "tags": [],
+    "tags": [
+      {
+        "kind": "if",
+        "label": "IF 3.0 (2025)",
+        "source": "https://www.tandfonline.com/journals/djmd20/about-this-journal",
+        "year": 2025
+      }
+    ],
     "doi": "10.2147/JMDH.S486449",
     "links": {
       "pdf": "https://doi.org/10.2147/JMDH.S486449",
@@ -901,8 +968,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 18.1",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 18.1 (2025)",
+        "source": "https://www.nature.com/nature-portfolio/about-journals/journal-metrics",
+        "year": 2025
       }
     ],
     "doi": "10.1038/s41467-024-54424-6",
@@ -936,8 +1005,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 17.6",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 17.6 (2025)",
+        "source": "https://pubs.rsna.org/page/radiology/about",
+        "year": 2025
       }
     ],
     "doi": "10.1148/radiol.233197",
@@ -965,7 +1036,15 @@
     "type": "journal",
     "year": 2024,
     "venue": "Journal of Biomedical Engineering, 2024",
-    "tags": [],
+    "tags": [
+      {
+        "kind": "if",
+        "label": "Chinese IF 1.122 (2025 ed.)",
+        "source": "https://www.cqvip.com/journal/90574X/90574X",
+        "year": 2025,
+        "label_cn": "中文 IF 1.122（2025版）"
+      }
+    ],
     "doi": "10.7507/1001-5515.202308001",
     "links": {
       "pdf": "https://doi.org/10.7507/1001-5515.202308001",
@@ -1001,8 +1080,10 @@
         "kind": "cas"
       },
       {
-        "label": "IF 2.7",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 2.9 (2024)",
+        "source": "https://link.springer.com/journal/11714",
+        "year": 2024
       }
     ],
     "doi": "",
@@ -1051,7 +1132,14 @@
     "type": "journal",
     "year": 2024,
     "venue": "Radiology: Artificial Intelligence, 2024",
-    "tags": [],
+    "tags": [
+      {
+        "kind": "if",
+        "label": "IF 20.1 (2025)",
+        "source": "https://pubs.rsna.org/page/ai/about",
+        "year": 2025
+      }
+    ],
     "doi": "10.1148/ryai.230362",
     "links": {
       "doi": "https://doi.org/10.1148/ryai.230362",
@@ -1072,7 +1160,14 @@
     "type": "journal",
     "year": 2024,
     "venue": "Cardiovascular Diabetology, 2024",
-    "tags": [],
+    "tags": [
+      {
+        "kind": "if",
+        "label": "IF 15.6 (2025)",
+        "source": "https://link.springer.com/journal/12933",
+        "year": 2025
+      }
+    ],
     "doi": "10.1186/s12933-024-02199-x",
     "links": {
       "doi": "https://doi.org/10.1186/s12933-024-02199-x",
@@ -1100,8 +1195,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 20.1",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 20.1 (2025)",
+        "source": "https://pubs.rsna.org/page/ai/about",
+        "year": 2025
       }
     ],
     "doi": "10.1148/ryai.230520",
@@ -1161,8 +1258,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 6",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 6.0 (2025)",
+        "source": "https://link.springer.com/journal/330",
+        "year": 2025
       }
     ],
     "doi": "10.1007/s00330-024-10802-8",
@@ -1197,8 +1296,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 4.7",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 4.7 (2025)",
+        "source": "https://referencecitationanalysis.com/InCiteJournalInfo?id=301",
+        "year": 2025
       }
     ],
     "doi": "10.1016/j.acra.2022.12.023",
@@ -1253,8 +1354,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 6.9",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 6.9 (2025)",
+        "source": "https://www.nature.com/nature-portfolio/about-journals/journal-metrics",
+        "year": 2025
       }
     ],
     "doi": "10.1038/s42004-023-01044-8",
@@ -1291,8 +1394,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 3.8",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 3.8 (2025)",
+        "source": "https://www.mdpi.com/journal/diagnostics/imprint",
+        "year": 2025
       }
     ],
     "doi": "10.3390/diagnostics13030524",
@@ -1325,8 +1430,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 17.2",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 17.3 (2025)",
+        "source": "https://www.acponline.org/clinical-information/journals-publications/annals-of-internal-medicine",
+        "year": 2025
       }
     ],
     "doi": "10.7326/0003-4819-159-8-201310150-00004",
@@ -1394,8 +1501,12 @@
         "kind": "cas"
       },
       {
-        "label": "IF 7.5",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 9.1",
+        "source": "https://www.sciencedirect.com/browse/calls-for-papers?subject=computer-science",
+        "year": null,
+        "year_note": "The source does not identify the JIF statistical year; checked 2026-10-17.",
+        "year_note_cn": "来源未标注 JIF 统计年度；核验日期为 2026-10-17。"
       }
     ],
     "doi": "",
@@ -1487,8 +1598,10 @@
         "kind": "cas"
       },
       {
-        "label": "IF 8.4",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 9.9 (2025)",
+        "source": "https://open.ieee.org/wp-content/uploads/IEEE-Title-List-September-2026.pdf",
+        "year": 2025
       }
     ],
     "doi": "",
@@ -1516,8 +1629,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 6",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 6.0 (2025)",
+        "source": "https://link.springer.com/journal/330",
+        "year": 2025
       }
     ],
     "doi": "10.1007/s00330-022-09116-4",
@@ -1550,8 +1665,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 6",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 6.0 (2025)",
+        "source": "https://link.springer.com/journal/330",
+        "year": 2025
       }
     ],
     "doi": "10.1007/s00330-022-09156-w",
@@ -1583,8 +1700,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 6.9",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 6.9 (2025)",
+        "source": "https://www.mdpi.com/journal/pharmaceutics/imprint",
+        "year": 2025
       }
     ],
     "doi": "10.3390/pharmaceutics14061122",
@@ -1638,8 +1757,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 17.3",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 17.3 (2025)",
+        "source": "https://pubs.acs.org/ancac3/pages/about",
+        "year": 2025
       }
     ],
     "doi": "10.1021/acsnano.2c02832",
@@ -1670,8 +1791,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 4.8",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 4.8 (2025)",
+        "source": "https://www.mdpi.com/journal/nanomaterials/imprint",
+        "year": 2025
       }
     ],
     "doi": "10.3390/nano12193383",
@@ -1704,8 +1827,12 @@
         "kind": "jcr"
       },
       {
+        "kind": "if",
         "label": "IF 12.5",
-        "kind": "if"
+        "source": "https://www.sciencedirect.com/browse/calls-for-papers?dgcid=STMJ_1686838576_STMJIN_OTR",
+        "year": null,
+        "year_note": "The source does not identify the JIF statistical year; checked 2026-10-17.",
+        "year_note_cn": "来源未标注 JIF 统计年度；核验日期为 2026-10-17。"
       }
     ],
     "doi": "10.1016/j.cej.2022.135921",
@@ -1764,8 +1891,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 6.6",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 6.6 (2025)",
+        "source": "https://onlinelibrary.wiley.com/journal/17555949/journal-metrics",
+        "year": 2025
       }
     ],
     "doi": "10.1111/cns.13962",
@@ -1798,8 +1927,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 17.6",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 17.6 (2025)",
+        "source": "https://pubs.rsna.org/page/radiology/about",
+        "year": 2025
       }
     ],
     "doi": "10.1148/radiol.2020201548",
@@ -1832,8 +1963,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 17.3",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 17.3 (2025)",
+        "source": "https://pubs.acs.org/ancac3/pages/about",
+        "year": 2025
       }
     ],
     "doi": "10.1021/acsnano.0c07973",
@@ -1860,7 +1993,14 @@
     "type": "journal",
     "year": 2021,
     "venue": "IEEE Transactions on Medical Imaging, 2021",
-    "tags": [],
+    "tags": [
+      {
+        "kind": "if",
+        "label": "IF 12.4 (2025)",
+        "source": "https://ieeetmi.org/journal-stats/",
+        "year": 2025
+      }
+    ],
     "doi": "",
     "links": {},
     "topic": [],
@@ -1884,8 +2024,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 5.1",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 5.1 (2025)",
+        "source": "https://www.mdpi.com/journal/molecules/imprint",
+        "year": 2025
       }
     ],
     "doi": "10.3390/molecules26237340",
@@ -1913,7 +2055,14 @@
     "type": "journal",
     "year": 2021,
     "venue": "Neural Plasticity",
-    "tags": [],
+    "tags": [
+      {
+        "kind": "if",
+        "label": "IF 3.4 (2025)",
+        "source": "https://onlinelibrary.wiley.com/journal/6020/journal-metrics",
+        "year": 2025
+      }
+    ],
     "doi": "10.1155/2021/2678379",
     "links": {
       "doi": "https://doi.org/10.1155/2021/2678379",
@@ -1938,7 +2087,16 @@
     "type": "journal",
     "year": 2021,
     "venue": "European Journal of Radiology, 2021",
-    "tags": [],
+    "tags": [
+      {
+        "kind": "if",
+        "label": "IF 3.3",
+        "source": "https://assets.ctfassets.net/o78em1y1w4i4/FpAK2XSTwUe8quVNQ83jm/eb9eaf4a9fcc494c1111c932a03f8cb9/Elsevier_Radiology_A5_Catalogue_1025_2_October_2025_Final.pdf",
+        "year": null,
+        "year_note": "The source does not identify the JIF statistical year; checked 2026-10-17.",
+        "year_note_cn": "来源未标注 JIF 统计年度；核验日期为 2026-10-17。"
+      }
+    ],
     "doi": "10.1016/j.ejrad.2021.109528",
     "links": {
       "doi": "https://doi.org/10.1016/j.ejrad.2021.109528",
@@ -1992,8 +2150,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 18.1",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 18.1 (2025)",
+        "source": "https://www.nature.com/nature-portfolio/about-journals/journal-metrics",
+        "year": 2025
       }
     ],
     "doi": "10.1038/s41467-021-22278-x",
@@ -2024,8 +2184,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 18.1",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 18.1 (2025)",
+        "source": "https://www.nature.com/nature-portfolio/about-journals/journal-metrics",
+        "year": 2025
       }
     ],
     "doi": "10.1038/s41467-020-18606-2",
@@ -2058,8 +2220,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 6.5",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 6.5 (2025)",
+        "source": "https://academic.oup.com/jbmr/pages/about",
+        "year": 2025
       }
     ],
     "doi": "10.1002/jbmr.4187",
@@ -2090,8 +2254,12 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 3.7",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 3.5",
+        "source": "https://www.ajnr.org/page/content/About",
+        "year": null,
+        "year_note": "The source does not identify the JIF statistical year; checked 2026-10-17.",
+        "year_note_cn": "来源未标注 JIF 统计年度；核验日期为 2026-10-17。"
       }
     ],
     "doi": "10.3174/ajnr.A5946",
@@ -2124,8 +2292,10 @@
         "kind": "jcr"
       },
       {
-        "label": "IF 17.6",
-        "kind": "if"
+        "kind": "if",
+        "label": "IF 17.6 (2025)",
+        "source": "https://pubs.rsna.org/page/radiology/about",
+        "year": 2025
       }
     ],
     "doi": "10.1148/radiol.2019190098",
@@ -2152,7 +2322,14 @@
     "type": "journal",
     "year": 2019,
     "venue": "PeerJ, 2019",
-    "tags": [],
+    "tags": [
+      {
+        "kind": "if",
+        "label": "IF 2.9 (2025)",
+        "source": "https://peerj.com/journals/peerj/",
+        "year": 2025
+      }
+    ],
     "doi": "",
     "links": {},
     "topic": [],

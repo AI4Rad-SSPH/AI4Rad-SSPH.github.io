@@ -23,12 +23,7 @@
     "CT Imaging",
     "Pulmonary Embolism"
   ],
-  "tags": [
-    {
-      "label": "IF 4.7",
-      "kind": "if"
-    }
-  ],
+  "tags": [],
   "abstract": "This study evaluates pulmonary artery-to-vein volume difference as an imaging biomarker for risk stratification in acute pulmonary embolism.",
   "lab": true,
   "featured": false,

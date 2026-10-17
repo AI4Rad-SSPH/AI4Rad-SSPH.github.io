@@ -85,6 +85,7 @@
 - **团队页**读取 `data/team.json`；成员条目设为 `"page": true` 后，其卡片会链接到个人主页。
 - **成员主页**共用一个模板 `members/index.html`，地址为 `members/?id=<id>`（中文加 `&lang=cn`）。它读取 `data/members/<id>.json`，并自动从论文索引拉取该成员的论文。
 - **论文**以「一篇一文件」存放在 `data/publications/`。`manifest.json` 由 `tools/build-pubs.py` 生成（校验必填字段、核对 `team.json` 的 author IDs、去重）。**CI 会自动处理**：PR 会被校验，合并时索引自动重建并提交——见 `.github/workflows/`。本地运行脚本仅供预览。
+- **期刊 IF**统一维护在 `data/journal-metrics.json`，记录统计年度及来源，构建时自动同步论文页和成员页，缺项会校验失败。中文数据库 IF 单独标注，来源未明确的统计年度不猜测。
 - **作者姓名**在论文列表中自动链接到成员主页，并在其个人主页上加粗高亮（容错匹配，如 "Bicong Yan" ↔ "Bi-Cong Yan"）。
 
 首页动态统一维护在 `data/news.json`，中英文共享数据，展示最新五条并可展开历史动态。论文列表支持发表状态筛选与中文作者姓名搜索；已接收但未公开的论文单独标注。运行 `node tools/test-site.js` 可检查中英文跳转、筛选、资料及脚本语法，PR 也会自动执行。修改共用 CSS/JS 后，应同步更新各页面资源 URL 的日期版本。

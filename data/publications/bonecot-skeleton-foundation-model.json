@@ -21,10 +21,6 @@
     {
       "label": "Q1",
       "kind": "jcr"
-    },
-    {
-      "label": "IF 26.3",
-      "kind": "if"
     }
   ],
   "abstract": "BoneCoT is a clinician-guided chain-of-thought framework for bone metastasis and bone-related disease assessment from whole-body skeletal CT. It is built on BoneFM, a skeleton-focused CT foundation backbone adapted from DINOv2-style self-supervised pretraining, and uses clinician-derived task dependencies to support downstream bone lesion reasoning. The model is validated across multiple centers for robust, interpretable bone metastasis assessment.",

@@ -12,10 +12,6 @@
     {
       "label": "Q1",
       "kind": "jcr"
-    },
-    {
-      "label": "IF 6.5",
-      "kind": "if"
     }
   ],
   "doi": "10.1002/jbmr.4187",

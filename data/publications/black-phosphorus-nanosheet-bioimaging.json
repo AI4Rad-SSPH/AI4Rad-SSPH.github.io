@@ -17,10 +17,6 @@
     {
       "label": "Q2",
       "kind": "jcr"
-    },
-    {
-      "label": "IF 4.8",
-      "kind": "if"
     }
   ],
   "abstract": "This work reports a facile synthesis of black phosphorus nanosheet@NaReF4 nanocomposites for potential bioimaging applications, combining the photothermal and photodynamic properties of black phosphorus with rare-earth-doped upconversion nanoparticles.",
