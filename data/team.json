@@ -88,7 +88,7 @@
       "affiliation": "Shanghai Sixth People's Hospital",
       "affiliation_cn": "上海市第六人民医院",
       "department": "Department of Radiology",
-      "department_cn": "放射干预科",
+      "department_cn": "放射介入科",
       "position": "Chief Technician",
       "position_cn": "主管技师",
       "page": true
@@ -127,7 +127,11 @@
       "page": true,
       "year": "2026",
       "position": "Postdoctoral Fellow",
-      "position_cn": "博士后"
+      "position_cn": "博士后",
+      "affiliation": "Shanghai Sixth People's Hospital",
+      "affiliation_cn": "上海市第六人民医院",
+      "department": "Department of Radiology",
+      "department_cn": "放射介入科"
     }
   ],
   "phd_engineering": [
@@ -142,8 +146,8 @@
       "degree_cn": "博士",
       "university": "Donghua University",
       "university_cn": "东华大学",
-      "school": "School of Information Science",
-      "school_cn": "信智学院",
+      "school": "School of Information Science and Technology",
+      "school_cn": "信息科学与技术学院",
       "year": "2026",
       "page": true
     },
@@ -157,8 +161,8 @@
       "avatar_path": "images/members/mengfei-wang.jpg",
       "university": "Donghua University",
       "university_cn": "东华大学",
-      "school": "School of Information Science",
-      "school_cn": "信智学院",
+      "school": "School of Information Science and Technology",
+      "school_cn": "信息科学与技术学院",
       "year": "2025",
       "page": true
     },
@@ -173,8 +177,8 @@
       "page": true,
       "university": "Donghua University",
       "university_cn": "东华大学",
-      "school": "School of Information Science",
-      "school_cn": "信智学院",
+      "school": "School of Information Science and Technology",
+      "school_cn": "信息科学与技术学院",
       "year": "2025"
     },
     {
@@ -185,7 +189,7 @@
       "role_cn": "博士研究生",
       "avatar_type": "initials",
       "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
+      "university_cn": "上海交通大学医学院",
       "program": "Medical-Engineering Cross Program",
       "program_cn": "医工交叉专项",
       "year": "2025",
@@ -201,9 +205,12 @@
       "avatar_path": "images/members/jianqiao-ye.jpg",
       "degree": "PhD",
       "degree_cn": "博士",
-      "note": "PhD Candidate",
-      "note_cn": "博士候选人",
-      "page": true
+      "page": true,
+      "university": "University of Shanghai for Science and Technology",
+      "university_cn": "上海理工大学",
+      "major": "Biomedical Engineering",
+      "major_cn": "生物医学工程",
+      "year": "2025"
     }
   ],
   "phd_medical": [
@@ -217,7 +224,7 @@
       "degree": "MD",
       "degree_cn": "MD",
       "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
+      "university_cn": "上海交通大学医学院",
       "year": "2026",
       "page": true
     },
@@ -234,9 +241,9 @@
       "year": "2026",
       "school": "College of Health Science and Technology",
       "school_cn": "医学技术学院",
-      "program": "Direct-entry PhD Program",
+      "program": "Direct-Entry PhD",
       "program_cn": "直博生",
-      "university": "Shanghai Jiao Tong University School of Medicine",
+      "university": "SJTU School of Medicine",
       "university_cn": "上海交通大学医学院"
     },
     {
@@ -247,9 +254,9 @@
       "role_cn": "直博生",
       "avatar_type": "initials",
       "page": true,
-      "program": "Direct-entry PhD Program",
+      "program": "Direct-Entry PhD",
       "program_cn": "直博生",
-      "university": "Shanghai Jiao Tong University School of Medicine",
+      "university": "SJTU School of Medicine",
       "university_cn": "上海交通大学医学院",
       "year": "2026",
       "degree": "PhD",
@@ -264,7 +271,7 @@
       "avatar_type": "initials",
       "degree": "PhD",
       "degree_cn": "博士",
-      "program": "Direct-entry PhD Program",
+      "program": "Direct-Entry PhD",
       "program_cn": "直博生",
       "year": "2026",
       "page": true
@@ -277,7 +284,7 @@
       "role_cn": "博士研究生",
       "avatar_type": "initials",
       "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
+      "university_cn": "上海交通大学医学院",
       "year": "2025",
       "page": true
     },
@@ -289,7 +296,7 @@
       "role_cn": "博士研究生",
       "avatar_type": "initials",
       "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
+      "university_cn": "上海交通大学医学院",
       "year": "2025",
       "page": true
     },
@@ -301,7 +308,7 @@
       "role_cn": "博士研究生",
       "avatar_type": "initials",
       "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
+      "university_cn": "上海交通大学医学院",
       "year": "2025",
       "note": "Ruijin Hospital",
       "note_cn": "瑞金医院",
@@ -315,7 +322,7 @@
       "role_cn": "博士研究生",
       "avatar_type": "initials",
       "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
+      "university_cn": "上海交通大学医学院",
       "year": "2024",
       "page": true
     },
@@ -329,7 +336,7 @@
       "degree": "MD",
       "degree_cn": "MD",
       "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
+      "university_cn": "上海交通大学医学院",
       "year": "2024",
       "page": true
     }
@@ -368,8 +375,8 @@
       "avatar_type": "initials",
       "university": "Donghua University",
       "university_cn": "东华大学",
-      "school": "School of Information Science",
-      "school_cn": "信智学院",
+      "school": "School of Information Science and Technology",
+      "school_cn": "信息科学与技术学院",
       "year": "2025",
       "page": true
     },
@@ -408,7 +415,7 @@
       "university": "Donghua University",
       "university_cn": "东华大学",
       "school": "School of Biomedical Engineering",
-      "school_cn": "生医工学院",
+      "school_cn": "生物医学工程学院",
       "year": "2024",
       "page": true
     },
@@ -421,8 +428,8 @@
       "avatar_type": "initials",
       "university": "Donghua University",
       "university_cn": "东华大学",
-      "school": "School of Information Science",
-      "school_cn": "信智学院",
+      "school": "School of Information Science and Technology",
+      "school_cn": "信息科学与技术学院",
       "year": "2024",
       "page": true
     }
@@ -437,9 +444,9 @@
       "avatar_type": "initials",
       "page": true,
       "year": "2026",
-      "program": "Academic Master’s Program",
+      "program": "Academic Master’s",
       "program_cn": "学术型硕士",
-      "university": "Shanghai Jiao Tong University School of Medicine",
+      "university": "SJTU School of Medicine",
       "university_cn": "上海交通大学医学院"
     },
     {
@@ -451,9 +458,9 @@
       "avatar_type": "initials",
       "page": true,
       "year": "2026",
-      "program": "Academic Master’s Program",
+      "program": "Academic Master’s",
       "program_cn": "学术型硕士",
-      "university": "Shanghai Jiao Tong University School of Medicine",
+      "university": "SJTU School of Medicine",
       "university_cn": "上海交通大学医学院"
     },
     {
@@ -465,9 +472,9 @@
       "avatar_type": "initials",
       "page": true,
       "year": "2026",
-      "program": "Professional Master’s Program",
+      "program": "Professional Master’s",
       "program_cn": "专业型硕士",
-      "university": "Shanghai Jiao Tong University School of Medicine",
+      "university": "SJTU School of Medicine",
       "university_cn": "上海交通大学医学院"
     },
     {
@@ -479,7 +486,7 @@
       "avatar_type": "photo",
       "avatar_path": "images/members/junlin-zhang.jpg",
       "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
+      "university_cn": "上海交通大学医学院",
       "year": "2025",
       "page": true
     },
@@ -491,7 +498,7 @@
       "role_cn": "硕士研究生",
       "avatar_type": "initials",
       "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
+      "university_cn": "上海交通大学医学院",
       "year": "2025",
       "page": true
     },
@@ -504,7 +511,7 @@
       "avatar_type": "photo",
       "avatar_path": "images/members/zhongzheng-cao.jpg",
       "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
+      "university_cn": "上海交通大学医学院",
       "year": "2024",
       "page": true
     },
@@ -516,7 +523,7 @@
       "role_cn": "硕士研究生",
       "avatar_type": "initials",
       "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
+      "university_cn": "上海交通大学医学院",
       "year": "2024",
       "page": true
     },
@@ -528,7 +535,7 @@
       "role_cn": "硕士研究生",
       "avatar_type": "initials",
       "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
+      "university_cn": "上海交通大学医学院",
       "year": "2024",
       "page": true
     }
@@ -544,7 +551,7 @@
       "degree": "MD",
       "degree_cn": "MD",
       "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
+      "university_cn": "上海交通大学医学院",
       "note": "2023–2026",
       "note_cn": "2023–2026",
       "page": true
@@ -590,7 +597,7 @@
       "degree": "PhD",
       "degree_cn": "博士",
       "university": "SJTU School of Medicine",
-      "university_cn": "交大医学院",
+      "university_cn": "上海交通大学医学院",
       "year": "2022",
       "page": true,
       "links": {

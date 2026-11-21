@@ -154,17 +154,28 @@ function renderMemberCard(member, lang) {
   var home = link ? '<a href="' + link + '"' + (member.page ? '' : ' target="_blank" rel="noopener"') + '>' : '';
   var homeEnd = link ? '</a>' : '';
   var metaParts = [];
-  // Default doctoral students to plain "PhD"; explicit degrees (e.g. MD, MD/PhD)
-  // are used when provided in the data.
-  var degreeText = member.degree
-    ? (lang === 'cn' ? (member.degree_cn || member.degree) : member.degree)
-    : (member.role === 'phd' ? (lang === 'cn' ? '博士' : 'PhD') : '');
+  var progVal = lang === 'cn' ? (member.program_cn || member.program) : member.program;
+  var progHasDegree = progVal && /直博|硕士|PhD|Master/i.test(progVal);
+  var degreeText = '';
+  if (!progHasDegree) {
+    degreeText = member.degree
+      ? (lang === 'cn' ? (member.degree_cn || member.degree) : member.degree)
+      : (member.role === 'phd'
+          ? (lang === 'cn' ? '博士' : 'PhD')
+          : (member.role === 'master' ? (lang === 'cn' ? '硕士' : 'Master’s') : ''));
+  }
   if (degreeText) metaParts.push(degreeText);
   ['university', 'school', 'program', 'major', 'note'].forEach(function(field) {
     var value = lang === 'cn' ? (member[field + '_cn'] || member[field]) : member[field];
     if (value) metaParts.push(value);
   });
-  if (member.year) metaParts.push(member.year + (lang === 'cn' ? '级' : ' cohort'));
+  if (member.year) {
+    if (member.role === 'alumni') {
+      metaParts.push(lang === 'cn' ? member.year + '届' : 'Class of ' + member.year);
+    } else {
+      metaParts.push(member.year + (lang === 'cn' ? '级' : ' cohort'));
+    }
+  }
   var meta = metaParts.join(' · ');
   if (member.links && member.links.github) {
     meta += ' · <a href="' + member.links.github + '" target="_blank" rel="noopener">GitHub</a>';
@@ -175,34 +186,52 @@ function renderMemberCard(member, lang) {
 function renderTeam(data, lang) {
   var container = document.getElementById('team-content');
   if (!container) return;
+  var phdCount = ((data.phd_medical || []).length) + ((data.phd_engineering || []).length);
+  var masterCount = ((data.master_medical || []).length) + ((data.master_engineering || []).length);
+  var jumpItems = [];
+  if (data.leader && data.leader.length) jumpItems.push(['#leader', lang === 'cn' ? '团队负责人' : 'Lab Leader', data.leader.length]);
+  if (data.pi && data.pi.length) jumpItems.push(['#investigators', lang === 'cn' ? '课题组 PI' : 'PIs', data.pi.length]);
+  if (data.postdoc && data.postdoc.length) jumpItems.push(['#postdoc', lang === 'cn' ? '博士后' : 'Postdocs', data.postdoc.length]);
+  if (phdCount) jumpItems.push(['#phd', lang === 'cn' ? '博士生' : 'Doctoral', phdCount]);
+  if (masterCount) jumpItems.push(['#master', lang === 'cn' ? '硕士生' : 'Master’s', masterCount]);
+  if (data.honors_students && data.honors_students.length) jumpItems.push(['#honors', lang === 'cn' ? '荣誉计划' : 'Honors', data.honors_students.length]);
+  if (data.alumni && data.alumni.length) jumpItems.push(['#alumni', lang === 'cn' ? '校友' : 'Alumni', data.alumni.length]);
+
   var html = '';
-  html += '<div class="section-label reveal"><span class="section-label__text">' + (lang === 'cn' ? '团队负责人' : 'Lab Leader') + '</span><span class="section-label__line"></span></div>';
-  html += data.leader.map(function(m){ return renderLeader(m, lang); }).join('');
+  if (jumpItems.length > 1) {
+    html += '<nav class="team-jump reveal" aria-label="' + (lang === 'cn' ? '团队分组导航' : 'Team sections') + '">' +
+      jumpItems.map(function (it) {
+        return '<a class="team-jump__pill" href="' + it[0] + '">' + it[1] + ' <span class="team-jump__count">' + it[2] + '</span></a>';
+      }).join('') + '</nav>';
+  }
+
+  html += '<div id="leader" class="section-label reveal"><span class="section-label__text">' + (lang === 'cn' ? '团队负责人' : 'Lab Leader') + '</span><span class="section-label__line"></span></div>';
+  html += (data.leader || []).map(function(m){ return renderLeader(m, lang); }).join('');
 
   html += '<div id="investigators" class="section-label reveal" style="margin-top:40px;"><span class="section-label__text">' + (lang === 'cn' ? '课题组PI' : 'Principal Investigators') + '</span><span class="section-label__line"></span></div>';
-  html += data.pi.map(function(m){ return renderPI(m, lang); }).join('');
+  html += '<div class="pi-grid">' + (data.pi || []).map(function(m){ return renderPI(m, lang); }).join('') + '</div>';
 
   if (data.postdoc && data.postdoc.length) {
     html += '<div id="postdoc" class="reveal" style="margin-top:40px;"><div class="section-label"><span class="section-label__text">' + (lang === 'cn' ? '博士后' : 'Postdoctoral Researchers') + '</span><span class="section-label__line"></span></div>';
-    html += data.postdoc.map(function(m){ return renderPI(m, lang); }).join('');
+    html += '<div class="pi-grid">' + data.postdoc.map(function(m){ return renderPI(m, lang); }).join('') + '</div>';
     html += '</div>';
   }
 
   html += '<div id="phd" class="student-category reveal"><div class="section-label"><span class="section-label__text">' + (lang === 'cn' ? '博士研究生' : 'Doctoral Students') + '</span><span class="section-label__line"></span></div>';
-  html += '<div class="student-category__sub"><div class="student-category__sub-label">' + (lang === 'cn' ? '医学与医学技术（MD / PhD）' : 'Medicine & Health Science · MD / PhD') + '</div><div class="member-grid">' + data.phd_medical.map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
-  html += '<div class="student-category__sub"><div class="student-category__sub-label">' + (lang === 'cn' ? '工学博士（PhD）' : 'Engineering · PhD') + '</div><div class="member-grid">' + data.phd_engineering.map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
+  html += '<div class="student-category__sub"><div class="student-category__sub-label">' + (lang === 'cn' ? '医学与医学技术（MD / PhD）' : 'Medicine & Health Science · MD / PhD') + '</div><div class="member-grid">' + (data.phd_medical || []).map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
+  html += '<div class="student-category__sub"><div class="student-category__sub-label">' + (lang === 'cn' ? '工学博士（PhD）' : 'Engineering · PhD') + '</div><div class="member-grid">' + (data.phd_engineering || []).map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
   html += '</div>';
 
   html += '<div id="master" class="student-category reveal"><div class="section-label"><span class="section-label__text">' + (lang === 'cn' ? '硕士研究生' : 'Master Students') + '</span><span class="section-label__line"></span></div>';
-  html += '<div class="student-category__sub"><div class="student-category__sub-label">' + (lang === 'cn' ? '医学硕士' : 'Medicine') + '</div><div class="member-grid">' + data.master_medical.map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
-  html += '<div class="student-category__sub"><div class="student-category__sub-label">' + (lang === 'cn' ? '工学硕士' : 'Engineering') + '</div><div class="member-grid">' + data.master_engineering.map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
+  html += '<div class="student-category__sub"><div class="student-category__sub-label">' + (lang === 'cn' ? '医学硕士' : 'Medicine') + '</div><div class="member-grid">' + (data.master_medical || []).map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
+  html += '<div class="student-category__sub"><div class="student-category__sub-label">' + (lang === 'cn' ? '工学硕士' : 'Engineering') + '</div><div class="member-grid">' + (data.master_engineering || []).map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
   html += '</div>';
 
   if (data.honors_students && data.honors_students.length) {
     html += '<div id="honors" class="student-category reveal"><div class="section-label"><span class="section-label__text">' + (lang === 'cn' ? '荣誉计划学生' : 'Honors Program Students') + '</span><span class="section-label__line"></span></div><div class="member-grid">' + data.honors_students.map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
   }
 
-  html += '<div id="alumni" class="alumni-section reveal" style="margin-top:48px;"><div class="section-label"><span class="section-label__text">' + (lang === 'cn' ? '毕业致谢' : 'Alumni') + '</span><span class="section-label__line"></span></div><div class="member-grid">' + data.alumni.map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
+  html += '<div id="alumni" class="alumni-section reveal" style="margin-top:48px;"><div class="section-label"><span class="section-label__text">' + (lang === 'cn' ? '毕业致谢' : 'Alumni') + '</span><span class="section-label__line"></span></div><div class="member-grid">' + (data.alumni || []).map(function(m){ return renderMemberCard(m, lang); }).join('') + '</div></div>';
 
   container.innerHTML = html;
 

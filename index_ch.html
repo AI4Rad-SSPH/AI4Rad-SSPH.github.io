@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AI4Rad 实验室 — 上海交通大学医学院附属第六人民医院放射介入科医学影像人工智能团队。">
+  <meta name="description" content="AI4Rad 实验室 — 上海交通大学医学院附属第六人民医院放射介入科医学影像人工智能研究团队。">
   <title>AI4Rad 实验室 · 医学影像人工智能</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="images/brand/team-logo.png">
-  <link rel="stylesheet" href="css/style.css?v=20261009">
+  <link rel="stylesheet" href="css/style.css?v=20261121">
 </head>
 <body>
   <nav class="nav">
@@ -31,69 +28,407 @@
   </nav>
 
   <main class="wrapper">
-    <section class="hero reveal">
-      <div class="hero__brandrow">
-        <img class="hero__emblem" src="images/brand/team-logo.png" alt="AI4Rad">
-        <h1 class="hero__title">AI4Rad 实验室</h1>
+    <section class="hero hero--home reveal">
+      <div class="hero--home__panel">
+        <div class="hero--home__top">
+          <div>
+            <span class="hero__eyebrow">上海交通大学医学院附属第六人民医院 · 放射介入科</span>
+            <h1 class="hero__title">AI4Rad 实验室</h1>
+            <p class="hero__affil-line">医学影像人工智能实验室 · 上海交通大学影像医学研究所</p>
+            <p class="hero__lead">我们研究医学影像中的疾病识别、诊断推理、定量分析与图像重建方法，围绕视觉基础模型、多模态学习与空间物理建模开展研究，通过多中心临床数据与放射科医生阅片评估检验方法表现，并探索影像表征背后的生理与病理机制。</p>
+            <div class="hero__actions">
+              <a href="./publications_ch.html" class="btn btn--primary">论文成果</a>
+              <a href="./team_ch.html" class="btn btn--secondary">研究团队</a>
+              <a href="./about_ch.html" class="btn btn--secondary">关于与研究布局</a>
+              <a href="https://github.com/AI4Rad-SSPH" target="_blank" rel="noopener" class="btn btn--secondary">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="hero__brand-badge">
+            <img class="hero__emblem" src="images/brand/team-logo.png" alt="AI4Rad 实验室">
+          </div>
+        </div>
+
+        <div class="stats-strip" aria-label="实验室概览">
+          <div class="stat-item">
+            <span class="stat-item__num">4</span>
+            <span class="stat-item__label">核心方法支柱</span>
+            <span class="stat-item__note">基础模型 · 多模态 · 重建 · 空间仿真</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-item__num">7</span>
+            <span class="stat-item__label">临床影像方向</span>
+            <span class="stat-item__note">泛血管、骨肌、肿瘤与急诊队列</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-item__num" id="stat-pubs">41</span>
+            <span class="stat-item__label">实验室论文成果</span>
+            <span class="stat-item__note">同行评审学术期刊与开源数据集</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-item__num" id="stat-members">39</span>
+            <span class="stat-item__label">医工交叉成员</span>
+            <span class="stat-item__note">临床医师、工程学者、博后与研究生</span>
+          </div>
+        </div>
       </div>
-      <p class="hero__subtitle">上海交通大学医学院附属第六人民医院 · 放射介入科 · 医学影像人工智能研究。</p>
-      <p class="hero__links">
-        <a href="./publications_ch.html">论文成果</a>
-        <span class="hero__sep">·</span>
-        <a href="./team_ch.html">团队</a>
-        <span class="hero__sep">·</span>
-        <a href="https://github.com/AI4Rad-SSPH" target="_blank" rel="noopener">GitHub</a>
-      </p>
     </section>
 
     <section class="reveal">
-      <h2 class="section-title">最新动态</h2>
-      <div id="home-news"><p class="text-body">正在加载最新动态…</p></div>
-      <p class="news-more"><a href="./publications_ch.html">查看全部论文 →</a></p>
+      <div class="section-head">
+        <h2 class="section-title">研究方向</h2>
+        <a href="./about_ch.html#clinical-domains" class="section-more">了解完整科研布局 →</a>
+      </div>
+      <p class="section-lead">我们的研究关注模型如何学习跨模态医学影像表征、如何融合报告与病史等临床信息进行推理、如何恢复精细解剖结构，以及如何建立影像结构与生理功能之间的定量联系。</p>
+
+      <div class="pillar-grid">
+        <article class="pillar-card">
+          <div class="pillar-card__head">
+            <h3 class="pillar-card__title">视觉基础模型</h3>
+            <span class="pillar-card__idx">01</span>
+          </div>
+          <p class="pillar-card__desc">研究可迁移于多模态、多病种场景的医学影像视觉表征学习方法，支持病灶识别、解剖分割、风险分层与定量影像标志物提取。</p>
+          <div class="pillar-card__tags">
+            <span class="pillar-card__tag">三维 CT / MRI 预训练</span>
+            <span class="pillar-card__tag">解剖分割与急诊分诊</span>
+            <span class="pillar-card__tag">跨域泛化学习</span>
+          </div>
+        </article>
+
+        <article class="pillar-card">
+          <div class="pillar-card__head">
+            <h3 class="pillar-card__title">多模态大语言模型</h3>
+            <span class="pillar-card__idx">02</span>
+          </div>
+          <p class="pillar-card__desc">融合医学影像、检查报告、临床病史与指南标准，探索诊断推理、治疗建议评估与结构化报告生成，结合多中心阅片研究检验输出可靠性。</p>
+          <div class="pillar-card__tags">
+            <span class="pillar-card__tag">影像锚定临床推理</span>
+            <span class="pillar-card__tag">结构化报告生成</span>
+            <span class="pillar-card__tag">多中心医生评测</span>
+          </div>
+        </article>
+
+        <article class="pillar-card">
+          <div class="pillar-card__head">
+            <h3 class="pillar-card__title">影像生成与重建</h3>
+            <span class="pillar-card__idx">03</span>
+          </div>
+          <p class="pillar-card__desc">研究超分辨率重建、低剂量去噪、伪影修复与跨模态图像合成，重点关注生成结果对细微解剖结构与定量诊断信息的保真度。</p>
+          <div class="pillar-card__tags">
+            <span class="pillar-card__tag">医学影像超分辨率</span>
+            <span class="pillar-card__tag">低剂量图像增强</span>
+            <span class="pillar-card__tag">跨模态合成</span>
+          </div>
+        </article>
+
+        <article class="pillar-card">
+          <div class="pillar-card__head">
+            <h3 class="pillar-card__title">空间智能与物理仿真</h3>
+            <span class="pillar-card__idx">04</span>
+          </div>
+          <p class="pillar-card__desc">结合三维解剖建模、多期相配准、血管血流动力学与骨肌生物力学仿真，研究影像解剖形态与生理功能、临床事件之间的定量关联。</p>
+          <div class="pillar-card__tags">
+            <span class="pillar-card__tag">血管血流动力学</span>
+            <span class="pillar-card__tag">三维形态建模</span>
+            <span class="pillar-card__tag">骨肌生物力学</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="clinical-band">
+        <div class="clinical-band__header">
+          <span class="clinical-band__label">重点临床影像方向</span>
+          <a href="./about_ch.html#clinical-domains" class="clinical-band__link">查看各方向说明 →</a>
+        </div>
+        <ul class="clinical-pills">
+          <li>泛血管影像与血流疾病</li>
+          <li>骨肌系统与骨定量</li>
+          <li>肿瘤影像与全身转移</li>
+          <li>急诊影像与腹部疾病诊断</li>
+          <li>慢病队列与长期随访</li>
+          <li>影像教育与报告反馈</li>
+          <li>光子计数 CT 等新影像技术转化</li>
+        </ul>
+      </div>
     </section>
 
     <section class="reveal">
-      <h2 class="section-title">研究方向</h2>
-      <p class="text-body">我们的研究建立在四类核心 AI 技术能力之上，服务于团队的七大临床影像方向。</p>
-      <ul class="text-list">
-        <li><strong>视觉基础模型</strong>：医学影像的视觉表征与结构化理解——诊断、分割、检测与定量。</li>
-        <li><strong>多模态大语言模型</strong>：融合影像、报告、病史与知识库，用于诊断推理与结构化报告。</li>
-        <li><strong>影像生成</strong>：面向临床价值的图像生成、修复、去噪与增强，含跨模态合成。</li>
-        <li><strong>空间智能与物理仿真</strong>：三维建模、配准、血流与骨肌力学仿真，以及可解释定量分析。</li>
-      </ul>
+      <div class="section-head">
+        <h2 class="section-title">代表性研究</h2>
+        <a href="./publications_ch.html" class="section-more">查看全部论文 →</a>
+      </div>
+
+      <div class="subsec-block">
+        <div class="subsec-head">
+          <h3 class="subsec-title">前沿基础模型、多模态智能体与开源基准 <span class="subsec-badge">核心方法代表作</span></h3>
+        </div>
+        <p class="subsec-desc">面向大规模临床影像表征学习、跨模态推理与微结构超分辨重建，结合多中心独立队列与放射科医生对照阅片研究开展系统验证。</p>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-card__meta">
+              <span class="project-card__venue">Nature Biomedical Engineering · 2026</span>
+              <span class="project-card__domain">全身骨骼基础模型</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://doi.org/10.1038/s41551-026-01736-1" target="_blank" rel="noopener">BoneCoT：医生思维链引导的全身骨骼 CT 基础模型</a></h4>
+            <p class="project-card__desc">基于 DINOv2 式自监督预训练构建全身骨骼 CT 基础骨干网络 BoneFM，并将放射科医生的阅片推理路径编码为显式任务依赖链，从解剖部位定位、骨密度改变逐步推理至骨转移病灶定性，在多中心队列中验证了可解释的骨转移评估性能。</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">BoneFM 自监督骨干</span>
+              <span class="project-card__chip">临床思维链建模</span>
+              <span class="project-card__chip">多中心骨转移验证</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://doi.org/10.1038/s41551-026-01736-1" target="_blank" rel="noopener">论文</a>
+              <a href="https://github.com/FrankZhangRp/BoneCoT" target="_blank" rel="noopener">代码</a>
+              <a href="https://frankzhangrp.github.io/BoneCoT/" target="_blank" rel="noopener">项目主页</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__meta">
+              <span class="project-card__venue">Nature Communications · 2026</span>
+              <span class="project-card__domain">急诊平扫 CT 分诊</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://www.nature.com/articles/s41467-026-76634-w" target="_blank" rel="noopener">AbdomenNet：平扫 CT 急腹症诊断、风险分层与急诊分诊基础模型</a></h4>
+            <p class="project-card__desc">在 103,989 例腹部平扫 CT 上完成自监督预训练并在 5,816 例精细标注病例上微调，覆盖 11 类急腹症识别与 3 项危重风险分层任务。在 3 个独立外部队列（2,528 例）上危急病种宏平均 AUROC 达 0.919；交叉辅助阅片试验将医生平均 AUROC 从 0.812 提升至 0.924，单病例中位阅片时间缩短 52.5 秒。</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">10.4 万例平扫 CT 预训练</span>
+              <span class="project-card__chip">3 中心外部验证</span>
+              <span class="project-card__chip">医生交叉阅片试验</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://www.nature.com/articles/s41467-026-76634-w" target="_blank" rel="noopener">论文</a>
+              <a href="https://github.com/FrankZhangRp/Acute_abdomen" target="_blank" rel="noopener">代码</a>
+              <a href="https://frankzhangrp.github.io/Acute_abdomen/" target="_blank" rel="noopener">项目主页</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__meta">
+              <span class="project-card__venue">npj Digital Medicine · 2026</span>
+              <span class="project-card__domain">多模态临床智能体</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://www.nature.com/articles/s41746-026-03066-7" target="_blank" rel="noopener">影像锚定的急性缺血性卒中多智能体治疗推荐框架</a></h4>
+            <p class="project-card__desc">模拟卒中多学科诊疗团队（MDT）分工，通过协同智能体串联急诊分诊、发病时间窗研判、多模态神经影像解读、溶栓/取栓禁忌证筛查与检索增强指南推理。在双中心 1,658 例疑似急性缺血性卒中回顾性队列中，将治疗方案推荐准确率从 0.636 提升至 0.785（Macro-F1 由 0.562 升至 0.768）。</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">双中心 1,658 例评估</span>
+              <span class="project-card__chip">多模态影像 + 禁忌证筛查</span>
+              <span class="project-card__chip">指南检索增强推理</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://www.nature.com/articles/s41746-026-03066-7" target="_blank" rel="noopener">论文</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__meta">
+              <span class="project-card__venue">npj Digital Medicine · 2026</span>
+              <span class="project-card__domain">多中心报告评测基准</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://www.nature.com/articles/s41746-026-02380-4" target="_blank" rel="noopener">BrainMIND：脑 MRI 报告诊断结论生成的多中心基准与读片研究</a></h4>
+            <p class="project-card__desc">围绕「由脑 MRI 报告影像所见（Findings）自动归纳诊断结论（Impression）」这一核心工作流任务，构建跨中心真实病例基准与放射科医生结构化盲法评价体系，系统对比评测了 10 种主流大语言模型在准确性、完整性与临床可用性上的表现与局限。</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">10 种主流 LLM 横向评测</span>
+              <span class="project-card__chip">多中心真实报告</span>
+              <span class="project-card__chip">放射科医生盲法打分</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://www.nature.com/articles/s41746-026-02380-4" target="_blank" rel="noopener">论文</a>
+              <a href="https://github.com/FrankZhangRp/BrainMIND" target="_blank" rel="noopener">代码</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__meta">
+              <span class="project-card__venue">Scientific Data · 2026</span>
+              <span class="project-card__domain">开源配对数据集</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://www.nature.com/articles/s41597-026-07748-5" target="_blank" rel="noopener">LumbarSR：配对临床 CT 与光子计数显微 CT 腰椎超分辨率数据集</a></h4>
+            <p class="project-card__desc">发布首个空间配准的人体腰椎常规临床 CT 与高分辨率离体光子计数显微 CT（Micro-CT）配对数据集，架起活体常规辐射剂量成像与微米级骨小梁三维微结构之间的桥梁，并配套公开基准评测代码与学术挑战赛。</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">临床 CT ↔ 光子计数 Micro-CT</span>
+              <span class="project-card__chip">骨小梁微结构重建</span>
+              <span class="project-card__chip">公开数据集与挑战赛</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://www.nature.com/articles/s41597-026-07748-5" target="_blank" rel="noopener">论文</a>
+              <a href="https://github.com/FrankZhangRp/LumbarSR-Challenge" target="_blank" rel="noopener">代码</a>
+              <a href="https://frankzhangrp.github.io/LumbarSR-Challenge/" target="_blank" rel="noopener">挑战赛</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__meta">
+              <span class="project-card__venue">J. Med. Internet Res. · 2026</span>
+              <span class="project-card__domain">急诊决策协作系统</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://www.jmir.org/2026/1/e96304" target="_blank" rel="noopener">HR-LLM-Stroke：急诊缺血性卒中分层多智能体决策支持框架</a></h4>
+            <p class="project-card__desc">针对急性缺血性卒中紧迫救治时间窗内的多源临床信息整合难题，设计影像要点提取、神经功能临床特征解析与指南规则核验的分层智能体工作流，在多中心卒中数据上完成验证并提供在线交互演示系统。</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">急诊卒中时间窗决策</span>
+              <span class="project-card__chip">多中心回顾验证</span>
+              <span class="project-card__chip">开源代码与交互演示</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://www.jmir.org/2026/1/e96304" target="_blank" rel="noopener">论文</a>
+              <a href="https://github.com/FrankZhangRp/HR-LLM-Stroke" target="_blank" rel="noopener">代码</a>
+              <a href="https://frankzhangrp.github.io/HR-LLM-Stroke/" target="_blank" rel="noopener">在线演示</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="subsec-block">
+        <div class="subsec-head">
+          <h3 class="subsec-title">临床队列、定量影像标志物与医工入门课题 <span class="subsec-badge">适合医学生 / RBL 与大创切入</span></h3>
+        </div>
+        <p class="subsec-desc">科研并非只有超大规模预训练——从解剖变异、血流生理机制与日常临床疑难问题出发，结合专病队列构建、三维定量测量、手术仿真或轻量化提示工程，同样能产出扎实的同行评审成果。以下均为实验室研究生与医学生主导发表的代表性临床与医工结合工作：</p>
+
+        <div class="project-grid">
+          <article class="project-card project-card--foundational">
+            <div class="project-card__meta">
+              <span class="project-card__venue">Insights into Imaging · 2026</span>
+              <span class="project-card__domain">临床规则提示 · 轻量化模型</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://link.springer.com/article/10.1186/s13244-026-02421-2" target="_blank" rel="noopener">指南标准引导的轻量化大模型辅助颈动脉斑块 AHA 分型</a></h4>
+            <p class="project-card__desc">纳入多中心 433 例患者的颈动脉黑血 MRI 自由文本报告，评测 10 种大模型并开展 4 名放射科医生辅助判读研究。研究证明：将改良版 AHA 斑块分型临床判读准则结构化编码进提示词后，本地可部署的 8B 轻量级模型即可有效提升医生间分型一致性。</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">433 例多中心报告</span>
+              <span class="project-card__chip">临床指南编码提示词</span>
+              <span class="project-card__chip">本地 8B 轻量模型验证</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://link.springer.com/article/10.1186/s13244-026-02421-2" target="_blank" rel="noopener">论文</a>
+              <a href="https://link.springer.com/content/pdf/10.1186/s13244-026-02421-2.pdf" target="_blank" rel="noopener">PDF</a>
+            </div>
+          </article>
+
+          <article class="project-card project-card--foundational">
+            <div class="project-card__meta">
+              <span class="project-card__venue">Academic Radiology · 2026</span>
+              <span class="project-card__domain">心肺病理生理 · 三维定量标志物</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://www.sciencedirect.com/science/article/pii/S1076633226005945" target="_blank" rel="noopener">肺动静脉三维体积差用于急性肺栓塞风险分层</a></h4>
+            <p class="project-card__desc">从急性肺栓塞导致肺循环阻力升高、右心后负荷增加与左心回流减少的病理生理机制出发，基于肺动脉 CTA 提取「肺动脉—肺静脉体积差」这一直观定量影像标志物，为急诊肺栓塞严重程度评估与风险分层提供可解释的定量依据。</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">病理生理驱动假设</span>
+              <span class="project-card__chip">CTA 三维血管定量</span>
+              <span class="project-card__chip">急诊危重风险分层</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://www.sciencedirect.com/science/article/pii/S1076633226005945" target="_blank" rel="noopener">论文</a>
+            </div>
+          </article>
+
+          <article class="project-card project-card--foundational">
+            <div class="project-card__meta">
+              <span class="project-card__venue">J. Orthop. Surg. Res. · 2026</span>
+              <span class="project-card__domain">解剖变异 · 三维手术仿真</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://doi.org/10.1186/s13018-026-07046-1" target="_blank" rel="noopener">寰椎后桥变异患者 C1 椎弓根螺钉置入风险的三维 CTA 仿真研究</a></h4>
+            <p class="project-card__desc">针对寰椎后桥（Ponticulus Posticus）解剖变异易改变骨性标志并增加椎动脉损伤风险的临床痛点，基于 141 例颈部 CTA 开展三维螺钉轨迹仿真（PedicleScrewSimulator），建立术前定量解剖筛选与置钉风险评估流程。</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">141 例颈部 CTA 解剖</span>
+              <span class="project-card__chip">三维置钉轨迹仿真</span>
+              <span class="project-card__chip">脊柱外科术前评估</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://doi.org/10.1186/s13018-026-07046-1" target="_blank" rel="noopener">论文</a>
+            </div>
+          </article>
+
+          <article class="project-card project-card--foundational">
+            <div class="project-card__meta">
+              <span class="project-card__venue">BMC Medical Imaging · 2026</span>
+              <span class="project-card__domain">临床流行病学 · 16 年专病队列</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://link.springer.com/article/10.1186/s12880-026-02801-6" target="_blank" rel="noopener">颅颌面创伤后急性颅内损伤年龄相关风险的 16 年队列研究</a></h4>
+            <p class="project-card__desc">依托医院连续 16 年急诊创伤影像队列，系统揭示颅颌面外伤患者发生急性颅内损伤的年龄相关性风险规律，重点识别出「孤立性面部骨折老年患者」这一隐匿高危人群，直接服务于急诊头颅 CT 检查指征优化。</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">16 年单中心大样本队列</span>
+              <span class="project-card__chip">高危亚组临床识别</span>
+              <span class="project-card__chip">急诊检查指征循证</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://link.springer.com/article/10.1186/s12880-026-02801-6" target="_blank" rel="noopener">论文</a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
     <section class="reveal">
-      <h2 class="section-title">代表性项目</h2>
-      <div class="text-list">
-        <p><strong>影像驱动卒中 MLLM</strong> — 协同多模态影像解读、禁忌证筛查与治疗推荐的急性缺血性卒中多智能体多模态大语言模型框架。<em>npj Digital Medicine</em>，2026。<a href="https://www.nature.com/articles/s41746-026-03066-7" target="_blank" rel="noopener">论文</a></p>
-        <p><strong>HR-LLM-Stroke</strong> — 面向急性缺血性卒中急诊治疗推荐的多智能体大语言模型框架。<em>Journal of Medical Internet Research</em>，2026。<a href="https://www.jmir.org/2026/1/e96304" target="_blank" rel="noopener">论文</a> · <a href="https://github.com/FrankZhangRp/HR-LLM-Stroke" target="_blank" rel="noopener">代码</a> · <a href="https://frankzhangrp.github.io/HR-LLM-Stroke/" target="_blank" rel="noopener">演示</a></p>
-        <p><strong>BrainMIND</strong> — 多中心基准与读片研究，评测 10 个大语言模型从脑 MRI 报告生成诊断印象的能力。《npj Digital Medicine》，2026。<a href="https://www.nature.com/articles/s41746-026-02380-4" target="_blank" rel="noopener">论文</a> · <a href="https://github.com/FrankZhangRp/BrainMIND" target="_blank" rel="noopener">代码</a></p>
-        <p><strong>脑血管与卒中 AI</strong> — CTA 脑动脉瘤检测、自动 ASPECTS 评分与急性卒中血栓表征。<em>Radiology</em> / <em>European Radiology</em>。</p>
+      <div class="section-head">
+        <h2 class="section-title">最新动态</h2>
+        <a href="./publications_ch.html" class="section-more">全部成果列表 →</a>
+      </div>
+      <div class="news-panel" id="home-news">
+        <p class="text-body" style="padding:12px 0;">正在加载最新动态…</p>
       </div>
     </section>
 
     <section class="reveal">
       <h2 class="section-title">加入我们</h2>
-      <p class="text-body">招收医学影像人工智能与机器学习方向的博士、硕士研究生。请将简历发送至 <a href="mailto:zhangrp@sjtu.edu.cn">zhangrp@sjtu.edu.cn</a>。</p>
+      <div class="platform-strip">
+        <ul class="platform-strip__items">
+          <li><span class="platform-strip__dot"></span><strong>自有百卡算力集群</strong>（超 100 kW 专享算力平台）</li>
+          <li><span class="platform-strip__dot"></span><strong>PB 级自有存储</strong>（大规模多模态影像专病库）</li>
+          <li><span class="platform-strip__dot"></span><strong>经费充裕</strong>（近五年主持国家级课题 &gt;10 项 · 总经费 &gt;1,000 万元）</li>
+        </ul>
+        <a href="./about_ch.html#research-platform" class="section-more">科研平台详情 →</a>
+      </div>
+      <div class="info-grid">
+        <div class="info-card info-card--subtle">
+          <span class="info-card__eyebrow">医工深度交叉</span>
+          <h3 class="info-card__title">临床与工程协同研究团队</h3>
+          <p class="info-card__body">实验室由<strong>李跃华</strong>教授领衔，<strong>张瑞鹏</strong>、<strong>韦建雍</strong>、<strong>孙正</strong>担任课题组 PI，扎根上海市第六人民医院放射介入科临床一线，汇聚放射科医师、人工智能研究人员、博士后及博硕士研究生。</p>
+          <div class="info-card__footer"><a href="./team_ch.html">查看完整团队名录 →</a></div>
+        </div>
+
+        <div class="info-card">
+          <span class="info-card__eyebrow">研究生与专职科研</span>
+          <h3 class="info-card__title">博硕士生、博士后与访问学者</h3>
+          <p class="info-card__body">欢迎国内外团队开展多中心合作；长期招收医学影像人工智能、计算机视觉与多模态学习方向的<strong>博士与硕士研究生</strong>（含医工交叉、医学技术与临床方向）、<strong>博士后</strong>及<strong>访问学者</strong>。请附简历发送至 <a href="mailto:zhangrp@sjtu.edu.cn">zhangrp@sjtu.edu.cn</a>。</p>
+          <div class="info-card__footer"><a href="./contact_ch.html">查看联系方式与申请说明 →</a></div>
+        </div>
+      </div>
+
+      <div class="ug-callout">
+        <div>
+          <span class="info-card__eyebrow">面向上海交通大学医学院本科生 · 长期开放招募</span>
+          <h3 class="ug-callout__title">热忱欢迎交大医学院本科生参与 RBL 与大创竞赛！</h3>
+          <p class="ug-callout__body">我们非常鼓励<strong>临床医学（五年制 / 八年制）、医学技术学院（医学影像技术等）、生物医学科学、口腔及预防医学</strong>等各专业本科生尽早走进临床科研！<strong>无需预先具备深度学习编程基础</strong>——实验室提供「一线放射科医师 + AI 算法导师/高年级博硕」双带教机制，可从专病队列分析、三维解剖定量、手术仿真或临床大模型评测平滑切入，支持个人报名或已组队小组联系指导。</p>
+        </div>
+        <div class="ug-callout__side">
+          <span class="ug-callout__side-label">支持本科生项目类型</span>
+          <ul class="ug-tracks">
+            <li>RBL 探究式学习</li>
+            <li>大学生创新创业训练计划（大创）</li>
+            <li>「挑战杯」/ 国创赛等科创竞赛</li>
+            <li>荣誉计划与本科毕业设计</li>
+          </ul>
+          <p class="ug-callout__cta">请简单介绍年级、专业与感兴趣的方向，邮件联系张瑞鹏老师：<a href="mailto:zhangrp@sjtu.edu.cn">zhangrp@sjtu.edu.cn</a></p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer__brand">
       <img src="images/brand/team-logo.png" alt="AI4Rad 实验室" class="footer__brandlogo">
-      <p class="footer__brand-cap"><span class="footer__brand-intro">上海市第六人民医院放射介入科 · 医学影像人工智能实验室 · 上海交通大学医学院</span><span class="footer__brand-vision">辅助临床诊疗 · 提升诊疗效率与质量 · 探索影像背后的生理病理机制</span></p>
+      <p class="footer__brand-cap"><span class="footer__brand-intro">上海市第六人民医院放射介入科 · 医学影像人工智能实验室 · 上海交通大学医学院</span><span class="footer__brand-vision">辅助临床诊疗 · 定量影像分析 · 探索影像背后的生理与病理机制</span></p>
     </div>
     <div class="footer__links">
       <a href="./index_ch.html">首页</a>
+      <a href="./about_ch.html">关于</a>
       <a href="./team_ch.html">团队</a>
-      <a href="./publications_ch.html">论文</a>
+      <a href="./publications_ch.html">论文成果</a>
+      <a href="./contact_ch.html">联系</a>
       <a href="mailto:zhangrp@sjtu.edu.cn">邮箱</a>
       <a href="https://github.com/AI4Rad-SSPH" target="_blank" rel="noopener">GitHub</a>
     </div>
     <p class="footer__meta">AI4Rad 实验室 · 放射介入科 · 上海市第六人民医院 · &copy; 2026</p>
     <div class="footer__affil">
-      <span class="footer__affil-cap">附属机构</span>
+      <span class="footer__affil-cap">依托单位</span>
       <div class="footer__affil-logos">
         <img src="images/brand/ssph-med-logo.svg" alt="上海市第六人民医院" class="a-ssph">
         <span class="footer__affil-sep" aria-hidden="true"></span>
@@ -102,7 +437,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=20261009"></script>
-  <script src="js/home.js?v=20261017-insights"></script>
+  <script src="js/main.js?v=20261121"></script>
+  <script src="js/home.js?v=20261121"></script>
 </body>
 </html>

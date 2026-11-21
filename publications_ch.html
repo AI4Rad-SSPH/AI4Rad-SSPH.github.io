@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AI4Rad 实验室论文成果 — 医学影像人工智能期刊与会议论文。">
+  <meta name="description" content="AI4Rad 实验室论文成果 — 医学影像人工智能同行评审期刊论文、开源数据集与待刊研究。">
   <title>论文成果 · AI4Rad 实验室</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="images/brand/team-logo.png">
-  <link rel="stylesheet" href="css/style.css?v=20261009">
+  <link rel="stylesheet" href="css/style.css?v=20261121">
 </head>
 <body>
   <nav class="nav">
@@ -32,8 +29,9 @@
 
   <main class="wrapper">
     <section class="hero reveal">
+      <span class="hero__eyebrow">学术发表与开源基准</span>
       <h1 class="hero__title">论文成果</h1>
-      <p class="hero__subtitle">团队论文成果，包含已接收、待发表的研究。另可查看李跃华教授的 <a href="https://scholar.google.com/citations?user=zj4WqewAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>。</p>
+      <p class="hero__subtitle">实验室科研论文列表（含已接收、待正式排期的研究成果）。更多过往工作另见李跃华教授的 <a href="https://scholar.google.com/citations?user=zj4WqewAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>。</p>
     </section>
 
     <div id="pub-root">
@@ -46,18 +44,20 @@
   <footer class="footer">
     <div class="footer__brand">
       <img src="images/brand/team-logo.png" alt="AI4Rad 实验室" class="footer__brandlogo">
-      <p class="footer__brand-cap"><span class="footer__brand-intro">上海市第六人民医院放射介入科 · 医学影像人工智能实验室 · 上海交通大学医学院</span><span class="footer__brand-vision">辅助临床诊疗 · 提升诊疗效率与质量 · 探索影像背后的生理病理机制</span></p>
+      <p class="footer__brand-cap"><span class="footer__brand-intro">上海市第六人民医院放射介入科 · 医学影像人工智能实验室 · 上海交通大学医学院</span><span class="footer__brand-vision">辅助临床诊疗 · 定量影像分析 · 探索影像背后的生理与病理机制</span></p>
     </div>
     <div class="footer__links">
       <a href="./index_ch.html">首页</a>
+      <a href="./about_ch.html">关于</a>
       <a href="./team_ch.html">团队</a>
       <a href="./publications_ch.html">论文成果</a>
+      <a href="./contact_ch.html">联系</a>
       <a href="mailto:zhangrp@sjtu.edu.cn">邮箱</a>
       <a href="https://github.com/AI4Rad-SSPH" target="_blank" rel="noopener">GitHub</a>
     </div>
     <p class="footer__meta">AI4Rad 实验室 · 放射介入科 · 上海市第六人民医院 · &copy; 2026</p>
     <div class="footer__affil">
-      <span class="footer__affil-cap">附属机构</span>
+      <span class="footer__affil-cap">依托单位</span>
       <div class="footer__affil-logos">
         <img src="images/brand/ssph-med-logo.svg" alt="上海市第六人民医院" class="a-ssph">
         <span class="footer__affil-sep" aria-hidden="true"></span>
@@ -66,17 +66,15 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=20261009"></script>
-  <script src="js/pub.js?v=20261017-if"></script>
+  <script src="js/main.js?v=20261121"></script>
+  <script src="js/pub.js?v=20261121"></script>
   <script>
   (function () {
-    var memberNameById = null;
     Promise.all([
-      fetch('data/publications/manifest.json?v=20261017-if').then(function (r) { return r.json(); }),
-      fetch('data/team.json?v=20261009').then(function (r) { return r.json(); })
+      fetch('data/publications/manifest.json?v=20261121').then(function (r) { if (!r.ok) throw new Error('manifest'); return r.json(); }),
+      fetch('data/team.json?v=20261121').then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; })
     ]).then(function (res) {
-      var papers = res[0], team = res[1];
-      // 全站列表只显示 lab 论文（含 Yuehua Li 的）。
+      var papers = res[0], team = res[1] || {};
       papers = papers.filter(function (p) { return p.lab !== false; });
       var names = {};
       var members = {};
@@ -87,7 +85,7 @@
           members[m.id] = { en: m.name_en, cn: m.name_cn };
         });
       });
-      memberNameById = function (id) { return names[id]; };
+      var memberNameById = function (id) { return names[id]; };
       window.Pub.initFilter('pub-root', papers, 'cn', memberNameById, { members: members });
     }).catch(function (e) {
       document.querySelector('#pub-root .pub-list').innerHTML =

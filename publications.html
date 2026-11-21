@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AI4Rad Lab publications — journal and conference papers on medical imaging AI.">
+  <meta name="description" content="AI4Rad Lab publications — peer-reviewed journal papers, open benchmarks, and accepted studies in medical imaging AI.">
   <title>Publications · AI4Rad Lab</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="images/brand/team-logo.png">
-  <link rel="stylesheet" href="css/style.css?v=20261009">
+  <link rel="stylesheet" href="css/style.css?v=20261121">
 </head>
 <body>
   <nav class="nav">
@@ -32,8 +29,9 @@
 
   <main class="wrapper">
     <section class="hero reveal">
+      <span class="hero__eyebrow">Peer-Reviewed Research &amp; Datasets</span>
       <h1 class="hero__title">Publications</h1>
-      <p class="hero__subtitle">Lab publications, including accepted papers awaiting publication. See also Yuehua Li’s <a href="https://scholar.google.com/citations?user=zj4WqewAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.</p>
+      <p class="hero__subtitle">Research publications from AI4Rad Lab, including accepted articles awaiting formal issue assignment. See also Prof. Yuehua Li’s <a href="https://scholar.google.com/citations?user=zj4WqewAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.</p>
     </section>
 
     <div id="pub-root">
@@ -46,18 +44,20 @@
   <footer class="footer">
     <div class="footer__brand">
       <img src="images/brand/team-logo.png" alt="AI4Rad Lab" class="footer__brandlogo">
-      <p class="footer__brand-cap"><span class="footer__brand-intro">Medical Imaging AI Lab · Department of Radiology, Shanghai Sixth People's Hospital · SJTU School of Medicine</span><span class="footer__brand-vision">Supporting clinical care · Diagnostic efficiency &amp; quality · Mechanisms behind the image</span></p>
+      <p class="footer__brand-cap"><span class="footer__brand-intro">Medical Imaging AI Lab · Department of Radiology, Shanghai Sixth People's Hospital · SJTU School of Medicine</span><span class="footer__brand-vision">Clinical decision support · Quantitative imaging · Physiological &amp; pathological mechanisms</span></p>
     </div>
     <div class="footer__links">
       <a href="./">Home</a>
+      <a href="./about.html">About</a>
       <a href="./team.html">Team</a>
       <a href="./publications.html">Publications</a>
+      <a href="./contact.html">Contact</a>
       <a href="mailto:zhangrp@sjtu.edu.cn">Email</a>
       <a href="https://github.com/AI4Rad-SSPH" target="_blank" rel="noopener">GitHub</a>
     </div>
     <p class="footer__meta">AI4Rad Lab · Department of Radiology · Shanghai Sixth People's Hospital · &copy; 2026</p>
     <div class="footer__affil">
-      <span class="footer__affil-cap">Affiliated with</span>
+      <span class="footer__affil-cap">Affiliated Institutions</span>
       <div class="footer__affil-logos">
         <img src="images/brand/ssph-med-logo.svg" alt="Shanghai Sixth People's Hospital" class="a-ssph">
         <span class="footer__affil-sep" aria-hidden="true"></span>
@@ -66,17 +66,15 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=20261009"></script>
-  <script src="js/pub.js?v=20261017-if"></script>
+  <script src="js/main.js?v=20261121"></script>
+  <script src="js/pub.js?v=20261121"></script>
   <script>
   (function () {
-    var memberNameById = null;
     Promise.all([
-      fetch('data/publications/manifest.json?v=20261017-if').then(function (r) { return r.json(); }),
-      fetch('data/team.json?v=20261009').then(function (r) { return r.json(); })
+      fetch('data/publications/manifest.json?v=20261121').then(function (r) { if (!r.ok) throw new Error('manifest'); return r.json(); }),
+      fetch('data/team.json?v=20261121').then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; })
     ]).then(function (res) {
-      var papers = res[0], team = res[1];
-      // Site-wide list shows only lab papers (those with Yuehua Li).
+      var papers = res[0], team = res[1] || {};
       papers = papers.filter(function (p) { return p.lab !== false; });
       var names = {};
       var members = {};
@@ -87,7 +85,7 @@
           members[m.id] = { en: m.name_en, cn: m.name_cn };
         });
       });
-      memberNameById = function (id) { return names[id]; };
+      var memberNameById = function (id) { return names[id]; };
       window.Pub.initFilter('pub-root', papers, 'en', memberNameById, { members: members });
     }).catch(function (e) {
       document.querySelector('#pub-root .pub-list').innerHTML =

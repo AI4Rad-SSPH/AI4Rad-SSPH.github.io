@@ -2,10 +2,10 @@
   "id": "chao-zhu",
   "name_en": "Chao Zhu",
   "name_cn": "朱超",
-  "title_en": "M.D. · Postdoctoral Fellow · Department of Radiology · Anhui Medical University",
-  "title_cn": "M.D. · 博士后 · 放射介入科 · 安徽医科大学",
-  "bio_en": "Postdoctoral fellow in Department of Radiology at Anhui Medical University, and a member of AI4Rad Lab.",
-  "bio_cn": "放射介入科博士后，AI4Rad Lab 成员。",
+  "title_en": "M.D. · Postdoctoral Fellow · Shanghai Sixth People's Hospital · AI4Rad Lab",
+  "title_cn": "M.D. · 博士后 · 上海市第六人民医院放射介入科 · AI4Rad 实验室",
+  "bio_en": "Chao Zhu, M.D. (Anhui Medical University), joined the Department of Radiology at Shanghai Sixth People's Hospital as a Postdoctoral Fellow in 2025 and is a member of AI4Rad Lab. His research focuses on emergency abdominal imaging AI, foundation models, and multicenter clinical validation.",
+  "bio_cn": "朱超，医学博士（安徽医科大学），2025 年入站上海交通大学医学院附属第六人民医院放射介入科博士后，AI4Rad 实验室成员。主要研究方向包括腹部急诊影像人工智能、基础模型与多中心临床转化验证。",
   "links": {},
   "interests_en": [
     "Medical imaging AI"

@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="关于 AI4Rad 实验室 — 上海市第六人民医院放射介入科医学影像人工智能团队的使命与愿景。">
+  <meta name="description" content="关于 AI4Rad 实验室 — 上海市第六人民医院放射介入科医学影像人工智能团队的研究目标、临床方向与医工交叉模式。">
   <title>关于 · AI4Rad 实验室</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="images/brand/team-logo.png">
-  <link rel="stylesheet" href="css/style.css?v=20261009">
+  <link rel="stylesheet" href="css/style.css?v=20261121">
 </head>
 <body>
   <nav class="nav">
@@ -32,37 +29,137 @@
 
   <main class="wrapper">
     <section class="hero reveal">
+      <span class="hero__eyebrow">实验室简介与科研布局</span>
       <h1 class="hero__title">关于我们</h1>
-      <p class="hero__subtitle">我们是谁，以及我们想做成什么。</p>
+      <p class="hero__subtitle">AI4Rad 实验室依托上海交通大学医学院附属第六人民医院放射介入科与上海交通大学影像医学研究所，由临床医师、工程研究人员、博士后、博硕士生及交大医学院本科生（RBL / 大创科研团队）共同开展医学影像人工智能研究。</p>
     </section>
 
     <section class="reveal">
-      <h2 class="section-title">使命愿景</h2>
-      <p class="text-body">AI4Rad 实验室面向真实临床场景探索医学影像人工智能：一方面研发能切实辅助医生、服务临床的工具，提升诊疗的效率与质量；另一方面借助人工智能前沿方法，探索医学影像表征背后蕴含的生理与病理机制，让影像成为理解疾病的窗口。</p>
+      <h2 class="section-title">研究定位与目标</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <span class="info-card__eyebrow">面向临床诊疗与评价</span>
+          <h3 class="info-card__title">真实临床场景驱动的方法研究</h3>
+          <p class="info-card__body">我们关注模型如何从 CT、MRI 等医学影像及临床病历中提取与疾病相关的有效信息，支持病灶识别、风险分层、急诊分诊与结构化报告生成，并通过多中心外部队列与放射科医生读片研究检验方法的可靠性。</p>
+        </div>
+
+        <div class="info-card">
+          <span class="info-card__eyebrow">结构与功能联系</span>
+          <h3 class="info-card__title">定量影像表型与生理病理机制</h3>
+          <p class="info-card__body">在辅助诊断之外，我们结合高分辨率图像重建、三维解剖建模、血管血流动力学与骨肌生物力学分析，探索影像结构特征与生理功能、病理演变过程之间的定量关系。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research-platform" class="reveal">
+      <h2 class="section-title">科研平台与课题支撑</h2>
+      <p class="section-lead">实验室建有独立的院内高性能人工智能算力中心与大规模临床影像存储设施，并依托充足的国家级科研经费，为大模型训练、大规模专病队列治理及学生创新课题提供坚实保障。</p>
+      <div class="platform-grid">
+        <div class="platform-card">
+          <div class="platform-card__kpi">
+            <span class="platform-card__num">百卡规模</span>
+            <span class="platform-card__unit">超 100 kW 算力平台</span>
+          </div>
+          <h3 class="platform-card__title">自有高性能算力集群</h3>
+          <p class="platform-card__body">建有百卡规模自有高性能 GPU 算力集群（算力机房总功率超 100 kW），团队独立专享、无需外部公共队列排队，可直接支撑十万例级三维 CT/MRI 视觉基础模型自监督预训练、多模态大语言模型微调与高并发推理实验。</p>
+        </div>
+
+        <div class="platform-card">
+          <div class="platform-card__kpi">
+            <span class="platform-card__num">PB 级</span>
+            <span class="platform-card__unit">自有高速存储阵列</span>
+          </div>
+          <h3 class="platform-card__title">自有临床影像数据平台</h3>
+          <p class="platform-card__body">配备 PB 级（Petabyte-scale）自有高速存储系统，安全承载大规模多模态专病影像队列、十余年纵向随访影像及常规临床 CT—光子计数显微 CT 等高精度配对数据的规范化治理与高速训练读取。</p>
+        </div>
+
+        <div class="platform-card">
+          <div class="platform-card__kpi">
+            <span class="platform-card__num">&gt;10 项</span>
+            <span class="platform-card__unit">总经费超 1,000 万元</span>
+          </div>
+          <h3 class="platform-card__title">国家级课题与充足经费</h3>
+          <p class="platform-card__body">科研经费充裕，近五年内团队成员主持国家级科研课题超 10 项，累计科研总经费超 1,000 万元，全面支持博硕士课题攻关、交大医学院本科生 RBL / 大创项目培育、多中心临床验证及国内外高水平学术交流。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="clinical-domains" class="reveal">
+      <h2 class="section-title">临床影像研究范围</h2>
+      <p class="section-lead">实验室围绕视觉基础模型、多模态大语言模型、影像生成与重建、空间智能与物理仿真四类方法支柱，结合上海市第六人民医院的优势临床学科，布局七大临床影像研究方向。</p>
+
+      <ul class="domain-grid">
+        <li class="domain-item">
+          <strong>泛血管影像与血流疾病</strong>
+          <span>心脑血管、颈动脉、主动脉及外周血管的解剖分割、血栓与斑块表征、灌注评估、血流动力学分析及临床事件预测。</span>
+        </li>
+        <li class="domain-item">
+          <strong>骨肌系统与骨定量</strong>
+          <span>脊柱、关节、肌腱韧带、创伤骨折及骨小梁微结构与骨代谢相关的临床 CT、MRI 与显微 CT 定量分析。</span>
+        </li>
+        <li class="domain-item">
+          <strong>肿瘤影像与全身转移</strong>
+          <span>以影像为入口的肿瘤检出、分期、全身骨转移评估、疗效监测、预后分层及影像—病理关联研究。</span>
+        </li>
+        <li class="domain-item">
+          <strong>急诊影像与腹部疾病诊断</strong>
+          <span>面向时间敏感型头颅创伤、胸痛肺栓塞与平扫急腹症的快速识别、风险分层及急诊分诊辅助研究。</span>
+        </li>
+        <li class="domain-item">
+          <strong>慢病队列与长期随访</strong>
+          <span>依托医院大规模纵向随访队列，挖掘多次影像检查中蕴含的疾病演变规律与定量预后标志物。</span>
+        </li>
+        <li class="domain-item">
+          <strong>影像教育与报告反馈</strong>
+          <span>指南标准引导的报告辅助撰写、诊断结论生成评测、报告质量控制及人机协同读片反馈机制。</span>
+        </li>
+        <li class="domain-item">
+          <strong>新影像技术与临床转化</strong>
+          <span>光子计数 CT、双能谱 CT、快速 MRI 与 4D Flow 等前沿成像技术的算法适配与临床应用评估。</span>
+        </li>
+      </ul>
     </section>
 
     <section class="reveal">
-      <h2 class="section-title">我们是谁</h2>
-      <p class="text-body">实验室依托上海交通大学医学院附属第六人民医院放射介入科，汇聚临床医生、工程师与研究生。我们围绕视觉基础模型、多模态大语言模型、影像生成、空间智能与物理仿真四类核心技术能力开展工作，服务于放射影像的多个临床方向。</p>
-      <p class="text-body">更多成员信息见<a href="./team_ch.html">团队</a>页面，研究成果见<a href="./publications_ch.html">论文成果</a>，或通过<a href="./contact_ch.html">联系</a>页面与我们取得联系。</p>
+      <h2 class="section-title">研究方式</h2>
+      <div class="info-grid info-grid--3">
+        <div class="info-card info-card--subtle">
+          <span class="info-card__eyebrow">01 · 医工协同</span>
+          <h3 class="info-card__title">临床问题与算法共创</h3>
+          <p class="info-card__body">放射科医师与工程研究人员从临床痛点凝练、专病队列构建到诊断思维链设计与误差分析全程深度协作。</p>
+        </div>
+        <div class="info-card info-card--subtle">
+          <span class="info-card__eyebrow">02 · 严谨验证</span>
+          <h3 class="info-card__title">多中心与读片研究</h3>
+          <p class="info-card__body">注重跨院区独立队列泛化测试与多读者辅助阅片对照试验，客观评估人工智能方法在真实判读流程中的增益与边界。</p>
+        </div>
+        <div class="info-card info-card--subtle">
+          <span class="info-card__eyebrow">03 · 开放共享</span>
+          <h3 class="info-card__title">基准数据与可复现研究</h3>
+          <p class="info-card__body">持续建设并公开配对影像数据集、评测基准与开源代码，提供可检验、可复用的医学影像研究成果。</p>
+        </div>
+      </div>
+      <p class="text-body" style="margin-top:22px;">更多成员信息请见<a href="./team_ch.html">团队</a>页面，代表性工作与完整论文请见<a href="./publications_ch.html">论文成果</a>，合作与招生事宜请访问<a href="./contact_ch.html">联系</a>页面。</p>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer__brand">
       <img src="images/brand/team-logo.png" alt="AI4Rad 实验室" class="footer__brandlogo">
-      <p class="footer__brand-cap"><span class="footer__brand-intro">上海市第六人民医院放射介入科 · 医学影像人工智能实验室 · 上海交通大学医学院</span><span class="footer__brand-vision">辅助临床诊疗 · 提升诊疗效率与质量 · 探索影像背后的生理病理机制</span></p>
+      <p class="footer__brand-cap"><span class="footer__brand-intro">上海市第六人民医院放射介入科 · 医学影像人工智能实验室 · 上海交通大学医学院</span><span class="footer__brand-vision">辅助临床诊疗 · 定量影像分析 · 探索影像背后的生理与病理机制</span></p>
     </div>
     <div class="footer__links">
       <a href="./index_ch.html">首页</a>
+      <a href="./about_ch.html">关于</a>
       <a href="./team_ch.html">团队</a>
-      <a href="./publications_ch.html">论文</a>
+      <a href="./publications_ch.html">论文成果</a>
+      <a href="./contact_ch.html">联系</a>
       <a href="mailto:zhangrp@sjtu.edu.cn">邮箱</a>
       <a href="https://github.com/AI4Rad-SSPH" target="_blank" rel="noopener">GitHub</a>
     </div>
     <p class="footer__meta">AI4Rad 实验室 · 放射介入科 · 上海市第六人民医院 · &copy; 2026</p>
     <div class="footer__affil">
-      <span class="footer__affil-cap">附属机构</span>
+      <span class="footer__affil-cap">依托单位</span>
       <div class="footer__affil-logos">
         <img src="images/brand/ssph-med-logo.svg" alt="上海市第六人民医院" class="a-ssph">
         <span class="footer__affil-sep" aria-hidden="true"></span>
@@ -71,6 +168,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=20261009"></script>
+  <script src="js/main.js?v=20261121"></script>
 </body>
 </html>

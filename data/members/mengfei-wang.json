@@ -3,10 +3,10 @@
   "name_en": "Mengfei Wang",
   "name_cn": "王孟飞",
   "photo": "images/members/mengfei-wang.jpg",
-  "title_en": "PhD Student · Medical Imaging & AI · AI4Rad Lab",
-  "title_cn": "博士研究生 · 医学影像与人工智能 · AI4Rad Lab",
+  "title_en": "PhD Student · Donghua University · 2025 Cohort · AI4Rad Lab",
+  "title_cn": "博士研究生 · 东华大学信息科学与技术学院 · 2025级 · AI4Rad 实验室",
   "bio_en": "Mengfei Wang is a PhD student at <strong>Donghua University</strong> and a member of <strong>AI4Rad Lab</strong>. His research focuses on AI for medical imaging and radiology, including deep-learning-based medical image analysis, generative models for image enhancement, translation, and super-resolution, and large language models for radiology report and clinical text analysis. He previously studied in the School of Health Science and Engineering at the University of Shanghai for Science and Technology. More information is available on his <a href=\"https://orcid.org/0009-0002-9474-3368\" target=\"_blank\" rel=\"noopener\">ORCID profile</a>.",
-  "bio_cn": "王孟飞是<strong>东华大学</strong>博士研究生，现为 <strong>AI4Rad Lab</strong> 成员。研究方向聚焦医学影像与放射学人工智能，包括基于深度学习的医学图像分析、面向图像增强/跨模态转换/超分辨率的生成模型，以及面向放射报告与临床文本分析的大语言模型。此前就读于上海理工大学健康科学与工程学院。更多信息见其 <a href=\"https://orcid.org/0009-0002-9474-3368\" target=\"_blank\" rel=\"noopener\">ORCID 页面</a>。",
+  "bio_cn": "王孟飞，<strong>东华大学</strong>博士研究生，现为 <strong>AI4Rad 实验室</strong>成员。研究方向聚焦医学影像与放射学人工智能，包括基于深度学习的医学图像分析、面向图像增强/跨模态转换/超分辨率的生成模型，以及面向放射报告与临床文本分析的大语言模型。此前就读于上海理工大学健康科学与工程学院。更多信息见其 <a href=\"https://orcid.org/0009-0002-9474-3368\" target=\"_blank\" rel=\"noopener\">ORCID 页面</a>。",
   "links": {
     "email": "wangmengfei@mail.dhu.edu.cn",
     "github": "https://github.com/Becomingw",

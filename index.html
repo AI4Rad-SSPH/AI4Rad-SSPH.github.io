@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AI4Rad Lab — Medical Imaging AI research at Shanghai Sixth People's Hospital, Shanghai Jiao Tong University School of Medicine.">
+  <meta name="description" content="AI4Rad Lab — Medical imaging AI research in the Department of Radiology at Shanghai Sixth People's Hospital, Shanghai Jiao Tong University School of Medicine.">
   <title>AI4Rad Lab · Medical Imaging AI</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="images/brand/team-logo.png">
-  <link rel="stylesheet" href="css/style.css?v=20261009">
+  <link rel="stylesheet" href="css/style.css?v=20261121">
 </head>
 <body>
   <nav class="nav">
@@ -31,69 +28,407 @@
   </nav>
 
   <main class="wrapper">
-    <section class="hero reveal">
-      <div class="hero__brandrow">
-        <img class="hero__emblem" src="images/brand/team-logo.png" alt="AI4Rad">
-        <h1 class="hero__title">AI4Rad Lab</h1>
+    <section class="hero hero--home reveal">
+      <div class="hero--home__panel">
+        <div class="hero--home__top">
+          <div>
+            <span class="hero__eyebrow">Shanghai Sixth People's Hospital · SJTU School of Medicine</span>
+            <h1 class="hero__title">AI4Rad Lab</h1>
+            <p class="hero__affil-line">Department of Interventional &amp; Diagnostic Radiology · Institute of Medical Imaging, Shanghai Jiao Tong University</p>
+            <p class="hero__lead">We develop artificial intelligence methods for disease detection, diagnostic reasoning, quantitative analysis, and image reconstruction in clinical radiology — evaluated through multicenter cohorts and radiologist reader studies, while investigating physiological and pathological mechanisms reflected in medical imaging.</p>
+            <div class="hero__actions">
+              <a href="./publications.html" class="btn btn--primary">Publications</a>
+              <a href="./team.html" class="btn btn--secondary">Research Team</a>
+              <a href="./about.html" class="btn btn--secondary">About &amp; Scope</a>
+              <a href="https://github.com/AI4Rad-SSPH" target="_blank" rel="noopener" class="btn btn--secondary">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="hero__brand-badge">
+            <img class="hero__emblem" src="images/brand/team-logo.png" alt="AI4Rad Lab">
+          </div>
+        </div>
+
+        <div class="stats-strip" aria-label="Lab overview">
+          <div class="stat-item">
+            <span class="stat-item__num">4</span>
+            <span class="stat-item__label">Core AI Directions</span>
+            <span class="stat-item__note">Vision · MLLM · Reconstruction · Simulation</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-item__num">7</span>
+            <span class="stat-item__label">Clinical Domains</span>
+            <span class="stat-item__note">Vascular, MSK, oncology &amp; emergency care</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-item__num" id="stat-pubs">41</span>
+            <span class="stat-item__label">Lab Publications</span>
+            <span class="stat-item__note">Peer-reviewed journals &amp; open benchmarks</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-item__num" id="stat-members">39</span>
+            <span class="stat-item__label">Team Members</span>
+            <span class="stat-item__note">Clinicians, AI researchers &amp; graduate students</span>
+          </div>
+        </div>
       </div>
-      <p class="hero__subtitle">Medical imaging AI research at Shanghai Sixth People's Hospital, Shanghai Jiao Tong University School of Medicine.</p>
-      <p class="hero__links">
-        <a href="./publications.html">Publications</a>
-        <span class="hero__sep">·</span>
-        <a href="./team.html">Team</a>
-        <span class="hero__sep">·</span>
-        <a href="https://github.com/AI4Rad-SSPH" target="_blank" rel="noopener">GitHub</a>
-      </p>
     </section>
 
     <section class="reveal">
-      <h2 class="section-title">News</h2>
-      <div id="home-news"><p class="text-body">Loading the latest news…</p></div>
-      <p class="news-more"><a href="./publications.html">All publications →</a></p>
+      <div class="section-head">
+        <h2 class="section-title">Research</h2>
+        <a href="./about.html#clinical-domains" class="section-more">Full research scope →</a>
+      </div>
+      <p class="section-lead">Our work examines how computational models represent medical images, integrate clinical context, restore fine anatomical detail, and connect image-derived structures with physiological function.</p>
+
+      <div class="pillar-grid">
+        <article class="pillar-card">
+          <div class="pillar-card__head">
+            <h3 class="pillar-card__title">Vision Foundation Models</h3>
+            <span class="pillar-card__idx">01</span>
+          </div>
+          <p class="pillar-card__desc">Generalizable visual representations adaptable across imaging modalities and organs for lesion detection, anatomical segmentation, risk stratification, and quantitative biomarkers.</p>
+          <div class="pillar-card__tags">
+            <span class="pillar-card__tag">3D CT / MRI Pretraining</span>
+            <span class="pillar-card__tag">Segmentation &amp; Triage</span>
+            <span class="pillar-card__tag">Domain Generalization</span>
+          </div>
+        </article>
+
+        <article class="pillar-card">
+          <div class="pillar-card__head">
+            <h3 class="pillar-card__title">Multimodal Large Language Models</h3>
+            <span class="pillar-card__idx">02</span>
+          </div>
+          <p class="pillar-card__desc">Combining medical images, radiology reports, clinical history, and diagnostic criteria for structured reporting, multi-agent clinical reasoning, and reader-validated decision support.</p>
+          <div class="pillar-card__tags">
+            <span class="pillar-card__tag">Imaging-Grounded Reasoning</span>
+            <span class="pillar-card__tag">Structured Reports</span>
+            <span class="pillar-card__tag">Multi-Reader Evaluation</span>
+          </div>
+        </article>
+
+        <article class="pillar-card">
+          <div class="pillar-card__head">
+            <h3 class="pillar-card__title">Image Generation &amp; Reconstruction</h3>
+            <span class="pillar-card__idx">03</span>
+          </div>
+          <p class="pillar-card__desc">Super-resolution, denoising, artifact restoration, and cross-modal synthesis designed to preserve diagnostically critical micro-architecture and quantitative accuracy.</p>
+          <div class="pillar-card__tags">
+            <span class="pillar-card__tag">Super-Resolution</span>
+            <span class="pillar-card__tag">Low-Dose Restoration</span>
+            <span class="pillar-card__tag">Cross-Modal Synthesis</span>
+          </div>
+        </article>
+
+        <article class="pillar-card">
+          <div class="pillar-card__head">
+            <h3 class="pillar-card__title">Spatial Intelligence &amp; Physical Simulation</h3>
+            <span class="pillar-card__idx">04</span>
+          </div>
+          <p class="pillar-card__desc">3D anatomical modeling, registration, vascular hemodynamics, and musculoskeletal biomechanics linking structural imaging phenotypes to physiological function.</p>
+          <div class="pillar-card__tags">
+            <span class="pillar-card__tag">Vascular Hemodynamics</span>
+            <span class="pillar-card__tag">3D Shape Modeling</span>
+            <span class="pillar-card__tag">MSK Biomechanics</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="clinical-band">
+        <div class="clinical-band__header">
+          <span class="clinical-band__label">Clinical Imaging Focus Areas</span>
+          <a href="./about.html#clinical-domains" class="clinical-band__link">Details in About →</a>
+        </div>
+        <ul class="clinical-pills">
+          <li>Pan-Vascular &amp; Hemodynamic Imaging</li>
+          <li>Musculoskeletal &amp; Bone Quantification</li>
+          <li>Oncologic Imaging &amp; Whole-Body Metastasis</li>
+          <li>Emergency &amp; Acute Abdominal Imaging</li>
+          <li>Longitudinal Chronic Disease Cohorts</li>
+          <li>Radiology Education &amp; Reporting Feedback</li>
+          <li>Photon-Counting CT &amp; Emerging Modalities</li>
+        </ul>
+      </div>
     </section>
 
     <section class="reveal">
-      <h2 class="section-title">Research</h2>
-      <p class="text-body">Our research is built on four core AI capabilities, applied across the lab's seven clinical imaging directions.</p>
-      <ul class="text-list">
-        <li><strong>Vision foundation models</strong> — visual representation and structured understanding of medical images: diagnosis, segmentation, detection, and quantification.</li>
-        <li><strong>Multimodal large language models</strong> integrating images, reports, clinical history, and knowledge for diagnostic reasoning and structured reporting.</li>
-        <li><strong>Medical image generation</strong> — clinically useful synthesis, restoration, denoising, and enhancement, including cross-modal generation.</li>
-        <li><strong>Spatial intelligence &amp; physical simulation</strong> — 3D modeling, registration, blood-flow and musculoskeletal mechanics, and interpretable quantitative analysis.</li>
-      </ul>
+      <div class="section-head">
+        <h2 class="section-title">Selected Research</h2>
+        <a href="./publications.html" class="section-more">All publications →</a>
+      </div>
+
+      <div class="subsec-block">
+        <div class="subsec-head">
+          <h3 class="subsec-title">Foundation Models, Multimodal Agents &amp; Open Benchmarks <span class="subsec-badge">Flagship Systems</span></h3>
+        </div>
+        <p class="subsec-desc">Large-scale representation learning, imaging-grounded clinical reasoning, and micro-architectural super-resolution validated across multicenter cohorts and structured radiologist reader studies.</p>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-card__meta">
+              <span class="project-card__venue">Nature Biomedical Engineering · 2026</span>
+              <span class="project-card__domain">Skeletal Foundation Model</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://doi.org/10.1038/s41551-026-01736-1" target="_blank" rel="noopener">BoneCoT: Clinician Chain-of-Thought Whole-Body Skeleton Foundation Model</a></h4>
+            <p class="project-card__desc">Built on BoneFM, a DINOv2-style self-supervised whole-body skeletal CT backbone, BoneCoT encodes clinician-derived task dependencies to guide step-by-step reasoning from anatomical localization and bone density changes to interpretable bone metastasis assessment across multicenter cohorts.</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">BoneFM Pretrained Backbone</span>
+              <span class="project-card__chip">Clinician Task-Chain</span>
+              <span class="project-card__chip">Multicenter Validation</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://doi.org/10.1038/s41551-026-01736-1" target="_blank" rel="noopener">Paper</a>
+              <a href="https://github.com/FrankZhangRp/BoneCoT" target="_blank" rel="noopener">Code</a>
+              <a href="https://frankzhangrp.github.io/BoneCoT/" target="_blank" rel="noopener">Project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__meta">
+              <span class="project-card__venue">Nature Communications · 2026</span>
+              <span class="project-card__domain">Emergency CT Triage</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://www.nature.com/articles/s41467-026-76634-w" target="_blank" rel="noopener">AbdomenNet: Acute Abdomen Diagnosis, Stratification &amp; Triage on Non-Contrast CT</a></h4>
+            <p class="project-card__desc">Pretrained via self-supervision on 103,989 non-contrast abdominal CT scans and fine-tuned on 5,816 annotated cases across 11 acute abdominal conditions and 3 risk-stratification tasks. Across 2,528 external patients from 3 cohorts, macro-AUROC reached 0.919 on emergent conditions; in a crossover reader study, AI assistance raised mean AUROC from 0.812 to 0.924 and cut median reading time by 52.5 s per case.</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">103,989 Pretraining CTs</span>
+              <span class="project-card__chip">3 External Cohorts</span>
+              <span class="project-card__chip">Reader Crossover Study</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://www.nature.com/articles/s41467-026-76634-w" target="_blank" rel="noopener">Paper</a>
+              <a href="https://github.com/FrankZhangRp/Acute_abdomen" target="_blank" rel="noopener">Code</a>
+              <a href="https://frankzhangrp.github.io/Acute_abdomen/" target="_blank" rel="noopener">Project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__meta">
+              <span class="project-card__venue">npj Digital Medicine · 2026</span>
+              <span class="project-card__domain">Multimodal Agentic MLLM</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://www.nature.com/articles/s41746-026-03066-7" target="_blank" rel="noopener">Imaging-Grounded Multi-Agent MLLM for Acute Stroke Treatment</a></h4>
+            <p class="project-card__desc">Emulates a multidisciplinary stroke team via specialized agents coordinating emergency triage, time-window estimation, multimodal neuroimaging interpretation, contraindication screening, and retrieval-augmented guideline reasoning. Evaluated on 1,658 suspected acute ischemic stroke cases across two centers, improving treatment recommendation accuracy from 0.636 to 0.785 (Macro-F1 0.562 → 0.768).</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">1,658 Two-Center Cases</span>
+              <span class="project-card__chip">Contraindication Screening</span>
+              <span class="project-card__chip">RAG Guideline Reasoning</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://www.nature.com/articles/s41746-026-03066-7" target="_blank" rel="noopener">Paper</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__meta">
+              <span class="project-card__venue">npj Digital Medicine · 2026</span>
+              <span class="project-card__domain">Multicenter Report Benchmark</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://www.nature.com/articles/s41746-026-02380-4" target="_blank" rel="noopener">BrainMIND: Multicenter Benchmark &amp; Reader Study on Brain MRI Reporting</a></h4>
+            <p class="project-card__desc">Establishes a reproducible multicenter benchmark and blinded radiologist reader study evaluating 10 mainstream large language models on generating diagnostic impressions from free-text brain MRI report findings, systematically quantifying factual accuracy, clinical completeness, and reporting utility.</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">10 Mainstream LLMs</span>
+              <span class="project-card__chip">Multicenter Brain MRI Reports</span>
+              <span class="project-card__chip">Blinded Radiologist Rating</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://www.nature.com/articles/s41746-026-02380-4" target="_blank" rel="noopener">Paper</a>
+              <a href="https://github.com/FrankZhangRp/BrainMIND" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__meta">
+              <span class="project-card__venue">Scientific Data · 2026</span>
+              <span class="project-card__domain">Open Paired Dataset</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://www.nature.com/articles/s41597-026-07748-5" target="_blank" rel="noopener">LumbarSR: Paired Clinical CT &amp; Photon-Counting Micro-CT Vertebra Dataset</a></h4>
+            <p class="project-card__desc">Releases the first spatially registered paired dataset of routine clinical CT and high-resolution photon-counting micro-CT volumes of human lumbar vertebrae, bridging in-vivo clinical imaging and trabecular bone micro-architecture through an open super-resolution benchmark and community challenge.</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">Clinical CT ↔ Micro-CT</span>
+              <span class="project-card__chip">Trabecular Micro-Structure</span>
+              <span class="project-card__chip">Open Benchmark &amp; Challenge</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://www.nature.com/articles/s41597-026-07748-5" target="_blank" rel="noopener">Paper</a>
+              <a href="https://github.com/FrankZhangRp/LumbarSR-Challenge" target="_blank" rel="noopener">Code</a>
+              <a href="https://frankzhangrp.github.io/LumbarSR-Challenge/" target="_blank" rel="noopener">Challenge</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__meta">
+              <span class="project-card__venue">J. Med. Internet Res. · 2026</span>
+              <span class="project-card__domain">Emergency Clinical Reasoning</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://www.jmir.org/2026/1/e96304" target="_blank" rel="noopener">HR-LLM-Stroke: Hierarchical Multi-Agent Emergency Stroke Decision Support</a></h4>
+            <p class="project-card__desc">Addresses rapid multi-source clinical synthesis within narrow stroke reperfusion windows by orchestrating specialized agents for structured imaging readout, neurological feature extraction, and guideline-aligned treatment recommendation, validated across multicenter cohorts with an interactive web demo.</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">Time-Critical Stroke Triage</span>
+              <span class="project-card__chip">Multicenter Validation</span>
+              <span class="project-card__chip">Open Code &amp; Live Demo</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://www.jmir.org/2026/1/e96304" target="_blank" rel="noopener">Paper</a>
+              <a href="https://github.com/FrankZhangRp/HR-LLM-Stroke" target="_blank" rel="noopener">Code</a>
+              <a href="https://frankzhangrp.github.io/HR-LLM-Stroke/" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="subsec-block">
+        <div class="subsec-head">
+          <h3 class="subsec-title">Clinical Cohorts, Quantitative Biomarkers &amp; Applied Studies <span class="subsec-badge">Undergraduate / RBL Friendly</span></h3>
+        </div>
+        <p class="subsec-desc">Impactful radiology research does not always require 100,000-scan pretraining — starting from anatomical variants, cardiopulmonary physiology, and concrete clinical questions, students lead peer-reviewed studies via cohort analysis, 3D quantitative measurement, surgical trajectory simulation, and lightweight LLM prompting:</p>
+
+        <div class="project-grid">
+          <article class="project-card project-card--foundational">
+            <div class="project-card__meta">
+              <span class="project-card__venue">Insights into Imaging · 2026</span>
+              <span class="project-card__domain">Criteria Prompting · Lightweight LLM</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://link.springer.com/article/10.1186/s13244-026-02421-2" target="_blank" rel="noopener">Criteria-Guided Lightweight LLM Assistance for Carotid Plaque AHA Classification</a></h4>
+            <p class="project-card__desc">Evaluated 10 LLMs and a 4-radiologist reader study across 433 multicenter patients with free-text carotid MRI reports, demonstrating that explicitly encoding clinical modified-AHA staging criteria enables a locally deployable lightweight 8B model to improve inter-reader classification agreement.</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">433 Multicenter Patients</span>
+              <span class="project-card__chip">Explicit Clinical Criteria</span>
+              <span class="project-card__chip">Local 8B Model + 4 Readers</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://link.springer.com/article/10.1186/s13244-026-02421-2" target="_blank" rel="noopener">Paper</a>
+              <a href="https://link.springer.com/content/pdf/10.1186/s13244-026-02421-2.pdf" target="_blank" rel="noopener">PDF</a>
+            </div>
+          </article>
+
+          <article class="project-card project-card--foundational">
+            <div class="project-card__meta">
+              <span class="project-card__venue">Academic Radiology · 2026</span>
+              <span class="project-card__domain">Pathophysiology · 3D CTA Biomarker</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://www.sciencedirect.com/science/article/pii/S1076633226005945" target="_blank" rel="noopener">Pulmonary Artery-to-Vein Volume Difference for Acute Pulmonary Embolism</a></h4>
+            <p class="project-card__desc">Grounded in cardiopulmonary hemodynamics — elevated pulmonary vascular resistance and reduced left-atrial venous return — this study extracts 3D pulmonary artery-to-vein volume difference on chest CTA as an interpretable quantitative biomarker for acute pulmonary embolism risk stratification.</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">Physiology-Driven Hypothesis</span>
+              <span class="project-card__chip">3D Vascular Volumetry</span>
+              <span class="project-card__chip">Emergency Risk Stratification</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://www.sciencedirect.com/science/article/pii/S1076633226005945" target="_blank" rel="noopener">Paper</a>
+            </div>
+          </article>
+
+          <article class="project-card project-card--foundational">
+            <div class="project-card__meta">
+              <span class="project-card__venue">J. Orthop. Surg. Res. · 2026</span>
+              <span class="project-card__domain">Anatomical Variant · 3D Simulation</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://doi.org/10.1186/s13018-026-07046-1" target="_blank" rel="noopener">3D CTA Trajectory Simulation for C1 Screw Placement in Ponticulus Posticus</a></h4>
+            <p class="project-card__desc">Addresses distorted cervical bony landmarks and vertebral artery injury risk in ponticulus posticus variants by performing 3D screw trajectory simulation across 141 cervical CTA examinations to establish a quantitative preoperative safety workflow.</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">141 Cervical CTA Subjects</span>
+              <span class="project-card__chip">3D Screw Trajectory Simulation</span>
+              <span class="project-card__chip">Spine Preoperative Planning</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://doi.org/10.1186/s13018-026-07046-1" target="_blank" rel="noopener">Paper</a>
+            </div>
+          </article>
+
+          <article class="project-card project-card--foundational">
+            <div class="project-card__meta">
+              <span class="project-card__venue">BMC Medical Imaging · 2026</span>
+              <span class="project-card__domain">Clinical Epidemiology · 16-Year Cohort</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://link.springer.com/article/10.1186/s12880-026-02801-6" target="_blank" rel="noopener">16-Year Cohort on Craniomaxillofacial Trauma &amp; Acute Intracranial Injury</a></h4>
+            <p class="project-card__desc">Analyzes a consecutive 16-year hospital trauma imaging cohort to characterize age-dependent risks of acute intracranial injury, highlighting occult vulnerability in older adults presenting with isolated facial fractures to guide emergency head CT screening.</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">16-Year Hospital Cohort</span>
+              <span class="project-card__chip">High-Risk Subgroup Discovery</span>
+              <span class="project-card__chip">Emergency CT Evidence</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://link.springer.com/article/10.1186/s12880-026-02801-6" target="_blank" rel="noopener">Paper</a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
     <section class="reveal">
-      <h2 class="section-title">Selected Projects</h2>
-      <div class="text-list">
-        <p><strong>Imaging-Grounded Stroke MLLM</strong> — A multi-agent multimodal LLM framework that coordinates multimodal imaging interpretation, contraindication screening, and treatment recommendation for acute ischemic stroke. <em>npj Digital Medicine</em>, 2026. <a href="https://www.nature.com/articles/s41746-026-03066-7" target="_blank" rel="noopener">Paper</a></p>
-        <p><strong>HR-LLM-Stroke</strong> — A multi-agent large language model framework for emergency treatment recommendation in acute ischemic stroke. <em>Journal of Medical Internet Research</em>, 2026. <a href="https://www.jmir.org/2026/1/e96304" target="_blank" rel="noopener">Paper</a> · <a href="https://github.com/FrankZhangRp/HR-LLM-Stroke" target="_blank" rel="noopener">Code</a> · <a href="https://frankzhangrp.github.io/HR-LLM-Stroke/" target="_blank" rel="noopener">Demo</a></p>
-        <p><strong>BrainMIND</strong> — A multicenter benchmark and reader study evaluating 10 LLMs on diagnostic impression generation from brain MRI reports. <em>npj Digital Medicine</em>, 2026. <a href="https://www.nature.com/articles/s41746-026-02380-4" target="_blank" rel="noopener">Paper</a> · <a href="https://github.com/FrankZhangRp/BrainMIND" target="_blank" rel="noopener">Code</a></p>
-        <p><strong>Cerebrovascular &amp; Stroke AI</strong> — Aneurysm detection on CTA, automatic ASPECTS scoring, and thrombus characterization in acute stroke. <em>Radiology</em> / <em>European Radiology</em>.</p>
+      <div class="section-head">
+        <h2 class="section-title">Latest News</h2>
+        <a href="./publications.html" class="section-more">Browse archive →</a>
+      </div>
+      <div class="news-panel" id="home-news">
+        <p class="text-body" style="padding:12px 0;">Loading the latest news…</p>
       </div>
     </section>
 
     <section class="reveal">
       <h2 class="section-title">Join Us</h2>
-      <p class="text-body">We recruit PhD and Master students in medical imaging AI and machine learning. Send your CV to <a href="mailto:zhangrp@sjtu.edu.cn">zhangrp@sjtu.edu.cn</a>.</p>
+      <div class="platform-strip">
+        <ul class="platform-strip__items">
+          <li><span class="platform-strip__dot"></span><strong>100+ GPU Dedicated Cluster</strong> (&gt;100 kW in-house compute)</li>
+          <li><span class="platform-strip__dot"></span><strong>PB-Scale Dedicated Storage</strong> (multimodal imaging cohorts)</li>
+          <li><span class="platform-strip__dot"></span><strong>Well-Funded</strong> (&gt;10 national grants · &gt;¥10M RMB in past 5 years)</li>
+        </ul>
+        <a href="./about.html#research-platform" class="section-more">Platform details →</a>
+      </div>
+      <div class="info-grid">
+        <div class="info-card info-card--subtle">
+          <span class="info-card__eyebrow">Clinical–Engineering Integration</span>
+          <h3 class="info-card__title">Interdisciplinary Research Group</h3>
+          <p class="info-card__body">Led by Prof. <strong>Yuehua Li</strong> together with PIs <strong>Ruipeng Zhang</strong>, <strong>Jianyong Wei</strong>, and <strong>Zheng Sun</strong>, our group brings together radiologists, engineering researchers, postdoctoral fellows, and graduate students inside a high-volume clinical imaging department.</p>
+          <div class="info-card__footer"><a href="./team.html">Meet the full team →</a></div>
+        </div>
+
+        <div class="info-card">
+          <span class="info-card__eyebrow">Graduate &amp; Postdoctoral Openings</span>
+          <h3 class="info-card__title">PhD / Master’s, Postdocs &amp; Visiting Scholars</h3>
+          <p class="info-card__body">We welcome multicenter collaborations and recruit <strong>PhD and master’s students</strong>, <strong>postdoctoral fellows</strong>, and <strong>visiting researchers</strong> in medical imaging AI, computer vision, and multimodal learning. Send your CV and research interests to <a href="mailto:zhangrp@sjtu.edu.cn">zhangrp@sjtu.edu.cn</a>.</p>
+          <div class="info-card__footer"><a href="./contact.html">Contact &amp; application details →</a></div>
+        </div>
+      </div>
+
+      <div class="ug-callout">
+        <div>
+          <span class="info-card__eyebrow">For SJTU School of Medicine Undergraduates · Open Year-Round</span>
+          <h3 class="ug-callout__title">Undergraduates Welcome: RBL &amp; Innovation Competitions</h3>
+          <p class="ug-callout__body">We warmly encourage undergraduates from <strong>SJTU School of Medicine</strong> (Clinical Medicine 5/8-year programs, Medical Imaging Technology, Biomedical Sciences, Stomatology, and Public Health) to join our lab! <strong>No prior deep-learning coding background is required</strong> — students receive dual mentorship from frontline radiologists and AI mentors, starting from clinical cohort curation, 3D anatomical quantification, surgical simulation, or LLM reader studies. Both individual students and pre-formed RBL / competition teams are welcome.</p>
+        </div>
+        <div class="ug-callout__side">
+          <span class="ug-callout__side-label">Supported Undergraduate Tracks</span>
+          <ul class="ug-tracks">
+            <li>RBL (Research-Based Learning)</li>
+            <li>National / Municipal Innovation Programs (大创)</li>
+            <li>Challenge Cup &amp; Innovation Competitions</li>
+            <li>Honors Program &amp; Senior Thesis</li>
+          </ul>
+          <p class="ug-callout__cta">Email a brief introduction (year, major &amp; interests) to Dr. Ruipeng Zhang: <a href="mailto:zhangrp@sjtu.edu.cn">zhangrp@sjtu.edu.cn</a></p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer__brand">
       <img src="images/brand/team-logo.png" alt="AI4Rad Lab" class="footer__brandlogo">
-      <p class="footer__brand-cap"><span class="footer__brand-intro">Medical Imaging AI Lab · Department of Radiology, Shanghai Sixth People's Hospital · SJTU School of Medicine</span><span class="footer__brand-vision">Supporting clinical care · Diagnostic efficiency &amp; quality · Mechanisms behind the image</span></p>
+      <p class="footer__brand-cap"><span class="footer__brand-intro">Medical Imaging AI Lab · Department of Radiology, Shanghai Sixth People's Hospital · SJTU School of Medicine</span><span class="footer__brand-vision">Clinical decision support · Quantitative imaging · Physiological &amp; pathological mechanisms</span></p>
     </div>
     <div class="footer__links">
       <a href="./">Home</a>
+      <a href="./about.html">About</a>
       <a href="./team.html">Team</a>
       <a href="./publications.html">Publications</a>
+      <a href="./contact.html">Contact</a>
       <a href="mailto:zhangrp@sjtu.edu.cn">Email</a>
       <a href="https://github.com/AI4Rad-SSPH" target="_blank" rel="noopener">GitHub</a>
     </div>
     <p class="footer__meta">AI4Rad Lab · Department of Radiology · Shanghai Sixth People's Hospital · &copy; 2026</p>
     <div class="footer__affil">
-      <span class="footer__affil-cap">Affiliated with</span>
+      <span class="footer__affil-cap">Affiliated Institutions</span>
       <div class="footer__affil-logos">
         <img src="images/brand/ssph-med-logo.svg" alt="Shanghai Sixth People's Hospital" class="a-ssph">
         <span class="footer__affil-sep" aria-hidden="true"></span>
@@ -102,7 +437,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=20261009"></script>
-  <script src="js/home.js?v=20261017-insights"></script>
+  <script src="js/main.js?v=20261121"></script>
+  <script src="js/home.js?v=20261121"></script>
 </body>
 </html>

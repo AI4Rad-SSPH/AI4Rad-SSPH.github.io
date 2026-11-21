@@ -3,10 +3,10 @@
   "name_en": "Yao Zeng",
   "name_cn": "曾耀",
   "photo": "images/members/yao-zeng.jpg",
-  "title_en": "PhD Student · AI4Rad Lab · Donghua University",
-  "title_cn": "博士研究生 · AI4Rad Lab · 东华大学",
+  "title_en": "PhD Student · Donghua University · 2025 Cohort · AI4Rad Lab",
+  "title_cn": "博士研究生 · 东华大学信息科学与技术学院 · 2025级 · AI4Rad 实验室",
   "bio_en": "Yao Zeng is a PhD student at the School of Information Science and Technology, Donghua University, and a member of AI4Rad Lab. He joined AI4Rad Lab in 2022 during his master's study at Shenyang University of Technology. His research focuses on medical imaging AI, vascular geometry modeling, computational hemodynamics, and physics-aware deep learning for blood-flow prediction. He is particularly interested in point-cloud representation learning for vascular flow fields, PINN-based hemodynamic modeling, and CFD-assisted clinical research.",
-  "bio_cn": "曾耀，东华大学信息科学与技术学院博士研究生，AI4Rad Lab 成员。2022 年硕士就读于沈阳工业大学期间加入 AI4Rad Lab。主要研究方向包括医学影像人工智能、血管几何建模、计算血流动力学，以及面向血流预测的物理感知深度学习。当前关注血流点云表征学习、基于 PINN 的血流动力学建模，以及 CFD 辅助临床研究。",
+  "bio_cn": "曾耀，东华大学信息科学与技术学院博士研究生，AI4Rad 实验室成员。2022 年硕士就读于沈阳工业大学期间加入 AI4Rad 实验室。主要研究方向包括医学影像人工智能、血管几何建模、计算血流动力学，以及面向血流预测的物理感知深度学习。当前关注血流点云表征学习、基于 PINN 的血流动力学建模，以及 CFD 辅助临床研究。",
   "links": {
     "email": "sspxdzy@scosine.org",
     "orcid": "https://orcid.org/0009-0002-3182-6107",

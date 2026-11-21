@@ -257,6 +257,11 @@
 
     function renderFilters() {
       var h = '';
+      h += '<div class="filter-row"><input class="filter-search" type="search" aria-label="' +
+           (lang === 'cn' ? '搜索论文' : 'Search publications') + '" placeholder="' +
+           (lang === 'cn' ? '搜索标题 / 作者 / 期刊…' : 'Search title / author / venue…') +
+           '" value="' + escAttr(state.q) + '"></div>';
+
       h += '<div class="filter-row"><span class="filter-label">' +
            (lang === 'cn' ? '类型' : 'Type') + '</span>';
       h += chip(lang === 'cn' ? '全部' : 'All', 'all', state.type === 'all', 'type');
@@ -309,10 +314,6 @@
       }
       if (hasAdvanced) h += '</details>';
 
-      h += '<div class="filter-row"><input class="filter-search" type="search" aria-label="' +
-           (lang === 'cn' ? '搜索论文' : 'Search publications') + '" placeholder="' +
-           (lang === 'cn' ? '搜索标题 / 作者 / 期刊…' : 'Search title / author / venue…') +
-           '" value="' + escAttr(state.q) + '"></div>';
       root.querySelector('.filters').innerHTML = h;
     }
 
