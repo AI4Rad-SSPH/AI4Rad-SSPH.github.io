@@ -6,7 +6,7 @@
   <meta name="description" content="AI4Rad Lab member profile.">
   <title>Member · AI4Rad Lab</title>
   <link rel="icon" href="../images/brand/team-logo.png">
-  <link rel="stylesheet" href="../css/style.css?v=20261121">
+  <link rel="stylesheet" href="../css/style.css?v=20261121b">
   <style>
     /* Member profile — the only page that renders .mp-*; styles live here, with
        sizes driven by the shared --fs-* / clamp tokens in css/style.css so this
@@ -94,8 +94,8 @@
     </div>
   </footer>
 
-  <script src="../js/main.js?v=20261121"></script>
-  <script src="../js/pub.js?v=20261121"></script>
+  <script src="../js/main.js?v=20261121b"></script>
+  <script src="../js/pub.js?v=20261121b"></script>
   <script>
   (function(){
     var params = new URLSearchParams(location.search);
@@ -164,7 +164,7 @@
 
     if (!id) { root.innerHTML = '<p class="mp-empty">' + t('No member specified.', '未指定成员。') + ' <a href="' + teamHref + '">' + t('Back to the team page →', '返回团队页面 →') + '</a></p>'; return; }
 
-    fetch('../data/members/' + id + '.json?v=20261121')
+    fetch('../data/members/' + id + '.json?v=20261121b')
       .then(function(r){ if (!r.ok) throw new Error('not found'); return r.json(); })
       .then(function(m){ render(m); })
       .catch(function(){
@@ -261,9 +261,9 @@
         if (!window.Pub) { pubSec.remove(); return; }
         renderNews(Pub.memberNews(m, [], [], lang));
         Promise.all([
-          fetchJson('../data/publications/manifest.json?v=20261121'),
-          fetchJson('../data/team.json?v=20261121'),
-          fetchJson('../data/news.json?v=20261121')
+          fetchJson('../data/publications/manifest.json?v=20261121b'),
+          fetchJson('../data/team.json?v=20261121b'),
+          fetchJson('../data/news.json?v=20261121b')
         ]).then(function (res) {
           var papers = res[0] || [];
           var team = res[1] || {};

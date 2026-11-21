@@ -18,7 +18,7 @@
     }).join('') + '</ul>';
   }
   if (root) {
-    fetch('data/news.json?v=20261121').then(function (response) {
+    fetch('data/news.json?v=20261121b').then(function (response) {
       if (!response.ok) throw new Error('News request failed');
       return response.json();
     }).then(function (items) {
@@ -39,7 +39,7 @@
 
   var statPubs = document.getElementById('stat-pubs');
   if (statPubs) {
-    fetch('data/publications/manifest.json?v=20261121')
+    fetch('data/publications/manifest.json?v=20261121b')
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (papers) {
         if (!Array.isArray(papers)) return;
@@ -50,7 +50,7 @@
 
   var statMembers = document.getElementById('stat-members');
   if (statMembers) {
-    fetch('data/team.json?v=20261121')
+    fetch('data/team.json?v=20261121b')
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (team) {
         if (!team || typeof team !== 'object') return;

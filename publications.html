@@ -6,7 +6,7 @@
   <meta name="description" content="AI4Rad Lab publications — peer-reviewed journal papers, open benchmarks, and accepted studies in medical imaging AI.">
   <title>Publications · AI4Rad Lab</title>
   <link rel="icon" href="images/brand/team-logo.png">
-  <link rel="stylesheet" href="css/style.css?v=20261121">
+  <link rel="stylesheet" href="css/style.css?v=20261121b">
 </head>
 <body>
   <nav class="nav">
@@ -66,13 +66,13 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=20261121"></script>
-  <script src="js/pub.js?v=20261121"></script>
+  <script src="js/main.js?v=20261121b"></script>
+  <script src="js/pub.js?v=20261121b"></script>
   <script>
   (function () {
     Promise.all([
-      fetch('data/publications/manifest.json?v=20261121').then(function (r) { if (!r.ok) throw new Error('manifest'); return r.json(); }),
-      fetch('data/team.json?v=20261121').then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; })
+      fetch('data/publications/manifest.json?v=20261121b').then(function (r) { if (!r.ok) throw new Error('manifest'); return r.json(); }),
+      fetch('data/team.json?v=20261121b').then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; })
     ]).then(function (res) {
       var papers = res[0], team = res[1] || {};
       papers = papers.filter(function (p) { return p.lab !== false; });

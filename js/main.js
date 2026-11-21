@@ -190,7 +190,7 @@ function renderTeam(data, lang) {
   var masterCount = ((data.master_medical || []).length) + ((data.master_engineering || []).length);
   var jumpItems = [];
   if (data.leader && data.leader.length) jumpItems.push(['#leader', lang === 'cn' ? '团队负责人' : 'Lab Leader', data.leader.length]);
-  if (data.pi && data.pi.length) jumpItems.push(['#investigators', lang === 'cn' ? '课题组 PI' : 'PIs', data.pi.length]);
+  if (data.pi && data.pi.length) jumpItems.push(['#investigators', lang === 'cn' ? '独立 PI' : 'Independent PIs', data.pi.length]);
   if (data.postdoc && data.postdoc.length) jumpItems.push(['#postdoc', lang === 'cn' ? '博士后' : 'Postdocs', data.postdoc.length]);
   if (phdCount) jumpItems.push(['#phd', lang === 'cn' ? '博士生' : 'Doctoral', phdCount]);
   if (masterCount) jumpItems.push(['#master', lang === 'cn' ? '硕士生' : 'Master’s', masterCount]);
@@ -208,7 +208,7 @@ function renderTeam(data, lang) {
   html += '<div id="leader" class="section-label reveal"><span class="section-label__text">' + (lang === 'cn' ? '团队负责人' : 'Lab Leader') + '</span><span class="section-label__line"></span></div>';
   html += (data.leader || []).map(function(m){ return renderLeader(m, lang); }).join('');
 
-  html += '<div id="investigators" class="section-label reveal" style="margin-top:40px;"><span class="section-label__text">' + (lang === 'cn' ? '课题组PI' : 'Principal Investigators') + '</span><span class="section-label__line"></span></div>';
+  html += '<div id="investigators" class="section-label reveal" style="margin-top:40px;"><span class="section-label__text">' + (lang === 'cn' ? '独立 PI' : 'Independent Principal Investigators') + '</span><span class="section-label__line"></span></div>';
   html += '<div class="pi-grid">' + (data.pi || []).map(function(m){ return renderPI(m, lang); }).join('') + '</div>';
 
   if (data.postdoc && data.postdoc.length) {

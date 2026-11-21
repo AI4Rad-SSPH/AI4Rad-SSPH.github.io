@@ -8,21 +8,21 @@
       "role_cn": "团队负责人",
       "avatar_type": "photo",
       "avatar_path": "images/members/yuehua-li.jpg",
-      "title": "MD & PhD · Professor · Chief Physician",
-      "title_cn": "MD & PhD · 教授 · 主任医师",
+      "title": "MD & PhD · Professor · Chief Physician · National-Level Talent",
+      "title_cn": "MD & PhD · 教授 · 主任医师 · 国家级人才",
       "affiliation": "Vice President, Shanghai Sixth People's Hospital · Executive Director, Institute of Medical Imaging, SJTU",
       "affiliation_cn": "上海市第六人民医院副院长 · 上海交通大学影像医学研究所执行所长",
-      "department": "Department of Radiology, SJTU School of Medicine",
+      "department": "Department of Interventional & Diagnostic Radiology, SJTU School of Medicine",
       "department_cn": "上海交通大学医学院附属第六人民医院 放射介入科",
       "tags_en": [
         "Lab Leader",
-        "Vascular Imaging",
-        "Stroke"
+        "National-Level Talent",
+        "Vascular & Stroke Imaging"
       ],
       "tags_cn": [
         "团队负责人",
-        "血管影像",
-        "卒中影像"
+        "国家级人才",
+        "血管与卒中影像"
       ],
       "page": true
     }
@@ -33,7 +33,7 @@
       "name_en": "Ruipeng Zhang",
       "name_cn": "张瑞鹏",
       "role": "pi",
-      "role_cn": "课题组PI",
+      "role_cn": "独立 PI",
       "avatar_type": "photo",
       "avatar_path": "images/members/ruipeng-zhang.jpg",
       "degree": "PhD",
@@ -56,7 +56,7 @@
       "name_en": "Jianyong Wei",
       "name_cn": "韦建雍",
       "role": "pi",
-      "role_cn": "课题组PI",
+      "role_cn": "独立 PI",
       "avatar_type": "initials",
       "degree": "PhD",
       "degree_cn": "博士",
@@ -77,7 +77,7 @@
       "name_en": "Zheng Sun",
       "name_cn": "孙正",
       "role": "pi",
-      "role_cn": "课题组PI",
+      "role_cn": "独立 PI",
       "avatar_type": "initials",
       "degree": "PhD",
       "degree_cn": "博士",
