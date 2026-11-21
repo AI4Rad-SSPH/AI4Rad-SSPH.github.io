@@ -12,7 +12,7 @@
 上海交通大学医学院附属第六人民医院 放射介入科 ·
 上海交通大学医学院
 
-<h3>🌐 <a href="https://ai4rad-ssph.github.io/">ai4rad-ssph.github.io</a></h3>
+<h3>🌐 <a href="https://ssph-ai4rad.net/index_ch.html">ssph-ai4rad.net</a> &nbsp;·&nbsp; <a href="https://ai4rad-ssph.github.io/index_ch.html">ai4rad-ssph.github.io</a></h3>
 
 <img src="ai4rad_home_light_v2.png" alt="AI4Rad Lab 首页" width="880">
 
