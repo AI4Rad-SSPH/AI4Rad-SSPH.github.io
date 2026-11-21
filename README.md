@@ -4,7 +4,10 @@
 
 <div align="center">
 
-<img src="images/brand/team-logo.png" alt="AI4Rad Lab" width="140">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/brand/team-logo-dark.svg">
+  <img src="images/brand/team-logo.svg" alt="AI4Rad Lab" width="148">
+</picture>
 
 # AI4Rad Lab · Medical Imaging AI
 
