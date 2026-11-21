@@ -27,10 +27,15 @@
     "Deep Learning",
     "Hemodynamics"
   ],
-  "tags": [],
-  "abstract": "A hemodynamics-guided, two-step deep learning framework for predicting vascular flow.",
+  "tags": [
+    {
+      "label": "Q1",
+      "kind": "jcr"
+    }
+  ],
+  "abstract": "FlowPredictor–Corrector (FPC) is a hemodynamics-guided, two-step deep learning framework that combines 3D vascular point-cloud representation learning with physics-based hemodynamic correction to non-invasively map 3D vascular geometry to 4D blood-flow fields, balancing rapid inference with physical consistency across reference CFD simulations and clinical vascular evaluations.",
   "lab": true,
-  "featured": false,
+  "featured": true,
   "author_roles": {
     "zhuo-li": [
       "first"

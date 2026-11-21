@@ -77,6 +77,10 @@
     "venue": "IEEE Journal of Biomedical and Health Informatics",
     "tags": [
       {
+        "label": "Q1",
+        "kind": "jcr"
+      },
+      {
         "kind": "if",
         "label": "IF 7.7 (2025)",
         "source": "https://open.ieee.org/wp-content/uploads/IEEE-Title-List-September-2026.pdf",
@@ -93,8 +97,8 @@
       "Deep Learning",
       "Hemodynamics"
     ],
-    "featured": false,
-    "abstract": "A hemodynamics-guided, two-step deep learning framework for predicting vascular flow.",
+    "featured": true,
+    "abstract": "FlowPredictor–Corrector (FPC) is a hemodynamics-guided, two-step deep learning framework that combines 3D vascular point-cloud representation learning with physics-based hemodynamic correction to non-invasively map 3D vascular geometry to 4D blood-flow fields, balancing rapid inference with physical consistency across reference CFD simulations and clinical vascular evaluations.",
     "lab": true,
     "status": "early_access",
     "published_date": "2026-10-08",

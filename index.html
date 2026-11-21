@@ -146,7 +146,7 @@
           <li>Emergency &amp; Acute Abdominal Imaging</li>
           <li>Longitudinal Chronic Disease Cohorts</li>
           <li>Radiology Education &amp; Reporting Feedback</li>
-          <li>Photon-Counting CT &amp; Emerging Modalities</li>
+          <li>Emerging Imaging Technologies &amp; Translation</li>
         </ul>
       </div>
     </section>
@@ -159,9 +159,9 @@
 
       <div class="subsec-block">
         <div class="subsec-head">
-          <h3 class="subsec-title">Foundation Models, Multimodal Agents &amp; Open Benchmarks <span class="subsec-badge">Flagship Systems</span></h3>
+          <h3 class="subsec-title">Foundation Models, Multimodal Reasoning &amp; Open Benchmarks <span class="subsec-badge">Representation &amp; Decision Systems</span></h3>
         </div>
-        <p class="subsec-desc">Large-scale representation learning, imaging-grounded clinical reasoning, and micro-architectural super-resolution validated across multicenter cohorts and structured radiologist reader studies.</p>
+        <p class="subsec-desc">Large-scale representation learning, criteria-grounded clinical reasoning, and micro-architectural super-resolution validated across multicenter cohorts and structured radiologist reader studies.</p>
 
         <div class="project-grid">
           <article class="project-card">
@@ -242,8 +242,8 @@
               <span class="project-card__venue">Scientific Data · 2026</span>
               <span class="project-card__domain">Open Paired Dataset</span>
             </div>
-            <h4 class="project-card__title"><a href="https://www.nature.com/articles/s41597-026-07748-5" target="_blank" rel="noopener">LumbarSR: Paired Clinical CT &amp; Photon-Counting Micro-CT Vertebra Dataset</a></h4>
-            <p class="project-card__desc">Releases the first spatially registered paired dataset of routine clinical CT and high-resolution photon-counting micro-CT volumes of human lumbar vertebrae, bridging in-vivo clinical imaging and trabecular bone micro-architecture through an open super-resolution benchmark and community challenge.</p>
+            <h4 class="project-card__title"><a href="https://www.nature.com/articles/s41597-026-07748-5" target="_blank" rel="noopener">LumbarSR: Paired Clinical CT &amp; High-Resolution Micro-CT Vertebra Dataset</a></h4>
+            <p class="project-card__desc">Releases the first spatially registered paired dataset of routine clinical CT and high-resolution ex-vivo micro-CT volumes of human lumbar vertebrae, bridging in-vivo clinical imaging and trabecular bone micro-architecture through an open super-resolution benchmark and community challenge.</p>
             <div class="project-card__highlights">
               <span class="project-card__chip">Clinical CT ↔ Micro-CT</span>
               <span class="project-card__chip">Trabecular Micro-Structure</span>
@@ -279,21 +279,39 @@
 
       <div class="subsec-block">
         <div class="subsec-head">
-          <h3 class="subsec-title">Clinical Cohorts, Quantitative Biomarkers &amp; Applied Studies <span class="subsec-badge">Undergraduate / RBL Friendly</span></h3>
+          <h3 class="subsec-title">Hemodynamic Modeling, Quantitative Biomarkers &amp; Clinical Studies <span class="subsec-badge">Biophysics &amp; Quantitative Imaging</span></h3>
         </div>
-        <p class="subsec-desc">Impactful radiology research does not always require 100,000-scan pretraining — starting from anatomical variants, cardiopulmonary physiology, and concrete clinical questions, students lead peer-reviewed studies via cohort analysis, 3D quantitative measurement, surgical trajectory simulation, and lightweight LLM prompting:</p>
+        <p class="subsec-desc">Combining 3D vascular geometry, hemodynamic constraints, biomechanical trajectory simulation, and multi-reader clinical studies across vascular, cardiopulmonary, and musculoskeletal disorders.</p>
 
         <div class="project-grid">
           <article class="project-card project-card--foundational">
             <div class="project-card__meta">
-              <span class="project-card__venue">Insights into Imaging · 2026</span>
-              <span class="project-card__domain">Criteria Prompting · Lightweight LLM</span>
+              <span class="project-card__venue">IEEE J. Biomed. Health Inform. · 2026</span>
+              <span class="project-card__domain">Vascular Hemodynamics · Physics-Guided DL</span>
             </div>
-            <h4 class="project-card__title"><a href="https://link.springer.com/article/10.1186/s13244-026-02421-2" target="_blank" rel="noopener">Criteria-Guided Lightweight LLM Assistance for Carotid Plaque AHA Classification</a></h4>
-            <p class="project-card__desc">Evaluated 10 LLMs and a 4-radiologist reader study across 433 multicenter patients with free-text carotid MRI reports, demonstrating that explicitly encoding clinical modified-AHA staging criteria enables a locally deployable lightweight 8B model to improve inter-reader classification agreement.</p>
+            <h4 class="project-card__title"><a href="https://ieeexplore.ieee.org/document/11726865" target="_blank" rel="noopener">FlowPredictor–Corrector: Hemodynamics-Guided Two-Step Vascular Flow Prediction</a></h4>
+            <p class="project-card__desc">Integrates 3D vascular point-cloud representation learning with physics-based hemodynamic correction to non-invasively map 3D vascular geometry to 4D blood-flow fields, preserving physical consistency with reference CFD simulations and clinical stenosis evaluations at rapid inference speed.</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">3D Point-Cloud Geometry</span>
+              <span class="project-card__chip">Physics-Based Correction</span>
+              <span class="project-card__chip">Rapid 4D Flow Prediction</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://ieeexplore.ieee.org/document/11726865" target="_blank" rel="noopener">Paper</a>
+              <a href="https://doi.org/10.1109/JBHI.2026.3741575" target="_blank" rel="noopener">DOI</a>
+            </div>
+          </article>
+
+          <article class="project-card project-card--foundational">
+            <div class="project-card__meta">
+              <span class="project-card__venue">Insights into Imaging · 2026</span>
+              <span class="project-card__domain">Vascular MRI Reporting · Multi-Reader Study</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://link.springer.com/article/10.1186/s13244-026-02421-2" target="_blank" rel="noopener">Criteria-Guided LLM Assistance for Carotid Plaque AHA Classification</a></h4>
+            <p class="project-card__desc">Evaluated 10 LLMs and a 4-radiologist reader study across 433 multicenter patients with free-text carotid MRI reports, demonstrating that explicitly encoding modified-AHA staging criteria improves inter-reader agreement and enables effective deployment of a lightweight 8B model.</p>
             <div class="project-card__highlights">
               <span class="project-card__chip">433 Multicenter Patients</span>
-              <span class="project-card__chip">Explicit Clinical Criteria</span>
+              <span class="project-card__chip">Explicit Staging Criteria</span>
               <span class="project-card__chip">Local 8B Model + 4 Readers</span>
             </div>
             <div class="project-card__links">
@@ -305,14 +323,14 @@
           <article class="project-card project-card--foundational">
             <div class="project-card__meta">
               <span class="project-card__venue">Academic Radiology · 2026</span>
-              <span class="project-card__domain">Pathophysiology · 3D CTA Biomarker</span>
+              <span class="project-card__domain">Cardiopulmonary CTA · Imaging Biomarker</span>
             </div>
-            <h4 class="project-card__title"><a href="https://www.sciencedirect.com/science/article/pii/S1076633226005945" target="_blank" rel="noopener">Pulmonary Artery-to-Vein Volume Difference for Acute Pulmonary Embolism</a></h4>
-            <p class="project-card__desc">Grounded in cardiopulmonary hemodynamics — elevated pulmonary vascular resistance and reduced left-atrial venous return — this study extracts 3D pulmonary artery-to-vein volume difference on chest CTA as an interpretable quantitative biomarker for acute pulmonary embolism risk stratification.</p>
+            <h4 class="project-card__title"><a href="https://www.sciencedirect.com/science/article/pii/S1076633226005945" target="_blank" rel="noopener">Pulmonary Artery-to-Vein Volume Difference in Acute Pulmonary Embolism</a></h4>
+            <p class="project-card__desc">Grounded in cardiopulmonary hemodynamics — elevated pulmonary vascular resistance and reduced left-atrial venous return — this study establishes 3D pulmonary artery-to-vein volume difference on chest CTA as an interpretable quantitative biomarker for acute pulmonary embolism risk stratification.</p>
             <div class="project-card__highlights">
-              <span class="project-card__chip">Physiology-Driven Hypothesis</span>
-              <span class="project-card__chip">3D Vascular Volumetry</span>
-              <span class="project-card__chip">Emergency Risk Stratification</span>
+              <span class="project-card__chip">Cardiopulmonary Physiology</span>
+              <span class="project-card__chip">3D CTA Volumetry</span>
+              <span class="project-card__chip">Acute PE Risk Stratification</span>
             </div>
             <div class="project-card__links">
               <a href="https://www.sciencedirect.com/science/article/pii/S1076633226005945" target="_blank" rel="noopener">Paper</a>
@@ -322,34 +340,17 @@
           <article class="project-card project-card--foundational">
             <div class="project-card__meta">
               <span class="project-card__venue">J. Orthop. Surg. Res. · 2026</span>
-              <span class="project-card__domain">Anatomical Variant · 3D Simulation</span>
+              <span class="project-card__domain">Cervical Anatomy · 3D Surgical Simulation</span>
             </div>
             <h4 class="project-card__title"><a href="https://doi.org/10.1186/s13018-026-07046-1" target="_blank" rel="noopener">3D CTA Trajectory Simulation for C1 Screw Placement in Ponticulus Posticus</a></h4>
-            <p class="project-card__desc">Addresses distorted cervical bony landmarks and vertebral artery injury risk in ponticulus posticus variants by performing 3D screw trajectory simulation across 141 cervical CTA examinations to establish a quantitative preoperative safety workflow.</p>
+            <p class="project-card__desc">Quantifies vertebral artery injury risks associated with ponticulus posticus anatomical variants via 3D pedicle screw trajectory simulation across 141 cervical CTA examinations, establishing a preoperative anatomical screening workflow.</p>
             <div class="project-card__highlights">
               <span class="project-card__chip">141 Cervical CTA Subjects</span>
               <span class="project-card__chip">3D Screw Trajectory Simulation</span>
-              <span class="project-card__chip">Spine Preoperative Planning</span>
+              <span class="project-card__chip">Preoperative Risk Quantification</span>
             </div>
             <div class="project-card__links">
               <a href="https://doi.org/10.1186/s13018-026-07046-1" target="_blank" rel="noopener">Paper</a>
-            </div>
-          </article>
-
-          <article class="project-card project-card--foundational">
-            <div class="project-card__meta">
-              <span class="project-card__venue">BMC Medical Imaging · 2026</span>
-              <span class="project-card__domain">Clinical Epidemiology · 16-Year Cohort</span>
-            </div>
-            <h4 class="project-card__title"><a href="https://link.springer.com/article/10.1186/s12880-026-02801-6" target="_blank" rel="noopener">16-Year Cohort on Craniomaxillofacial Trauma &amp; Acute Intracranial Injury</a></h4>
-            <p class="project-card__desc">Analyzes a consecutive 16-year hospital trauma imaging cohort to characterize age-dependent risks of acute intracranial injury, highlighting occult vulnerability in older adults presenting with isolated facial fractures to guide emergency head CT screening.</p>
-            <div class="project-card__highlights">
-              <span class="project-card__chip">16-Year Hospital Cohort</span>
-              <span class="project-card__chip">High-Risk Subgroup Discovery</span>
-              <span class="project-card__chip">Emergency CT Evidence</span>
-            </div>
-            <div class="project-card__links">
-              <a href="https://link.springer.com/article/10.1186/s12880-026-02801-6" target="_blank" rel="noopener">Paper</a>
             </div>
           </article>
         </div>
@@ -385,28 +386,10 @@
         </div>
 
         <div class="info-card">
-          <span class="info-card__eyebrow">Graduate &amp; Postdoctoral Openings</span>
-          <h3 class="info-card__title">PhD / Master’s, Postdocs &amp; Visiting Scholars</h3>
-          <p class="info-card__body">We welcome multicenter collaborations and recruit <strong>PhD and master’s students</strong>, <strong>postdoctoral fellows</strong>, and <strong>visiting researchers</strong> in medical imaging AI, computer vision, and multimodal learning. Send your CV and research interests to <a href="mailto:zhangrp@sjtu.edu.cn">zhangrp@sjtu.edu.cn</a>.</p>
+          <span class="info-card__eyebrow">Recruitment &amp; Collaboration</span>
+          <h3 class="info-card__title">Work With Us</h3>
+          <p class="info-card__body">We welcome multicenter collaborations and recruit <strong>PhD and master’s students</strong>, <strong>postdoctoral fellows</strong>, and <strong>visiting researchers</strong> in medical imaging AI, computer vision, and multimodal learning. Motivated undergraduates from <strong>SJTU School of Medicine</strong> are also encouraged to participate in <strong>RBL (Research-Based Learning)</strong> and innovation competitions. Please contact <a href="mailto:zhangrp@sjtu.edu.cn">zhangrp@sjtu.edu.cn</a>.</p>
           <div class="info-card__footer"><a href="./contact.html">Contact &amp; application details →</a></div>
-        </div>
-      </div>
-
-      <div class="ug-callout">
-        <div>
-          <span class="info-card__eyebrow">For SJTU School of Medicine Undergraduates · Open Year-Round</span>
-          <h3 class="ug-callout__title">Undergraduates Welcome: RBL &amp; Innovation Competitions</h3>
-          <p class="ug-callout__body">We warmly encourage undergraduates from <strong>SJTU School of Medicine</strong> (Clinical Medicine 5/8-year programs, Medical Imaging Technology, Biomedical Sciences, Stomatology, and Public Health) to join our lab! <strong>No prior deep-learning coding background is required</strong> — students receive dual mentorship from frontline radiologists and AI mentors, starting from clinical cohort curation, 3D anatomical quantification, surgical simulation, or LLM reader studies. Both individual students and pre-formed RBL / competition teams are welcome.</p>
-        </div>
-        <div class="ug-callout__side">
-          <span class="ug-callout__side-label">Supported Undergraduate Tracks</span>
-          <ul class="ug-tracks">
-            <li>RBL (Research-Based Learning)</li>
-            <li>National / Municipal Innovation Programs (大创)</li>
-            <li>Challenge Cup &amp; Innovation Competitions</li>
-            <li>Honors Program &amp; Senior Thesis</li>
-          </ul>
-          <p class="ug-callout__cta">Email a brief introduction (year, major &amp; interests) to Dr. Ruipeng Zhang: <a href="mailto:zhangrp@sjtu.edu.cn">zhangrp@sjtu.edu.cn</a></p>
         </div>
       </div>
     </section>

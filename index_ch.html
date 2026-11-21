@@ -146,7 +146,7 @@
           <li>急诊影像与腹部疾病诊断</li>
           <li>慢病队列与长期随访</li>
           <li>影像教育与报告反馈</li>
-          <li>光子计数 CT 等新影像技术转化</li>
+          <li>影像新技术与临床转化</li>
         </ul>
       </div>
     </section>
@@ -159,9 +159,9 @@
 
       <div class="subsec-block">
         <div class="subsec-head">
-          <h3 class="subsec-title">前沿基础模型、多模态智能体与开源基准 <span class="subsec-badge">核心方法代表作</span></h3>
+          <h3 class="subsec-title">基础模型、多模态推理与开源基准 <span class="subsec-badge">大规模表征与决策</span></h3>
         </div>
-        <p class="subsec-desc">面向大规模临床影像表征学习、跨模态推理与微结构超分辨重建，结合多中心独立队列与放射科医生对照阅片研究开展系统验证。</p>
+        <p class="subsec-desc">面向跨模态医学影像表征学习、临床指南约束推理与微结构重建基准，结合多中心独立队列与放射科医生对照阅片研究开展系统验证。</p>
 
         <div class="project-grid">
           <article class="project-card">
@@ -242,10 +242,10 @@
               <span class="project-card__venue">Scientific Data · 2026</span>
               <span class="project-card__domain">开源配对数据集</span>
             </div>
-            <h4 class="project-card__title"><a href="https://www.nature.com/articles/s41597-026-07748-5" target="_blank" rel="noopener">LumbarSR：配对临床 CT 与光子计数显微 CT 腰椎超分辨率数据集</a></h4>
-            <p class="project-card__desc">发布首个空间配准的人体腰椎常规临床 CT 与高分辨率离体光子计数显微 CT（Micro-CT）配对数据集，架起活体常规辐射剂量成像与微米级骨小梁三维微结构之间的桥梁，并配套公开基准评测代码与学术挑战赛。</p>
+            <h4 class="project-card__title"><a href="https://www.nature.com/articles/s41597-026-07748-5" target="_blank" rel="noopener">LumbarSR：配对临床 CT 与高分辨率显微 CT 腰椎超分辨数据集</a></h4>
+            <p class="project-card__desc">发布首个空间配准的人体腰椎常规临床 CT 与高分辨率离体显微 CT（Micro-CT）配对数据集，连接活体常规辐射剂量成像与微米级骨小梁三维微结构，并配套公开基准评测代码与学术挑战赛。</p>
             <div class="project-card__highlights">
-              <span class="project-card__chip">临床 CT ↔ 光子计数 Micro-CT</span>
+              <span class="project-card__chip">临床 CT ↔ 高分辨 Micro-CT</span>
               <span class="project-card__chip">骨小梁微结构重建</span>
               <span class="project-card__chip">公开数据集与挑战赛</span>
             </div>
@@ -279,22 +279,40 @@
 
       <div class="subsec-block">
         <div class="subsec-head">
-          <h3 class="subsec-title">临床队列、定量影像标志物与医工入门课题 <span class="subsec-badge">适合医学生 / RBL 与大创切入</span></h3>
+          <h3 class="subsec-title">血流动力学建模、定量影像标志物与临床队列研究 <span class="subsec-badge">物理建模与临床定量</span></h3>
         </div>
-        <p class="subsec-desc">科研并非只有超大规模预训练——从解剖变异、血流生理机制与日常临床疑难问题出发，结合专病队列构建、三维定量测量、手术仿真或轻量化提示工程，同样能产出扎实的同行评审成果。以下均为实验室研究生与医学生主导发表的代表性临床与医工结合工作：</p>
+        <p class="subsec-desc">结合三维血管点云与流体物理约束、解剖仿真及临床专病队列，围绕泛血管、心肺与骨肌临床问题开展高可解释性的定量影像研究。</p>
 
         <div class="project-grid">
           <article class="project-card project-card--foundational">
             <div class="project-card__meta">
-              <span class="project-card__venue">Insights into Imaging · 2026</span>
-              <span class="project-card__domain">临床规则提示 · 轻量化模型</span>
+              <span class="project-card__venue">IEEE J. Biomed. Health Inform. · 2026</span>
+              <span class="project-card__domain">血管血流动力学 · 物理引导深度学习</span>
             </div>
-            <h4 class="project-card__title"><a href="https://link.springer.com/article/10.1186/s13244-026-02421-2" target="_blank" rel="noopener">指南标准引导的轻量化大模型辅助颈动脉斑块 AHA 分型</a></h4>
-            <p class="project-card__desc">纳入多中心 433 例患者的颈动脉黑血 MRI 自由文本报告，评测 10 种大模型并开展 4 名放射科医生辅助判读研究。研究证明：将改良版 AHA 斑块分型临床判读准则结构化编码进提示词后，本地可部署的 8B 轻量级模型即可有效提升医生间分型一致性。</p>
+            <h4 class="project-card__title"><a href="https://ieeexplore.ieee.org/document/11726865" target="_blank" rel="noopener">FlowPredictor–Corrector：血流动力学引导的两阶段血管血流预测框架</a></h4>
+            <p class="project-card__desc">融合三维血管点云几何表征学习与血流动力学物理约束校正，构建「预测—物理校正」两阶段深度学习框架，由三维血管解剖形态无创快速映射四维血流场分布，在兼顾计算流体力学（CFD）物理一致性与狭窄评估精度的同时显著提升计算效率。</p>
+            <div class="project-card__highlights">
+              <span class="project-card__chip">三维点云表征</span>
+              <span class="project-card__chip">血流动力学物理校正</span>
+              <span class="project-card__chip">无创快速血流场重建</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://ieeexplore.ieee.org/document/11726865" target="_blank" rel="noopener">论文</a>
+              <a href="https://doi.org/10.1109/JBHI.2026.3741575" target="_blank" rel="noopener">DOI</a>
+            </div>
+          </article>
+
+          <article class="project-card project-card--foundational">
+            <div class="project-card__meta">
+              <span class="project-card__venue">Insights into Imaging · 2026</span>
+              <span class="project-card__domain">血管影像报告 · 多读者对照评估</span>
+            </div>
+            <h4 class="project-card__title"><a href="https://link.springer.com/article/10.1186/s13244-026-02421-2" target="_blank" rel="noopener">临床准则引导的大语言模型辅助颈动脉斑块 AHA 分型研究</a></h4>
+            <p class="project-card__desc">纳入多中心 433 例患者的颈动脉黑血 MRI 自由文本报告，评测 10 种大模型并开展 4 名放射科医生辅助判读研究。结果表明，显式编码改良版 AHA 斑块分型准则可有效提升判读一致性，并支持本地 8B 轻量级模型的可靠部署。</p>
             <div class="project-card__highlights">
               <span class="project-card__chip">433 例多中心报告</span>
-              <span class="project-card__chip">临床指南编码提示词</span>
-              <span class="project-card__chip">本地 8B 轻量模型验证</span>
+              <span class="project-card__chip">临床分型准则约束</span>
+              <span class="project-card__chip">本地 8B 模型 + 4 读者研究</span>
             </div>
             <div class="project-card__links">
               <a href="https://link.springer.com/article/10.1186/s13244-026-02421-2" target="_blank" rel="noopener">论文</a>
@@ -305,14 +323,14 @@
           <article class="project-card project-card--foundational">
             <div class="project-card__meta">
               <span class="project-card__venue">Academic Radiology · 2026</span>
-              <span class="project-card__domain">心肺病理生理 · 三维定量标志物</span>
+              <span class="project-card__domain">心肺血管定量 · 影像学标志物</span>
             </div>
             <h4 class="project-card__title"><a href="https://www.sciencedirect.com/science/article/pii/S1076633226005945" target="_blank" rel="noopener">肺动静脉三维体积差用于急性肺栓塞风险分层</a></h4>
-            <p class="project-card__desc">从急性肺栓塞导致肺循环阻力升高、右心后负荷增加与左心回流减少的病理生理机制出发，基于肺动脉 CTA 提取「肺动脉—肺静脉体积差」这一直观定量影像标志物，为急诊肺栓塞严重程度评估与风险分层提供可解释的定量依据。</p>
+            <p class="project-card__desc">围绕急性肺栓塞所致肺循环阻力升高与左心静脉回流减少的病理生理改变，从胸部 CTA 定量提取「肺动脉—肺静脉体积差」作为新型三维影像学标志物，为急性肺栓塞临床危重度分层提供客观定量指标。</p>
             <div class="project-card__highlights">
-              <span class="project-card__chip">病理生理驱动假设</span>
-              <span class="project-card__chip">CTA 三维血管定量</span>
-              <span class="project-card__chip">急诊危重风险分层</span>
+              <span class="project-card__chip">心肺血流生理机制</span>
+              <span class="project-card__chip">CTA 三维容积定量</span>
+              <span class="project-card__chip">急性肺栓塞风险分层</span>
             </div>
             <div class="project-card__links">
               <a href="https://www.sciencedirect.com/science/article/pii/S1076633226005945" target="_blank" rel="noopener">论文</a>
@@ -322,34 +340,17 @@
           <article class="project-card project-card--foundational">
             <div class="project-card__meta">
               <span class="project-card__venue">J. Orthop. Surg. Res. · 2026</span>
-              <span class="project-card__domain">解剖变异 · 三维手术仿真</span>
+              <span class="project-card__domain">骨肌解剖变异 · 三维手术仿真</span>
             </div>
             <h4 class="project-card__title"><a href="https://doi.org/10.1186/s13018-026-07046-1" target="_blank" rel="noopener">寰椎后桥变异患者 C1 椎弓根螺钉置入风险的三维 CTA 仿真研究</a></h4>
-            <p class="project-card__desc">针对寰椎后桥（Ponticulus Posticus）解剖变异易改变骨性标志并增加椎动脉损伤风险的临床痛点，基于 141 例颈部 CTA 开展三维螺钉轨迹仿真（PedicleScrewSimulator），建立术前定量解剖筛选与置钉风险评估流程。</p>
+            <p class="project-card__desc">针对寰椎后桥（Ponticulus Posticus）解剖变异改变骨性标志并增加椎动脉损伤风险的临床问题，基于 141 例颈部 CTA 开展三维螺钉轨迹仿真分析，建立术前定量解剖评估与置钉安全筛选方法。</p>
             <div class="project-card__highlights">
-              <span class="project-card__chip">141 例颈部 CTA 解剖</span>
+              <span class="project-card__chip">141 例颈部 CTA</span>
               <span class="project-card__chip">三维置钉轨迹仿真</span>
-              <span class="project-card__chip">脊柱外科术前评估</span>
+              <span class="project-card__chip">椎动脉风险定量评估</span>
             </div>
             <div class="project-card__links">
               <a href="https://doi.org/10.1186/s13018-026-07046-1" target="_blank" rel="noopener">论文</a>
-            </div>
-          </article>
-
-          <article class="project-card project-card--foundational">
-            <div class="project-card__meta">
-              <span class="project-card__venue">BMC Medical Imaging · 2026</span>
-              <span class="project-card__domain">临床流行病学 · 16 年专病队列</span>
-            </div>
-            <h4 class="project-card__title"><a href="https://link.springer.com/article/10.1186/s12880-026-02801-6" target="_blank" rel="noopener">颅颌面创伤后急性颅内损伤年龄相关风险的 16 年队列研究</a></h4>
-            <p class="project-card__desc">依托医院连续 16 年急诊创伤影像队列，系统揭示颅颌面外伤患者发生急性颅内损伤的年龄相关性风险规律，重点识别出「孤立性面部骨折老年患者」这一隐匿高危人群，直接服务于急诊头颅 CT 检查指征优化。</p>
-            <div class="project-card__highlights">
-              <span class="project-card__chip">16 年单中心大样本队列</span>
-              <span class="project-card__chip">高危亚组临床识别</span>
-              <span class="project-card__chip">急诊检查指征循证</span>
-            </div>
-            <div class="project-card__links">
-              <a href="https://link.springer.com/article/10.1186/s12880-026-02801-6" target="_blank" rel="noopener">论文</a>
             </div>
           </article>
         </div>
@@ -385,28 +386,10 @@
         </div>
 
         <div class="info-card">
-          <span class="info-card__eyebrow">研究生与专职科研</span>
-          <h3 class="info-card__title">博硕士生、博士后与访问学者</h3>
-          <p class="info-card__body">欢迎国内外团队开展多中心合作；长期招收医学影像人工智能、计算机视觉与多模态学习方向的<strong>博士与硕士研究生</strong>（含医工交叉、医学技术与临床方向）、<strong>博士后</strong>及<strong>访问学者</strong>。请附简历发送至 <a href="mailto:zhangrp@sjtu.edu.cn">zhangrp@sjtu.edu.cn</a>。</p>
+          <span class="info-card__eyebrow">招生与学术合作</span>
+          <h3 class="info-card__title">欢迎加入与交流</h3>
+          <p class="info-card__body">欢迎国内外团队开展多中心科研合作；长期招收医学影像人工智能、计算机视觉与多模态学习方向的<strong>博士与硕士研究生</strong>、<strong>博士后</strong>及<strong>访问学者</strong>，同时欢迎<strong>上海交通大学医学院本科生</strong>参与 <strong>RBL 探究式学习</strong>与<strong>大创竞赛</strong>等科研训练。有意者请邮件联系张瑞鹏老师：<a href="mailto:zhangrp@sjtu.edu.cn">zhangrp@sjtu.edu.cn</a>。</p>
           <div class="info-card__footer"><a href="./contact_ch.html">查看联系方式与申请说明 →</a></div>
-        </div>
-      </div>
-
-      <div class="ug-callout">
-        <div>
-          <span class="info-card__eyebrow">面向上海交通大学医学院本科生 · 长期开放招募</span>
-          <h3 class="ug-callout__title">热忱欢迎交大医学院本科生参与 RBL 与大创竞赛！</h3>
-          <p class="ug-callout__body">我们非常鼓励<strong>临床医学（五年制 / 八年制）、医学技术学院（医学影像技术等）、生物医学科学、口腔及预防医学</strong>等各专业本科生尽早走进临床科研！<strong>无需预先具备深度学习编程基础</strong>——实验室提供「一线放射科医师 + AI 算法导师/高年级博硕」双带教机制，可从专病队列分析、三维解剖定量、手术仿真或临床大模型评测平滑切入，支持个人报名或已组队小组联系指导。</p>
-        </div>
-        <div class="ug-callout__side">
-          <span class="ug-callout__side-label">支持本科生项目类型</span>
-          <ul class="ug-tracks">
-            <li>RBL 探究式学习</li>
-            <li>大学生创新创业训练计划（大创）</li>
-            <li>「挑战杯」/ 国创赛等科创竞赛</li>
-            <li>荣誉计划与本科毕业设计</li>
-          </ul>
-          <p class="ug-callout__cta">请简单介绍年级、专业与感兴趣的方向，邮件联系张瑞鹏老师：<a href="mailto:zhangrp@sjtu.edu.cn">zhangrp@sjtu.edu.cn</a></p>
         </div>
       </div>
     </section>
